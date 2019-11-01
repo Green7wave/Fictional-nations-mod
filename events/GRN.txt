@@ -126,6 +126,12 @@ country_event = {
  		  amount = 500
   		  target = GRN
 		}
+		if = {
+			limit = {
+				ROOT = CRZ
+			}
+			GRN = { add_timed_idea = communism_in_the_land}
+		}
 	}
 
 	option = { 
