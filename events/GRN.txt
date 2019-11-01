@@ -128,9 +128,17 @@ country_event = {
 		}
 		if = {
 			limit = {
-				ROOT = CRZ
+				ROOT = {
+					11683 = { is_capital = yes }
+				}
 			}
-			GRN = { add_timed_idea = communism_in_the_land}
+			GRN = { 
+				add_timed_idea = {
+					idea = communism_in_the_land
+					days = 60
+
+				} 
+			}
 		}
 	}
 

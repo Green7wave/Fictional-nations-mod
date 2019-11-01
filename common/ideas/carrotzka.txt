@@ -1,3 +1,4 @@
+
 ideas = {
 	country = {
 		recovery_from_civil_war = {
@@ -154,7 +155,7 @@ ideas = {
 				}
 	
 				allowed_civil_war = {
-					has_government = anarchist
+					has_government = anarchism
 				}
 	
 				modifier = {
