@@ -1312,7 +1312,7 @@ focus_tree = {
 				y = 0
 				cost = 10
 				ai_will_do = {
-					factor = 0 # make this go 40 when u done with it
+					factor = 40 # make this go 40 when u done with it
 				}
 				completion_reward = {
 					add_ideas = carrot_farming_focus
@@ -1464,4 +1464,27 @@ focus_tree = {
 							}				
 						}
 					}
-		    	}
+
+					focus = {
+						id = CRZ_aluminum_factory
+						icon = GFX_focus_generic_aluminum
+						x = 25
+						y = 4
+						cost = 10
+						available_if_capitulated = yes
+						prerequisite = { focus = CRZ_chromium_mines }
+						ai_will_do = {
+							factor = 40
+						}
+						completion_reward = {	
+							197 = {
+								add_resource = {
+									type = aluminium
+									amount = 16
+								}
+							}		
+						}
+					}
+				}
+
+			
