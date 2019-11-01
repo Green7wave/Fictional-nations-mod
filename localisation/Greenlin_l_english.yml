@@ -1,9 +1,14 @@
 ﻿l_english:
- # leader descriptions
+
+
+# Bookmarks
+ GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Mark Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
+
+# leader descriptions
  POLITICS_GREEN_WAVE_desc:0 "Chosen leader of Greenlin, known as 'Green Wave'. he is a member of the royal green family but is against the family's treditions. he also has a lot of popularity within his own people"
  POLICITCS_SUN_WAVE_desc:0 ""
 
- # country names
+# country names
  GRN_fascism:0  "Gloryious Greenlin"
  GRN_fascism_DEF:0 "the Gloryious Greenlin"
  GRN_democratic:0  "Greenlin"
@@ -13,22 +18,22 @@
  GRN_communism:0 "Socialist Greenlin"
  GRN_communism_DEF:0 "the Social Democratic Greenlin"
 
- # City and state names
+# City and state names
  VICTORY_POINTS_6923:0 "Grensofer"
  VICTORY_POINTS_949:0 "Sinkestin"
  STATE_48:0 "Iplieren"
 
- # Parties
+# Parties
  GRN_communism_party:0 "Green Communism Party"
  GRN_neutrality_party:0 "Monarchist Party"
  GRN_fascism_party:0 "GGL Party"
  GRN_democratic_party:0 "People's Freewill Party"
 
- # Tool tips (§G§) 
+# Tool tips (§G§) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
 
- # Ideas
+# Ideas
  special_democracy:0 "Special Democracy"
  special_democracy_desc:0 "Greenlin's way of democracy is, 'diffrent', than how other countries have it. the leader favors the system and says 'its no problem because people still love it'"
  gis:0 "GIS"

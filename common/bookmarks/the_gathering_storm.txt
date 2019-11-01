@@ -18,18 +18,18 @@ bookmarks = {
 			}
 		}
 
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+		"GRN"={
+			history = "GRN_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				the_cruel_king
+				industrial_issue
+				special_democracy
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-				FRA_revise_versailles
+				GRN_starttherevolution
+				GRN_organizationofgrl
+				GRN_reconstructionofthecountry
 			}
 		}
 		"USA"={
@@ -105,19 +105,6 @@ bookmarks = {
 				GER_danzig_or_war
 				GER_ussr_war_goal
 			}
-		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				vittoria_mutilata
-				victor_emmanuel
-			}	
-			focuses = {
-				ITA_pact_of_steel
-				ITA_spanish_italian_faction
-				ITA_italy_first
-			}		
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
