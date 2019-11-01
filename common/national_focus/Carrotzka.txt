@@ -815,7 +815,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { CRZ_war_with_turkey }
+		prerequisite = { focus = CRZ_war_with_turkey }
 		ai_will_do = {
 			factor = 40
 		}
