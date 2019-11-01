@@ -18,6 +18,9 @@ state={
 			dockyard = 3
 			infrastructure = 8
 			arms_factory = 5
+			11683 = {
+				coastal_bunker = 8
+			}
 		}
 		add_core_of = CRZ
 		1939.1.1 = {
