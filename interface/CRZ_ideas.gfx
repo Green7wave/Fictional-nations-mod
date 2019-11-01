@@ -4043,4 +4043,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_new_meaning_of_freedom.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_Anarchist_society"
+		texturefile = "gfx/interface/ideas/idea_Anarchist_society.dds"
+	}
+
 }
