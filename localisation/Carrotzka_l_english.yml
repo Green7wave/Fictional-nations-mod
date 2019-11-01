@@ -91,7 +91,10 @@
  recovery_from_civil_war:0 "recovery from civil war"
  recovery_from_civil_war_desc:0 "that was a tough fight, very tough fight"
  peoples_revolution:0 "peoples revolution"
- peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people choosed and now they will do their best for their country"
+ peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people choosed 
+ and now they will do their best for their country"
+ Anarchist_society:0 "Anarchist Society"
+ Anarchist_society_desc:0 "We're not looking for any trouble here..."
  
  # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"

@@ -1439,7 +1439,9 @@ focus_tree = {
 								target = ACZ
 								autonomy_state = autonomy_free
 							}	
-							ACZ = { set_cosmetic_tag = ACZ_FREE }
+							ACZ = { 
+								set_cosmetic_tag = ACZ_FREE
+							add_ideas = Anarchist_society }
 							
 						}
 					}

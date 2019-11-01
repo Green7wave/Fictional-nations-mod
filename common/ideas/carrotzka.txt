@@ -215,6 +215,25 @@ ideas = {
 
 			removal_cost = -1
 		}
+
+		Anarchist_society = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				enemy_justify_war_goal_time = 500
+				drift_defence_factor = 500
+				anarchism_drift = 500
+			}
+
+			removal_cost = -1
+		}
 	}
 
 	political_advisor = {
