@@ -49,3 +49,18 @@ news_event = {
 		name = crznews.3.a
 	}
 }
+
+news_event = {
+	id = crznews.4
+	title = crznews.4.t
+	desc = crznews.4.d
+	picture = GFX_news_event_stalin_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.4.a
+	}
+}
