@@ -821,7 +821,6 @@ focus_tree = {
 		}
 				available = {
 			TUR = { exists = no}
-			ROM = { exists = no }
 						}
 		completion_reward = {
 			add_ideas = owner_of_the_black_sea
@@ -1174,7 +1173,10 @@ focus_tree = {
 			y = 2
 			cost = 10
 			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_warwithromania }
+			prerequisite = { focus = CRZ_warwithromania}
+			available = {
+				ROM = { exists = no }
+			}
 			ai_will_do = {
 				factor = 80
 			}
@@ -1493,6 +1495,9 @@ focus_tree = {
 						y = 2
 						cost = 10
 						available_if_capitulated = yes
+						available = {
+							POL = { exists = no }
+						}
 						prerequisite = { focus = CRZ_war_with_poland }
 						ai_will_do = {
 							factor = 40
