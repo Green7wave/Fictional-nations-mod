@@ -200,42 +200,7 @@
  	
  }
  
-# civil war ends
- country_event = {
- 	id = grn.5
- 	title = grn.5.t
- 	desc = grn.5.d
- 	picture = GFX_news_event_073
- 	fire_only_once = yes
- 	trigger = {
-		tag = GRN
-		has_country_flag = greenlin_in_civil_war
-		has_civil_war = no
-	}
- 	
- 	mean_time_to_happen = {
- 		days = 1
- 	}
- 	
- 	option = { 
- 		name = grn.5.a 
-		clr_country_flag = greenlin_in_civil_war
-		if = {
-			limit = {
-				has_country_flag = support_from_ally
-			}
-			clr_country_flag = support_from_ally
-		}
-		if = {
-			limit = {
-				has_country_flag = revolution_armed_flag
-			}
-			clr_country_flag = revolution_armed_flag
-		}
- 	}
- 
- 	
- }
+
  
  
  

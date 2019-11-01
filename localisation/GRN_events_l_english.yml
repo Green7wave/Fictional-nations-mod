@@ -1,17 +1,27 @@
 ﻿l_english:
-grn.1.t:0 "Ling family explodes their factories"
-grn.1.d:0 "In a rushed attempt to get the control of the country, the Ling family has started a revolt in the country, and got quickly arrested by the Greenlin police after doing so. \n officials say this will cripple Greenlin's industry, will the king do anything with the new event?"
-grn.1.a:0 "Oh no..."
-#
-grn.2.t:0 "Green wave requests assistance in achieving freedom of their country"
-grn.2.d:0 "The leader of the People's Freedom party or known short as People's Freedom has requested our government and leader to assist him in the upcoming revolutions, helping them may create a future ally for ourselves"
-grn.2.a:0 "Sure, he seems nice"
-grn.2.b:0 "No"
-#
-grn.3.t:0 "Carrotzka accepts assistance request"
-grn.3.d:0 "'They remind me of the pre-revolution Carrotzka, we may have been alone in this cause, but we will make sure they will not.' \n The future president of Greenlin has thanked then in a public speech saying 'this alliance was written long ago'"
-grn.3.a:0 "Good"
-#
-grn.4.t:0 "Carrotzka says no to Greeblin's assistance request"
-grn.4.d:0 "Leader of Carrotzka, Sadra Carrot, has denied the request of the future leader of Greenlin 'Green wave' \n The leader of Greenlin's Freedom says he won't forget such actions from the leader of Carrotzka"
-grn.4.a:0 "What a..."
+# news
+  grnnews.1.t:0 "Greenlin's Civil war reaches an end"
+  grnnews.1.d:0 "Greenlin, the country that was previously gone into a civil war has finally reached its own peace. \n This civil war ended with the freedom of choice party winning over the previous one, however the new leader's brother, mehrad the cruel has been found dead after battle. \n Green wave the new leader has mourned over his brothers dead body, funeral will happen in the following next days."
+  grnnews.1.a:0 "Rest in pieces"
+
+  
+# events
+  grn.1.t:0 "Ling family explodes their factories"
+  grn.1.d:0 "In a rushed attempt to get the control of the country, the Ling family has started a revolt in the country, and got quickly arrested by the Greenlin police after doing so. \n officials say this will cripple Greenlin's industry, will the king do anything with the new event?"
+  grn.1.a:0 "Oh no..."
+  #
+  grn.2.t:0 "Green wave requests assistance in achieving freedom of their country"
+  grn.2.d:0 "The leader of the People's Freedom party or known short as People's Freedom has requested our government and leader to assist him in the upcoming revolutions, helping them may create a future ally for ourselves"
+  grn.2.a:0 "Sure, he seems nice"
+  grn.2.b:0 "No"
+  #
+  grn.3.t:0 "Carrotzka accepts assistance request"
+  grn.3.d:0 "'They remind me of the pre-revolution Carrotzka, we may have been alone in this cause, but we will make sure they will not.' \n The future president of Greenlin has thanked then in a public speech saying 'this alliance was written long ago'"
+  grn.3.a:0 "Good"
+  #
+  grn.4.t:0 "Carrotzka says no to Greeblin's assistance request"
+  grn.4.d:0 "Leader of Carrotzka, Sadra Carrot, has denied the request of the future leader of Greenlin 'Green wave' \n The leader of Greenlin's Freedom says he won't forget such actions from the leader of Carrotzka"
+  grn.4.a:0 "What a..."
+  #
+  
+  
