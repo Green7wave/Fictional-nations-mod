@@ -1,0 +1,67 @@
+ideologies = {
+
+	anarchism = {
+	
+		types = {
+		
+			anarcho_communism  = {
+			}
+			
+			anarcho_collectivism = {
+			}
+			
+			anarcho_syndicalism = {
+			}
+			
+			anarcho_mutualism = {
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ANARCHIST_1"
+			"FACTION_NAME_ANARCHIST_2"
+			"FACTION_NAME_ANARCHIST_3"
+			"FACTION_NAME_ANARCHIST_4"
+		}
+		
+		color = { 0 0 0 }
+		
+		rules = {
+			can_force_government = no
+			can_puppet = no
+			can_send_volunteers = yes
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+
+		modifiers = {
+			generate_wargoal_tension = 1 
+			join_faction_tension = 0.8
+			lend_lease_tension = 1 
+			send_volunteers_tension = 0.6 
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+			drift_defence_factor = -0.25
+		}
+
+		can_host_government_in_exile = no
+		war_impact_on_world_tension = -1
+		faction_impact_on_world_tension = 0.25
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+		can_collaborate = yes
+
+		ai_neutral = yes # 
+	}
+
+
+}

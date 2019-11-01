@@ -1,0 +1,2 @@
+CRZ = "countries/Carrotzka.txt"
+ACZ = "countries/Carrotzka_anarch.txt"

@@ -1,0 +1,27 @@
+spriteTypes = {	
+    
+    spriteType = {
+        name = "GFX_idea_special_democracy"
+        texturefile = "gfx/interface/ideas/special_democracy.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_GIS"
+        texturefile = "gfx/interface/ideas/GIS.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_the_cruel_king"
+        texturefile = "gfx/interface/ideas/the_cruel_king.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_industry_issue"
+        texturefile = "gfx/interface/ideas/industry_issue.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_hawks"
+        texturefile = "gfx/interface/ideas/idea_hawks.dds"
+    }
+}

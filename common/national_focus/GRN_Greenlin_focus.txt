@@ -1,0 +1,570 @@
+focus_tree = {
+	id = Greenlin_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRN
+		}
+	}
+
+	#Focus for Reconstruction of the country
+	focus = {
+		id = GRN_reconstructionofthecountry
+		icon = GFX_goal_generic_production
+		x = 28
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+           if = {
+			   limit = {
+				   has_country_flag = ling_attacked
+			   }
+			   NOT = { has_idea = industrial_issue2 }
+		   } else = {
+			   NOT = { has_idea = industrial_issue }
+		   }	
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#Focus for The People's Freedom of Choice
+	focus = {
+		id = GRN_thepeoplesfreedomofchoice
+		icon = GFX_goal_support_democracy
+		x = 3
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_downwiththeking }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_popularity= { 
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = -0.05
+		}
+	}
+
+	#Focus for Start the revolution
+	focus = {
+		id = GRN_starttherevolution
+		icon = GFX_focus_rom_abdicate
+		x = 3
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_thepeoplesfreedomofchoice }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			set_politics= {
+			 	ruling_party = democratic
+ 				elections_allowed = no
+			}
+			# civil war stuff
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = support_from_ally
+						has_country_flag = revolution_armed_flag
+					}
+				}
+				
+				start_civil_war = {
+  				  ruling_party = communism
+  				  ideology = neutrality
+  				  size = 0.2
+  				  capital = 48
+   				  states = { 
+   				     48 212 211 184
+    			  }
+				}
+				
+			} else_if = {
+				limit = {
+					OR = {
+						has_country_flag = support_from_ally
+						has_country_flag = revolution_armed_flag
+					}
+				}
+				start_civil_war = {
+  				  ruling_party = communism
+  				  ideology = neutrality
+  				  size = 0.5
+  				  capital = 48
+   				  states = { 
+   				     48 212 211 184
+    			  }
+				}
+			} else = {
+				start_civil_war = {
+  				  ruling_party = communism
+  				  ideology = neutrality
+  				  size = 0.7
+  				  capital = 48
+   				  states = { 
+   				     48 212 211 184
+    			  }
+				}
+
+			}
+
+
+			add_ideas = special_democracy
+		}
+	}
+
+	#Focus for Technology Sharing
+	focus = {
+		id = GRN_technologysharing
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_specialalliance }
+		mutually_exclusive = { focus = GRN_enhancedtechnology }
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			is_in_faction= yes
+		}
+		completion_reward = {
+
+		}
+	}
+
+	#Focus for Organization of GRL
+	focus = {
+		id = GRN_organizationofgrl
+		icon = GFX_focus_research2
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_countrysstabilization }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_ideas = grl 
+			add_timed_idea = {
+  			  idea = projects3
+  			  days = 160
+			}
+		}
+	}
+
+	#Focus for Down With The King
+	focus = {
+		id = GRN_downwiththeking
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 9
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_popularity= { 
+				ideology = neutrality 
+				popularity = -0.05
+			}
+			add_stability = -0.01
+		}
+	}
+
+	#Focus for National Security
+	focus = {
+		id = GRN_nationalsecurity
+		icon = GFX_nationalsecurity
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_formthegis }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = nis
+
+		}
+	}
+
+	#Focus for Special alliance
+	focus = {
+		id = GRN_specialalliance
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_countrysstabilization }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			# TODO: send events for faction creation (check allies events)
+		}
+	}
+
+	#Focus for Enhanced technology
+	focus = {
+		id = GRN_enhancedtechnology
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_organizationofgrl }
+		mutually_exclusive = { focus = GRN_technologysharing }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_ideas = enhanced_tech
+		}
+	}
+
+	#Focus for Country's stabilization
+	focus = {
+		id = GRN_countrysstabilization
+		icon = GFX_focus_rom_handle_king
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		prerequisite = { focus = GRN_starttherevolution }
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_civil_war = no
+		}
+		completion_reward = {
+			add_stability = 0.2
+			# TODO : make stabilization through events
+		}
+	}
+
+	#Focus for Ask the neigbour
+	focus = {
+		id = GRN_asktheneigbour
+		icon = GFX_asktheneigbour
+		x = 5
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_thepeoplesfreedomofchoice }
+		ai_will_do = {
+			factor = 320
+		}
+		bypass = {
+			OR ={
+				CRZ = { NOT = {has_government = communism}}
+				CRZ = { exists = no }
+				has_completed_focus = GRN_starttherevolution
+			}
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = tip_asktheneigbour
+			hidden_effect = {
+				CRZ = {country_event = grn.2}
+			}
+		}
+	}
+
+	#Focus for Arm the revolution
+	focus = {
+		id = GRN_armtherevolution
+		icon = GFX_goal_generic_small_arms
+		x = 5
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_asktheneigbour }
+		ai_will_do = {
+			factor = 80
+		}
+		bypass = {
+			has_completed_focus = GRN_starttherevolution
+		}
+		completion_reward = {
+			custom_effect_tooltip = tip_armtherevolution
+			hidden_effect = {
+				set_country_flag = revolution_armed_flag
+			}
+		}
+	}
+
+	#Focus for Military's Organization
+	focus = {
+		id = GRN_militarysorganization
+		icon = GFX_militarysorganization
+		x = 21
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			# TODO : add some basic military guys
+			army_experience = 40
+		}
+	}
+
+	#Focus for Where the men fly
+	focus = {
+		id = GRN_wherethemenfly
+		icon = GFX_goal_generic_air_bomber
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_repairthedamage }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+
+		}
+	}
+
+	#Focus for Naval buildings
+	focus = {
+		id = GRN_navalbuildings
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_repairthedamage }
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	#Focus for Repair the damage
+	focus = {
+		id = GRN_repairthedamage
+		icon = GFX_goal_generic_construct_civilian
+		x = 29
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_reconstructionofthecountry }
+		ai_will_do = {
+			factor = 80
+		}
+	}
+
+	#Focus for Fighters and CAS
+	focus = {
+		id = GRN_fightersandcas
+		icon = GFX_goal_generic_air_fighter2
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_thehawks 
+			focus = GRN_greenlinsbreakers 
+			focus = GRN_divisionprograms 
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	#Focus for Submarine and Destroyers
+	focus = {
+		id = GRN_submarineanddestroyers
+		icon = GFX_goal_generic_navy_submarine
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_greenlinsbreakers 
+			focus = GRN_thehawks 
+			focus = GRN_divisionprograms 
+		}
+		ai_will_do = {
+			factor = 39
+		}
+	}
+
+	#Focus for Division programs
+	focus = {
+		id = GRN_divisionprograms
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_militarysorganization }
+		mutually_exclusive = { 
+			focus = GRN_thehawks 
+		}
+		mutually_exclusive = { 
+			focus = GRN_greenlinsbreakers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greenlin's Breakers
+	focus = {
+		id = GRN_greenlinsbreakers
+		icon = GFX_goal_generic_army_tanks
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_militarysorganization }
+		mutually_exclusive = { focus = GRN_divisionprograms }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hawks
+	focus = {
+		id = GRN_thehawks
+		icon = GFX_focus_generic_paratrooper
+		x = 21
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_militarysorganization }
+		mutually_exclusive = { focus = GRN_divisionprograms }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = hawks
+			# TODO : add paratrooper girl and name her purple
+		}
+	}
+
+	#Focus for Form the GIS
+	focus = {
+		id = GRN_formthegis
+		icon = GFX_formthegis
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_countrysstabilization }
+		ai_will_do = {
+			factor = 80
+		}
+	}
+
+	#Focus for Radar Technology
+	focus = {
+		id = GRN_radartechnology
+		icon = GFX_radartechnology
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_reconstructionofthecountry }
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	#Focus for Fix the Industry issue
+	focus = {
+		id = GRN_fixtheindustryissue
+		icon = GFX_goal_generic_air_production
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_countrysstabilization }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			custom_effect_tooltip = GRN_t_1
+		}
+	}
+
+	#Focus for The fission reaction
+	focus = {
+		id = GRN_thefissionreaction
+		icon = GFX_focus_wonderweapons
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_bettermathmaticalmachines }
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	#Focus for Better mathmatical machines
+	focus = {
+		id = GRN_bettermathmaticalmachines
+		icon = GFX_bettermathmaticalmachines
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_radartechnology }
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	#Focus for Demand help from the faction
+	focus = {
+		id = GRN_demandhelpfromthefaction
+		icon = GFX_focus_generic_treaty
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		prerequisite = { focus = GRN_reconstructionofthecountry }
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			date > 1939.1.1
+			has_completed_focus = GRN_repairthedamage
+		}
+		available = {
+			is_in_faction = yes
+		}
+	}
+
+#End of focuses 
+ }

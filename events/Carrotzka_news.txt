@@ -1,0 +1,51 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = crznews
+
+news_event = {
+	id = crznews.1
+	title = crznews.1.t
+	desc = crznews.1.d
+	picture = GFX_news_event_hungary_refused
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.1.a
+	}
+}
+
+news_event = {
+	id = crznews.2
+	title = crznews.2.t
+	desc = crznews.2.d
+	picture = GFX_news_event_generic_riot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = crznews.2.a
+	}
+}
+
+news_event = {
+	id = crznews.3
+	title = crznews.3.t
+	desc = crznews.3.d
+	picture = GFX_news_event_romania_poland_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.3.a
+	}
+}

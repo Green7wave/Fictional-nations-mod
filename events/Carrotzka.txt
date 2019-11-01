@@ -1,0 +1,30 @@
+﻿add_namespace = carrotzka
+
+country_event = {
+	id = carrotzka.2
+	title = carrotzka.2.t
+	desc = carrotzka.2.d
+	picture = GFX_report_event_ger_civil_war
+	
+	trigger = {
+		tag = CRZ
+		NOT = {
+			has_completed_focus = CRZ_death_to_some_states
+		}
+		date > 1938.1.1
+		anarchism > 0.30
+         
+	}
+
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		ai_chance = { factor = 40 }
+		name = carrotzka.2.a
+		start_civil_war = {
+			ideology = anarchism
+			size = 0.4
+		}
+		news_event= news.338
+	}
+}

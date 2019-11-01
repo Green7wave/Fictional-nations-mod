@@ -1,0 +1,327 @@
+ideas = {
+
+	country = {
+		
+		special_democracy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = special_democracy
+
+			modifier = {
+				political_power_factor = 0.04
+			}
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no
+				can_guarantee_other_ideologies = yes				
+
+			}
+		}
+		#
+
+		gis = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+				    has_government = democratic
+				}
+			}
+
+			picture = GIS
+			
+			modifier = {
+				subversive_activites_upkeep = -0.45
+				drift_defence_factor = 0.5
+				max_planning = 0.05
+				recon_factor = 0.2
+				decryption_factor = 0.8
+			}
+		}
+		#
+		nis = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+				    has_government = democratic
+				}
+			}
+			
+			picture = generic_spy_intel
+
+			modifier = {
+				partisan_effect = 0.2
+				subversive_activites_upkeep = -0.05
+				decryption_factor = 0.8
+			}
+		}
+		#
+		
+		grl = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+				    has_government = democratic
+				}
+			}
+			
+			picture = generic_research_bonus
+
+			modifier = {	
+				research_speed_factor = 0.1
+			}
+
+			on_add = {
+				add_research_slot = 3
+			}
+		}
+
+		#
+		the_cruel_king = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.20
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
+			}
+
+			picture = the_cruel_king
+
+			modifier = {
+				army_org_factor = -0.2
+				send_volunteer_factor = -0.8
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.4
+				research_speed_factor = -0.50
+				stability_factor = -0.15
+			}
+		}
+		
+		#
+
+		communism_in_the_land = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+
+		#
+
+		industrial_issue = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+
+			picture = industry_issue
+
+			modifier = {
+				industry_repair_factor = -0.4
+				industry_free_repair_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.4
+				stability_factor = -0.1
+				research_speed_factor = -0.1
+			}
+		}
+
+		###
+
+		enhanced_tech = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+				    has_government = democratic
+				}
+			}
+			
+			picture = jap_supremacy_of_technology
+
+			modifier = {	
+				research_speed_factor = 0.1
+			}
+		}
+
+		###
+
+		industrial_issue2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+
+			picture = industry_issue
+
+			modifier = {
+				industry_repair_factor = -0.9
+				industry_free_repair_factor = -1.0
+				production_factory_max_efficiency_factor = -0.4
+				production_speed_buildings_factor = -0.6
+				local_resources_factor = -0.2
+				stability_factor = -0.2
+				research_speed_factor = -0.2
+			}
+		}
+		###
+
+		
+		hawks = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+				    has_government = democratic
+				}
+			}
+			
+			picture = hawks
+			modifier = {	
+				air_paradrop_attack_factor = 0.1
+				air_paradrop_defence_factor = 0.25
+				no_supply_grace = 48 
+			}
+		}
+		###
+		projects1 = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+
+		}
+
+		projects2 = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+
+		}
+
+		projects3 = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+
+		}
+	}
+
+
+
+
+}

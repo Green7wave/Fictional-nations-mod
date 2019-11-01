@@ -1,0 +1,96 @@
+
+
+continent = {
+	name = europe
+	
+	political = {
+		anarchism = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = north_america
+
+	political = {
+
+		anarchism = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = south_america
+	
+	political = {
+		anarchism = {
+				male = { 
+					"gfx/leaders/South America/Portrait_South_America_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = australia
+	
+	political = {
+		anarchism = {
+				male = { 
+					"gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+			}
+		}
+	}
+
+}
+
+continent = {
+	name = africa
+	
+	political = {
+
+		anarchism = {
+				male = { 
+					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+			}
+		}
+	}
+
+
+}
+
+continent = {
+	name = asia
+	political = {
+		anarchism = {
+				male = { 
+					"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" 
+			}
+		}
+	}	
+
+}
+
+continent = {
+	name = middle_east
+
+	political = {
+		anarchism = {
+				male = { 
+					"gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds" 
+			}
+		}
+	}
+
+}

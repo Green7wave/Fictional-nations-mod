@@ -1,0 +1,57 @@
+﻿l_english:
+ # leader descriptions
+ POLITICS_GREEN_WAVE_desc:0 "Chosen leader of Greenlin, known as 'Green Wave'. he is a member of the royal green family but is against the family's treditions. he also has a lot of popularity within his own people"
+ POLICITCS_SUN_WAVE_desc:0 ""
+
+ # country names
+ GRN_fascism:0  "Gloryious Greenlin"
+ GRN_fascism_DEF:0 "the Gloryious Greenlin"
+ GRN_democratic:0  "Greenlin"
+ GRN_democratic_DEF:0 "the United Power of Greenlin"
+ GRN_neutrality:0  "Greenlin Empire"
+ GRN_neutrality_DEF:0 "the Greenlin Empire""
+ GRN_communism:0 "Socialist Greenlin"
+ GRN_communism_DEF:0 "the Social Democratic Greenlin"
+
+ # City and state names
+ VICTORY_POINTS_6923:0 "Grensofer"
+ VICTORY_POINTS_949:0 "Sinkestin"
+ STATE_48:0 "Iplieren"
+
+ # Parties
+ GRN_communism_party:0 "Green Communism Party"
+ GRN_neutrality_party:0 "Monarchist Party"
+ GRN_fascism_party:0 "GGL Party"
+ GRN_democratic_party:0 "People's Freewill Party"
+
+ # Tool tips (§G§) 
+ tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
+ tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
+
+ # Ideas
+ special_democracy:0 "Special Democracy"
+ special_democracy_desc:0 "Greenlin's way of democracy is, 'diffrent', than how other countries have it. the leader favors the system and says 'its no problem because people still love it'"
+ gis:0 "GIS"
+ gis_desc:0 "Being aware and knowing what lies in the dark is crucial for a country to stay stabilized and survive, the Global Intellegnce Securance is taking care of this work in greenlin."
+ nis:0 "NIS"
+ nis_desc:0 "The National Information Security takes care of spies, internal crisis and watches greenlin's residents closely to ensure the stabilization of the land."
+ grl:0 "GRL"
+ grl_desc:0 "Green Research Laboratorian is a nationwide research organization which focuses on improving research speed and also gaining funds for various research programs."
+ the_cruel_king:0 "King's cruelty"
+ the_cruel_king_desc:0 "King mehrad isn't what would one call 'kind', he also can't take care of the country like how his father would, this is tearing the country apart."
+ communism_in_the_land:0 "Communists in the land"
+ communism_in_the_land_desc:0 "Because of the recent diplomatic actions communists have entered the land and are spreading the communist word to others."
+ industrial_issue:0 "Industrial issue"
+ industrial_issue_desc:0 "Greenlin's industrial giant Ling Suzo head of Ling family has started strikes due to recent tensions between them and the king, this has weakend Greenlin and his industrial future."
+ industrial_issue2_desc:0 "The wide terrorist attack done by the Ling family has crippled our factories and because of them being the soul reason the factories existed we can't fix this without a big movement"
+ industrial_issue2:0 "Wide Industrial issue"
+ projects1:0 "Greenlin's Projects"
+ projects1_desc:0 "our recent projects require funding and resources to reach their completion, till then, we have to pay the project's price"
+ projects2:0 "Greenlin's Big Projects"
+ projects2_desc:0 "our recent big projects require funding and resources to reach their completion, till then, we have to pay the project's price"
+ projects3:0 "Greenlin's Huge Projects"
+ projects3_desc:0 "our recent huge projects require funding and resources to reach their completion, till then, we have to pay the project's price"
+ enhanced_tech:0 "Enhanced Technology"
+ enhanced_tech_desc:0 "By giving better supplies to researchers and making better school systems we have achieved a new level of technology that we can call it 'enhaned'"
+ hawks:0 "Hawks"
+ hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."

@@ -1,0 +1,98 @@
+﻿l_english:
+# factions
+ Black_And_Red_Alliance:0 "Black And Red Alliance"
+
+# events
+ carrotzka.2.t:0 "anarchist peoples want freedom"
+ carrotzka.2.d:0 "we promised a lawless society to anarchist peoples that helped us in civil war, and now anarchist peoples want what they fighted for"
+ carrotzka.2.a:0 "i thought we are friends!"
+
+
+# Carrotzka news
+ crznews.1.t:0 "king cabbage excuted"
+ crznews.1.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to death"
+ crznews.1.a:0 "he got what he deserved"
+  #
+ crznews.2.t:0 "second carrotzkaian civil war!"
+ crznews.2.d:0 "leader of carrotzka, sadra carrot promised a lawless society to anarchist peoples that helped him in civil war, looks like all of those were empty promises and now anarchist peoples want what they fighted for"
+ crznews.2.a:0 "oh?"
+  #
+ crznews.3.t:0 "king cabbage imprisoned"
+ crznews.3.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to life imprisonment"
+ crznews.3.a:0 " well..."
+
+
+# Leader Traits
+ equalist:0 "Equalist"
+ loved_by_people:0 "Loved by people"
+ unquestionable:0 "Unquestionable"
+
+# Leader Desc
+ POLITICS_SADRA_CARROT_DESC:0 "The great leader of Carrotzka, after starting the revolution as a farmer against the cruel king, he has been taking care of the salad reigion."
+
+# opinion modifiers
+ CRZ_communist_ally:0 "Communist Allies"
+
+# Country names
+ CRZ_fascism:0  "Greater Carrotzka"
+ CRZ_fascism_DEF:0 "Nationalist Carrotzka"
+ CRZ_democratic:0  "Carrotzka Republic"
+ CRZ_democratic_DEF:0 "the Carrotzka Republic"
+ CRZ_neutrality:0  "Carrotzka Empire"
+ CRZ_neutrality_DEF:0 "the Carrotzka Empire"
+ CRZ_communism:0 "Carrotzka"
+ CRZ_communism_DEF:0 "the Socialist Republic of Carrotzka"
+ CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
+ CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
+ ACZ_FREE_anarchism:0 "Free Europe"
+ ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
+
+
+
+# State and province names
+ STATE_197:0 "Emerald Valley"
+ VICTORY_POINTS_3755:0 "Seanturary"
+ VICTORY_POINTS_11683:0 "Carrotgrad"
+ VICTORY_POINTS_9435:0 "Green Tidings"
+ VICTORY_POINTS_11437:0 "Carrot Fields"
+ VICTORY_POINTS_8256:0 "Black Sea"
+
+# Parties
+ CRZ_communism_party:0 "Communist Party Of Carrotzka"
+ CRZ_neutrality_party:0 "Loyalists"
+ CRZ_fascism_party:0 "Glorious Carrotzka"
+ CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
+ CRZ_anarchism_party:0 "Anarchist People"
+
+# ideas
+ loyalists:0 "loyalists"
+ loyalists_desc:0 "some people still fighting for king and calling themselves loyalists, if we dont stop them they can cause trouble in near future"
+ peoples_revolution:0 "peoples revolution"
+ peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people choosed and now they will do their best for their country"
+ peoples_revolution_2:0 "peoples revolution"
+ peoples_revolution_2desc:0 "we don't have any other parties againts us...because communism is what people choosed and now they will do their best for their country"
+ peoples_revolution_3:0 "peoples revolution"
+ peoples_revolution_3_desc:0 "now we have reached the absolute and people are worshiping us..."
+ king_is_dead:0 "king is dead!"
+ king_is_dead_desc:0 "a good king is a dead one"
+ the_orange_fleet:0 "The orange fleet"
+ the_orange_fleet:0 "its time for us to put all of our focus on our fleet..."
+ king_cabbagesii_revenge:0 "King cabbage II revenge"
+ king_cabbagesii_revenge_desc:0 "that son of the bitch escaped at the very last momments...we need to stop him from whatever he is doing"
+ carrot_farming_focus:0 "Carrot farming focus"
+ carrot_farming_focus_desc:0 "what a carrotzka called without carrot farming? ZKA LOL"
+ felix_kjellberg:0 "Felix Kjellberg"
+ help_of_anarchists:0 "help of anarchists"
+ help_of_anarchists_desc:0 "anarchist people of our country helped us in our civil war, we may want to make it up for them or they will get angry..."
+ owner_of_the_black_sea:0 "Owner of the black sea"
+ owner_of_the_black_sea_desc:0 "we are the owner of the black sea...nothing can stop our navy"
+ new_meaning_of_freedom:0 "new meaning of freedom"
+ new_meaning_of_freedom_desc:0 "anarchist people of carrotzka, you are being rescued...\nplease do not resist
+ recovery_from_civil_war:0 "recovery from civil war"
+ recovery_from_civil_war_desc:0 "that was a tough fight, very tough fight"
+ peoples_revolution:0 "peoples revolution"
+ peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people choosed and now they will do their best for their country"
+ 
+ # Bookmarks
+ CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"
+

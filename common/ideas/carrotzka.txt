@@ -1,0 +1,230 @@
+ideas = {
+	country = {
+		recovery_from_civil_war = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.10
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
+			}
+
+			modifier = {
+                army_org_factor = -0.5
+				send_volunteer_factor = -0.8
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.5
+			}
+		
+		}
+
+		loyalists = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				neutrality_drift = 0.3
+			}
+		}
+
+		peoples_revolution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.2
+			}
+
+			modifier = {
+                army_org_factor = 0.3
+				send_volunteer_factor = 1
+				training_time_factor = -0.2
+				partisan_effect = 0.4
+				war_support_factor = 0.2
+			}
+		}
+
+		peoples_revolution_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+                army_org_factor = 0.4
+				send_volunteer_factor = 0.5
+				training_time_factor = -0.3
+				partisan_effect = 0.5
+				war_support_factor = 0.3
+			}
+		}
+
+		peoples_revolution_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+                army_org_factor = 0.5
+				training_time_factor = -0.4
+			    partisan_effect = 0.6
+				fascism_drift = 0.1
+				war_support_factor = 0.4
+			}
+			rule = {
+				can_use_kamikaze_pilots = yes
+				}
+		}
+
+		king_is_dead = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+                army_org_factor = 0.2
+				training_time_factor = -0.4
+				production_speed_arms_factory_factor = 1
+				production_speed_dockyard_factor = 1
+				production_speed_naval_base_factor = 1
+				production_speed_coastal_bunker_factor = 1
+				production_speed_bunker_factor = 1
+				production_speed_air_base_factor = 1
+				production_speed_anti_air_building_factor = 1
+			}
+		}
+		
+		the_orange_fleet = {
+			allowed = {
+			   always = no
+			}
+			research_bonus = {
+				naval_equipment = 0.7
+			}
+		}
+
+		king_cabbagesii_revenge = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_coastal_bunker_factor = -0.1
+				production_speed_bunker_factor = -0.1
+				production_speed_air_base_factor = -0.1
+				production_speed_anti_air_building_factor = -0.1
+				fascism_drift = 0.15
+			}
+		}
+
+			help_of_anarchists = {
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					has_government = anarchist
+				}
+	
+				modifier = {
+					anarchism_drift = 0.1
+					war_support_factor = -0.01
+				}
+			}
+
+		carrot_farming_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.09
+			}
+		}
+
+		owner_of_the_black_sea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_naval_base_factor = 1
+				naval_accidents_chance = -0.5
+				naval_defense_factor = 0.4
+				naval_damage_factor = 0.4
+				naval_strike = 0.4
+			}
+		}
+
+		new_meaning_of_freedom = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				autonomy_gain = -0.5
+			}
+
+			removal_cost = -1
+		}
+	}
+
+	political_advisor = {
+			
+		felix_kjellberg = {		
+
+			allowed = {
+				original_tag = CRZ
+			}		
+			traits = { communist_revolutionary }
+        }
+	}
+}

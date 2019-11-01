@@ -1,0 +1,36 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 1000069
+	
+	state_category = large_city
+
+	history={
+		victory_points = {
+			11683 50
+		}
+		victory_points = {
+			3755 10
+		}
+		owner = CRZ
+		buildings = {
+			dockyard = 3
+			infrastructure = 8
+			coastal_bunker = 10
+			arms_factory = 5
+		}
+		add_core_of = CRZ
+		1939.1.1 = {
+			buildings = {
+				dockyard = 8
+				arms_factory = 5
+				industrial_complex = 5
+			}
+		}
+	}
+
+	provinces={
+		409 574 3403 3755 6597 9573 11546 11683 
+	}
+}

@@ -1,0 +1,194 @@
+﻿###########################
+# GRN Events
+###########################
+
+add_namespace = grn
+
+# The bombs blow up
+country_event = {
+	id = grn.1
+	title = grn.1.t
+	desc = grn.1.d
+	picture = GFX_report_event_generic_ruins
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRN
+		has_war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = { 
+		name = grn.1.a
+		# damage civs
+		every_state = {
+			limit = {
+				is_owned_by = GRN
+				industrial_complex > 0
+			}
+	
+			damage_building = {
+				type = industrial_complex 
+				damage = 5
+			}
+		}
+		# damage mils and infe
+		every_state = {
+			limit = {
+				is_owned_by = GRN
+				arms_factory > 2
+			}
+	
+			damage_building = {
+				type = arms_factory 
+				damage = 2
+			}
+
+		}
+		# remove some ipliereng factories
+		if {
+			limit = {
+				48 = { 
+					is_owned_by = GRN 
+					industrial_complex > 1
+				}
+			}
+			48 = {
+				remove_building = {
+  				  type = industrial_complex
+  				  level = 2
+				}
+			}
+		}
+		# removes some of the arms factories
+		if {
+			limit = {
+				212 = { 
+					is_owned_by = GRN 
+					arms_factory > 2
+				}
+			}
+			212 = {
+				remove_building = {
+  				  type = arms_factory
+  				  level = 3
+				}
+			}
+		}
+		# get the new idea bro *sad Greenlin noises*
+		swap_ideas = {
+  			remove_idea = industrial_issue
+ 			add_idea = industrial_issue2
+		}
+        # let the code know we had the event
+		set_country_flag = ling_attacked
+		
+	}
+	
+}
+
+# green requests for help
+country_event = {
+	id = grn.2
+	title = grn.2.t
+	desc = grn.2.d
+	picture = GFX_report_event_generic_rally
+
+	fire_only_once = yes
+	
+
+	is_triggered_only = yes
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = grn.2.a
+		ai_chance = { 
+			factor = 4000 
+		}
+		GRN = {
+			set_country_flag = support_from_ally  
+			country_event = {
+   			 id = grn.3
+   			 days = 2
+  		 	 random = 10
+			}
+		}
+		send_equipment = {
+ 		  equipment = infantry_equipment
+ 		  amount = 500
+  		  target = GRN
+		}
+	}
+
+	option = { 
+		name = grn.2.b
+		ai_chance = { 
+			factor = 1
+		}
+		GRN = { 
+			country_event = {
+   			 id = grn.4
+   			 days = 2
+  		 	 random = 10
+			}
+		}
+	}
+	
+}
+
+# ally accepts request for help
+country_event = {
+	id = grn.3
+	title = grn.3.t
+	desc = grn.3.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = grn.3.a 
+	}
+
+	
+}
+
+# ally says no to request
+country_event = {
+	id = grn.4
+	title = grn.4.t
+	desc = grn.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = grn.4.a 
+	}
+
+	
+}
+
+
+
+
+
+
+

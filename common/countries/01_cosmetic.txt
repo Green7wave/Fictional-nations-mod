@@ -1,0 +1,6 @@
+
+ACZ_FREE = {
+ 	color = rgb { 205 212 228 }
+	color_ui = rgb { 255 255 255 }
+}
+

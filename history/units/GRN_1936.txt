@@ -1,0 +1,304 @@
+﻿#templates
+division_template = {
+	name = "Greenlin Infantry Division" 				
+	division_names_group = GRN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  
+		engineer = { x = 0 y = 1 } 
+	}
+}
+division_template = {
+	name = "Shield Division" 				# Square Infantry Division
+	division_names_group = GRN_HOME_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+}
+
+
+## Units Spawned 
+units = {
+
+	# Turkish Border
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11905
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9888
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 9902
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	# Yugoslavia Border
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9771
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 965
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 935
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 907
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 3882
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 11762
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+	# Romania Border
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 11754
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 793
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 3796
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 9610
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 9612
+		division_template = "Shield Division" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+		
+	}
+
+
+	# Greenlin Main Army
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4109
+		division_template = "Greenlin Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11767
+		division_template = "Greenlin Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11818
+		division_template = "Greenlin Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		
+	}
+
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9914
+		division_template = "Greenlin Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		
+	}
+
+}
+
+# air units
+air_wings = {
+	48 = {
+		fighter_equipment_1 =  {
+			owner = "GRN" 
+			amount = 100
+		}	
+	}
+}
+
+# productions
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GRN"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 20
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRN" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 10
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GRN" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 15
+	}
+
+
+}

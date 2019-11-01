@@ -1,0 +1,192 @@
+﻿capital = 48
+
+oob = "GRN_1936"
+
+set_research_slots = 2
+set_stability = 0.4
+set_convoys = 25
+
+# Starting tech
+set_technology = {
+   # air
+	early_fighter = 1
+	fighter1 = 1
+	cv_fighter1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+
+   # support
+	tech_support = 1
+	tech_engineers = 1
+	#tech_recon = 1 - a bit useless at 1.7.1 i will consider it later
+	tech_maintenance_company = 1
+	tech_signal_company = 1
+
+   # tanks
+	gwtank = 1
+	basic_light_tank = 1
+	# basic_heavy_tank = -
+
+   # infantry
+    infantry_weapons = 1
+	infantry_weapons1 = 1
+	paratroopers = 1 # Greenlin's special
+	motorised_infantry = 1
+
+   # artillery
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+
+   # land doctrine
+	superior_firepower = 1
+
+   # air doctrine
+	formation_flying = 1
+	dive_bombing = 1
+	
+   # electronics
+    electronic_mechanical_engineering = 1
+    radio = 1
+    radio_detection = 1
+    #decimetric_radar = 1
+    #improved_decimetric_radar = 1
+    #centimetric_radar = 1
+    #improved_centimetric_radar = 1
+    #advanced_centimetric_radar = 1
+    mechanical_computing = 1
+    #computing_machine = 1
+    #improved_computing_machine = 1
+    #advanced_computing_machine = 1
+   # basic_encryption = 1
+   # improved_encryption = 1
+    #advanced_encryption = 1
+   # basic_decryption = 1
+   # improved_decryption = 1
+   # advanced_decryption = 1
+   # experimental_rockets = 1
+    #rocket_engines = 1
+    #improved_rocket_engines = 1
+   # advanced_rocket_engines = 1
+   #  jet_engines = 1
+   #  atomic_research = 1
+   #  nuclear_reactor = 1
+   #  nukes = 1
+
+
+  # industry
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		mtg_transport = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+##
+add_ideas = {
+	the_cruel_king
+	industrial_issue
+}
+##
+set_popularities = {
+	democratic = 40
+	communism = 19
+	neutrality = 41
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1924.9.12"
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Mani Wave"
+	desc = "POLITICS_GREEN_WAVE_DESC"
+    picture = "Potrait_GRN_greenwave.dds"
+	expire = "1960.8.2"
+	ideology = liberalism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Mehrad Wave"
+	desc = "POLITICS_SUN_WAVE_DESC"
+    picture = "not_chosen.dds"
+	expire = "1960.8.2"
+	ideology = oligarchism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Sergei Wave"
+	desc = "POLITICS_RED_WAVE_DESC"
+    picture = "Portrait_GRN_redwave.dds"
+	expire = "1960.8.2"
+	ideology = marxism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Wilhelm Watch"
+	desc = "POLITICS_DARK_WATCH_DESC"
+    picture = "not_chosen.dds"
+	expire = "1960.8.2"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "Daniel Mofrad"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+
+
+
+
+
+
+

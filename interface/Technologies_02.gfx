@@ -1,0 +1,286 @@
+SpriteTypes = {
+
+	SpriteType = {
+		name = "GFX_CRZ_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_CAS1_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_CAS2_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_CAS3_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_CRZ_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_CRZ_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_CRZ_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRZ_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_bomber.dds"
+	}
+
+#
+
+	SpriteType = {
+		name = "GFX_CRZ_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorized_equipment_1.dds"
+	}
+
+	### SOV equipment ###		
+
+
+	SpriteType = {
+		name = "GFX_CRZ_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_comintern.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_comintern.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_comintern.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_comintern.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_comintern.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_comintern.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_CRZ_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_CRZ_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRZ_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRZ_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}		
+	
+#	SpriteType = {
+#		name = "GFX_CRZ_infantry3_medium"
+#		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+#	}	
+#	
+#	SpriteType = {
+#		name = "GFX_CRZ_infantry2_medium"
+#		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+#	}
+	
+
+### Sovjet tanks ####	
+
+	SpriteType = {
+		name = "GFX_CRZ_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRZ_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_CRZ_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_CRZ_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_spart.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRZ_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+}

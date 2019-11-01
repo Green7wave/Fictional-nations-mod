@@ -1,0 +1,311 @@
+﻿
+GRN_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Gunner Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst No U Division" }
+		2 = { "%dnd Shrek Division" }
+		3 = { "%drd In fact three Division" }
+		5 = { "%dth Creeper Division" }
+		6 = { "%dth Aw Man Division" }
+		4 = { "%dth Nightmare Division" }
+		7 = { "%dth Greenlin Gunner Division" }
+		8 = { "%dth Rifle Break Division" }
+		9 = { "%dth Coca Gunner Division" }
+		10 = { "%dth Doge Division" }
+		11 = { "%dth Anti-pearl Division" }
+		12 = { "%dth Minecraft Division" }
+		13 = { "%dth Hunter Division" }
+		14 = { "%dth Wubbalobba Division" }
+		15 = { "%dth Flanker Division" }
+		16 = { "%dth Poision Division" }
+		17 = { "%dth Awesome Division" }
+		18 = { "%dth Blink Division" }
+		19 = { "%dth Wea Finder Division" }
+		20 = { "%dth Yeet Division" }
+		21 = { "%dst Alabama Division" }
+		22 = { "%dth Has no de vision" }
+		23 = { "%drd Anti-fortnite Division" }
+		24 = { "%dth 399 Division" }
+		25 = { "%dth Pro Division" }
+		26 = { "%dth Flex Tape Division" }
+		27 = { "%dth Area 51 Division" }
+		28 = { "%dth Anime Division" }
+		29 = { "%dth Music Division" }
+		30 = { "%dth Fapping Division" }
+		31 = { "%dst Ding Dong Division" }
+		32 = { "%dth Socialist Division" }
+		33 = { "%drd Carrot Division" }
+		34 = { "%dth Shooting Division" }
+		35 = { "%dth Good Name Division" }
+		36 = { "%dth Space Division" }
+		37 = { "%dth Knife Division" }
+		38 = { "%dth Electric Gun Division" }
+		39 = { "%dth Fallout Division" }
+		40 = { "%dth Greenish Division" }
+		41 = { "%dst F.R.I.E.N.D.S Division" }
+		42 = { "%dnd John Snow Division" }
+		43 = { "%drd Uno Division" }
+		44 = { "%dst Titanium Division" }
+		45 = { "%dth Racist Division" }
+		46 = { "%dth Nerfing Division" }
+		47 = { "%dth Agent Division" }
+		48 = { "%dth Ling Division" }
+		49 = { "%dth Straight Girl Division" }
+		50 = { "%dth Hardwork Division" }
+	}
+}
+
+GRN_POL_01 = 
+{
+	name = "Cavalry Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Police Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+}
+
+GRN_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d QuickMen Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+
+}
+
+GRN_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Tank Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Tank Frickers Div." }
+		2 = { "%dnd Tank Creeper Div." }
+		3 = { "%drd Tank Joe Div." }
+		4 = { "%dth Tank Breakthrougher Div." }
+		5 = { "%dth Tank Sword Div." }
+		6 = { "%dth Tank God Div." }
+		7 = { "%dth Tank Lucky Div." }
+		8 = { "%dth Tank Hard Killer Div." }
+		9 = { "%dth Tank Phantoms Div." }
+		10 = { "%dth Tank Power Div." }
+		11 = { "%dth Tank Anti-Panzer Div." }
+		12 = { "%dth Tank Fired Bullets Div." }
+		13 = { "%dth Tank Big shot Div." }
+		14 = { "%dth Tank Harvester Div." }
+		15 = { "%dth Tank Vodka Div." }
+		16 = { "%dth Tank Fury Div." }
+		17 = { "%dth Tank Hugers Div." }
+		18 = { "%dst Tank No jumping Div." }
+		19 = { "%dnd Tank Silence Div." }
+		20 = { "%dth Tank 'The Exit' Div." }
+		21 = { "%dth Tank Blasting Div." }
+		22 = { "%dth Tank Greenlin Div." }
+		23 = { "%dth Tank Checkers Div." }
+		24 = { "%dth Tank Reserved Div." }
+		25 = { "%dth Tank Replacer Div." }
+		26 = { "%dth Tank Aveneger Div." }
+		
+	}
+}
+
+GRN_PAR_01 = 
+{
+	name = "Airborne Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Airborn Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Green Hawk Division" }
+		2 = { "%dnd Sick Hawk Division" }
+		3 = { "%drd Parrot Hawk Division" }
+		4 = { "%dth Goat Hawk Division" }
+		5 = { "%dth Expensive Hawk Division" }
+		6 = { "%dth Untitled Hawk Division" }
+		7 = { "%dth Greenlin Hawk Division" }
+		8 = { "%dth Smoking Hawk Division" }
+		9 = { "%dth Feather Hawk Division" }
+		10 = { "%dth Lava Hawk Division" }
+		11 = { "%dth Magma Hawk Division" }
+		12 = { "%dth Deared Hawk Division" }
+		13 = { "%dth Furry Hawk Division" }
+		14 = { "%dth Scope Hawk Division" }
+		15 = { "%dth Seer Hawk Division" }
+	}
+}
+
+GRN_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Highlanders Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+}
+
+GRN_HOME_01 = 
+{
+	name = "Home Defense Division"
+
+	for_countries = { GRN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { GRN_INF_01 }
+
+	fallback_name = "%d Greenlin Shield Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dth Needle Shield Division" }
+		2 = { "%dth Crocodile Shield Division" }
+		3 = { "%dth Man Shield Division" }
+		4 = { "%drd Blue Shield Division" }
+		5 = { "%dth Infantry Shield Division" }
+		6 = { "%dth Way Shield Division" }
+		7 = { "%dth Greenlin Shield Division" }
+		8 = { "%dst Cat Shield Division" }
+		9 = { "%dth Bridge Shield Division" }
+		10 = { "%dth Lava Shield Division" }
+		11 = { "%dth Godly Shield Division" }
+		12 = { "%dth Victorial Shield Division" }
+		13 = { "%dth Lightning Shield Division" }
+		14 = { "%drd Thunderbolt Shield Division" }
+		15 = { "%dst Wooden Shield Division" }
+		16 = { "%dth Killer Shield Division" }
+		17 = { "%dth Hacker Shield Division" }
+		18 = { "%dth Spicked Shield Division" }
+		19 = { "%dnd Razor Shield Division" }
+		20 = { "%dth Perfect Shield Division" }
+		21 = { "%dth Godly Shield Division" }
+		22 = { "%dnd Lighten Shield Division" }
+		23 = { "%dth Moving Shield Division" }
+		24 = { "%dth Homosexual Shield Division" }
+		25 = { "%drd Bold Shield Division" }
+		26 = { "%dth Eagle Shield Division" }
+		27 = { "%dth Iron Shield Division" }
+		28 = { "%dth Line Shield Division" }
+		29 = { "%dth Fish Shield Division" }
+		30 = { "%dth Power Shield Division" }
+		31 = { "%dth Tackle Shield Division" }
+		32 = { "%dth Infinity Shield Division" }
+		69 = { "%dth Good Number Shield Division" }
+		33 = { "%drd Fire Shield Division" }
+		34 = { "%dth Intesnse Shield Division" }
+		35 = { "%dnd Barbarian Shield Division" }
+		36 = { "%dst Sickle Shield Division" }
+		37 = { "%dth Battle Shield Division" }
+		38 = { "%dth Cool Shield Division" }
+		39 = { "%dth Melody Shield Division" }
+		40 = { "%dth Sinkestin Shield Division" }
+		41 = { "%dth Grensofer Shield Division" }
+		42 = { "%dth Anthens Shield Division" }
+		43 = { "%dth Team Shield Division" }
+		44 = { "%dth Hammer Shield Division" }
+		45 = { "%dth Anti-Anti-Vax Shield Division" }
+		46 = { "%dth Unmmovable Shield Division" }
+		47 = { "%dth Oxygen Shield Division" }
+		48 = { "%dth Galaxy Shield Division" }
+		49 = { "%dth Avenger Shield Division" }
+
+	}
+}
+
+
+GRN_SPC_01 = 
+{
+		name = "Home Defense Division"
+	
+		for_countries = { GRN }
+	
+		can_use = { always = yes }
+	
+		division_types = { "infantry" }
+	
+		# Number reservation system will tie to another group.
+		# link_numbering_with = { GRN_INF_01 }
+	
+		fallback_name = "%d SpaceMarine Division"
+	
+		# Names with numbers (only one number per entry). 
+		# It's okay to have gaps in numbering.
+
+
+}
