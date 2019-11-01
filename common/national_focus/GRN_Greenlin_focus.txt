@@ -71,11 +71,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+
+		
 		completion_reward = {
 			set_politics= {
 			 	ruling_party = democratic
  				elections_allowed = no
 			}
+			set_country_flag = greenlin_in_civil_war
 			# civil war stuff
 			if = {
 				limit = {
@@ -86,7 +89,6 @@ focus_tree = {
 				}
 				
 				start_civil_war = {
-  				  ruling_party = communism
   				  ideology = neutrality
   				  size = 0.2
   				  capital = 48
@@ -95,15 +97,21 @@ focus_tree = {
     			  }
 				}
 				
-			} else_if = {
+			} 
+			if = {
 				limit = {
 					OR = {
-						has_country_flag = support_from_ally
-						has_country_flag = revolution_armed_flag
+						AND = {
+							NOT = { has_country_flag = revolution_armed_flag  }
+							has_country_flag = support_from_ally
+						}
+						AND = {
+							NOT = { has_country_flag = support_from_ally } 
+							has_country_flag = revolution_armed_flag
+						}
 					}
 				}
 				start_civil_war = {
-  				  ruling_party = communism
   				  ideology = neutrality
   				  size = 0.5
   				  capital = 48
@@ -111,9 +119,15 @@ focus_tree = {
    				     48 212 211 184
     			  }
 				}
-			} else = {
+			} 
+			if = {
+				limit = {
+					AND = {
+						NOT = { has_country_flag = support_from_ally }
+						NOT = { has_country_flag = revolution_armed_flag }
+					}
+				}
 				start_civil_war = {
-  				  ruling_party = communism
   				  ideology = neutrality
   				  size = 0.7
   				  capital = 48
