@@ -1485,6 +1485,21 @@ focus_tree = {
 							}		
 						}
 					}
-				}
 
+					focus = {
+						id = CRZ_partisans_suppression
+						icon = GFX_goal_generic_forceful_treaty
+						x = 38
+						y = 2
+						cost = 10
+						available_if_capitulated = yes
+						prerequisite = { focus = CRZ_war_with_poland }
+						ai_will_do = {
+							factor = 40
+						}
+						completion_reward = {	
+							add_ideas = partisan_suppression_focus
+							}		
+						}
+					}
 			
