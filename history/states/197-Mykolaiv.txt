@@ -17,7 +17,6 @@ state={
 		buildings = {
 			dockyard = 3
 			infrastructure = 8
-			coastal_bunker = 10
 			arms_factory = 5
 		}
 		add_core_of = CRZ
