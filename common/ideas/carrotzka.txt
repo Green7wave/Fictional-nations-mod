@@ -235,6 +235,40 @@ ideas = {
 
 			removal_cost = -1
 		}
+
+		Call_of_equality = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+
+			removal_cost = -1
+		}
+
+		Call_of_freedom = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				anarchism_drift = 0.1
+			}
+
+			removal_cost = -1
+		}
 	}
 
 	political_advisor = {

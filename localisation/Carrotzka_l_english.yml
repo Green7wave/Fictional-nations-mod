@@ -101,6 +101,10 @@
  peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people have choosed and now they will do their best for their country"
  Anarchist_society:0 "Anarchist Society"
  Anarchist_society_desc:0 "We're not looking for any trouble here..."
+ Call_of_equality:0 "Call Of Equality"
+ Call_of_equality_desc:0 "people of our country look intrested in equalitty"
+ Call_of_freedom:0 "Call Of Freedom"
+ Call_of_freedom_desc:0  "people of our country look intrested in total freedom"
  
  # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"

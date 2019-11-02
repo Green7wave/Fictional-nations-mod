@@ -1450,7 +1450,7 @@ focus_tree = {
 
 					focus = {
 						id = CRZ_the_new_meaning_of_freedom
-						icon = GFX_focus_cze_german_puppet
+						icon = GFX_focus_ger_great_red_menace
 						x = 28
 						y = 2
 						cost = 10
@@ -1506,5 +1506,41 @@ focus_tree = {
 							add_ideas = partisan_suppression_focus
 							}		
 						}
-					}
+
+					focus = {
+							id = CRZ_invite_south_africa
+							icon = GFX_focus_SAF_colonialist_crusade
+							x = 32
+							y = 3
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								SAF = {
+									add_ideas = Call_of_freedom 
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_venezuela
+							icon = GFX_focus_generic_anti_fascist_diplomacy
+							x = 32
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								VEN = {
+									add_ideas = Call_of_equality
+								}
+							}		
+						}
+				}
 			
