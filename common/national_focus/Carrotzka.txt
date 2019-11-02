@@ -1527,12 +1527,12 @@ focus_tree = {
 
 						focus = {
 							id = CRZ_invite_venezuela
-							icon = GFX_focus_generic_anti_fascist_diplomacy
+							icon = GFX_focus_invite_venezuela
 							x = 32
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
-							prerequisite = { focus = CRZ_black_and_red_alliance }
+							prerequisite = { focus = CRZ_invite_south_africa }
 							ai_will_do = {
 								factor = 40
 							}
