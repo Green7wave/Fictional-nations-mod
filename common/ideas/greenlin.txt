@@ -18,6 +18,12 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.04
+				lend_lease_tension = -0.20 
+				send_volunteers_tension = -0.20 
+				justify_war_goal_time = -0.1
+				generate_wargoal_tension = -0.4 
+				guarantee_cost = -0.2 
+
 			}
 			rule = {
 				can_declare_war_on_same_ideology = yes
@@ -25,7 +31,8 @@ ideas = {
 				can_puppet = yes
 				can_lower_tension = yes
 				can_only_justify_war_on_threat_country = no
-				can_guarantee_other_ideologies = yes				
+				can_guarantee_other_ideologies = yes
+
 
 			}
 		}
@@ -75,7 +82,8 @@ ideas = {
 			modifier = {
 				partisan_effect = 0.2
 				subversive_activites_upkeep = -0.05
-				decryption_factor = 0.8
+				encryption_factor = 0.8
+				enemy_justify_war_goal_time = 0.05
 			}
 		}
 		#
