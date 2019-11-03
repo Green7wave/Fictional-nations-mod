@@ -1450,7 +1450,7 @@ focus_tree = {
 
 					focus = {
 						id = CRZ_the_new_meaning_of_freedom
-						icon = GFX_focus_cze_german_puppet
+						icon = GFX_focus_ger_great_red_menace
 						x = 28
 						y = 2
 						cost = 10
@@ -1482,7 +1482,7 @@ focus_tree = {
 							197 = {
 								add_resource = {
 									type = aluminium
-									amount = 16
+									amount = 20
 								}
 							}		
 						}
@@ -1506,5 +1506,77 @@ focus_tree = {
 							add_ideas = partisan_suppression_focus
 							}		
 						}
-					}
+
+					focus = {
+							id = CRZ_invite_south_africa #actually this is estonia
+							icon = GFX_goal_generic_support_communismv
+							x = 33
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								EST = {
+								 add_ideas = Call_of_equality 
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_venezuela #and this one is lituania
+							icon = GFX_goal_generic_national_unity
+							x = 35
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								LIT = {
+									add_ideas = Call_of_freedom
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_latvania
+							icon = GFX_goal_generic_demand_territory
+							x = 30
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								LAT = {
+									add_ideas = Call_of_freedom
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_finland
+							icon = GFX_focus_generic_join_comintern
+							x = 28
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								FIN = {
+									add_ideas = Call_of_equality
+								}
+							}		
+						}
+				}
 			

@@ -1590,11 +1590,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_generic_chromium.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_invite_venezuela"
+		texturefile = "gfx/interface/goals/focus_invite_venezuela.dds"
+	}
+
 }
-
-
-
-
-
-
-focus_generic_chromium

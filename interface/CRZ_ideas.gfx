@@ -4048,4 +4048,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_Anarchist_society.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_Call_of_freedom"
+		texturefile = "gfx/interface/ideas/idea_Call_of_freedom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_Call_of_equality"
+		texturefile = "gfx/interface/ideas/idea_Call_of_equality.dds"
+	}
+
 }
