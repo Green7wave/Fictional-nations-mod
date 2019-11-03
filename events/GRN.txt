@@ -277,6 +277,11 @@
 			}
 
 			modifier = {
+				factor 0.5
+				FROM = { NOT = { has_government = ROOT }}
+			}
+
+			modifier = {
 				factor = 0.1
 				AND = {
 					tag = ROM
