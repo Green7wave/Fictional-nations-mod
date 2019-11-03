@@ -89,7 +89,7 @@
  		
  	}
  	
- }
+}
  
 # green requests for help
  country_event = {
@@ -156,7 +156,7 @@
  		}
  	}
  	
- }
+}
  
 # ally accepts request for help
  country_event = {
@@ -178,7 +178,7 @@
  	}
  
  	
- }
+}
  
 # ally says no to request
  country_event = {
@@ -198,7 +198,172 @@
  	}
  
  	
- }
+}
+
+# Greenlin sends the bois an invite to the faction
+ country_event = {
+ 	id = grn.5
+ 	title = grn.5.t
+ 	desc = grn.5.d
+	desc = {
+	trigger = {
+		tag = CRZ
+	}
+		text = grn.5.dd
+	}
+ 	picture = GFX_report_event_generic_sign_treaty2
+ 	fire_only_once = yes
+ 	is_triggered_only = yes
+ 	
+ 	mean_time_to_happen = {
+ 		days = 1
+ 	}
+ 	
+	#yes
+ 	option = {
+		name = grn.5.a
+		ai_chance = { 
+			factor = 20
+
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+    				target = GRN
+   					 value > 75
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+    				target = GRN
+   					 value < 10
+				}
+			}
+
+			modifier = {
+				factor = 2
+				ai_irrationality > 10
+			}
+
+			modifier = {
+				factor = 2.5
+				num_divisions < 20
+			}
+
+			modifier = {
+				factor = 0.5
+				num_divisions > 30
+			}
+
+			modifier = {
+				factor = 20000
+				is_subject_of = GRN
+			}
+			
+			modifier = {
+				factor = 0
+				AND = {
+					OR = {
+						tag = HUN
+						tag = YUG
+						tag = TUR
+					}
+					NOT = {
+						is_subject_of = GRN
+					}
+				}
+
+			}
+
+			modifier = {
+				factor = 0.1
+				AND = {
+					tag = ROM
+					NOT = {
+						is_subject_of = GRN
+					}
+				}
+
+			}
+
+			modifier = {
+				factor = 0.1
+				is_in_faction = yes
+			}
+
+			modifier = {
+				factor = 0
+				threat < 0.15
+			}
+		}
+
+		GRN = {
+			country_event = grn.6
+			add_to_faction = ROOT
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "GRN"
+			value = 200
+		}
+	}
+
+	# no
+	option = {
+		name = grn.5.b
+		ai_chance = { factor = 30 }
+		GRN = { country_event = grn.7 }
+	}
+ 
+ 	
+}
+
+# invitation is accepted
+ country_event = {
+ 	id = grn.6
+ 	title = grn.6.t
+ 	desc = grn.6.d
+ 	picture = GFX_report_event_generic_read_write
+ 
+
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	mean_time_to_happen = {
+ 		days = 2
+ 	}
+ 	
+ 	option = { 
+ 		name = grn.6.a 
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+ 	}
+ 
+ 	
+}
+
+# invitation is DENIED
+ country_event = {
+ 	id = grn.7
+ 	title = grn.7.t
+ 	desc = grn.7.d
+ 	picture = GFX_report_event_generic_read_write
+ 
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	mean_time_to_happen = {
+ 		days = 3
+ 	}
+ 	
+ 	option = { 
+ 		name = grn.7.a 
+ 	}
+ 
+ 	
+}
  
 
  

@@ -132,25 +132,25 @@ focus_tree = {
 	}
 
 	#Focus for Technology Sharing
-	focus = {
-		id = GRN_technologysharing
-		icon = GFX_goal_generic_scientific_exchange
-		x = 2
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = GRN_specialalliance }
-		mutually_exclusive = { focus = GRN_enhancedtechnology }
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-			is_in_faction= yes
-		}
-		completion_reward = {
-
-		}
-	}
+	#focus = {
+	#	id = GRN_technologysharing
+	#	icon = GFX_goal_generic_scientific_exchange
+	#	x = 2
+	#	y = 5
+	#	cost = 8
+	#	available_if_capitulated = yes
+	#	prerequisite = { focus = GRN_specialalliance }
+	#	mutually_exclusive = { }
+	#	ai_will_do = {
+	#		factor = 40
+	#	}
+	#	available = {
+	#		is_in_faction= yes
+	#	}
+	#	completion_reward = {
+	#
+	#	}
+	#}
 
 	#Focus for Organization of GRL
 	focus = {
@@ -197,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = GRN_nationalsecurity
 		icon = GFX_nationalsecurity
-		x = 5
+		x = 6
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -215,7 +215,7 @@ focus_tree = {
 	focus = {
 		id = GRN_specialalliance
 		icon = GFX_goal_generic_national_unity
-		x = 2
+		x = 3
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -223,10 +223,179 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+		bypass = {
+			CRZ = { exists = no }
+		}
 		completion_reward = {
-			# TODO: send events for faction creation (check allies events)
+			# me and the bois make an alliance
+			if = {
+				limit = {
+					any_state = {
+						is_controlled_by = ACZ
+					}
+					ACZ = {
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				ACZ = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					CRZ = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				CRZ = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					ROM = { 
+						exists = yes 
+						NOT = {
+							OR = {
+								has_completed_focus = ROM_join_axis
+								has_completed_focus = ROM_appoint_soviet_friendly_government
+								has_completed_focus = ROM_join_comintern
+								has_completed_focus = ROM_appoint_german_friendly_government
+							}
+						}
+						has_war = no
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				ROM = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					PER = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				PER = { country_event = grn.5 }
+			}
+
+
+			if = {
+				limit = {
+					AFG = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				AFG = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					IRQ = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				IRQ = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					AFG = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				AFG = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					HUN = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				HUN = { country_event = grn.5 }
+			}
+
+
+			if = {
+				limit = {
+					YUG = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				YUG = { country_event = grn.5 }
+			}
+
+			if = {
+				limit = {
+					YUG = {
+						exists = yes
+						OR = {
+							is_subject = no
+							is_subject_of = GRN
+						}
+					}
+				}
+				YUG = { country_event = grn.5 }
+			}
+
 		}
 	}
+
+
+	# focus for Pressure the samller countries
+	focus = {
+		id = GRN_pressuretheweak
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 1
+		relative_position_id = GRN_specialalliance
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_specialalliance }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			
+		}
+
+
+	}
+
 
 	#Focus for Enhanced technology
 	focus = {
@@ -237,7 +406,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_organizationofgrl }
-		mutually_exclusive = { focus = GRN_technologysharing }
+		mutually_exclusive = { }
 		ai_will_do = {
 			factor = 40
 		}
@@ -476,13 +645,16 @@ focus_tree = {
 	focus = {
 		id = GRN_formthegis
 		icon = GFX_formthegis
-		x = 5
+		x = 6
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_countrysstabilization }
 		ai_will_do = {
 			factor = 80
+		}
+		completion_reward = {
+			add_ideas = gis
 		}
 	}
 
@@ -504,7 +676,7 @@ focus_tree = {
 	focus = {
 		id = GRN_fixtheindustryissue
 		icon = GFX_goal_generic_air_production
-		x = 7
+		x = 8
 		y = 4
 		cost = 10
 		available_if_capitulated = yes

@@ -6,22 +6,36 @@
 
   
 # events
+  # Ling explosion
   grn.1.t:0 "Ling family explodes their factories"
   grn.1.d:0 "In a rushed attempt to get the control of the country, the Ling family has started a revolt in the country, and got quickly arrested by the Greenlin police after doing so. \n officials say this will cripple Greenlin's industry, will the king do anything with the new event?"
   grn.1.a:0 "Oh no..."
-  #
+  # Carrotzka help
   grn.2.t:0 "Green wave requests assistance in achieving freedom of their country"
   grn.2.d:0 "The leader of the People's Freedom party or known short as People's Freedom has requested our government and leader to assist him in the upcoming revolutions, helping them may create a future ally for ourselves"
   grn.2.a:0 "Sure, he seems nice"
   grn.2.b:0 "No"
-  #
+  # says yes
   grn.3.t:0 "Carrotzka accepts assistance request"
   grn.3.d:0 "'They remind me of the pre-revolution Carrotzka, we may have been alone in this cause, but we will make sure they will not.' \n The future president of Greenlin has thanked then in a public speech saying 'this alliance was written long ago'"
   grn.3.a:0 "Good"
-  #
+  # says no
   grn.4.t:0 "Carrotzka says no to Greeblin's assistance request"
   grn.4.d:0 "Leader of Carrotzka, Sadra Carrot, has denied the request of the future leader of Greenlin 'Green wave' \n The leader of Greenlin's Freedom says he won't forget such actions from the leader of Carrotzka"
   grn.4.a:0 "What a..."
+  # creating alliance
+  grn.5.t:0 "Invitation to Greenlin's Faction"
+  grn.5.d:0 "In order to restore peace and strengthen the balkans and middle east against upcoming storms, Greenlin has reuqested our part in an alliance, our contribution will help them greatly"
+  grn.5.dd:0 "In order to restore peace and strengthen the balkans and middle east against upcoming storms, Greenlin has requested to show our brethrenship once more in the history of the world"
+  grn.5.a:0 "This alliance is happening"
+  grn.5.b:0 "[Root.GetName] won't be taking part in this"
   #
+  grn.6.t:0 "[From.GetName] has accepted our alliance request"
+  grn.6.d:0 "After long considerations [From.GetName] has decided to take part in our faction and try its best to strengthen our countries agianst the enemies.\nOur alliance will be known to all"
+  grn.6.a:0 "Very cool of them"
+  #
+  grn.7.t:0 "[From.GetName] has refused our alliance request"
+  grn.7.d:0 "[From.GetName] has not seen their benefits in our alliance, in a polite answer to our call they have refused it."
+  grn.7.a:0 "Maybe they have good reasons"
   
   
