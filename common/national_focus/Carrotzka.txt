@@ -1482,7 +1482,7 @@ focus_tree = {
 							197 = {
 								add_resource = {
 									type = aluminium
-									amount = 16
+									amount = 20
 								}
 							}		
 						}
@@ -1528,7 +1528,7 @@ focus_tree = {
 						focus = {
 							id = CRZ_invite_venezuela #and this one is lituania
 							icon = GFX_goal_generic_national_unity
-							x = 34
+							x = 35
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
@@ -1546,7 +1546,7 @@ focus_tree = {
 						focus = {
 							id = CRZ_invite_latvania
 							icon = GFX_goal_generic_demand_territory
-							x = 31
+							x = 30
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
@@ -1564,7 +1564,7 @@ focus_tree = {
 						focus = {
 							id = CRZ_invite_finland
 							icon = GFX_focus_generic_join_comintern
-							x = 30
+							x = 28
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
