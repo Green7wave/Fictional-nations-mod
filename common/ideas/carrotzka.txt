@@ -247,7 +247,7 @@ ideas = {
 			}
 			
 			modifier = {
-				communism_drift = 0.1
+				communism_drift = 0.2
 			}
 
 			removal_cost = -1
@@ -264,7 +264,7 @@ ideas = {
 			}
 			
 			modifier = {
-				anarchism_drift = 0.1
+				anarchism_drift = 0.2
 			}
 
 			removal_cost = -1

@@ -66,7 +66,7 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		SAF = {
+		LIT = {
 			has_government = anarchism
 		}
          
@@ -77,7 +77,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.5.a
-		CRZ = { add_to_faction = SAF }
+		CRZ = { add_to_faction = LIT }
 	}
 }
 
@@ -89,7 +89,7 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		VEN = {
+		EST = {
 			has_government = communism
 		}
          
@@ -100,6 +100,52 @@ country_event = {
 	option = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
-		CRZ = { add_to_faction = VEN }
+		CRZ = { add_to_faction = EST }
+	}
+}
+
+country_event = {
+	id = carrotzka.7
+	title = carrotzka.7.t
+	desc = carrotzka.7.d
+	picture = GFX_report_event_ger_civil_war
+	
+	fire_only_once = yes
+	trigger = {
+		LAT = {
+			has_government = anarchism
+		}
+         
+	}
+
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		ai_chance = { factor = 40 }
+		name = carrotzka.5.a
+		CRZ = { add_to_faction = LAT }
+	}
+}
+
+country_event = {
+	id = carrotzka.8
+	title = carrotzka.8.t
+	desc = carrotzka.8.d
+	picture = GFX_report_event_ger_civil_war
+	
+	fire_only_once = yes
+	trigger = {
+		FIN = {
+			has_government = communism
+		}
+         
+	}
+
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		ai_chance = { factor = 40 }
+		name = carrotzka.6.a
+		CRZ = { add_to_faction = FIN }
 	}
 }

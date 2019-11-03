@@ -1508,10 +1508,10 @@ focus_tree = {
 						}
 
 					focus = {
-							id = CRZ_invite_south_africa
-							icon = GFX_focus_SAF_colonialist_crusade
-							x = 32
-							y = 3
+							id = CRZ_invite_south_africa #actually this is estonia
+							icon = GFX_goal_generic_support_communismv
+							x = 33
+							y = 4
 							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
@@ -1519,25 +1519,61 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								SAF = {
-									add_ideas = Call_of_freedom 
+								EST = {
+								 add_ideas = Call_of_equality 
 								}
 							}		
 						}
 
 						focus = {
-							id = CRZ_invite_venezuela
-							icon = GFX_focus_invite_venezuela
-							x = 32
+							id = CRZ_invite_venezuela #and this one is lituania
+							icon = GFX_goal_generic_national_unity
+							x = 34
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
-							prerequisite = { focus = CRZ_invite_south_africa }
+							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
 								factor = 40
 							}
 							completion_reward = {	
-								VEN = {
+								LIT = {
+									add_ideas = Call_of_freedom
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_latvania
+							icon = GFX_goal_generic_demand_territory
+							x = 31
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								LAT = {
+									add_ideas = Call_of_freedom
+								}
+							}		
+						}
+
+						focus = {
+							id = CRZ_invite_finland
+							icon = GFX_focus_generic_join_comintern
+							x = 30
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { focus = CRZ_black_and_red_alliance }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								FIN = {
 									add_ideas = Call_of_equality
 								}
 							}		
