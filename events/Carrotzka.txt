@@ -170,7 +170,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
 		LAT = {
-			set_ruling_party = anarchism
+			set_politics = { ruling_party = anarchism }
 		}
 	}
 }
@@ -195,7 +195,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
 		LIT ={ 
-			set_ruling_party = anarchism
+			set_politics = { ruling_party = anarchism }
 		}
 	}
 }
