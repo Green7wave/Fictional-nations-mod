@@ -292,7 +292,7 @@ ideas = {
 				guarantee_tension = 0
 				ai_get_ally_desire_factor = 100		
 				send_volunteer_divisions_required = -1
-				subversive_activites = 0.75	
+				subversive_activites_upkeep = -1
 			}
 
 			removal_cost = -1
