@@ -1509,7 +1509,7 @@ focus_tree = {
 
 					focus = {
 							id = CRZ_invite_south_africa #actually this is estonia
-							icon = GFX_goal_generic_support_communismv
+							icon = GFX_goal_generic_support_communism
 							x = 33
 							y = 3
 							cost = 10
