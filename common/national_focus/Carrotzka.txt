@@ -1510,7 +1510,7 @@ focus_tree = {
 					focus = {
 							id = CRZ_invite_south_africa #actually this is estonia
 							icon = GFX_goal_generic_support_communism
-							x = 33
+							x = 34
 							y = 3
 							cost = 10
 							available_if_capitulated = yes
@@ -1528,7 +1528,7 @@ focus_tree = {
 						focus = {
 							id = CRZ_invite_venezuela #and this one is lituania
 							icon = GFX_goal_generic_national_unity
-							x = 35
+							x = 32
 							y = 3
 							cost = 10
 							available_if_capitulated = yes
@@ -1576,6 +1576,28 @@ focus_tree = {
 								FIN = {
 									add_ideas = Call_of_equality
 								}
+							}		
+						}
+						
+						focus = {
+							id = CRZ_support_the_world_revolution
+							icon = GFX_focus_prc_agrarian_socialism
+							x = 31
+							y = 4
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { 
+								focus = CRZ_black_and_red_alliance
+								focus = CRZ_invite_finland 
+								focus = CRZ_invite_latvania
+								focus = CRZ_invite_south_africa
+								focus = CRZ_invite_venezuela
+							}
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								add_ideas = support_the_world_revolution								
 							}		
 						}
 				}

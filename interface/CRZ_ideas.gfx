@@ -4058,4 +4058,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_Call_of_equality.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_support_the_world_revolution"
+		texturefile = "gfx/interface/ideas/idea_support_the_world_revolution.dds"
+	}
 }

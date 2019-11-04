@@ -269,6 +269,28 @@ ideas = {
 
 			removal_cost = -1
 		}
+
+		support_the_world_revolution = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				generate_wargoal_tension = 0.1
+				join_faction_tension = 0
+				lend_lease_tension = 0
+				send_volunteers_tension = 0
+				guarantee_tension = 0
+				ai_get_ally_desire_factor = 100				
+			}
+
+			removal_cost = -1
+		}
 	}
 
 	political_advisor = {
