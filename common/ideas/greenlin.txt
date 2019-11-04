@@ -21,7 +21,7 @@ ideas = {
 				lend_lease_tension = -0.20 
 				send_volunteers_tension = -0.20 
 				justify_war_goal_time = -0.1
-				generate_wargoal_tension = -0.4 
+				generate_wargoal_tension = -0.6 
 				guarantee_cost = -0.2 
 
 			}

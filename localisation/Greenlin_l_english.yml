@@ -32,6 +32,8 @@
 # Tool tips (§G§) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
+ tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
+ tip_technologysharing:0 "Joins the §GOwl Eyed Research§W sharing group"
 
 # Ideas
  special_democracy:0 "Special Democracy"
@@ -60,3 +62,10 @@
  enhanced_tech_desc:0 "By giving better supplies to researchers and making better school systems we have achieved a new level of technology that we can call it 'enhaned'"
  hawks:0 "Hawks"
  hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."
+
+# Tech sharing Group
+ green_research_name:0 "Owl Eyed Research"
+ green_research_desc:0 "Reduced research time for technologies researched by other Owl Eyed countries."
+
+# factions
+ owl_eyed_faction:0 "Owl Eyed Nations" 

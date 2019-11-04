@@ -253,6 +253,7 @@
 				factor = 0
 				AND = {
 					OR = {
+						tag = ROM
 						tag = HUN
 						tag = YUG
 						tag = TUR
