@@ -4059,7 +4059,27 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_idea_support_the_world_revolution"
-		texturefile = "gfx/interface/ideas/idea_support_the_world_revolution.dds"
+		name = "GFX_idea_generic_army_carrotzka_1"
+		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_army_carrotzka_2"
+		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_army_carrotzka_3"
+		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_army_carrotzka_4"
+		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_army_carrotzka_5"
+		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_5.dds"
 	}
 }
