@@ -1,4 +1,3 @@
-
 ideas = {
 	country = {
 		recovery_from_civil_war = {
@@ -317,7 +316,7 @@ ideas = {
 			#Also unit leader: 404
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			available = 
 			{
@@ -325,8 +324,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 404
 						} 
 					}
@@ -346,7 +345,7 @@ ideas = {
 			#Also unit leader: 405
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			available = 
 			{
@@ -354,8 +353,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 405
 						} 
 					}
@@ -375,7 +374,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			available = 
 			{
@@ -396,7 +395,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -420,7 +419,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -442,7 +441,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -460,11 +459,11 @@ ideas = {
 			}
 		}
 		
-		nikolay_kuznetsov = {
+		nikolay_kuznetCRZ = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -486,7 +485,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -510,7 +509,7 @@ ideas = {
 		alexander_novikov = {
 						
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -532,7 +531,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -553,7 +552,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -575,7 +574,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -601,17 +600,17 @@ ideas = {
 			#Also unit leader: 408
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
 				custom_trigger_tooltip = {
-				tooltip = SOV_konev_civil_war
+				tooltip = CRZ_konev_civil_war
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 408
 						}
 					}
@@ -632,7 +631,7 @@ ideas = {
 			#Also unit leader: 407
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -641,8 +640,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 407
 						} 
 					}
@@ -658,16 +657,16 @@ ideas = {
 			}
 		}
 		
-		konstantin_rokossovsky = {
+		konstantin_rokosCRZsky = {
 			#Also unit leader: 402
 			
 			allowed = {
-				original_tag = SOV # Unlocked via focus
+				original_tag = CRZ # Unlocked via focus
 				hidden_trigger = {
 					NOT = {
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 403
 						} 
 					}
@@ -676,7 +675,7 @@ ideas = {
 			available = 
 			{
 				NOT = { has_country_flag = purge_1_group_b }
-				has_completed_focus = SOV_positive_heroism
+				has_completed_focus = CRZ_positive_heroism
 			}
 			
 
@@ -693,7 +692,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -714,7 +713,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -732,11 +731,11 @@ ideas = {
 			}
 		}
 		
-		stepan_krasovsky = {
+		stepan_kraCRZsky = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -757,7 +756,7 @@ ideas = {
 			#Also unit leader: 403
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -766,8 +765,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 403
 						} 
 					}
@@ -787,7 +786,7 @@ ideas = {
 			#Also unit leader: 406
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -796,8 +795,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 406
 						} 
 					}
@@ -818,7 +817,7 @@ ideas = {
 			#Also unit leader: 409
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -827,8 +826,8 @@ ideas = {
 				hidden_trigger = {
 					NOT = { 
 						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
+							has_war_with = CRZ
+							original_tag = CRZ
 							has_unit_leader = 409
 						} 
 					}
@@ -854,7 +853,7 @@ ideas = {
 			
 			allowed = {
 				OR = {
-					original_tag = SOV
+					original_tag = CRZ
 					AND = {
 						OR = {
 							is_literally_china = yes
@@ -873,9 +872,9 @@ ideas = {
 							tag = MAN
 						}
 					}
-					has_completed_focus = CHI_hire_soviet_designer
+					has_completed_focus = CHI_hire_CRZiet_designer
 					NOT = {
-						has_war_with = SOV
+						has_war_with = CRZ
 					}
 				}
 			}
@@ -894,7 +893,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -913,7 +912,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -937,7 +936,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -956,7 +955,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -975,7 +974,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -994,7 +993,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1017,7 +1016,7 @@ ideas = {
 		
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1036,7 +1035,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1060,7 +1059,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1081,7 +1080,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1100,7 +1099,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1125,7 +1124,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1148,7 +1147,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -1170,7 +1169,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1186,7 +1185,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV # Unlocked via focus
+				original_tag = CRZ # Unlocked via focus
 
 			}
 			available = 
@@ -1194,7 +1193,7 @@ ideas = {
 				NOT = { has_country_flag = counter_purge }
 			}
 			available = {
-				has_completed_focus = SOV_positive_heroism
+				has_completed_focus = CRZ_positive_heroism
 			}
 			
 			cost = 250
@@ -1210,7 +1209,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -1231,7 +1230,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 			cost = 250
@@ -1247,7 +1246,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 
 			}
 			available = 
@@ -1268,7 +1267,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1284,7 +1283,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 
@@ -1300,7 +1299,7 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				original_tag = CRZ
 			}
 			
 			research_bonus = {
