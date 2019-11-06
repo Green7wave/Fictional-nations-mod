@@ -345,6 +345,17 @@ focus_tree = {
 		completion_reward = {
 			army_experience= 100
 			add_manpower= 800000
+			create_corps_commander = {
+				name = "Vassily Carrot"
+				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
+				traits = { war_hero }
+				skill = 6
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 6
+				logistics_skill = 6
+			}
+			
 		}
 	}
 
