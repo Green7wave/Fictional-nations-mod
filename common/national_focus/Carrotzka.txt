@@ -348,7 +348,10 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Vassily Carrot"
 				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
-				traits = { war_hero }
+				traits = { 
+					war_hero 
+					brilliant_strategist
+				}
 				skill = 5
 				attack_skill = 5
 				defense_skill = 5

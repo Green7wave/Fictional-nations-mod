@@ -312,28 +312,11 @@ ideas = {
 	army_chief = {
 		
 		
-		semyon_timoshenko = {
-			#Also unit leader: 404
+		1 = {
 			
 			allowed = {
 				original_tag = CRZ
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = CRZ
-							original_tag = CRZ
-							has_unit_leader = 404
-						} 
-					}
-				}
-			}
-			
-
-			
+			}			
 			traits = { army_chief_reform_2 }
 			
 			ai_will_do = {
@@ -341,28 +324,11 @@ ideas = {
 			}
 		}
 		
-		kliment_voroshilov = {
-			#Also unit leader: 405
+		2 = {
 			
 			allowed = {
 				original_tag = CRZ
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = CRZ
-							original_tag = CRZ
-							has_unit_leader = 405
-						} 
-					}
-				}
-			}
-			
-
-			
+			}			
 			traits = { army_chief_drill_1 }
 			
 			ai_will_do = {
@@ -370,20 +336,13 @@ ideas = {
 			}
 		}
 		
-		alexander_yegorov = {
+		3 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_a }
-			}
-			
-
-			
-			# PURGED
+		
 			traits = { army_chief_defensive_2 }
 			
 			ai_will_do = {
@@ -391,21 +350,13 @@ ideas = {
 			}
 		}
 		
-		vasily_blucher = {
+		4 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
-
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_a }
-			}
-			
 
-			
-			# PURGED
 			traits = { army_chief_maneuver_2 }
 			
 			ai_will_do = {
@@ -415,21 +366,14 @@ ideas = {
 	}
 	navy_chief = {
 		
-		pyotr_smirnov = {
+		5 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_a }
-			}
-			
 
-			
-			# PURGED
 			traits = { navy_chief_naval_aviation_1 }
 			
 			ai_will_do = {
@@ -437,21 +381,13 @@ ideas = {
 			}
 		}
 		
-		mikhail_frinovsky = {
+		6 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
-
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_a }
-			}
-			
 
-			
-			# PURGED
 			traits = { navy_chief_commerce_raiding_1 }
 			
 			ai_will_do = {
@@ -459,21 +395,14 @@ ideas = {
 			}
 		}
 		
-		nikolay_kuznetsov = {
+		7 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_b }
-			}
-			
 
-			
-			# Not Purged, but eventually demoted
 			traits = { navy_chief_reform_2 }
 			
 			ai_will_do = {
@@ -481,20 +410,14 @@ ideas = {
 			}
 		}
 		
-		ivan_yumashev = {
+		8 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-			}
-			
-
-			
+					
 			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
@@ -506,41 +429,26 @@ ideas = {
 	air_chief = {
 		
 		
-		alexander_novikov = {
+		9 = {
 						
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
-			
-
-			
-			# Not Purged, but imprisoned
-			traits = { air_chief_reform_3 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-		konstantin_vershinin = {
+		10 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_b }
-			}
-			
-
-			
+		
 			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
@@ -548,43 +456,29 @@ ideas = {
 			}
 		}
 		
-		yakov_smushkevich = {
+		11 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
-			
 
-			
-			# PURGED
-			traits = { air_chief_safety_2 } # Could also have reform
+			traits = { air_chief_safety_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-		pavel_rychagov = {
+		12 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
-			
 
-			
-			# PURGED
 			traits = { air_chief_all_weather_2 }
 			
 			ai_will_do = {
@@ -596,56 +490,26 @@ ideas = {
 	
 	high_command = {
 	
-		ivan_konev = {
-			#Also unit leader: 408
+		13 = {
 			
 			allowed = {
 				original_tag = CRZ
-			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-				custom_trigger_tooltip = {
-				tooltip = CRZ_konev_civil_war
-					NOT = { 
-						any_other_country = {
-							has_war_with = CRZ
-							original_tag = CRZ
-							has_unit_leader = 408
-						}
-					}
-				}
 			}
 			
 
 			
 			traits = { army_concealment_2 }
-			# Almost certainly a psychopath
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		
-		aleksandr_vasilevsky = {
-			#Also unit leader: 407
+		14 = {
 			
 			allowed = {
 				original_tag = CRZ
 
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_b }
-				hidden_trigger = {
-					NOT = { 
-						any_other_country = {
-							has_war_with = CRZ
-							original_tag = CRZ
-							has_unit_leader = 407
-						} 
-					}
-				}
 			}
 			
 
@@ -657,30 +521,8 @@ ideas = {
 			}
 		}
 		
-		konstantin_rokossovsky = {
-			#Also unit leader: 402
-			
-			allowed = {
-				original_tag = CRZ # Unlocked via focus
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = CRZ
-							original_tag = CRZ
-							has_unit_leader = 403
-						} 
-					}
-				}
-			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				has_completed_focus = CRZ_positive_heroism
-			}
-			
+		15 = {	
 
-			
-			# Not purged, but tried and tortured, then released
 			traits = { army_armored_3 }
 			
 			ai_will_do = {
@@ -688,19 +530,12 @@ ideas = {
 			}
 		}	
 		
-		pavel_zhigarev = {
+		16 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
-
 			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-
 			
 			traits = { air_airborne_1 }
 			
@@ -709,21 +544,14 @@ ideas = {
 			}
 		}
 		
-		sergei_khudyakov = {
+		17 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = purge_2_group_b }
-			}
-			
 
-			
-			# Purged, but post-war
 			traits = { air_close_air_support_2 }
 			
 			ai_will_do = {
@@ -731,19 +559,13 @@ ideas = {
 			}
 		}
 		
-		stepan_krasovsky = {
+		18 = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 
 			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-
 			
 			traits = { air_air_combat_training_2 }
 			
@@ -752,7 +574,7 @@ ideas = {
 			}
 		}	
 		
-		vladimir_kasatonov = {
+		19 = {
 			#Also unit leader: 403
 			
 			allowed = {
@@ -782,7 +604,7 @@ ideas = {
 			}
 		}
 		
-		gordey_levchenko = {
+		20 = {
 			#Also unit leader: 406
 			
 			allowed = {
@@ -813,7 +635,7 @@ ideas = {
 			}
 		}
 		
-		arseniy_golovko = {
+		21 = {
 			#Also unit leader: 409
 			
 			allowed = {
@@ -843,307 +665,12 @@ ideas = {
 			}
 		}	
 	}
-		
-	tank_manufacturer = {
-		
-		designer = yes
-		
-		morozov_design_bureau = {
-			
-			
-			allowed = {
-				OR = {
-					original_tag = CRZ
-					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
-				}
-			}
-
-			available = {
-				if = {
-					limit = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-					}
-					has_completed_focus = CHI_hire_CRZiet_designer
-					NOT = {
-						has_war_with = CRZ
-					}
-				}
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { fast_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		astrov_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { medium_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		okmo = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
 	
-	aircraft_manufacturer = {
-		
-		designer = yes
-		
-		mig_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { light_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		ilyushin_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { medium_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		tupolev_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		yakovlev_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				air_equipment = 0.15
-			}
-			
-			traits = { naval_aircraft_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}	
-	
-	
-	industrial_concern = {
-				
-		stalingrad_tractor_factory = {
-		
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { industrial_concern }
-			
-			modifier = {
-			}
-		}
-		
-		leningrad_polytechnical_institute = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { electronics_concern }
-			
-			modifier = {
-			}
-		}
-	}
-	
-	materiel_manufacturer = {
-			
-		designer = yes
-		
-		grabin_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-			
-			modifier = {
-			}
-		}	
-		
-	
-		
-		tula_arms_plant = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				infantry_weapons = 0.15
-			}
-			
-			traits = { infantry_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-		
-		gaz = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				motorized_equipment = 0.15
-				mot_rockets = 0.50
-			}
-			
-			traits = { motorized_equipment_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
-	
-	naval_manufacturer = {
-	
-		designer = yes
-		
-		nevskoye_design_bureau = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { naval_manufacturer }
-			
-			modifier = {
-			}
-		}
-	}
 	
 	theorist = {	
 	
 			
-		mikhail_tukhachevsky = {
+		22 = {
 			
 			
 			allowed = {
@@ -1165,7 +692,7 @@ ideas = {
 			traits = { mass_assault_expert }
 		}
 		
-		boris_shaposhnikov = {
+		23 = {
 			
 			
 			allowed = {
@@ -1181,7 +708,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		georgy_zhukov = {
+		24 = {
 			
 			
 			allowed = {
@@ -1205,7 +732,7 @@ ideas = {
 			traits = { mass_assault_expert }
 		}
 		
-		sergey_gorshkov = {
+		25 = {
 			
 			
 			allowed = {
@@ -1226,88 +753,5 @@ ideas = {
 			traits = { naval_theorist }
 		}
 		
-		vladimir_tributs = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_fleet_in_being = 0.15
-			}
-			
-			traits = { grand_fleet_proponent}
-		}
-		
-		sergei_rudenko = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-
-			}
-			available = 
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_battlefield_support = 0.15
-			}
-			
-			traits = { close_air_support_proponent }
-		}
-		
-		alexander_golovanov = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		igor_kurchatov = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		sergei_korolev = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-
-			
-			traits = { rocket_scientist }
-		}
 	}
 }
