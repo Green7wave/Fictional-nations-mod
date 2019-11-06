@@ -1591,8 +1591,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_invite_venezuela"
-		texturefile = "gfx/interface/goals/focus_invite_venezuela.dds"
+		name = "GFX_focus_invite_south_africa"
+		texturefile = "gfx/interface/goals/focus_invite_south_africa.dds"
 	}
 
 }
