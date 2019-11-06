@@ -725,7 +725,7 @@
 
 }
  
-# Greenlin goes communist, the leader doesn't want leadership
+# Greenlin goes communist, Sergei doesn't want leadership
  country_event = {
  	id = grn.13
  	title = grn.13.t
@@ -748,8 +748,7 @@
 			create_country_leader = {
 				name = "Mani Wave"
 				desc = "POLITICS_GREEN_WAVE_DESC"
- 			   picture = "not_chosen.dds" # Potrait_GRN_greenwave
-				expire = "1960.8.2"
+ 			   picture = "Potrait_GRN_greenwave.dds"
 				ideology = marxism
 				traits = {
 
@@ -768,7 +767,7 @@
 			create_country_leader = {
 				name = "Mani Wave"
 				desc = "POLITICS_GREEN_WAVE_DESC"
- 			   picture = "not_chosen.dds" # Potrait_GRN_greenwave
+ 			   picture = "Potrait_GRN_greenwave.dds" 
 				expire = "1960.8.2"
 				ideology = marxism
 				traits = {
