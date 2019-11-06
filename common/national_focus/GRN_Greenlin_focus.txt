@@ -302,7 +302,7 @@ focus_tree = {
 			factor = 40
 		}
 		bypass = {
-			CRZ = { exists = no }
+			GRN = { is_in_faction = yes }
 		}
 		completion_reward = {
 			create_faction = owl_eyed_faction
@@ -500,8 +500,13 @@ focus_tree = {
 		relative_position_id = GRN_specialalliance
 		cost = 10
 		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		prerequisite = { focus = GRN_specialalliance }
 		mutually_exclusive = { }
+		available = {
+			GRN = { is_in_faction = yes }
+		}
 		bypass = {
 			AND = {
 				PER = {is_in_faction_with = GRN}
@@ -514,7 +519,51 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			
+		  	if = {
+				limit = {
+					GRN = { is_in_faction = yes }
+				}
+				PER = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+				AFG = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+				IRQ = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					GRN = { is_in_faction = no }
+				}
+				custom_effect_tooltip = tip_pressuretheweak
+			}
+
 		}
 
 
@@ -813,7 +862,11 @@ focus_tree = {
 			factor = 160
 		}
 		completion_reward = {
-			custom_effect_tooltip = GRN_t_1
+			country_event = {
+				id = grn.9
+				days = 1
+				random = 18
+			}
 		}
 	}
 

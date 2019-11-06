@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_sergei_giving_leadership"
+		texturefile = "gfx/event_pictures/Sergei_giving_leadership.dds"
+	}
+
+}

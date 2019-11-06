@@ -12,9 +12,9 @@
  GRN_fascism:0  "Gloryious Greenlin"
  GRN_fascism_DEF:0 "the Gloryious Greenlin"
  GRN_democratic:0  "Greenlin"
- GRN_democratic_DEF:0 "the United Power of Greenlin"
+ GRN_democratic_DEF:0 "the United People's Greenlin"
  GRN_neutrality:0  "Greenlin Empire"
- GRN_neutrality_DEF:0 "the Greenlin Empire""
+ GRN_neutrality_DEF:0 "the Greenlin Empire"
  GRN_communism:0 "Socialist Greenlin"
  GRN_communism_DEF:0 "the Social Democratic Greenlin"
 
@@ -34,6 +34,7 @@
  tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
  tip_technologysharing:0 "Joins the §GOwl Eyed Research§W sharing group"
+ tip_pressuretheweak:0 "Iran, Afghanistan, Iraq will be pressured to join Greenlin's faction and submit to Greenlin"
 
 # Ideas
  special_democracy:0 "Special Democracy"
