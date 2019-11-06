@@ -133,7 +133,7 @@ create_country_leader = {
 	desc = "POLITICS_GREEN_WAVE_DESC"
     picture = "not_chosen.dds" # Potrait_GRN_greenwave
 	expire = "1960.8.2"
-	ideology = liberalism
+	ideology = socialism
 	traits = {
 
 	}
@@ -164,7 +164,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm Watch"
 	desc = "POLITICS_DARK_WATCH_DESC"
-    picture = "not_chosen.dds"
+    picture = "Portrait_GRN_dark_watch.dds"
 	expire = "1960.8.2"
 	ideology = fascism_ideology
 	traits = {

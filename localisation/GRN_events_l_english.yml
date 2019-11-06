@@ -29,13 +29,35 @@
   grn.5.dd:0 "In order to restore peace and strengthen the balkans and middle east against upcoming storms, Greenlin has requested to show our brethrenship once more in the history of the world"
   grn.5.a:0 "This alliance is happening"
   grn.5.b:0 "[Root.GetName] won't be taking part in this"
-  #
+  # ally accepted it
   grn.6.t:0 "[From.GetName] has accepted our alliance request"
   grn.6.d:0 "After long considerations [From.GetName] has decided to take part in our faction and try its best to strengthen our countries agianst the enemies.\nOur alliance will be known to all"
   grn.6.a:0 "Very cool of them"
-  #
+  # ally is a baby
   grn.7.t:0 "[From.GetName] has refused our alliance request"
   grn.7.d:0 "[From.GetName] has not seen their benefits in our alliance, in a polite answer to our call they have refused it."
   grn.7.a:0 "Maybe they have good reasons"
-  
-  
+  # pressuring the middle east
+  grn.8.g:0 "We will let them rule"
+  # Fixing industry
+  grn.9.t:0 "Fixing the big issue"
+  grn.9.d:0 "Greenlin's industry has been disabled since the Ling attack, the Ling family has officially said that they were sorry for the awful actions of their head - who is now in prison - \n Alternatively we can hire new people or try to rule the industry ourselves, what should we do?"
+  grn.9.a:0 "We forgive the Ling family"
+  grn.9.b:0 "Hiring new people seems better"
+  grn.9.c:0 "We will rule the industry ourselves"
+  # fixed industry
+  grn.10.t:0 "The workers final heaven"
+  grn.10.d:0 "Our recent actions has fianlly gaven fruit as the factories have reached their stable form, people around Greenlin are suprised to see the prices finally go down."
+  grn.10.a:0 "Seems awesome"
+  # corruption in industry
+  grn.11.t:0 "Corruption in industry"
+  grn.11.d:0 "The new people who are hired are using their new powers in their advantage, this is certainly not what people would have wanted..."
+  grn.11.a:0 "We have to confront them"
+  # people are salty
+  grn.12.t:0 "People don't forgive the Ling family"
+  grn.12.d:0 "Despite all the good work the Ling family has done over the years, the people of Greenlin have started small protests against the new ownership of the Ling family, the protests can be ignored but its best to control them right away"
+  grn.12.a:0 "We will do propaganda to fix this"
+  # Green turns marxist
+  grn.13.t:0 "Sergei Wave gives leadership to his brother"
+  grn.13.d:0 "The currrent communist leader of Greenlin has declared his brother as the new leader, people were shocked.\n in a formal speech he said 'My brother always knew the Marxist ways and is a better leader then what i will be, i'm sure he will do anything for his people'"
+  grn.13.a:0 "Unexpected"

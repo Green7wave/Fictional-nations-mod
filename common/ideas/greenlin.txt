@@ -21,7 +21,7 @@ ideas = {
 				lend_lease_tension = -0.20 
 				send_volunteers_tension = -0.20 
 				justify_war_goal_time = -0.1
-				generate_wargoal_tension = -0.4 
+				generate_wargoal_tension = -0.6 
 				guarantee_cost = -0.2 
 
 			}
@@ -112,8 +112,8 @@ ideas = {
 				add_research_slot = 3
 			}
 		}
-
 		#
+
 		the_cruel_king = {
 			removal_cost = -1
 			
@@ -142,7 +142,6 @@ ideas = {
 				stability_factor = -0.15
 			}
 		}
-		
 		#
 
 		communism_in_the_land = {
@@ -262,6 +261,32 @@ ideas = {
 				air_paradrop_attack_factor = 0.1
 				air_paradrop_defence_factor = 0.25
 				no_supply_grace = 48 
+			}
+		}
+		###
+
+		government_corruption = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+		
+
+			picture = idea_generic_deal_with_the_devil
+
+			modifier = {
+				industry_repair_factor = -0.9
+				industry_free_repair_factor = -1.0
+				production_factory_max_efficiency_factor = -0.4
+				production_speed_buildings_factor = -0.6
+				local_resources_factor = -0.2
+				stability_factor = -0.2
+				research_speed_factor = -0.2
 			}
 		}
 		###

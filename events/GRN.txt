@@ -115,7 +115,7 @@
  			country_event = {
     			 id = grn.3
     			 days = 2
-   		 	 random = 10
+   		 		random = 10
  			}
  		}
  		send_equipment = {
@@ -125,9 +125,7 @@
  		}
  		if = {
  			limit = {
- 				ROOT = {
- 					11683 = { is_capital = yes }
- 				}
+ 				ROOT = { tag = CRZ }
  			}
  			GRN = { 
  				add_timed_idea = {
@@ -169,6 +167,27 @@
  	
  	option = { 
  		name = grn.3.a 
+		effect_tooltip = {
+			FROM = {
+				send_equipment = {
+  			 		equipment = infantry_equipment
+  			 		amount = 500
+   					target = GRN
+ 				}
+			}
+ 			if = {
+ 				limit = {
+ 					FROM = { tag = CRZ }
+ 				}
+ 				GRN = { 
+ 					add_timed_idea = {
+ 						idea = communism_in_the_land
+ 						days = 60
+	
+ 					} 
+ 				}
+ 			}
+		}
  	}
  
  	
@@ -253,6 +272,7 @@
 				factor = 0
 				AND = {
 					OR = {
+						tag = ROM
 						tag = HUN
 						tag = YUG
 						tag = TUR
@@ -292,13 +312,21 @@
 		}
 
 		GRN = {
-			country_event = grn.6
+			country_event = {
+				id = grn.6
+				random = 7
+			}
 			add_to_faction = ROOT
 		}
 		add_ai_strategy = {
 			type = alliance
 			id = "GRN"
 			value = 200
+		}
+		hidden_effect = {
+			set_country_flag = alliance_applicant@ROOT
+			FROM = { set_country_flag = alliance_inviter@ROOT }
+			news_event = { id = news.289 hours = 12 }
 		}
 	}
 
@@ -352,8 +380,407 @@
  	
 }
  
+# Pressure the middle east
+ country_event = {
+	id = grn.8
+	title = generic.5.t
+	desc = generic.5.d.e
+	picture = GFX_report_event_generic_read_write
 
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_applicant
+			FROM = {
+				save_event_target_as = alliance_inviter
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = generic.5.e
+		trigger = {
+			NOT = {
+				is_in_faction_with = FROM
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				has_war = no
+				FROM = {
+					has_war = yes
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			modifier = {
+				factor = 0.75
+				FROM = {
+					is_major = no
+				}
+			}
+		}
+		FROM = { 
+			add_to_faction = ROOT
+			country_event = { id = generic.6 hours = 6 }
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = FROM
+			value = 200
+		}
+		hidden_effect = {
+			set_country_flag = alliance_applicant@ROOT
+			FROM = { set_country_flag = alliance_inviter@ROOT }
+			news_event = { id = news.289 hours = 12 }
+		}
+	}
+	#
+	option = {
+		name = grn.8.g
+		trigger = {
+			is_in_faction_with = FROM
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0.5
+				has_war = no
+				FROM = {
+					has_war = yes
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			modifier = {
+				factor = 0.75
+				FROM = {
+					is_major = no
+				}
+			}
+		}
+
+		FROM = { puppet = ROOT }
+	}
+	#
+	option = {
+		name = generic.2.f
+		trigger = {
+			is_in_faction = no
+		}
+		ai_chance = {
+			factor = 40
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 65
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 35
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 5
+				}
+			}
+			
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 35
+				}
+			}
+			
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 65
+				}
+			}
+			
+			modifier = {
+				factor = 0.1
+				has_war = yes
+				FROM = {
+					has_war = no
+				}
+			}
+			
+			modifier = {
+				factor = 0.1
+				FROM = {
+					is_major = yes
+				}
+			}
+		}
+		FROM = { 
+			country_event = { id = generic.7 hours = 6 }
+			create_wargoal = {
+  				type = puppet_wargoal_focus
+ 				target = ROOT
+			}
+		}
+
+	}
+
+	option = { #Reject if in faction
+		name = generic.2.g
+		trigger = {
+			is_in_faction = yes
+		}
+		FROM = { 
+			country_event = { id = generic.7 hours = 6 }
+		}
+	}
+}
+
+# Fix The industry issue
+ country_event = {
+ 	id = grn.9
+ 	title = grn.9.t
+ 	desc = grn.9.d
+ 	picture = GFX_report_event_indonesia_handover
+
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	
+ 	option = { # let the ling come back
+ 		name = grn.9.a 
+		add_political_power = -120
+		
+		random_list = {
+			80 = {
+				modifier = {
+					factor = 1.5
+					ROOT = {has_government = democratic}
+				}
+				country_event = {
+					id = grn.10
+					days = 2 
+					random = 10
+				}
+			}
+			20 = {
+				country_event = {
+					id = grn.12
+					days= 2
+					random = 12
+				}
+			}
+		}
+ 	}
+	
+	option = { # find new people 
+ 		name = grn.9.b 
+		add_political_power = -30
+		random_list = {
+			70 = {
+				country_event = {
+					id = grn.10
+					days = 2 
+					random = 10
+				}
+			}
+			30 = {
+				modifier = {
+					factor = 1.5
+					ROOT = {has_government = democratic}
+				}
+				country_event = {
+					id = grn.11
+					days = 2
+					random = 12
+				}
+			}
+		}
+		
+ 	}
+	
+	option = { # rule them ourselves
+ 		name = grn.9.c
+		add_political_power = -180
+		add_stability = -0.1
+		country_event = {
+					id = grn.10
+					days = 2 
+					random = 10
+		}
+ 	}
+
+}
+
+# Idustry Fixed
+ country_event = {
+ 	id = grn.10
+ 	title = grn.10.t
+ 	desc = grn.10.d
+ 	picture = GFX_report_event_generic_factory
+
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	
+ 	option = { 
+ 		name = grn.10.a 
+		if = {
+			limit = {
+				has_idea = industrial_issue
+			}
+			remove_ideas = industrial_issue
+		} else = {
+			remove_ideas = industrial_issue2
+		}
+ 	}
+
+}
+
+# Corruption in Industry
+ country_event = {
+ 	id = grn.11
+ 	title = grn.11.t
+ 	desc = grn.11.d
+ 	picture = GFX_report_event_hitler_handshake
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	
+ 	option = { 
+ 		name = grn.11.a 
+		add_stability = -0.15
+		if = {
+			limit = {
+				has_idea = industrial_issue
+			}
+			remove_ideas = industrial_issue
+		} else = {
+			remove_ideas = industrial_issue2
+		}
+ 	}
+
+}
+
+# People don't forgive Ling family
+ country_event = {
+ 	id = grn.12
+ 	title = grn.12.t
+ 	desc = grn.12.d
+ 	picture = GFX_report_event_gathering_protest
+
+ 	is_triggered_only = yes
+ 	
+ 	
+ 	
+ 	option = { 
+ 		name = grn.12.a 
+		add_stability = -0.1
+		set_war_support = -0.15
+		hidden_effect = {
+			country_event = {
+				id = grn.10
+				days = 7
+				random = 10
+			}
+		}
+ 	}
+	
+	option = {
+		name = grn.12.b 
+		add_political_power = -30
+		hidden_effect = {
+			country_event = {
+				id = grn.10
+				days = 7
+				random = 10
+			}
+		}
+	}
+
+}
  
- 
- 
+# Greenlin goes communist, the leader doesn't want leadership
+ country_event = {
+ 	id = grn.13
+ 	title = grn.13.t
+ 	desc = grn.13.d
+ 	picture = GFX_sergei_giving_leadership
+	fire_only_once = yes
+ 	trigger = {
+		tag = GRN
+		has_government = communism
+		has_war = no
+		NOT = { has_country_flag = mani_turned_marxist }
+	}
+ 	
+ 	
+ 	
+ 	option = { 
+ 		name = grn.13.a
+		effect_tooltip = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Mani Wave"
+				desc = "POLITICS_GREEN_WAVE_DESC"
+ 			   picture = "not_chosen.dds" # Potrait_GRN_greenwave
+				expire = "1960.8.2"
+				ideology = marxism
+				traits = {
+
+				}
+			}
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = communism
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Mani Wave"
+				desc = "POLITICS_GREEN_WAVE_DESC"
+ 			   picture = "not_chosen.dds" # Potrait_GRN_greenwave
+				expire = "1960.8.2"
+				ideology = marxism
+				traits = {
+
+				}
+			}
+			set_country_flag = mani_turned_marxist
+		}
+		
+
+
+ 	}
+
+}
  

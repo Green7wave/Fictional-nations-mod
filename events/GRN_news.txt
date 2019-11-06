@@ -43,6 +43,20 @@ add_namespace = grnnews
 		    	}
 		    	clr_country_flag = revolution_armed_flag
 		    }
+			set_rule = {
+				can_boost_other_ideologies = yes
+				can_create_factions = yes
+				can_declare_war_on_same_ideology = yes
+				can_force_government = no
+				can_guarantee_other_ideologies = yes
+				can_join_opposite_factions = yes
+				can_lower_tension = yes
+				can_puppet = no
+			}
+			set_politics = {
+				elections_allowed = no
+				last_election = date
+			}
         }
         
     }

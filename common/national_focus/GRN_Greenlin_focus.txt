@@ -50,6 +50,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
+		mutually_exclusive = { focus = GRN_equalityaboveall }
 		completion_reward = {
 			add_popularity= { 
 				ideology = democratic
@@ -63,11 +64,12 @@ focus_tree = {
 	focus = {
 		id = GRN_equalityaboveall
 		icon = GFX_goal_support_communism
-		x = 8
+		x = 7
 		y = 1
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_downwiththeking }
+		mutually_exclusive = { focus = GRN_thepeoplesfreedomofchoice }
 		ai_will_do = {
 			factor = 80
 		}
@@ -98,60 +100,133 @@ focus_tree = {
 
 		
 		completion_reward = {
-			set_politics= {
-			 	ruling_party = democratic
- 				elections_allowed = no
+			# democratic choice
+			if = {
+				limit = {
+					has_completed_focus = GRN_thepeoplesfreedomofchoice
+				}
+				set_politics= {
+        			ruling_party = democratic
+         			elections_allowed = no
+        		}
+        		set_country_flag = greenlin_in_civil_war
+        		# civil war stuff
+        		if = {
+        			limit = {
+        				AND = {
+        						has_country_flag = support_from_ally
+        						has_country_flag = revolution_armed_flag
+        				}
+        			}
+        				
+        			start_civil_war = {
+          			    ideology = neutrality
+          				size = 0.2
+        			}
+        				
+        		} 
+        		if = {
+        			limit = {
+        				OR = {
+        					AND = {
+        						NOT = { has_country_flag = revolution_armed_flag  }
+        						has_country_flag = support_from_ally
+        					}
+        					AND = {
+        						NOT = { has_country_flag = support_from_ally } 
+        						has_country_flag = revolution_armed_flag
+        					}
+        				}
+        			}
+        			start_civil_war = {
+          			  ideology = neutrality
+          			  size = 0.5
+        			}
+        		} 
+        		if = {
+        			limit = {
+        				AND = {
+        					NOT = { has_country_flag = support_from_ally }
+        					NOT = { has_country_flag = revolution_armed_flag }
+        				}
+        			}
+        			start_civil_war = {
+          			  ideology = neutrality
+          			  size = 0.7
+        			}
+        
+        		}
+        
+        
+        		add_ideas = special_democracy
 			}
-			set_country_flag = greenlin_in_civil_war
-			# civil war stuff
+			# commie choice
+			if = {
+				limit = {
+					has_completed_focus = GRN_equalityaboveall
+				}
+				set_politics= {
+        			ruling_party = communism
+         			elections_allowed = no
+        		}
+        		set_country_flag = greenlin_in_civil_war
+				set_country_flag = sergei_in_control
+        		if = {
+        			limit = {
+        				AND = {
+        						has_country_flag = support_from_ally
+        						has_country_flag = revolution_armed_flag
+        				}
+        			}
+        				
+        			start_civil_war = {
+          			    ideology = neutrality
+          				size = 0.2
+        			}
+        				
+        		} 
+        		if = {
+        			limit = {
+        				OR = {
+        					AND = {
+        						NOT = { has_country_flag = revolution_armed_flag  }
+        						has_country_flag = support_from_ally
+        					}
+        					AND = {
+        						NOT = { has_country_flag = support_from_ally } 
+        						has_country_flag = revolution_armed_flag
+        					}
+        				}
+        			}
+        			start_civil_war = {
+          			  ideology = neutrality
+          			  size = 0.5
+        			}
+        		} 
+        		if = {
+        			limit = {
+        				AND = {
+        					NOT = { has_country_flag = support_from_ally }
+        					NOT = { has_country_flag = revolution_armed_flag }
+        				}
+        			}
+        			start_civil_war = {
+          			  ideology = neutrality
+          			  size = 0.7
+        			}
+        
+        		}
+			}
 			if = {
 				limit = {
 					AND = {
-						has_country_flag = support_from_ally
-						has_country_flag = revolution_armed_flag
+						NOT = { has_completed_focus = GRN_equalityaboveall }
+						NOT = { has_completed_focus = GRN_thepeoplesfreedomofchoice }
 					}
 				}
+				custom_effect_tooltip = tip_starttherevolution
 				
-				start_civil_war = {
-  				  ideology = neutrality
-  				  size = 0.2
-				}
-				
-			} 
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							NOT = { has_country_flag = revolution_armed_flag  }
-							has_country_flag = support_from_ally
-						}
-						AND = {
-							NOT = { has_country_flag = support_from_ally } 
-							has_country_flag = revolution_armed_flag
-						}
-					}
-				}
-				start_civil_war = {
-  				  ideology = neutrality
-  				  size = 0.5
-				}
-			} 
-			if = {
-				limit = {
-					AND = {
-						NOT = { has_country_flag = support_from_ally }
-						NOT = { has_country_flag = revolution_armed_flag }
-					}
-				}
-				start_civil_war = {
-  				  ideology = neutrality
-  				  size = 0.7
-				}
-
 			}
-
-
-			add_ideas = special_democracy
 		}
 	}
 
@@ -200,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = GRN_nationalsecurity
 		icon = GFX_nationalsecurity
-		x = 6
+		x = 7
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -227,9 +302,10 @@ focus_tree = {
 			factor = 40
 		}
 		bypass = {
-			CRZ = { exists = no }
+			GRN = { is_in_faction = yes }
 		}
 		completion_reward = {
+			create_faction = owl_eyed_faction
 			# me and the bois make an alliance
 			if = {
 				limit = {
@@ -323,19 +399,6 @@ focus_tree = {
 
 			if = {
 				limit = {
-					AFG = {
-						exists = yes
-						OR = {
-							is_subject = no
-							is_subject_of = GRN
-						}
-					}
-				}
-				AFG = { country_event = grn.5 }
-			}
-
-			if = {
-				limit = {
 					HUN = {
 						exists = yes
 						OR = {
@@ -363,7 +426,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					YUG = {
+					TUR = {
 						exists = yes
 						OR = {
 							is_subject = no
@@ -371,7 +434,7 @@ focus_tree = {
 						}
 					}
 				}
-				YUG = { country_event = grn.5 }
+				TUR = { country_event = grn.5 }
 			}
 
 			if = {
@@ -400,8 +463,14 @@ focus_tree = {
 		relative_position_id = GRN_specialalliance
 		cost = 8
 		available_if_capitulated = yes
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 		prerequisite = { focus = GRN_specialalliance }
 		mutually_exclusive = { focus = GRN_enhancedtechnology }
+		available = {
+			num_faction_members > 0
+		}
+
 		ai_will_do = {
 			factor = 40
 		}
@@ -409,21 +478,35 @@ focus_tree = {
 			is_in_faction= yes
 		}
 		completion_reward = {
-	
+			#GRN = { add_to_tech_sharing_group = green_research }
+			every_country = {
+				limit = {
+					is_in_faction_with = GRN
+				}
+				hidden_effect = {
+					add_to_tech_sharing_group = green_research
+				}
+   				custom_effect_tooltip = tip_technologysharing
+			}
 		}
 	}
 
 	# focus for Pressure the samller countries
 	focus = {
 		id = GRN_pressuretheweak
-		icon = GFX_goal_tfv_generic_tech_sharing
+		icon = GFX_goal_generic_forceful_treaty
 		x = 1
 		y = 1
 		relative_position_id = GRN_specialalliance
 		cost = 10
 		available_if_capitulated = yes
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		prerequisite = { focus = GRN_specialalliance }
 		mutually_exclusive = { }
+		available = {
+			GRN = { is_in_faction = yes }
+		}
 		bypass = {
 			AND = {
 				PER = {is_in_faction_with = GRN}
@@ -436,7 +519,51 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			
+		  	if = {
+				limit = {
+					GRN = { is_in_faction = yes }
+				}
+				PER = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+				AFG = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+				IRQ = {
+					add_ai_strategy = {
+							type = alliance
+							id = "GRN"
+							value = 200
+					}
+					country_event = {
+   						id = grn.8
+   						random = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					GRN = { is_in_faction = no }
+				}
+				custom_effect_tooltip = tip_pressuretheweak
+			}
+
 		}
 
 
@@ -509,10 +636,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			custom_effect_tooltip = tip_asktheneigbour
-			hidden_effect = {
-				CRZ = {country_event = grn.2}
-			}
+			#custom_effect_tooltip = tip_asktheneigbour
+		
+			CRZ = {country_event = grn.2}
+		
 		}
 	}
 
@@ -695,7 +822,7 @@ focus_tree = {
 	focus = {
 		id = GRN_formthegis
 		icon = GFX_formthegis
-		x = 6
+		x = 7
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -726,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = GRN_fixtheindustryissue
 		icon = GFX_goal_generic_air_production
-		x = 8
+		x = 5
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -735,7 +862,11 @@ focus_tree = {
 			factor = 160
 		}
 		completion_reward = {
-			custom_effect_tooltip = GRN_t_1
+			country_event = {
+				id = grn.9
+				days = 1
+				random = 18
+			}
 		}
 	}
 
