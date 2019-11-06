@@ -1727,14 +1727,14 @@ random_owned_controlled_state = {
 						}
 
 						focus = {
-							id = CRZ_leader_in_war
+							id = CRZ_leader_in_battlefield
 							icon = GFX_focus_mex_support_general_cedillo
-							x = 14
+							x = 13
 							y = 2
 							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { 
-								focus = CRZ_black_and_red_alliance
+								focus = CRZ_civlwarveterands
 							}
 							ai_will_do = {
 								factor = 40

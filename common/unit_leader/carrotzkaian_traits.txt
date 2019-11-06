@@ -6,6 +6,9 @@ leader_in_battalefield = {
     type = land
     trait_type = personality_trait
     
+    attack_skill = 2
+    planning_skill = 2
+    
     modifier = {
         max_dig_in = 1
         planning_speed = 0.25
@@ -14,8 +17,6 @@ leader_in_battalefield = {
         acclimatization_cold_climate_gain_factor = 0.40
         out_of_supply_factor = -0.25
         army_infantry_attack_factor = 0.10
-        attack_skill = 2
-		planning_skill = 2
     }
 
     corps_commander_modifier = {
