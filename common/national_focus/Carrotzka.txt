@@ -1443,10 +1443,10 @@ focus_tree = {
 							}	
 							ACZ = { 
 								set_cosmetic_tag = ACZ_FREE
-							add_ideas = Anarchist_society }
-							
-						}
+							add_ideas = Anarchist_society 
+						}					
 					}
+				}
 
 					focus = {
 						id = CRZ_the_new_meaning_of_freedom
