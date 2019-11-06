@@ -349,11 +349,11 @@ focus_tree = {
 				name = "Vassily Carrot"
 				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
 				traits = { war_hero }
-				skill = 6
-				attack_skill = 6
-				defense_skill = 6
-				planning_skill = 6
-				logistics_skill = 6
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
 			}
 			
 		}
