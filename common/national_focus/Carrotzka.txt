@@ -1725,5 +1725,38 @@ random_owned_controlled_state = {
 								add_ideas = support_the_world_revolution								
 							}		
 						}
+
+						focus = {
+							id = CRZ_leader_in_war
+							icon = GFX_focus_mex_support_general_cedillo
+							x = 14
+							y = 2
+							cost = 10
+							available_if_capitulated = yes
+							prerequisite = { 
+								focus = CRZ_black_and_red_alliance
+							}
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								create_field_marshal = {
+									name = "Sadra Carrot"
+									picture = "Portrait_carrotzka_Sadra_Carrot.dds"
+									traits = { 
+										defensive_doctrine
+										politically_connected
+										leader_in_battalefield
+									}
+									skill = 5
+									attack_skill = 5
+									defense_skill = 5
+									planning_skill = 5
+									logistics_skill = 5
+								}
+								
+						
+							}		
+						}
 				}
 			
