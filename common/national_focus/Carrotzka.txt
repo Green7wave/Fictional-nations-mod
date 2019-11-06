@@ -1734,7 +1734,7 @@ random_owned_controlled_state = {
 							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { 
-								focus = CRZ_civlwarveterands
+								focus = CRZ_civilwarveterans
 							}
 							ai_will_do = {
 								factor = 40
@@ -1753,10 +1753,26 @@ random_owned_controlled_state = {
 									defense_skill = 5
 									planning_skill = 5
 									logistics_skill = 5
-								}
-								
-						
+								}							
 							}		
+						}
+
+						focus = {
+							id = CRZ_early_north_korea
+							icon = GFX_focus_hol_the_foundations_of_defense
+							x = 23
+							y = 1
+							prerequisite = {
+								focus = CRZ_carrot_farming
+							}
+							cost = 10
+							ai_will_do = {
+								factor = 40 
+							}
+							completion_reward = {
+								add_ideas = closed_economy
+								add_ideas = war_economy
+							}
 						}
 				}
 			
