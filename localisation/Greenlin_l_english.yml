@@ -24,10 +24,14 @@
  STATE_48:0 "Iplieren"
 
 # Parties
- GRN_communism_party:0 "Green Communism Party"
+ GRN_communism_party_long:0 "GCP"
+ GRN_communism_party_long:0 "Green Communism Party"
  GRN_neutrality_party:0 "Monarchist Party"
- GRN_fascism_party:0 "GGL Party"
+ GRN_fascism_party:0 "GGS Party"
+ GRN_fascism_party_long:0 "Gloryious Greenlin Supporters Party"
  GRN_democratic_party:0 "People's Freewill Party"
+ GRN_anarchism_party_long:0 "Greenlin's United Free People"
+ GRN_anarchism_party:0 "GUFP"
 
 # Tool tips (§G§) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
@@ -63,6 +67,8 @@
  enhanced_tech_desc:0 "By giving better supplies to researchers and making better school systems we have achieved a new level of technology that we can call it 'enhaned'"
  hawks:0 "Hawks"
  hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."
+ greenlin_rising:0 "Industrial Rising"
+ greenlin_rising_desc:0 "After a long fall, Greenlin has finally started to rise, and it's time to reconstruct the country!"
 
 # Tech sharing Group
  green_research_name:0 "Owl Eyed Research"

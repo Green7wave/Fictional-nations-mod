@@ -34,7 +34,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = greenlin_rising
+				days = 180
+			}
 		}
 	}
 

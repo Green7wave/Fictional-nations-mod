@@ -21,6 +21,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_idea_greenlin_rising"
+        texturefile = "gfx/interface/ideas/idea_greenlin_rising.dds"
+    }
+
+    spriteType = {
         name = "GFX_idea_hawks"
         texturefile = "gfx/interface/ideas/idea_hawks.dds"
     }
