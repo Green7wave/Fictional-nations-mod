@@ -825,6 +825,7 @@ random_owned_controlled_state = {
 									neutrality = 0
 									anarchism = 100
 								}
+								news_event = crznews.5
 
 	                    	}
 	                     }
