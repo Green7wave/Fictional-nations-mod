@@ -64,3 +64,18 @@ news_event = {
 		name = crznews.4.a
 	}
 }
+
+news_event = {
+	id = crznews.5
+	title = crznews.5.t
+	desc = crznews.5.d
+	picture = GFX_Anarchist_carrotzka_formed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.5.a
+	}
+}
