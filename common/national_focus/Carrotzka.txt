@@ -1775,5 +1775,30 @@ random_owned_controlled_state = {
 								add_ideas = war_economy
 							}
 						}
+
+						focus = {
+							id = CRZ_foreign_scientists
+							icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+							x = 45
+							y = 0
+							cost = 10
+							available_if_capitulated = yes
+							ai_will_do = {
+								factor = 1								
+							}
+							completion_reward = {
+								unlock_decision_tooltip = { 
+									decision = invite_grn 
+									show_effect_tooltip = yes 
+									show_modifires = yes
+									}
+									
+									unlock_decision_tooltip = { 
+										decision = invite_sov
+										show_effect_tooltip = yes 
+										show_modifires = yes
+										}
+							}
+						}
 				}
 			
