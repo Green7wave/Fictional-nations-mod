@@ -10,7 +10,6 @@
  carrotzka.1.d:0 "carrotzka demanded caucause from us what should we do"
  carrotzka.1.a:0 "give them"
 
-
 # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
  crznews.1.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to death"
@@ -29,9 +28,8 @@
   crznews.4.a:0 "Intresting..."
   #
   crznews.5.t:0 "Anarchist carrotzka formed"
-  crznews.5.d:0 "following the meating beetwen sadra carrot and nestor makhno, anarchist carrotzka will be formed under controll of carrotzka until they choose what to do with them"
+  crznews.5.d:0 "following the meeting beetwen sadra carrot and nestor makhno, anarchist carrotzka will be formed under controll of carrotzka until they choose what to do with them"
   crznews.5.a:0 "they got what they fought for"
-
 
 # Leader Traits
  equalist:0 "Equalist"
@@ -57,8 +55,6 @@
  CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
  ACZ_FREE_anarchism:0 "Free Europe"
  ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
-
-
 
 # State and province names
  STATE_197:0 "Emerald Valley"
@@ -112,15 +108,15 @@
  support_the_world_revolution:0 "support the world revolution"
  support_the_world_revolution:0 "we will accept and support any movement againts a corrupted goverment"
  
- # Bookmarks
+# Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"
 
- # traits
+# traits
  leader_in_battalefield:0 "Leader in battalefield"
  leader_in_battalefield:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
  
- #decision
+#decision
  invite_sov:0 "invite soviet scientists"
  invite_sov_desc:0 "lets ask our dear friend to send us some scientists..."
  invite_grn:0 "invite greenlinian scientists"
-invite_grn_desc:0 "greenlin people's brain got a six pac..."
+ invite_grn_desc:0 "greenlin people's brain got a six pac..."

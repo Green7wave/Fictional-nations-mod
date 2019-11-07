@@ -658,6 +658,12 @@
 		} else = {
 			remove_ideas = industrial_issue2
 		}
+		if = {
+			limit = {
+				has_idea = government_corruption
+			}
+			remove_ideas = government_corruption
+		}
  	}
 
 }

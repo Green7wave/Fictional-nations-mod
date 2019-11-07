@@ -2,7 +2,7 @@
 
 
 # Bookmarks
- GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Mark Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
+ GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Frank Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
 
 # leader descriptions
  POLITICS_GREEN_WAVE_desc:0 "Chosen leader of Greenlin, known as 'Green Wave'. he is a member of the royal green family but is against the family's treditions. he also has a lot of popularity within his own people"
@@ -24,10 +24,14 @@
  STATE_48:0 "Iplieren"
 
 # Parties
- GRN_communism_party:0 "Green Communism Party"
+ GRN_communism_party_long:0 "GCP"
+ GRN_communism_party_long:0 "Green Communism Party"
  GRN_neutrality_party:0 "Monarchist Party"
- GRN_fascism_party:0 "GGL Party"
+ GRN_fascism_party:0 "GGS Party"
+ GRN_fascism_party_long:0 "Gloryious Greenlin Supporters Party"
  GRN_democratic_party:0 "People's Freewill Party"
+ GRN_anarchism_party_long:0 "Greenlin's United Free People"
+ GRN_anarchism_party:0 "GUFP"
 
 # Tool tips (§G§) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
@@ -35,6 +39,7 @@
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
  tip_technologysharing:0 "Joins the §GOwl Eyed Research§W sharing group"
  tip_pressuretheweak:0 "Iran, Afghanistan, Iraq will be pressured to join Greenlin's faction and submit to Greenlin"
+ tip_repairthedamage:0 "Previously removed buildings by the §WLing attack§W event will be added to the country"
 
 # Ideas
  special_democracy:0 "Special Democracy"
@@ -63,6 +68,8 @@
  enhanced_tech_desc:0 "By giving better supplies to researchers and making better school systems we have achieved a new level of technology that we can call it 'enhaned'"
  hawks:0 "Hawks"
  hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."
+ greenlin_rising:0 "Industrial Rising"
+ greenlin_rising_desc:0 "After a long fall, Greenlin has finally started to rise, and it's time to reconstruct the country!"
 
 # Tech sharing Group
  green_research_name:0 "Owl Eyed Research"
