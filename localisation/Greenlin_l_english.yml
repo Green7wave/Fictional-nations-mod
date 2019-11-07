@@ -2,7 +2,7 @@
 
 
 # Bookmarks
- GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Mark Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
+ GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Frank Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
 
 # leader descriptions
  POLITICS_GREEN_WAVE_desc:0 "Chosen leader of Greenlin, known as 'Green Wave'. he is a member of the royal green family but is against the family's treditions. he also has a lot of popularity within his own people"
@@ -39,6 +39,7 @@
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
  tip_technologysharing:0 "Joins the §GOwl Eyed Research§W sharing group"
  tip_pressuretheweak:0 "Iran, Afghanistan, Iraq will be pressured to join Greenlin's faction and submit to Greenlin"
+ tip_repairthedamage:0 "Previously removed buildings by the §WLing attack§W event will be added to the country"
 
 # Ideas
  special_democracy:0 "Special Democracy"

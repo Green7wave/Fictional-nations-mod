@@ -696,10 +696,33 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_repairthedamage }
 		ai_will_do = {
-			factor = 40
+			factor = 60
 		}
 		completion_reward = {
-
+			random_owned_state = {
+				prioritize = { 44 }
+				add_building_construction = {
+   					type = air_base
+    				level = 7
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				prioritize = { 182 }
+				add_building_construction = {
+   					type = air_base
+    				level = 8
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				prioritize = { 77 }
+				add_building_construction = {
+   					type = air_base
+    				level = 8
+    				instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -709,11 +732,44 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 28
 		y = 2
-		cost = 10
+		cost = 14
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_repairthedamage }
 		ai_will_do = {
 			factor = 40
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 731
+				}
+				731 = {
+					add_building_construction = {
+   						type = naval_base
+    					level = 7
+    					instant_build = yes
+    					province = 11818
+					}
+				}
+			}
+			random_owned_state = {
+				prioritize = { 185 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+   					type = dockyard
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				prioritize = { 186 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+   					type = dockyard
+    				level = 2
+    				instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -727,7 +783,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_reconstructionofthecountry }
 		ai_will_do = {
-			factor = 80
+			factor = 160
+		}
+		completion_reward = {
+		 if = {
+			limit = {
+				has_country_flag = ling_attacked
+			}
+			hidden_effect = {
+					48 = {
+					add_building_construction = {
+  					  	type = industrial_complex
+   					  	level = 2
+    					instant_build = yes
+					}
+				}
+				212 = {
+					add_building_construction = {
+  					  	type = arms_factory
+   					  	level = 3
+    					instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = tip_repairthedamage
+		 }
 		}
 	}
 
@@ -850,6 +930,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		}
+		completion_reward ={
+			add_tech_bonus = {
+				name = radar_bonus
+				bonus = 1
+				uses = 3
+				category = radar_tech
+			}
+		}
 	}
 
 	#Focus for Fix the Industry issue
@@ -884,6 +972,23 @@ focus_tree = {
 		prerequisite = { focus = GRN_bettermathmaticalmachines }
 		ai_will_do = {
 			factor = 10
+			modifier = {
+				factor = 4
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 2
+				date > 1939.1.1
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				category = nuclear
+			}
 		}
 	}
 
@@ -899,12 +1004,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 2
+				category = computing_tech
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.8
+				uses = 2
+				category = encryption_tech
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.8
+				uses = 2
+				category = decryption_tech
+			}
+		}
 	}
 
-	#Focus for Demand help from the faction
+	#Focus for Technological Factories
 	focus = {
-		id = GRN_demandhelpfromthefaction
-		icon = GFX_focus_generic_treaty
+		id = GRN_technological_factories
+		icon = GFX_goal_generic_construction
 		x = 31
 		y = 1
 		cost = 10
@@ -913,14 +1038,20 @@ focus_tree = {
 		continue_if_invalid = yes
 		prerequisite = { focus = GRN_reconstructionofthecountry }
 		ai_will_do = {
-			factor = 10
+			factor = 80
 		}
 		bypass = {
-			date > 1939.1.1
-			has_completed_focus = GRN_repairthedamage
 		}
 		available = {
-			is_in_faction = yes
+			has_tech = improved_computing_machine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 4
+				category = industry
+			}
 		}
 	}
 
