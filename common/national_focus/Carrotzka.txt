@@ -1793,21 +1793,37 @@ random_owned_controlled_state = {
 						}
 
 						focus = {
-						#this one yours
-					    	id = 
-							icon = GFX_
+					    	id = CRZ_improve_relations_with_grn
+							icon = GFX_greenlin_deal
 							x = 43
 							y = 1
 							cost = 10
 							available_if_capitulated = yes
 							ai_will_do = {
-								factor = 1								
+								factor = 10
+								modifier = {
+									factor = 8
+									has_opinion = {
+    									target = GRN
+    									value > 74
+									}
+								}
+								modifier = {
+									factor = 0
+									OR = {
+										has_war_with = GRN
+										GRN = { exists = no }
+										has_opinion = {
+    										target = GRN
+    										value < 0
+										}
+									}
+								}								
 							}
 							completion_reward = {
-
+								unlock_decision_category_tooltip = improve_relations_grn
 							}
 						}
-					}
 
 						focus = {
 								id = CRZ_soviet_engineers

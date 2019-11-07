@@ -1,0 +1,16 @@
+improve_relations_grn = {
+	icon = decision_category_generic_foreign_policy
+
+	allowed = {
+		OR = {
+			tag = GRN 
+			tag = CRZ
+		}
+	}
+
+	visible = {
+		CRZ = {
+			has_completed_focus = CRZ_improve_relations_with_grn
+		}
+	}
+}

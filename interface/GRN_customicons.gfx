@@ -1,5 +1,10 @@
 spriteTypes = { 
 
+ SpriteType = { 
+        name = "GFX_greenlin_deal" 
+        texturefile = "gfx/interface/goals/greenlin_deal.dds" 
+ }
+
 
 ##Icon For: 1463869
  SpriteType = { 
