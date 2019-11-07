@@ -1807,7 +1807,6 @@ random_owned_controlled_state = {
 
 							}
 						}
-					}
 
 						focus = {
 								id = CRZ_soviet_engineers
