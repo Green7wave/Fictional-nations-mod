@@ -296,9 +296,16 @@ focus_tree = {
 			add_political_power= -65
 			add_stability = 0.2
 			remove_ideas = loyalists
+			custom_effect_tooltip = tip_space
 			add_timed_idea = { idea = king_is_dead days = 50 }
+			custom_effect_tooltip = tip_space
 			add_ideas = King_cabbagesII_revenge
-			news_event = crznews.1
+			hidden_effect = {
+				news_event = {
+					id = crznews.1
+					days = 1
+				}
+			}
 		}
 	}
 

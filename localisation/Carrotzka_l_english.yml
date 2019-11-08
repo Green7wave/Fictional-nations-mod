@@ -120,3 +120,7 @@
  invite_sov_desc:0 "lets ask our dear friend to send us some scientists..."
  invite_grn:0 "invite greenlinian scientists"
  invite_grn_desc:0 "greenlin people's brain got a six pac..."
+ 
+ # Groups
+ improve_relations_grn:0 "Relations Improvement"
+ #improve_relations_grn_desc:0 "Improving relations between countries can do nothing but help our cause"
