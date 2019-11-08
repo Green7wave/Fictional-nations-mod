@@ -1,7 +1,7 @@
 spriteTypes = { 
 
 	SpriteType = { 
-        name = "GFX_greenlin_deal" 
+        name = "GFX_greenlin_deal_shine" 
         texturefile = "gfx/interface/goals/greenlin_deal.dds" 
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

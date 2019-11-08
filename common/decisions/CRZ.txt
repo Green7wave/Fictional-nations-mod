@@ -31,7 +31,7 @@ improve_relations_grn = {
         days_remove = -1
 
         visible = {
-            CRZ = { has_completed_focus = CRZ_improve_relations_grn }
+            CRZ = { has_completed_focus = CRZ_improve_relations_with_grn }
         }
 
         modifier = {
