@@ -681,7 +681,48 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward = {
-			# TODO : add some basic military guys
+			# adding desginers
+			set_country_flag = military_restored
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = GRN_BIGUNS
+
+			# adding some generals - i would make it militray training if i had time
+			create_field_marshal = {
+				name = "Markiplier"
+				portrait_path = "gfx\leaders\GRN\Portrait_GRN_Mark.tga"
+				traits = { 
+					trickster
+					brilliant_strategist
+					media_personality
+					skilled_staffer
+					urban_assault_specialist
+				}
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			if = {
+				limit = {
+					has_country_flag = ling_forgiven
+				}
+				create_corps_commander = {
+					name = "Suho Ling"
+					portrait_path = "gfx\leaders\GRN\Portrait_GRN_Suho.tga"
+					traits = { 
+						panzer_leader
+						panzer_expert
+						trait_engineer
+					}
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 3
+				}
+			}
+			
 			army_experience = 40
 		}
 	}

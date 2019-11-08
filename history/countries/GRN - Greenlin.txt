@@ -119,7 +119,7 @@ set_popularities = {
 	democratic = 27
 	communism = 24
 	neutrality = 26
-	fascsim = 23
+	Fascism = 23
 }
 
 set_politics = {
@@ -175,13 +175,18 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Daniel Mofrad"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
+	portrait_path = "gfx\leaders\GRN\Portrait_GRN_Daniel.tga"
+	traits = { 
+		trickster
+		trait_reckless
+		hill_fighter
+		jungle_rat
+	}
 	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 
