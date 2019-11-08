@@ -13,4 +13,8 @@ opinion_modifiers = {
 	CRZ_communist_ally {
 		value = 50
 	}
+
+	CRZ_tech_partner {
+		value = 50
+	}
 }	
