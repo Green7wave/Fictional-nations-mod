@@ -90,7 +90,8 @@ add_ideas = {
 
 create_country_leader = {
 
-	desc = "vladimir parovski"
+	name = "vladimir parovski"
+	desc = ""
 	picture = "gfx/leaders/CRZ/Portrait_carrotzka_vladimir_parovski.dds"
 	expire = "1953.3.1"
 	ideology = socialism
