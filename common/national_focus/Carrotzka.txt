@@ -1802,6 +1802,7 @@ random_owned_controlled_state = {
 									modifier = CRZ_tech_partner 
 								}			
 							}
+						}
 
 						focus = {
 					    	id = CRZ_improve_relations_with_grn

@@ -88,16 +88,19 @@ add_ideas = {
 	help_of_anarchists
 }
 
-#create_country_leader = {
-#
-#	desc = ""
-#	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-#	expire = "1953.3.1"
-#	ideology = conservatism
-#	traits = {
-#		
-#	}
-#}
+create_country_leader = {
+
+	desc = "vladimir parovski"
+	picture = "gfx/leaders/CRZ/Portrait_carrotzka_vladimir_parovski.dds"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		dislikes_germany
+		economic_reformer
+		veteran_communist
+		social_reformer
+	}
+}
 
 create_country_leader = {
 	name = "Sadra Carrot"
@@ -115,24 +118,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "King CabbageII"
     desc = "POLITICS_king_cabbage_II_DESC"
-	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage_II.tga"
+	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage_II.dds"
 	expire = "1960.6.1"
 	ideology = falangism
 	traits = {
 		dictator
+		inexperienced_imperialist
+		unpopular_monarch
+		fascist_militia_leader
+		anti_communist_crusader
 	}
 }
 
-#create_country_leader = {
-#	name = "king cabbage"
-#	desc = "POLITICS_SADRA_CARROT_DESC"
-#	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage.tga"
-#	expire = "1912.3.1"
-#	ideology = oligarchism
-#	traits = {
-#		
-#	}
-#}
+create_country_leader = {
+    name = "king cabbage"
+    desc = "POLITICS_SADRA_CARROT_DESC"
+	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage.dds"
+	expire = "1912.3.1"
+	ideology = oligarchism
+	traits = {
+		autocratic_imperialist
+		anti_communist
+	}
+}
 
 create_country_leader = {
 	name = "Nestor makhno"
@@ -141,7 +149,8 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = anarcho_communism
 	traits = {
-        loved_by_people
+		loved_by_people
+		revolutionary_general
 	}
 }
 
