@@ -1,6 +1,6 @@
 ﻿l_english:
 # tooltips
- 
+ crz_in_grn_techshare:0 " In Greenlin's Tech sharing group"
 
 # factions
  Black_And_Red_Alliance:0 "Black And Red Alliance"
@@ -12,8 +12,25 @@
  carrotzka.1.t:0 "carrotzka demands the caucause"
  carrotzka.1.d:0 "carrotzka demanded caucause from us what should we do"
  carrotzka.1.a:0 "give them"
+ carrotzka.1.b:0 "we give them and they give us, communism"
+ carrotzka.14.t:0 "Soviet union accepted carrotzka's demand, but with demands..."
+ carrotzka.14.d:0 "sir, when we sent the demand they demanded back! we accepted them since you said 'take it no matter what'\n right now they are already using our factories, but we have to send them the 1000 guns now"
+ carrotzka.14.a:0 "We had to do it..."
+ carrotzka.15.t:0 "Soviet union accepted our demand"
+ carrotzka.15.d:0 "soviet union accepted our demand for the caucause, and they didn't even ask for anything!\n[ROOT.Getname] rules the caucause now, BRING THE CARROTS BOIS!"
+ carrotzka.15.a:0 "Thank you Stalin very cool"
+ carrotzka.11.t:0 "[From.Getname] asks for Technology Sharing"
+ carrotzka.11.d:0 "In an unformal and goofy letter, the leader of [From.Getname] has asked us to add them in an tech sharing program to have progresses together.\nhe has also insisted that there will be vodka on his table if we accept."
+ carrotzka.11.a:0 "Sure, [From.Getname] and Greenlin go together"
+ carrotzka.11.b:0 "NO"
+ carrotzka.12.t:0 "[From.getname] said yes to our request"
+ carrotzka.12.d:0 "bring the carrots! they said yes to our request, wooohooo"
+ carrotzka.12.a:0 "Noice"
+ carrotzka.13.t:0 "[From.getname] DENIED our request"
+ carrotzka.13.d:0 "the gosh darn [From.getname] said no to our perfect lettering sir, but they still let us use those scientiest"
+ carrotzka.13.a:0 "Much sad"
 
-# Carrotzka news
+ # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
  crznews.1.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to death"
  crznews.1.a:0 "he got what he deserved"
@@ -26,9 +43,9 @@
  crznews.3.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to life imprisonment"
  crznews.3.a:0 " well..."
   #
-  crznews.4.t:0 "soviet union accepted carrotzka's demand"
-  crznews.4.d:0 "soviet union accepted carrotzka's demand for the caucause...\nthey rule the caucause now"
-  crznews.4.a:0 "Intresting..."
+  crznews.4.t:0 "Soviet Union gave their westren southren area to Carrotzka"
+  crznews.4.d:0 "Soviet Union after some lettering between the two countries, has accpeted Carrotzka's demands for taking their southren area, what Carrotzka gave to them remains unknown and this movement has met a lot of criticisms which now the people who did them are in gulag.\nWhat will this new event bring is still unknown to the world"
+  crznews.4.a:0 "Hope they enjoy the beaches"
   #
   crznews.5.t:0 "Anarchist carrotzka formed"
   crznews.5.d:0 "following the meeting beetwen sadra carrot and nestor makhno, anarchist carrotzka will be formed under controll of carrotzka until they choose what to do with them"
@@ -111,7 +128,12 @@
  Call_of_freedom:0 "Call Of Freedom"
  Call_of_freedom_desc:0  "people of our country look intrested in total freedom"
  support_the_world_revolution:0 "support the world revolution"
- support_the_world_revolution:0 "we will accept and support any movement againts a corrupted goverment"
+ support_the_world_revolution_desc:0 "we will accept and support any movement againts a corrupted goverment"
+ crz_soviet_demands:0 "Soviet Demands"
+ crz_soviet_demands_desc:0 "For taking some of their land, they demanded some factories from us"
+ sov_soviet_demands:0 "Our Demands From Carrotzka"
+ sov_soviet_demands_desc:0 "For taking some of our land, we demanded some factories from them"
+
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"
@@ -125,7 +147,9 @@
  invite_sov_desc:0 "Lets ask our dear friend to send us some Engineers..."
  invite_grn:0 "Invite Greenlinian scientists"
  invite_grn_desc:0 "Greenlin people's brain got a six pac..."
- 
+ grn_techshare:0 "Request Grennlin's Techsharing"
+ grn_techshare_desc:0 "I'm sure we can do more than just big brain scientists with Greenlin"
+
  # Groups
  improve_relations_grn:0 "Relations Improvement"
  #improve_relations_grn_desc:0 "Improving relations between countries can do nothing but help our cause"

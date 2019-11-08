@@ -13,3 +13,21 @@ technology_sharing_group = {
 
 }
 
+technology_sharing_group = {
+
+	id = crz_grn_research
+	name = crz_grn_research_name
+	desc = crz_grn_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.40
+
+    available = {
+        NOT = {
+			has_war_with = GRN
+			GRN = { exists = no }
+		}
+    }
+
+}
+

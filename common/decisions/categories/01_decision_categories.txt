@@ -1,5 +1,5 @@
 improve_relations_grn = {
-	icon = generic_foreign_policy
+	icon = generic_political_actions # generic_foreign_policy
 
 	allowed = {
 		OR = {

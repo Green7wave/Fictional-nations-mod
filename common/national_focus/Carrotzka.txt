@@ -134,7 +134,7 @@ focus_tree = {
 	#Focus for improve relations with soviet
 	focus = {
 		id = CRZ_improverelationswithsoviet
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = 0
 		y = 1
 		cost = 9
@@ -296,16 +296,9 @@ focus_tree = {
 			add_political_power= -65
 			add_stability = 0.2
 			remove_ideas = loyalists
-			custom_effect_tooltip = tip_space
 			add_timed_idea = { idea = king_is_dead days = 50 }
-			custom_effect_tooltip = tip_space
 			add_ideas = King_cabbagesII_revenge
-			hidden_effect = {
-				news_event = {
-					id = crznews.1
-					days = 1
-				}
-			}
+			news_event = crznews.1
 		}
 	}
 
@@ -1259,12 +1252,11 @@ random_owned_controlled_state = {
 		focus = {
 			id = CRZ_continue_the_special_forces_program
 			icon = GFX_focus_eng_special_air_service
-			x = 0
-			y = 1
-			relative_position_id = CRZ_battle_tactics
+			x = 17
+			y = 5
 			cost = 10
 			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_battle_tactics }
+			prerequisite = { focus = CRZ_carrotzka_engineering_school }
 			ai_will_do = {
 				factor = 40
 			}
@@ -1810,25 +1802,19 @@ random_owned_controlled_state = {
 									modifier = CRZ_tech_partner 
 								}			
 							}
-						
 						}
 
 						focus = {
 					    	id = CRZ_improve_relations_with_grn
 							icon = GFX_greenlin_deal
-							x = -1
+							x = 43
 							y = 1
-							relative_position_id = CRZ_carrotzka_engineering_school
 							cost = 10
 							available_if_capitulated = yes
-							prerequisite = { 
-								focus = CRZ_carrotzka_engineering_school
-								focus = CRZ_extreme_nationalism 
-							}
 							ai_will_do = {
-								factor = 20
+								factor = 10
 								modifier = {
-									factor = 4
+									factor = 8
 									has_opinion = {
     									target = GRN
     									value > 74
@@ -1853,18 +1839,17 @@ random_owned_controlled_state = {
 
 						focus = {
 								id = CRZ_soviet_engineers
-								icon = GFX_focus_chi_mission_to_the_soviet_union # focus_research
-								x = 0
+								icon = GFX_CHI_mission_to_the_soviet_union # focus_research
+								x = 45
 								y = 1
-								relative_position_id = CRZ_improve_relations_with_grn
 								cost = 10
 								available_if_capitulated = yes
-								prerequisite = { focus = CRZ_improve_relations_with_grn }
 								ai_will_do = {
 									factor = 1								
 								}
 								completion_reward = {
-									unlock_decision_tooltip = invite_sov
+									add_ideas = soviet_scientists
+									# modifier = CHI_mission_to_the_soviet_union
 								}
 							}
 				}

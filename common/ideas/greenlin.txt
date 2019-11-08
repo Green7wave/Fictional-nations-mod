@@ -370,7 +370,8 @@ ideas = {
 			}
 
 		}
-	}
+
+	} # end of national spirits 
 
 
 

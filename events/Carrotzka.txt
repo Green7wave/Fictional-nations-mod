@@ -43,7 +43,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 } 
 	
 	option = {
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 20 }
 		name = carrotzka.1.a
 		CRZ = { 
 			transfer_state = 235
@@ -53,10 +53,109 @@ country_event = {
 			transfer_state = 238
 			transfer_state = 230
 			transfer_state = 229
-		    news_event = crznews.4
+		    news_event = {
+				id = crznews.4
+				days = 2
+				random = 30
+			} 
 		}
 	}
+
+	option = {
+		ai_chance = { factor = 80 }
+		name = carrotzka.1.b
+		CRZ = { 
+			transfer_state = 235
+			transfer_state = 231
+			transfer_state = 233
+			transfer_state = 232
+			transfer_state = 238
+			transfer_state = 230
+			transfer_state = 229
+		    news_event = {
+				id = crznews.4
+				days = 2
+				random = 30
+			} 
+			country_event = {
+				id = carrotzka.14
+				random = 5
+			}
+		}
+		CRZ ={
+			add_timed_idea = {
+				idea = crz_soviet_demands
+				days = 280
+			}
+			effect_tooltip = {
+				send_equipment = {
+ 				   	equipment = infantry_equipment
+    				amount = 1000
+    				target = SOV
+				}
+			}
+			
+		}
+		SOV = {
+			add_timed_idea = {
+				idea = sov_soviet_demands
+				days = 280
+			}
+		}
+		
+	}
 }
+###
+
+country_event = {
+	id = carrotzka.14
+	title = carrotzka.14.t
+	desc = carrotzka.14.d
+	picture = GFX_report_event_ger_civil_war
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 80 }
+		name = carrotzka.14.a
+		CRZ = {
+			send_equipment = {
+ 				equipment = infantry_equipment
+    			amount = 1000
+    			target = SOV
+			}
+		}
+		effect_tooltip = {
+			CRZ ={
+				add_ideas = crz_soviet_demands
+			}
+			SOV = {
+				add_ideas = sov_soviet_demands
+			}
+		}	
+	}
+	
+}
+###
+country_event = {
+	id = carrotzka.15
+	title = carrotzka.15.t
+	desc = carrotzka.15.d
+	picture = GFX_report_event_ger_civil_war
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = carrotzka.15.a
+		ai_chance = { factor = 80 }
+	}
+	
+}
+###
 
 country_event = {
 	id = carrotzka.5
@@ -198,4 +297,82 @@ country_event = {
 			set_politics = { ruling_party = anarchism }
 		}
 	}
+}
+
+# request GRN to add us to a tech group
+country_event = {
+	id = carrotzka.11
+	title = carrotzka.11.t
+	desc = carrotzka.11.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 4000 }
+		name = carrotzka.11.a
+		ROOT = {
+			add_to_tech_sharing_group = crz_grn_research
+		}
+		FROM = {
+			add_to_tech_sharing_group = crz_grn_research
+			country_event = {
+				id = carrotzka.12
+				days = 1
+				random = 20
+			}
+			set_country_flag = in_grn_techshare
+		}
+	}
+
+	option = {
+		name = carrotzka.11.b
+		ai_chance =  { factor = 0 }
+		FROM = {
+			country_event = {
+				id = carrotzka.13
+				days = 1
+				random = 20
+			}
+		}
+	}
+}
+
+# they said yes
+country_event = {
+	id = carrotzka.12
+	title = carrotzka.12.t
+	desc = carrotzka.12.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 40 }
+		name = carrotzka.12.a
+		effect_tooltip = {
+			ROOT = {
+				add_to_tech_sharing_group = crz_grn_research
+			}
+			FROM = {
+				add_to_tech_sharing_group = crz_grn_research
+			}
+		}	
+	}
+}
+
+# they said no
+country_event = {
+	id = carrotzka.13
+	title = carrotzka.13.t
+	desc = carrotzka.13.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 40 }
+		name = carrotzka.13.a
+	}
+
 }

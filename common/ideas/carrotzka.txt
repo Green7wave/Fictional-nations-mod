@@ -313,6 +313,66 @@ ideas = {
 
 			removal_cost = -1
 		}
+
+		#
+
+		crz_soviet_demands = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				SOV = {
+					OR = {
+						exists = no
+						has_war_with = CRZ
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		
+		}
+		#
+		sov_soviet_demands = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				SOV = {
+					OR = {
+						exists = no
+						has_war_with = CRZ
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.10 
+			}
+		
+		}
+
+
+
+		# end of national focus
 	}
 
 	political_advisor = {

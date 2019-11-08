@@ -1,5 +1,5 @@
 spriteTypes = {	
-    
+
     spriteType = {
         name = "GFX_idea_special_democracy"
         texturefile = "gfx/interface/ideas/special_democracy.dds"

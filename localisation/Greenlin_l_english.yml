@@ -75,6 +75,8 @@
 # Tech sharing Group
  green_research_name:0 "Owl Eyed Research"
  green_research_desc:0 "Reduced research time for technologies researched by other Owl Eyed countries."
+ crz_grn_research_name:0 "Carrotzka-Greenlin Research"
+ crz_grn_research_desc:0 "Reduced research time for technologies researched by the other country."
 
 # factions
  owl_eyed_faction:0 "Owl Eyed Nations" 
