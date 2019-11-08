@@ -780,6 +780,7 @@
 
 				}
 			}
+			
 		}
 		hidden_effect = {
 			set_politics = {
@@ -801,6 +802,21 @@
 				}
 			}
 			set_country_flag = mani_turned_marxist
+			create_field_marshal = {
+					name = "Sergei Wave"
+					portrait_path = "gfx\leaders\GRN\Portrait_GRN_redwave.tga"
+					traits = { 
+						defensive_doctrine
+						inspirational_leader
+						politically_connected
+						infantry_officer
+					}
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 2
+					logistics_skill = 3
+			}
 		}
 		
 

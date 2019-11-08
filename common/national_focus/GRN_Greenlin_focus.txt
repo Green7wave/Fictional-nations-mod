@@ -681,6 +681,8 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward = {
+			army_experience = 40
+			
 			# adding desginers
 			set_country_flag = military_restored
 			custom_effect_tooltip = available_designer
@@ -697,8 +699,8 @@ focus_tree = {
 					skilled_staffer
 					urban_assault_specialist
 				}
-				skill = 4
-				attack_skill = 4
+				skill = 3
+				attack_skill = 3
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 3
@@ -723,7 +725,7 @@ focus_tree = {
 				}
 			}
 			
-			army_experience = 40
+			
 		}
 	}
 
