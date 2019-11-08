@@ -17,4 +17,8 @@ opinion_modifiers = {
 	CRZ_tech_partner {
 		value = 50
 	}
+
+	CRZ_good_terms {
+		value = 50
+	}
 }	

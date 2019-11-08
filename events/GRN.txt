@@ -123,6 +123,16 @@
   		  amount = 500
    		  target = GRN
  		}
+		GRN = {
+			add_opinion_modifier = {
+ 			   target = ROOT
+ 			   modifier = CRZ_good_terms
+			}
+		}
+		add_opinion_modifier = {
+			target = GRN 
+			modifier = CRZ_good_terms
+		}
  		if = {
  			limit = {
  				ROOT = { tag = CRZ }
@@ -187,6 +197,16 @@
  					} 
  				}
  			}
+			FROM = {
+				add_opinion_modifier = {
+ 				   target = ROOT
+ 				   modifier = CRZ_good_terms
+				}
+			}
+			add_opinion_modifier = {
+				target = FROM 
+				modifier = CRZ_good_terms
+			}
 		}
  	}
  

@@ -1,26 +1,27 @@
 improve_relations_grn = {
-    #invite_sov = {
-#
-	#	icon = generic_research
-#
-   #     cost = 150
-   #     fire_only_once = no
-   #     
-   #     days_remove = -1
-#
-   #     visible = {
-    #        has_completed_focus = CRZ_foreign_scientists
-    #    }
+    invite_sov = {
 
-    #    modifier = {
-    ##        research_speed_factor = 0.07
-    #    }
-#
-    #    ai_will_do = {
-	#		factor = 1
-#		}
- #   }
+		icon = generic_research
 
+        cost = 150
+        fire_only_once = no
+        
+        days_remove = -1
+
+        visible = {
+            has_completed_focus = CRZ_soviet_engineers
+        }
+
+        modifier = {
+            research_speed_factor = 0.07
+        }
+
+        ai_will_do = {
+			factor = 1
+		}
+    }
+
+    #
     invite_grn = {
 
 		icon = generic_research

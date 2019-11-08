@@ -1,4 +1,7 @@
 ﻿l_english:
+# tooltips
+ 
+
 # factions
  Black_And_Red_Alliance:0 "Black And Red Alliance"
 
@@ -41,6 +44,8 @@
 
 # opinion modifiers
  CRZ_communist_ally:0 "Communist Allies"
+ CRZ_tech_partner:0 "Tech Partners"
+ CRZ_good_terms:0 "[Root.GetName] and them are in good terms" 
 
 # Country names
  CRZ_fascism:0  "Greater Carrotzka"
@@ -116,10 +121,10 @@
  leader_in_battalefield:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
  
 #decision
- invite_sov:0 "invite soviet scientists"
- invite_sov_desc:0 "lets ask our dear friend to send us some scientists..."
- invite_grn:0 "invite greenlinian scientists"
- invite_grn_desc:0 "greenlin people's brain got a six pac..."
+ invite_sov:0 "Invite Soviet engineers"
+ invite_sov_desc:0 "Lets ask our dear friend to send us some Engineers..."
+ invite_grn:0 "Invite Greenlinian scientists"
+ invite_grn_desc:0 "Greenlin people's brain got a six pac..."
  
  # Groups
  improve_relations_grn:0 "Relations Improvement"
