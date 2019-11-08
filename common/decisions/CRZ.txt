@@ -1,25 +1,25 @@
-political_actions = {
-    invite_sov = {
+improve_relations_grn = {
+    #invite_sov = {
+#
+	#	icon = generic_research
+#
+   #     cost = 150
+   #     fire_only_once = no
+   #     
+   #     days_remove = -1
+#
+   #     visible = {
+    #        has_completed_focus = CRZ_foreign_scientists
+    #    }
 
-		icon = generic_research
-
-        cost = 150
-        fire_only_once = no
-        
-        days_remove = -1
-
-        visible = {
-            has_completed_focus = CRZ_foreign_scientists
-        }
-
-        modifier = {
-            research_speed_factor = 0.07
-        }
-
-        ai_will_do = {
-			factor = 1
-		}
-    }
+    #    modifier = {
+    ##        research_speed_factor = 0.07
+    #    }
+#
+    #    ai_will_do = {
+	#		factor = 1
+#		}
+ #   }
 
     invite_grn = {
 
@@ -31,7 +31,7 @@ political_actions = {
         days_remove = -1
 
         visible = {
-            has_completed_focus = CRZ_foreign_scientists
+            CRZ = { has_completed_focus = CRZ_improve_relations_grn }
         }
 
         modifier = {
