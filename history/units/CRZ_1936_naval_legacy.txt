@@ -8,7 +8,7 @@ units= {
 		naval_base = 11670 # Murmansk
 		task_force = {				
 			name = "Severnyy Flot"
-			location = 3134 # Murmansk
+			location = 11670 # Murmansk
 			# 1ya Flotiliya Esmintsev
 			ship = { name = "Dzerzhinskiy" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }
 			ship = { name = "Nezamozhnik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }
@@ -37,7 +37,7 @@ units= {
 		naval_base = 11670 # Leningrad
 		task_force = {				
 			name = "Baltiyskiy Flot"
-			location = 3151 # Leningrad
+			location = 11670 # Leningrad
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRZ } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRZ } } }
 			# 3ya Flotiliya Esmintsev
