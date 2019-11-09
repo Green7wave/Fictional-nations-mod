@@ -1580,10 +1580,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_hol_liberation.dds"
 	}
 
-	SpriteType = {
-		name = "GFX_focus_carrot_farming_focus"
-		texturefile = "gfx/interface/goals/focus_carrot_farming_focus.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_focus_generic_chromium"
