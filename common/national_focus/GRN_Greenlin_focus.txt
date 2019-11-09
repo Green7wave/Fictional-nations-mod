@@ -691,7 +691,7 @@ focus_tree = {
 			# adding some generals - i would make it militray training if i had time
 			create_field_marshal = {
 				name = "Markiplier"
-				portrait_path = "gfx\leaders\GRN\Portrait_GRN_Mark.tga"
+				portrait_path = "gfx/leaders/GRN/Portrait_GRN_Mark.tga"
 				traits = { 
 					trickster
 					brilliant_strategist
@@ -711,7 +711,7 @@ focus_tree = {
 				}
 				create_corps_commander = {
 					name = "Suho Ling"
-					portrait_path = "gfx\leaders\GRN\Portrait_GRN_Suho.tga"
+					portrait_path = "gfx/leaders/GRN/Portrait_GRN_Suho.tga"
 					traits = { 
 						panzer_leader
 						panzer_expert
