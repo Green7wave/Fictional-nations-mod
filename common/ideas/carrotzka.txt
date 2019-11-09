@@ -123,8 +123,8 @@ ideas = {
 			allowed = {
 			   always = no
 			}
-			research_bonus = {
-				naval_equipment = 0.7
+			modifier = {
+				production_speed_dockyard_factor = 0.3
 			}
 		}
 

@@ -1753,7 +1753,7 @@ random_owned_controlled_state = {
 								factor = 40
 							}
 							completion_reward = {	
-								create_field_marshal = {
+								create_corps_commander = {
 									name = "Sadra Carrot"
 									picture = "Portrait_carrotzka_Sadra_Carrot.dds"
 									traits = { 

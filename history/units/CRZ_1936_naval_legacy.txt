@@ -59,25 +59,7 @@ units= {
 			ship = { name = "Shch-301" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
 			ship = { name = "Shch-302" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
 			ship = { name = "Shch-303" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-304" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-305" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-306" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-307" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-308" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			# 2iy Podvodniy Flot
-			ship = { name = "Shch-113" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-114" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-115" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-116" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			# 6iy Podvodniy Flot
-			ship = { name = "Shch-117" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-118" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-119" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-120" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			# 7ij  Podvodniy Flot
-			ship = { name = "Shch-201" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-202" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }					
+			ship = { name = "Shch-304" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }							
 		}
 	}
 
