@@ -124,7 +124,7 @@ ideas = {
 			   always = no
 			}
 			modifier = {
-				production_speed_dockyard_factor = 0.7
+				industrial_capacity_dockyard = 0.6
 			}
 		}
 
@@ -192,7 +192,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_naval_base_factor = 1
+				production_speed_naval_base_factor = 0.4
 				naval_accidents_chance = -0.5
 				naval_defense_factor = 0.4
 				naval_damage_factor = 0.4
