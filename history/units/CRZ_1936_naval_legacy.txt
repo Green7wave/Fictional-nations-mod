@@ -77,9 +77,7 @@ units= {
 			# 7ij  Podvodniy Flot
 			ship = { name = "Shch-201" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
 			ship = { name = "Shch-202" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-204" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
-			ship = { name = "Shch-309" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }			
+			ship = { name = "Shch-203" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }					
 		}
 	}
 
