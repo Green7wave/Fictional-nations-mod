@@ -1044,11 +1044,11 @@ random_owned_controlled_state = {
 			factor = 40
 		}
 		completion_reward = {
-			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 4.0
-				uses = 3
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 				technology = tech_mountaineers3
@@ -1291,12 +1291,7 @@ random_owned_controlled_state = {
 				factor = 40
 			}
 			completion_reward = {
-				add_tech_bonus = {
-					name = RAJ_chindits
-					bonus = 3.0
-					uses = 3
-					category = mountaineers_tech
-				}
+				add_ideas = special_forces
 			}
 		}
 
