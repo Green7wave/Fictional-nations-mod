@@ -180,6 +180,7 @@ create_equipment_variant = {
 	}
 }
 
+### VARIANTS ###
 
 create_equipment_variant = {			
 	name = "AG Class"
