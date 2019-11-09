@@ -804,7 +804,7 @@
 			set_country_flag = mani_turned_marxist
 			create_field_marshal = {
 					name = "Sergei Wave"
-					portrait_path = "gfx\leaders\GRN\Portrait_GRN_redwave.tga"
+					portrait_path = "gfx/leaders/GRN/Portrait_GRN_redwave.tga"
 					traits = { 
 						defensive_doctrine
 						inspirational_leader
