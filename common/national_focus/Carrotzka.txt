@@ -1255,6 +1255,28 @@ random_owned_controlled_state = {
 				}
 			}	
 		}
+		
+		focus = {
+			id = CRZ_battle_tactics
+			icon = GFX_goal_generic_position_armies
+			x = 19
+			y = 3
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = CRZ_military_science }
+			ai_will_do = {
+				factor = 60
+			}
+			completion_reward = {
+				army_experience = 50
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 4.0
+					uses = 7
+					category = land_doctrine
+				}
+			}
+		}
 
 		focus = {
 			id = CRZ_continue_the_special_forces_program
@@ -1278,27 +1300,6 @@ random_owned_controlled_state = {
 			}
 		}
 
-		focus = {
-			id = CRZ_battle_tactics
-			icon = GFX_goal_generic_position_armies
-			x = 19
-			y = 3
-			cost = 10
-			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_military_science }
-			ai_will_do = {
-				factor = 60
-			}
-			completion_reward = {
-				army_experience = 50
-				add_tech_bonus = {
-					name = land_doc_bonus
-					bonus = 4.0
-					uses = 7
-					category = land_doctrine
-				}
-			}
-		}
 
 		focus = {
 			id = CRZ_expand_the_orange_fleet
