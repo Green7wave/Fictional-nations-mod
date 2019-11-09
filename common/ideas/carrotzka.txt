@@ -124,7 +124,7 @@ ideas = {
 			   always = no
 			}
 			modifier = {
-				production_speed_dockyard_factor = 0.3
+				production_speed_dockyard_factor = 0.7
 			}
 		}
 
