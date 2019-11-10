@@ -1324,6 +1324,12 @@ random_owned_controlled_state = {
 							uses = 5
 							category = bb_tech
 								}
+								create_navy_leader = {
+									name = "Ocean Man"
+									picture = "Portrait_carrotzka_Ocean_man.dds"
+									traits = { superior_tactician }
+									skill = 3
+								}
 					}
 				}
 
