@@ -767,7 +767,7 @@ random_owned_controlled_state = {
 		icon = GFX_goal_generic_military_sphere
 		x = 11
 		y = 6
-		cost = 3
+		cost = 0
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_carrotzkapurged }
 		ai_will_do = {
@@ -1848,7 +1848,7 @@ random_owned_controlled_state = {
 
 							focus = {
 								id = CRZ_area_sixty_nine
-								icon = focus_wonderweapons
+								icon = GFX_focus_wonderweapons
 								x = 0
 								y = 1
 								relative_position_id = CRZ_early_north_korea

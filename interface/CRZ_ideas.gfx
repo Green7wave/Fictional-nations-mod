@@ -4082,4 +4082,27 @@ spriteTypes = {
 		name = "GFX_idea_generic_army_carrotzka_5"
 		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_5.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_home_of_carrot"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FRA_scw_intervention_republicans_focus
