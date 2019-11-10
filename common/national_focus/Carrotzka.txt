@@ -1845,4 +1845,22 @@ random_owned_controlled_state = {
 									unlock_decision_tooltip = invite_sov
 								}
 							}
+
+							focus = {
+								id = CRZ_area_sixty_nine
+								icon = focus_wonderweapons
+								x = 0
+								y = 1
+								relative_position_id = CRZ_early_north_korea
+								prerequisite = {
+									focus = CRZ_early_north_korea
+								}
+								cost = 10
+								ai_will_do = {
+									factor = 40 
+								}
+								completion_reward = {
+									add_nuclear_bombs = 1
+								}
+							}
 				}
