@@ -38,7 +38,7 @@ units= {
 		task_force = {				
 			name = "Baltiyskiy Flot"
 			location = 11670 # Leningrad
-			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRZ } } }
+			ship = { name = "Emeraldborn" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRZ } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CRZ } } }
 			# 3ya Flotiliya Esmintsev
 			ship = { name = "Engels" definition = submarine equipment = { submarine_1 = { amount = 1 owner = CRZ } } }
