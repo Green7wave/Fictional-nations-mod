@@ -1044,11 +1044,11 @@ random_owned_controlled_state = {
 			factor = 40
 		}
 		completion_reward = {
-			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 4.0
-				uses = 3
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 				technology = tech_mountaineers3
@@ -1255,29 +1255,7 @@ random_owned_controlled_state = {
 				}
 			}	
 		}
-
-		focus = {
-			id = CRZ_continue_the_special_forces_program
-			icon = GFX_focus_eng_special_air_service
-			x = 0
-			y = 1
-			relative_position_id = CRZ_battle_tactics
-			cost = 10
-			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_battle_tactics }
-			ai_will_do = {
-				factor = 40
-			}
-			completion_reward = {
-				add_tech_bonus = {
-					name = RAJ_chindits
-					bonus = 3.0
-					uses = 3
-					category = mountaineers_tech
-				}
-			}
-		}
-
+		
 		focus = {
 			id = CRZ_battle_tactics
 			icon = GFX_goal_generic_position_armies
@@ -1299,6 +1277,24 @@ random_owned_controlled_state = {
 				}
 			}
 		}
+
+		focus = {
+			id = CRZ_continue_the_special_forces_program
+			icon = GFX_focus_eng_special_air_service
+			x = 0
+			y = 1
+			relative_position_id = CRZ_battle_tactics
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = CRZ_battle_tactics }
+			ai_will_do = {
+				factor = 40
+			}
+			completion_reward = {
+				add_ideas = special_forces
+			}
+		}
+
 
 		focus = {
 			id = CRZ_expand_the_orange_fleet

@@ -42,7 +42,7 @@ improve_relations_grn = {
                 exists = yes
                 NOT = { has_war_with = CRZ }
             }
-            NOT = { has_country_tag = in_grn_techshare }
+            NOT = { has_country_flag = in_grn_techshare }
         }
         
         remove_effect = {

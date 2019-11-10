@@ -175,7 +175,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Daniel Mofrad"
-	portrait_path = "gfx\leaders\GRN\Portrait_GRN_Daniel.tga"
+	portrait_path = "gfx/leaders/GRN/Portrait_GRN_Daniel.tga"
 	traits = { 
 		trickster
 		trait_reckless
