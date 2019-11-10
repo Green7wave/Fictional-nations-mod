@@ -232,7 +232,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		x = 7
 		y = 5
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_executethekingsparty }
 		ai_will_do = {
@@ -250,7 +250,7 @@ focus_tree = {
 			
 			add_political_power = 200
 			add_stability = 0.5
-		    add_ideas = home_of_revolution
+		    add_ideas = home_of_carrot
 	}
 	}
 
@@ -767,7 +767,7 @@ random_owned_controlled_state = {
 		icon = GFX_goal_generic_military_sphere
 		x = 11
 		y = 6
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_carrotzkapurged }
 		ai_will_do = {

@@ -13,16 +13,21 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = -0.10
-				naval_doctrine = -0.10
-				air_doctrine = -0.10
+				land_doctrine = -0.1
+				naval_doctrine = -0.1
+				air_doctrine = -0.1
 			}
 
 			modifier = {
                 army_org_factor = -0.5
 				send_volunteer_factor = -0.8
-				industrial_capacity_factory = -0.2
-				training_time_factor = 0.4
+				industrial_capacity_factory = -0.4
+				training_time_factor = 0.5
+				stability_factor = -0.2
+				air_chief_cost_factor = 0.25
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+				army_morale_factor = -0.1
 			}
 		
 		}
@@ -59,6 +64,23 @@ ideas = {
 			}
 		}
 
+		home_of_carrot = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = 0.3
+				stability_factor = 0.2
+				drift_defence_factor = 0.5
+			}
+		}
+
 		peoples_revolution_2 = {
 			allowed = {
 				always = no
@@ -74,6 +96,7 @@ ideas = {
 				training_time_factor = -0.3
 				partisan_effect = 0.5
 				war_support_factor = 0.3
+				army_morale_factor = 0.1
 			}
 		}
 
@@ -92,6 +115,7 @@ ideas = {
 			    partisan_effect = 0.6
 				fascism_drift = 0.1
 				war_support_factor = 0.4
+				army_morale_factor = 0.2
 			}
 			rule = {
 				can_use_kamikaze_pilots = yes
@@ -378,11 +402,15 @@ ideas = {
 	political_advisor = {
 			
 		felix_kjellberg = {		
-
+        cost = 200
 			allowed = {
 				original_tag = CRZ
 			}		
-			traits = { communist_revolutionary }
+			traits = { 
+				communist_revolutionary
+				prince_of_terror
+				smooth_talking_charmer
+			}
         }
 	}
 
