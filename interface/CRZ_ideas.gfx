@@ -4087,22 +4087,10 @@ spriteTypes = {
 		name = "GFX_home_of_carrot"
 		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_CSI"
+		texturefile = "gfx/interface/ideas/nkvd_2.dds"
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FRA_scw_intervention_republicans_focus
