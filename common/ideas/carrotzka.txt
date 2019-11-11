@@ -338,6 +338,26 @@ ideas = {
 			removal_cost = -1
 		}
 
+		CSI = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				generate_wargoal_tension = -0.1
+				subversive_activites_upkeep = -0.2
+				enemy_justify_war_goal_time = 0.1
+				decryption_factor = 0.1
+				stability_factor = 0.1
+			}
+			removal_cost = -1
+		}
+
 		#
 
 		crz_soviet_demands = {

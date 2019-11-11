@@ -952,9 +952,6 @@ random_owned_controlled_state = {
 		ai_will_do = {
 			factor = 40
 		}
-				available = {
-			TUR = { exists = no}
-						}
 		completion_reward = {
 			add_ideas = owner_of_the_black_sea
 			navy_experience = 100
@@ -1304,9 +1301,6 @@ random_owned_controlled_state = {
 			cost = 10
 			available_if_capitulated = yes
 			prerequisite = { focus = CRZ_warwithromania}
-			available = {
-				ROM = { exists = no }
-			}
 			ai_will_do = {
 				factor = 80
 			}
@@ -1635,9 +1629,6 @@ random_owned_controlled_state = {
 						y = 2
 						cost = 10
 						available_if_capitulated = yes
-						available = {
-							POL = { exists = no }
-						}
 						prerequisite = { focus = CRZ_war_with_poland }
 						ai_will_do = {
 							factor = 40
@@ -1851,16 +1842,33 @@ random_owned_controlled_state = {
 								icon = GFX_focus_wonderweapons
 								x = 0
 								y = 1
-								relative_position_id = CRZ_early_north_korea
+								relative_position_id = CRZ_CSI
 								prerequisite = {
-									focus = CRZ_early_north_korea
+									focus = CRZ_CSI
 								}
 								cost = 10
 								ai_will_do = {
 									factor = 40 
 								}
 								completion_reward = {
-									add_nuclear_bombs = 1
+									add_nuclear_bombs = 2
 								}
+							}
+
+							focus = {
+								id = CRZ_CSI
+								icon = GFX_goal_generic_demand_territory
+								x = 0
+								y = 1
+								cost = 10
+								relative_position_id = CRZ_early_north_korea
+								available_if_capitulated = yes
+								prerequisite = { focus = CRZ_early_north_korea }
+								ai_will_do = {
+									factor = 40
+								}
+								completion_reward = {	
+									add_ideas = CSI
+								}		
 							}
 				}
