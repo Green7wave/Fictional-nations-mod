@@ -428,8 +428,6 @@ ideas = {
 			}		
 			traits = { 
 				communist_revolutionary
-				prince_of_terror
-				smooth_talking_charmer
 			}
         }
 
@@ -453,7 +451,6 @@ ideas = {
 			}
         }
 	}
-}
 
 
 	army_chief = {
