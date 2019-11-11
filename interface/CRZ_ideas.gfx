@@ -4095,12 +4095,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_flowy"
-		texturefile = "gfx/interface/ideas/idea_felix_kjellberg.dds"
+		texturefile = "gfx/interface/ideas/idea_flowy.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_vaultboy"
-		texturefile = "gfx/interface/ideas/idea_felix_kjellberg.dds"
+		texturefile = "gfx/interface/ideas/idea_vaultboy.dds"
 	}
 
 }

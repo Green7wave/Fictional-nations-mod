@@ -422,14 +422,12 @@ ideas = {
 	political_advisor = {
 			
 		felix_kjellberg = {		
-        cost = 200
+        	cost = 200
 			allowed = {
 				original_tag = CRZ
 			}		
 			traits = { 
 				communist_revolutionary
-				prince_of_terror
-				smooth_talking_charmer
 			}
         }
 
@@ -442,7 +440,7 @@ ideas = {
 					being_flowy
 				}
 			}
-	
+        }
 
 		vaultboy = {		
 			cost = 150
