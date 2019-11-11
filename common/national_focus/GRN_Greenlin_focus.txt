@@ -302,7 +302,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_countrysstabilization }
 		ai_will_do = {
-			factor = 40
+			factor = 80
+			modifier = {
+				factor = 0
+				threat < 0.15
+			}
+			modifier = {
+				factor = 0
+				is_in_faction = yes
+			}
 		}
 		bypass = {
 			GRN = { is_in_faction = yes }
@@ -520,6 +528,10 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 40
+			modifier = {
+				factor = 2
+				num_faction_members < 3
+			}
 		}
 		completion_reward = {
 		  	if = {
