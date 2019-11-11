@@ -47,6 +47,15 @@
 
  # Manufators
  GRN_BIGUNS:0 "BIGUNS"
+ wise_shots:0 "Wise Shots"
+ greenlins_breakers:0 "Greenlin's Breakers"
+ burning_feathers:0 "Burning Feathers"
+ helping_metals:0 "Aiding Metals"
+ stronger_sight:0 "Stronger Sights"
+ flying_ships:0 "Flying Ships"
+
+
+
 
  # Polticial advisors
  temmie:0 "Temmie"
@@ -55,7 +64,21 @@
  sergei_wave:0 "Sergei Wave"
 
 
- # Military high commands 
+ # Military people
+ yashiro_toyotomi:0 "Yashiro Toyotomi"
+ hideo_sunshin:0 "Hideo Sunshin"
+ ryan_gardner:0 "Ryan Gardner"
+ theo_smith:0 "Theo Smith"
+ grn_joe:0 "Joe"
+ markus_sinsh:0 "Markus Sinsh"
+ bogun_maxim:0 "Bogun Maxim"
+ hector_deeps:0 "Hector Deeps"
+ nickolas_vales:0 "Nickolas Vales"
+ silvestrov_yuriy:0 "Silvestrov Yuriy"
+ desmond_laster:0 "Desmond Laster"
+ sonya_tangleter:0 "Sonya Tangleter"
+ pyryev_yadovki:0 "Pyryev Yadovki"
+
 
 
  # national spirits

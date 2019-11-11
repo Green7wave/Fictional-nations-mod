@@ -519,4 +519,330 @@ ideas = {
 
 	} # end of advisors
 
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		wise_shots = {
+
+			picture = generic_tank_manufacturer_2
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+				has_completed_focus = GRN_greenlinsbreakers
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+
+		greenlins_breakers = {
+
+			picture = generic_acquire_tanks
+			
+			allowed = {
+				original_tag = GRN
+			}
+			visible = {
+				has_completed_focus = GRN_greenlinsbreakers
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	} # end of tank makers
+
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		burning_feathers = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+								
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		helping_metals = { 
+			
+			picture = generic_air_manufacturer_2
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+								
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		stronger_sight = { 
+
+			picture = vittoria_mutilata
+			
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+								
+			}
+
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		flying_ships = {
+
+			picture = generic_degauss_ship_hulls
+			
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+								
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	} # end of aircraft makers
+
+	army_chief = {
+		
+		yashiro_toyotomi = {
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		hideo_sunshin = {
+			picture = generic_navy_asia_2
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		ryan_gardner = {
+
+			picture = generic_navy_europe_3
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		 theo_smith = {
+
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		grn_joe = {
+
+			picture = generic_air_asia_2
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { air_chief_ground_support_2 }
+		}
+	
+		markus_sinsh = {
+
+			picture = generic_air_europe_3
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { air_chief_reform_2 }			
+		}
+	}
+
+	high_command = {
+
+		bogun_maxim = {
+
+			picture = generic_army_europe_4
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		hector_deeps = {
+
+			picture = generic_army_europe_6
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		nickolas_vales = {
+
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_infantry_2 }			
+		}
+
+		silvestrov_yuriy  = {
+
+			picture = generic_army_europe_5
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			traits = { army_regrouping_2 }			
+		}
+	}
+
+	theorist = {
+
+		desmond_laster = {
+
+			picture = generic_army_asia_4
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		sonya_tangleter = {
+
+			picture = generic_army_female_arab
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		pyryev_yadovki  = {
+
+			picture = courtney_hodge
+
+			allowed = {
+				original_tag = GRN
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+
 }

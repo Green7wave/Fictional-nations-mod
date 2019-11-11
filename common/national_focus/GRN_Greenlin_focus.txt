@@ -699,6 +699,7 @@ focus_tree = {
 			set_country_flag = military_restored
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = GRN_BIGUNS
+			
 
 			# adding some generals - i would make it militray training if i had time
 			create_field_marshal = {
@@ -880,7 +881,22 @@ focus_tree = {
 			focus = GRN_divisionprograms 
 		}
 		ai_will_do = {
-			factor = 40
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = aircraft_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 3
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 	}
 
@@ -899,6 +915,14 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 39
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment_bonus
+				bonus = 1
+				uses = 2
+				category = naval_equipment
+			}
 		}
 	}
 
@@ -931,6 +955,12 @@ focus_tree = {
 		prerequisite = { focus = GRN_militarysorganization }
 		# mutually_exclusive = { focus = GRN_divisionprograms }
 		# mutually_exclusive = { focus = GRN_thehawks }
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = wise_shots
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = greenlins_breakers
+		}
 		ai_will_do = {
 			factor = 1
 		}
