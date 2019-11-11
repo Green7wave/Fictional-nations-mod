@@ -38,7 +38,7 @@ units= {
 		task_force = {				
 			name = "Baltiyskiy Flot"
 			location = 11670 # Leningrad
-			ship = { name = "Emeraldboen" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_3 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
+			ship = { name = "Emeraldboen" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
 			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CRZ version_name = "Marti Class" } } }
 			# 3ya Flotiliya Esmintsev
