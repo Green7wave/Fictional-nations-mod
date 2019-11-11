@@ -432,7 +432,6 @@ ideas = {
 				smooth_talking_charmer
 			}
         }
-	}
 
 	flowy = {		
         cost = 999999999999999999999999999999999999999999999
@@ -443,7 +442,6 @@ ideas = {
 				being_flowy
 			}
         }
-	}
 
 	vaultboy = {		
         cost = 150
@@ -455,6 +453,7 @@ ideas = {
 			}
         }
 	}
+}
 
 
 	army_chief = {
