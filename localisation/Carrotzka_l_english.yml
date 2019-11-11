@@ -55,6 +55,7 @@
  equalist:0 "Equalist"
  loved_by_people:0 "Loved by people"
  unquestionable:0 "Unquestionable"
+ being_flowy:0 "Flowy"
 
 # Leader Desc
  POLITICS_SADRA_CARROT_DESC:0 "The great leader of Carrotzka, after starting the revolution as a farmer against the cruel king, he has been taking care of the salad reigion."
@@ -137,6 +138,8 @@
  home_of_carrot_desc:0 "finally...all of those bastards...are gone...*picks up an glass of carrot juice* cheers guys!"
  CSI:0 "CSI"
  CSI_desc:0 "Carrotzka's security and information is an spying system...not strong as greenlin's but its still something"
+ flowy:0 "FLOWY"
+ vaultboy:0 "Vault Boy"
 
  
 # Bookmarks
