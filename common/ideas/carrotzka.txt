@@ -434,6 +434,29 @@ ideas = {
         }
 	}
 
+	flowy = {		
+        cost = 999999999999999999999999999999999999999999999
+			allowed = {
+				original_tag = CRZ
+			}		
+			traits = { 
+				being_flowy
+			}
+        }
+	}
+
+	vaultboy = {		
+        cost = 150
+			allowed = {
+				original_tag = CRZ
+			}		
+			traits = { 
+				smooth_talking_charmer
+			}
+        }
+	}
+
+
 	army_chief = {
 		
 		

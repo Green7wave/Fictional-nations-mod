@@ -4093,4 +4093,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/nkvd_2.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_flowy"
+		texturefile = "gfx/interface/ideas/idea_felix_kjellberg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vaultboy"
+		texturefile = "gfx/interface/ideas/idea_felix_kjellberg.dds"
+	}
+
 }

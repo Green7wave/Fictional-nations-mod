@@ -22,4 +22,26 @@ leader_traits = {
         justify_war_goal_time = -0.90 
     }
 
+    being_flowy = {
+		random = no
+		sprite = 13
+        political_power_factor = 5555555555555
+        consumer_goods_factor = 666666666666666
+        drift_defence_factor = 99999999999999999999
+        generate_wargoal_tension = 888888888888888
+        justify_war_goal_time = 666666666
+        consumer_goods_factor = -999999999
+        war_support_factor = 8756734873287
+        enemy_partisan_effect = -8127598172598
+		foreign_subversive_activites = -97824537980254378902543
+		non_core_manpower = 871398197023560712637856123
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				not = { has_completed_focus = USA_suspend_the_presecution }
+				factor = 0
+			}
+		}
+	}
+
 }
