@@ -411,7 +411,8 @@ ideas = {
 
 		temmie = {
 
-			
+			cost = 100
+
 			allowed = {
 				original_tag = GRN
 			}
@@ -419,11 +420,11 @@ ideas = {
 				OR ={
 					AND = {
 						has_government = democratic
-						has_completed_focus = GRN_thepeoplesfreedomofchoice
+						
 					}
 					AND = {
 						has_government = communism
-						has_completed_focus = GRN_equalityaboveall
+						
 						has_country_flag = mani_turned_marxist
 					}
 
@@ -434,6 +435,85 @@ ideas = {
 
 			ai_will_do = {
 				factor = 2
+			}
+		}
+		
+		siknestor = {
+
+			cost = 100
+			allowed = {
+				original_tag = GRN
+			}
+			available = {
+				OR ={
+					AND = {
+						has_government = democratic
+						
+					}
+					AND = {
+						has_government = communism
+						
+						has_country_flag = mani_turned_marxist
+					}
+
+				}
+			}
+			
+			traits = { terror_itself }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		maxwell_blackmore = {
+
+			cost = 200
+
+			allowed = {
+				original_tag = GRN
+			}
+
+			available = {
+				OR ={
+					AND = {
+						has_government = democratic
+						
+					}
+					AND = {
+						has_government = communism
+						
+						has_country_flag = mani_turned_marxist
+					}
+
+				}
+			}
+			
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		sergei_wave = {
+
+			cost = 150
+
+			allowed = {
+				original_tag = GRN
+			}
+
+			available = {
+				NOT = {
+					has_country_flag = sergei_retired
+				}
+			}
+			
+			traits = { communist_revolutionary }
+
+			ai_will_do = {
+				factor = 1
 			}
 		}
 

@@ -50,4 +50,17 @@ leader_traits = {
             factor = 1
         }
 	}
+
+    terror_itself = {
+		sprite = 13
+        # nerfed the first two and buffed the non_core_manpower
+		enemy_partisan_effect = -0.20
+		foreign_subversive_activites = -0.15
+		non_core_manpower = 0.03 
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

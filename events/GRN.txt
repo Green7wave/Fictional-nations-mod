@@ -802,6 +802,7 @@
 				}
 			}
 			set_country_flag = mani_turned_marxist
+			set_country_flag = sergei_retired
 			create_field_marshal = {
 					name = "Sergei Wave"
 					portrait_path = "gfx/leaders/GRN/Portrait_GRN_redwave.tga"

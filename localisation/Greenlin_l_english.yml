@@ -41,6 +41,7 @@
  tip_repairthedamage:0 "Previously removed buildings by the §WLing attack§W event will be added to the country"
  tip_space:0 "\nAnd\n"
  mani_turned_marxist:0 "Has §YMani Wave§W as leader"
+ sergei_retired:0 " §YSergei Wave§W has retired"
 
 # Ideas
 
@@ -49,6 +50,10 @@
 
  # Polticial advisors
  temmie:0 "Temmie"
+ siknestor:0 "Siknestor"
+ maxwell_blackmore:0 "Maxwell Blackmore"
+ sergei_wave:0 "Sergei Wave"
+
 
  # Military high commands 
 
@@ -94,3 +99,4 @@
 
 # traits
  temmies_special:0 "Cute Charming Convincer"
+ terror_itself:0 "Terror Itself"
