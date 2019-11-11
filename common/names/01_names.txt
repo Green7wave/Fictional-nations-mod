@@ -1,0 +1,51 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+
+CRZ = {
+	male = {
+		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+		Giorgi Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+		Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+		Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		Alaksandar Blagoje Bozidar Branko Danilo Dejan Djordje Dragan Dragisa Dragoljub
+		Dragutin Draza Dusan Gavrilo Goran Janko Jovan Koca Kosta Krsto
+		Ljubisa Mihailo Milan Miliutin Milivoje Milojko Milos Miodrag Mirko Miroslav
+		Momcilo Nebojsa Nikola Pavle Peko Petar Radomir Ratko Sava Slobodan
+		Stepa Stojan Veljko Vaselien Vladimir Vojislav Zivojin Zivota Zoran Zvezdan
+		}
+	}
+	female = {
+		names = { natasha svetlana masha  }
+	}
+	surnames = { Romanov Rozhestvensky Skobelev 
+		Shuvalov Surkov Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+		}
+}
+
+GRN = {
+	male = {
+		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
+			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
+			Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian
+			James Jeremy John Leopold Lester Martin Nigel Oswald Max
+			Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Zachary Jake
+			Joe 
+			Lucas Dmitry Amir Hideo Liang Sava 
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne Temmie Anjela Natasha Melody Aram Beatris Maya }
+	}
+	surnames = { 	Allenby Battemberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill
+			Cochrane Cockburn Dundas Fisher French Gough Grant Grenfell Haig Murphy
+			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
+			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
+			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
+			
+		}
+	callsigns = { "Sharp Eye" "Big Brain" "Super Nova" "Dark Mist" AntiLucktipy OrangeCall Deklekto "Small brain crusher" King Imaginary "Physics Breaker" }
+}
