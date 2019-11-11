@@ -1,8 +1,5 @@
 ﻿l_english:
 
-# Manufacturars and Thoerists
- GRN_BIGUNS:0 "BIGUNS"
-
 # Bookmarks
  GRN_GATHERING_STORM_DESC:0 "The Greenlin Empire has stood at its place for hundreds of years, and used neutral policy in the Great War. however, with the recent death of Frank Wave, the dead king's son has been chosen for the throne. \n\nMehrad is terrible at protecting the country, many want to overthrow the king and the country is in chaos, with the new war getting close, what will the people of Greenlin do?"
 
@@ -35,7 +32,7 @@
  GRN_anarchism_party_long:0 "Greenlin's United Free People"
  GRN_anarchism_party:0 "GUFP"
 
-# Tool tips (§G§) 
+# Tool tips (§G§W) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
@@ -43,8 +40,20 @@
  tip_pressuretheweak:0 "Iran, Afghanistan, Iraq will be pressured to join Greenlin's faction and submit to Greenlin"
  tip_repairthedamage:0 "Previously removed buildings by the §WLing attack§W event will be added to the country"
  tip_space:0 "\nAnd\n"
+ mani_turned_marxist:0 "Has §YMani Wave§W as leader"
 
 # Ideas
+
+ # Manufators
+ GRN_BIGUNS:0 "BIGUNS"
+
+ # Polticial advisors
+ temmie:0 "Temmie"
+
+ # Military high commands 
+
+
+ # national spirits
  special_democracy:0 "Special Democracy"
  special_democracy_desc:0 "Greenlin's way of democracy is, 'diffrent', than how other countries have it. the leader favors the system and says 'its no problem because people still love it'"
  gis:0 "GIS"
@@ -82,3 +91,6 @@
 
 # factions
  owl_eyed_faction:0 "Owl Eyed Nations" 
+
+# traits
+ temmies_special:0 "Cute Charming Convincer"

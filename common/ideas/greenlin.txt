@@ -374,6 +374,7 @@ ideas = {
 
 	} # end of national spirits 
 
+
 	materiel_manufacturer = {
 		
 		designer = yes
@@ -403,7 +404,39 @@ ideas = {
 	
 	
 	
-	}
+	} # end of manufacturers
 
+
+	political_advisor = {
+
+		temmie = {
+
+			
+			allowed = {
+				original_tag = GRN
+			}
+			available = {
+				OR ={
+					AND = {
+						has_government = democratic
+						has_completed_focus = GRN_thepeoplesfreedomofchoice
+					}
+					AND = {
+						has_government = communism
+						has_completed_focus = GRN_equalityaboveall
+						has_country_flag = mani_turned_marxist
+					}
+
+				}
+			}
+			
+			traits = { temmies_special }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+	} # end of advisors
 
 }

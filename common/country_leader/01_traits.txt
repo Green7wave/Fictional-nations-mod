@@ -25,23 +25,29 @@ leader_traits = {
     being_flowy = {
 		random = no
 		sprite = 13
-        political_power_factor = 5555555555555
-        consumer_goods_factor = 666666666666666
-        drift_defence_factor = 99999999999999999999
-        generate_wargoal_tension = 888888888888888
-        justify_war_goal_time = 666666666
-        consumer_goods_factor = -999999999
-        war_support_factor = 8756734873287
-        enemy_partisan_effect = -8127598172598
-		foreign_subversive_activites = -97824537980254378902543
-		non_core_manpower = 871398197023560712637856123
+        political_power_factor = 5555
+        consumer_goods_factor = -666
+        drift_defence_factor = 999
+        generate_wargoal_tension = -888
+        justify_war_goal_time = -666
+        war_support_factor = 875
+        enemy_partisan_effect = -8127
+		foreign_subversive_activites = -978
+		non_core_manpower = 8713
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
-				factor = 0
-			}
 		}
 	}
 
+    temmies_special = {
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+		trade_opinion_factor = 0.10
+		
+        ai_will_do = {
+            factor = 1
+        }
+	}
 }
