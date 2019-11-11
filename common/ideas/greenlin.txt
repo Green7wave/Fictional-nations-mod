@@ -814,7 +814,8 @@ ideas = {
 	
 		sonya_tangleter = {
 
-			picture = generic_army_female_arab
+			picture = generic_political_advisor_female_europe
+			
 
 			allowed = {
 				original_tag = GRN
@@ -829,7 +830,7 @@ ideas = {
 
 		pyryev_yadovki  = {
 
-			picture = courtney_hodge
+			picture = generic_army_south_america_1
 
 			allowed = {
 				original_tag = GRN
@@ -840,6 +841,26 @@ ideas = {
 			}
 			
 			traits = { air_warfare_theorist }
+		}
+
+		markiplier = {
+			
+			
+			allowed = {
+				original_tag = GRN
+			}
+			
+			visible = {
+				has_country_flag = military_restored
+			}
+
+			cost = 200
+			
+			research_bonus = {
+				cat_superior_firepower = 0.15
+			}
+			
+			traits = { superior_firepower_expert }
 		}
 
 	}

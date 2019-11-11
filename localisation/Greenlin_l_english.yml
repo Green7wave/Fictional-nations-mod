@@ -42,6 +42,7 @@
  tip_space:0 "\nAnd\n"
  mani_turned_marxist:0 "Has §YMani Wave§W as leader"
  sergei_retired:0 " §YSergei Wave§W has retired"
+ available_theoriest:0 "Available as §YMilitary Theroiest§W:\n"
 
 # Ideas
 
@@ -78,7 +79,7 @@
  desmond_laster:0 "Desmond Laster"
  sonya_tangleter:0 "Sonya Tangleter"
  pyryev_yadovki:0 "Pyryev Yadovki"
-
+ markiplier:0 "Markiplier"
 
 
  # national spirits

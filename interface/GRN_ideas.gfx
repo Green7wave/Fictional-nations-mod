@@ -19,4 +19,9 @@ spriteTypes = {
 		name = "GFX_idea_sergei_wave"
 		texturefile = "gfx/interface/ideas/idea_sergei_wave.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_markiplier"
+		texturefile = "gfx/interface/ideas/idea_markiplier.dds"
+	}
 }

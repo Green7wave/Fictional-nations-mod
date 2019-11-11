@@ -89,6 +89,7 @@ units= {
 			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
 		}
 	}
+}
 #########################
 ## STARTING PRODUCTION ##
 #########################

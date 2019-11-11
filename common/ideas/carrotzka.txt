@@ -669,6 +669,11 @@ ideas = {
 		
 		o = {	
 
+			allowed = {
+				original_tag = CRZ
+
+			}
+			
 			traits = { army_armored_3 }
 			
 			ai_will_do = {

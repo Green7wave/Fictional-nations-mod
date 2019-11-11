@@ -718,6 +718,8 @@ focus_tree = {
 				planning_skill = 3
 				logistics_skill = 3
 			}
+			custom_effect_tooltip = available_theoriest
+			show_ideas_tooltip = markiplier
 			if = {
 				limit = {
 					has_country_flag = ling_forgiven
