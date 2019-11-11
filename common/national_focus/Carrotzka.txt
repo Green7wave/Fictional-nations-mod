@@ -1838,6 +1838,23 @@ random_owned_controlled_state = {
 							}
 
 							focus = {
+								id = CRZ_CSI
+								icon = GFX_goal_generic_secret_weapon
+								x = 0
+								y = 1
+								cost = 10
+								relative_position_id = CRZ_early_north_korea
+								available_if_capitulated = yes
+								prerequisite = { focus = CRZ_early_north_korea }
+								ai_will_do = {
+									factor = 40
+								}
+								completion_reward = {	
+									add_ideas = CSI
+								}		
+							}
+
+							focus = {
 								id = CRZ_area_sixty_nine
 								icon = GFX_focus_wonderweapons
 								x = 0
@@ -1853,22 +1870,5 @@ random_owned_controlled_state = {
 								completion_reward = {
 									add_nuclear_bombs = 2
 								}
-							}
-
-							focus = {
-								id = CRZ_CSI
-								icon = GFX_goal_generic_secret_weapon
-								x = 0
-								y = 1
-								cost = 10
-								relative_position_id = CRZ_early_north_korea
-								available_if_capitulated = yes
-								prerequisite = { focus = CRZ_early_north_korea }
-								ai_will_do = {
-									factor = 40
-								}
-								completion_reward = {	
-									add_ideas = CSI
-								}		
 							}
 				}
