@@ -440,7 +440,7 @@ ideas = {
 					being_flowy
 				}
 			}
-        }
+        
 
 		vaultboy = {		
 			cost = 150
@@ -452,7 +452,6 @@ ideas = {
 				}
 		}
 	}
-
 	
 
 
