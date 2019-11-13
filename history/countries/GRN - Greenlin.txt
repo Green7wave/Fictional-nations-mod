@@ -177,7 +177,6 @@ create_corps_commander = {
 	name = "Daniel Mofrad"
 	portrait_path = "gfx/leaders/GRN/Portrait_GRN_Daniel.tga"
 	traits = { 
-		trickster
 		trait_reckless
 		hill_fighter
 		jungle_rat
