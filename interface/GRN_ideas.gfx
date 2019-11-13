@@ -24,4 +24,10 @@ spriteTypes = {
 		name = "GFX_idea_markiplier"
 		texturefile = "gfx/interface/ideas/idea_markiplier.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_bob_ross"
+		texturefile = "gfx/interface/ideas/idea_bob_ross.dds"
+	}
+
 }

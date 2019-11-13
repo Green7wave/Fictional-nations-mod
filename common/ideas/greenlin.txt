@@ -257,8 +257,8 @@ ideas = {
 			
 			picture = idea_hawks
 			modifier = {	
-				air_paradrop_attack_factor = 0.1
-				air_paradrop_defence_factor = 0.25
+				air_paradrop_attack_factor = 0.05
+				air_paradrop_defence_factor = 0.15
 				no_supply_grace = 48 
 				special_forces_cap = 0.03
 			}
@@ -792,6 +792,21 @@ ideas = {
 			}
 			
 			traits = { army_regrouping_2 }			
+		}
+
+		bob_ross = {
+
+			cost = 250
+
+			allowed = {
+				original_tag = GRN 
+			}
+
+			visible = {
+				has_country_flag = bob_ross_in_airforce
+			}
+
+			traits = { army_commando_2 }
 		}
 	}
 

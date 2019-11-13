@@ -983,9 +983,28 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
+			create_corps_commander = {
+				name = "Bob Ross"
+				portrait_path = "gfx/leaders/GRN/Portrait_GRN_Bob_Ross.tga"
+				traits = { 
+					media_personality
+					urban_assault_specialist
+					trickster
+					commando
+					paratrooper
+				}
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			set_country_flag = bob_ross_in_airforce
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = bob_ross
 			add_ideas = hawks
-			# TODO : add paratrooper girl and name her purple
 		}
+
 	}
 
 	#Focus for Form the GIS
