@@ -706,7 +706,6 @@ focus_tree = {
 				name = "Markiplier"
 				portrait_path = "gfx/leaders/GRN/Portrait_GRN_Mark.tga"
 				traits = { 
-					trickster
 					brilliant_strategist
 					media_personality
 					skilled_staffer
@@ -988,7 +987,6 @@ focus_tree = {
 				portrait_path = "gfx/leaders/GRN/Portrait_GRN_Bob_Ross.tga"
 				traits = { 
 					media_personality
-					urban_assault_specialist
 					trickster
 					commando
 					paratrooper
