@@ -134,7 +134,7 @@ ideas = {
 			picture = the_cruel_king
 
 			modifier = {
-				army_org_factor = -0.2
+				army_org_factor = -0.4
 				send_volunteer_factor = -0.8
 				industrial_capacity_factory = -0.2
 				training_time_factor = 0.4
