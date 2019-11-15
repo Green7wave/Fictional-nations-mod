@@ -172,7 +172,7 @@ GRN_PAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { GRN_INF_01 }
 
-	fallback_name = "%d Airborn Division"
+	fallback_name = "%d Hawk Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.

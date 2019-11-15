@@ -982,6 +982,64 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = {
+							has_tech = tech_recon
+						}
+					}
+					division_template = { 						
+						name = "Hawk Division"				
+						division_names_group = GRN_PAR_01
+						regiments = {
+							paratrooper = { x = 0 y = 0 }
+							paratrooper = { x = 0 y = 1 }
+							paratrooper = { x = 0 y = 2 }
+							paratrooper = { x = 1 y = 0 }
+							paratrooper = { x = 1 y = 1 }
+							paratrooper = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = {x = 0 y = 1}
+							artillery = { x = 0 y = 2 }  
+						}
+					}
+
+				} else ={
+					division_template = { 						
+						name = "Hawk Division"				
+						division_names_group = GRN_PAR_01
+						regiments = {
+							paratrooper = { x = 0 y = 0 }
+							paratrooper = { x = 0 y = 1 }
+							paratrooper = { x = 0 y = 2 }
+							paratrooper = { x = 1 y = 0 }
+							paratrooper = { x = 1 y = 1 }
+							paratrooper = { x = 1 y = 2 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }  
+						}
+					}
+				}
+					
+			}
+
+			create_unit = {
+  			  division = "name = \"Hawk Division no. 1\" division_template = \"Hawk Division\" start_experience_factor = 2 start_equipment_factor = 1"
+  			  owner = GRN
+			}
+			create_unit = {
+  			  division = "name = \"Hawk Division no. 2\" division_template = \"Hawk Division\" start_experience_factor = 2 start_equipment_factor = 1"
+  			  owner = GRN
+			}
+
+
+
+			# Bob Ross and Hawks
 			create_corps_commander = {
 				name = "Bob Ross"
 				portrait_path = "gfx/leaders/GRN/Portrait_GRN_Bob_Ross.tga"
