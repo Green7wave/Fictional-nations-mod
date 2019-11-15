@@ -416,349 +416,64 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
-				completion_reward = {
+		completion_reward = {
 			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
+				division_template = {
+					name = "Carrotzka Revolutionary Division"
+					priority = 2
+					division_names_group = CRZ_INF_01
+				regiments = {
+					mountaineers = { x = 0 y = 0 }	
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }	
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 2 y = 0 }	
+					mountaineers = { x = 2 y = 1 }	
+					mountaineers = { x = 2 y = 2 }	
+					mountaineers = { x = 3 y = 0 }	
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = {x = 0 y = 1}
+					artillery = { x = 0 y = 2 }  
 					}
 				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-					completion_reward = {
-			hidden_effect = {
-						division_template = {
-							name = "Carrotzka Revolutionary Division"
-							priority = 2
-							division_names_group = CRZ_INF_01
-				    	regiments = {
-							mountaineers = { x = 0 y = 0 }	
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }	
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }	
-							mountaineers = { x = 2 y = 1 }	
-							mountaineers = { x = 2 y = 2 }	
-							mountaineers = { x = 3 y = 0 }	
-						}
-						support = {
-							engineer = { x = 0 y = 0 }
-							recon = {x = 0 y = 1}
-							artillery = { x = 0 y = 2 }  
-							}
-						}
-					}
-		random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 197 }
-					create_unit = {
-						division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-						owner = CRZ
-					}
-				}
-	}
-
-	completion_reward = {
-		hidden_effect = {
-					division_template = {
-						name = "Carrotzka Revolutionary Division"
-						priority = 2
-						division_names_group = CRZ_INF_01
-					regiments = {
-						mountaineers = { x = 0 y = 0 }	
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }	
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-						mountaineers = { x = 2 y = 0 }	
-						mountaineers = { x = 2 y = 1 }	
-						mountaineers = { x = 2 y = 2 }	
-						mountaineers = { x = 3 y = 0 }	
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						recon = {x = 0 y = 1}
-						artillery = { x = 0 y = 2 }  
-						}
-					}
-				}
-	random_owned_controlled_state = {
+			}
+			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
 				prioritize = { 197 }
 				create_unit = {
-					division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"2nd Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"3rd Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"4th Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"5th Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"6th Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
+					owner = CRZ
+				}
+				create_unit = {
+					division = "name = \"7th Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
 					owner = CRZ
 				}
 			}
-}
-
-completion_reward = {
-	hidden_effect = {
-				division_template = {
-					name = "Carrotzka Revolutionary Division"
-					priority = 2
-					division_names_group = CRZ_INF_01
-				regiments = {
-					mountaineers = { x = 0 y = 0 }	
-					mountaineers = { x = 0 y = 1 }
-					mountaineers = { x = 0 y = 2 }	
-					mountaineers = { x = 1 y = 0 }
-					mountaineers = { x = 1 y = 1 }
-					mountaineers = { x = 1 y = 2 }
-					mountaineers = { x = 2 y = 0 }	
-					mountaineers = { x = 2 y = 1 }	
-					mountaineers = { x = 2 y = 2 }	
-					mountaineers = { x = 3 y = 0 }	
-				}
-				support = {
-					engineer = { x = 0 y = 0 }
-					recon = {x = 0 y = 1}
-					artillery = { x = 0 y = 2 }  
-					}
-				}
-			}
-random_owned_controlled_state = {
-			limit = { ROOT = { has_full_control_of_state = PREV } }
-			prioritize = { 197 }
-			create_unit = {
-				division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-				owner = CRZ
-			}
 		}
-}
-
-completion_reward = {
-	hidden_effect = {
-				division_template = {
-					name = "Carrotzka Revolutionary Division"
-					priority = 2
-					division_names_group = CRZ_INF_01
-				regiments = {
-					mountaineers = { x = 0 y = 0 }	
-					mountaineers = { x = 0 y = 1 }
-					mountaineers = { x = 0 y = 2 }	
-					mountaineers = { x = 1 y = 0 }
-					mountaineers = { x = 1 y = 1 }
-					mountaineers = { x = 1 y = 2 }
-					mountaineers = { x = 2 y = 0 }	
-					mountaineers = { x = 2 y = 1 }	
-					mountaineers = { x = 2 y = 2 }	
-					mountaineers = { x = 3 y = 0 }	
-				}
-				support = {
-					engineer = { x = 0 y = 0 }
-					recon = {x = 0 y = 1}
-					artillery = { x = 0 y = 2 }  
-					}
-				}
-			}
-random_owned_controlled_state = {
-			limit = { ROOT = { has_full_control_of_state = PREV } }
-			prioritize = { 197 }
-			create_unit = {
-				division = "name = \"Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
-				owner = CRZ
-			}
-		}
-}
 
  }
 
