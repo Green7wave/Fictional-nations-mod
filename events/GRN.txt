@@ -16,10 +16,11 @@
  	trigger = {
  		tag = GRN
  		has_war = no
+		NOT = { has_country_flag = ling_attacked }
  	}
  	
  	mean_time_to_happen = {
- 		days = 10
+ 		days = 3
  	}
  	
  	option = { 
@@ -117,7 +118,17 @@
     			 days = 2
    		 		random = 10
  			}
+			add_ai_strategy = {
+				type = befriend
+				id = "CRZ"
+				value = 72
+			}
  		}
+		add_ai_strategy = {
+				type = befriend
+				id = "GRN"
+				value = 72
+		}
  		send_equipment = {
   		  equipment = infantry_equipment
   		  amount = 500
@@ -242,7 +253,7 @@
 		text = grn.5.dd
 	}
  	picture = GFX_report_event_generic_sign_treaty2
- 	fire_only_once = yes
+ 	fire_only_once = no
  	is_triggered_only = yes
  	
  	
@@ -253,10 +264,10 @@
 			factor = 20
 
 			modifier = {
-				factor = 1.5
+				factor = 2
 				has_opinion = {
     				target = GRN
-   					 value > 75
+   					value > 75
 				}
 			}
 
@@ -264,7 +275,7 @@
 				factor = 0.5
 				has_opinion = {
     				target = GRN
-   					 value < 10
+   					value < 10
 				}
 			}
 
@@ -274,8 +285,8 @@
 			}
 
 			modifier = {
-				factor = 2.5
-				num_divisions < 20
+				factor = 3
+				num_divisions < 25
 			}
 
 			modifier = {
@@ -289,7 +300,7 @@
 			}
 			
 			modifier = {
-				factor = 0
+				factor = 0.01
 				AND = {
 					OR = {
 						tag = ROM
@@ -305,8 +316,22 @@
 			}
 
 			modifier = {
-				factor 0.5
+				factor = 2
+
+				OR = {
+					tag = PER
+					tag = AFG
+					tag = IRQ
+					tag = SAU
+				}
+
+
+			}
+
+			modifier = {
+				factor 0.9
 				FROM = { NOT = { has_government = ROOT }}
+				NOT = { tag = PER }
 			}
 
 			modifier = {
@@ -326,7 +351,7 @@
 			}
 
 			modifier = {
-				factor = 0
+				factor = 0.1
 				threat < 0.15
 			}
 		}
@@ -353,7 +378,7 @@
 	# no
 	option = {
 		name = grn.5.b
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 20 }
 		GRN = { country_event = grn.7 }
 	}
  
@@ -622,14 +647,14 @@
  		name = grn.9.b 
 		add_political_power = -30
 		random_list = {
-			70 = {
+			60 = {
 				country_event = {
 					id = grn.10
 					days = 2 
 					random = 10
 				}
 			}
-			30 = {
+			40 = {
 				modifier = {
 					factor = 1.5
 					ROOT = {has_government = democratic}
@@ -826,3 +851,42 @@
 
 }
  
+# civil war is going for 5 months, time for a big debuff
+ country_event = {
+ 	id = grn.14
+ 	title = grn.14.t
+ 	desc = grn.14.d
+ 	picture = GFX_report_event_generic_read_write
+ 
+ 	fire_only_once = no
+ 	trigger = {
+		ORIGINAL_tag = GRN
+		has_civil_war = yes
+		date > 1937.2.1
+		NOT = { has_country_flag = grn_got_the_boost}
+	}
+ 	
+ 	mean_time_to_happen = {
+		 days = 2
+	 }
+ 	
+ 	option = { 
+ 		name = grn.14.a 
+		if = {
+			limit = {
+				NOT = { has_government = neutrality }
+			}
+			set_country_flag = grn_got_the_boost
+			add_ideas = end_civil_war
+		} else = {
+			set_country_flag = grn_got_the_boost
+			add_ideas = clear_loss
+
+		}
+
+ 	}
+ 
+ 	
+}
+
+

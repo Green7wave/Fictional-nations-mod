@@ -29,6 +29,11 @@
  carrotzka.13.t:0 "[From.getname] DENIED our request"
  carrotzka.13.d:0 "the gosh darn [From.getname] said no to our perfect lettering sir, but they still let us use those scientiest"
  carrotzka.13.a:0 "Much sad"
+ carrotzka.16.t:0 "The civil war of Loyalists"
+ carrotzka.16.d:0 "It was clear and obvious that the Loyalist group was planning a way to take their throne back, now the king is back and you will be surely raped sir\n the communist niggas of Carrotzka are eatin their last Carrtozka before the civil war forces reach the capital\nstill there is this question, will Greenlin be able to save us from this?"
+ carrotzka.16.a:0 "We'll pray to woter sheep"
+
+
 
  # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
@@ -63,7 +68,7 @@
 # opinion modifiers
  CRZ_communist_ally:0 "Communist Allies"
  CRZ_tech_partner:0 "Tech Partners"
- CRZ_good_terms:0 "[Root.GetName] and them are in good terms" 
+ CRZ_good_terms:0 "us and them are in good terms" 
 
 # Country names
  CRZ_fascism:0  "Greater Carrotzka"

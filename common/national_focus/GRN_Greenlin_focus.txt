@@ -1221,5 +1221,35 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GRN_greenlins_army
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 2
+		relative_position_id = GRN_thehawks
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_submarineanddestroyers  
+			focus = GRN_fightersandcas
+		}
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 6
+				date > 1939.1.1
+			}
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = army_of_green
+			
+		}
+	}
+
+
+
 #End of focuses 
  }

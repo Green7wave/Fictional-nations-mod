@@ -3,8 +3,8 @@ leader_traits = {
     equalist = {
         random = no
         political_power_factor = 0.05
-        consumer_goods_factor = 0.01
-        drift_defence_factor = 0.25 
+        consumer_goods_factor = 0.02
+        drift_defence_factor = 0.15 
 
         ai_will_do = {
 			factor = 1
@@ -13,13 +13,13 @@ leader_traits = {
 
     loved_by_people = {
         production_speed_buildings_factor = 0.1
-        non_core_manpower = 0.05
-
+        non_core_manpower = 0.01
+        stability_factor = 0.10 
 
     }
 
     unquestionable = {
-        justify_war_goal_time = -0.90 
+        justify_war_goal_time = -0.85 
     }
 
     being_flowy = {

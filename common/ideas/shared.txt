@@ -1,0 +1,31 @@
+ideas = {
+
+	country = {
+		
+		call_of_brothers = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				send_volunteers_tension = -1.00
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		#
+
+	} # end of national spirits 
+
+
+}

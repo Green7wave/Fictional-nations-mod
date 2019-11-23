@@ -11,11 +11,11 @@
  GRN_fascism:0  "Gloryious Greenlin"
  GRN_fascism_DEF:0 "the Gloryious Greenlin"
  GRN_democratic:0  "Greenlin"
- GRN_democratic_DEF:0 "the United People's Greenlin"
+ GRN_democratic_DEF:0 "the Social Democratic Greenlin"
  GRN_neutrality:0  "Greenlin Empire"
  GRN_neutrality_DEF:0 "the Greenlin Empire"
  GRN_communism:0 "Socialist Greenlin"
- GRN_communism_DEF:0 "the Social Democratic Greenlin"
+ GRN_communism_DEF:0 "the Socialist Greenlin"
 
 # City and state names
  VICTORY_POINTS_6923:0 "Grensofer"
@@ -23,7 +23,7 @@
  STATE_48:0 "Iplieren"
 
 # Parties
- GRN_communism_party_long:0 "GCP"
+ GRN_communism_party:0 "GCP"
  GRN_communism_party_long:0 "Green Communism Party"
  GRN_neutrality_party:0 "Monarchist Party"
  GRN_fascism_party:0 "GGS Party"
@@ -32,19 +32,19 @@
  GRN_anarchism_party_long:0 "Greenlin's United Free People"
  GRN_anarchism_party:0 "GUFP"
 
-# Tool tips (§G§W) 
+# Tool tips (§G§!) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will change the odds of the civil war in the players favor"
- tip_starttherevolution:0 "§RThis focus will cause an civil war!§ §W \n§"
- tip_technologysharing:0 "Joins the §GOwl Eyed Research§W sharing group"
+ tip_starttherevolution:0 "§RThis focus will cause an civil war!§! \n"
+ tip_technologysharing:0 "Joins the §GOwl Eyed Research§! sharing group"
  tip_pressuretheweak:0 "Iran, Afghanistan, Iraq will be pressured to join Greenlin's faction and submit to Greenlin"
- tip_repairthedamage:0 "Previously removed buildings by the §WLing attack§W event will be added to the country"
+ tip_repairthedamage:0 "Previously removed buildings by the §!Ling attack§! event will be added to the country"
  tip_space:0 "\nAnd\n"
- tip_hawks:0 "Gets §YHawks Division§W template and spawns 2 units of the same template.\n"
- mani_turned_marxist:0 "Has §YMani Wave§W as leader"
- sergei_retired:0 " §YSergei Wave§W has retired"
- available_theoriest:0 "Available as a §YMilitary Theroiest§W:\n"
- available_high_command:0 "Available as an §YHigh Command§W:\n"
+ tip_hawks:0 "Gets §YHawks Division§! template and spawns 2 units of the same template.\n"
+ mani_turned_marxist:0 "Has §YMani Wave§! as leader"
+ sergei_retired:0 " §YSergei Wave§! has retired"
+ available_theoriest:0 "Available as a §YMilitary Theroiest§!:\n"
+ available_high_command:0 "Available as an §YHigh Command§!:\n"
 
 # Ideas
 
@@ -114,6 +114,13 @@
  hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."
  greenlin_rising:0 "Industrial Rising"
  greenlin_rising_desc:0 "After a long fall, Greenlin has finally started to rise, and it's time to reconstruct the country!"
+ army_of_green:0 "People's Army"
+ army_of_green_desc:0 "The people of Greenlin have suffered enough for the king, the shall not suffer again becuase of forgien attacks, the people of Greenlin attack!"
+ clear_loss:0 "Clear Loss"
+ clear_loss_desc:0 "The royal servants can not stop the might of upcoming attacks, the king himself doesn't believe a way out of this, we can only accept... defeat."
+ end_civil_war:0 "End the Civil War"
+ end_civil_war_desc:0 "The people of Greenlin can feel the freedom in their grasp, charge people! don't let them dictate our future again, for the Green future!"
+
 
 # Tech sharing Group
  green_research_name:0 "Owl Eyed Research"

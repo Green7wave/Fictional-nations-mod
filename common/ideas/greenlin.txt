@@ -21,9 +21,9 @@ ideas = {
 				lend_lease_tension = -0.20 
 				send_volunteers_tension = -0.20 
 				justify_war_goal_time = -0.1
-				generate_wargoal_tension = -0.6 
+				generate_wargoal_tension = -0.6
+				join_faction_tension = -0.20  
 				guarantee_cost = -0.2 
-
 			}
 			rule = {
 				can_declare_war_on_same_ideology = yes
@@ -55,9 +55,8 @@ ideas = {
 			picture = GIS
 			
 			modifier = {
+				partisan_effect = 0.2
 				subversive_activites_upkeep = -0.45
-				drift_defence_factor = 0.5
-				max_planning = 0.05
 				recon_factor = 0.2
 				decryption_factor = 0.8
 			}
@@ -80,10 +79,10 @@ ideas = {
 			picture = generic_spy_intel
 
 			modifier = {
-				partisan_effect = 0.2
 				subversive_activites_upkeep = -0.05
 				encryption_factor = 0.8
 				enemy_justify_war_goal_time = 0.05
+				drift_defence_factor = 0.5
 			}
 		}
 		#
@@ -144,6 +143,45 @@ ideas = {
 		}
 		#
 
+		clear_loss = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			picture = chi_army_corruption
+
+			modifier = {
+				army_org_factor = -0.8
+				training_time_factor = 0.2
+				stability_factor = -0.2
+			}
+		}
+		#
+		
+		end_civil_war = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			
+			cancel = {
+				has_civil_war = no
+			}
+
+			picture = hol_liberation
+
+			modifier = {
+				army_org_factor = 0.8
+				training_time_factor = -0.4
+			}
+		}
+		#
+
 		communism_in_the_land = {
 			
 			allowed = {
@@ -156,14 +194,13 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = idea_hol_haven_of_tolerance
+			picture = hol_haven_of_tolerance
 
 			
 			modifier = {
 				communism_drift = 0.05
 			}
 		}
-
 		#
 
 		industrial_issue = {
@@ -287,6 +324,33 @@ ideas = {
 		}
 		###
 
+		army_of_green = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = communism
+			}
+		
+
+			picture = idea_mex_politicised_army_2
+
+			modifier = {
+				justify_war_goal_time = -0.05
+				generate_wargoal_tension = -0.1
+				join_faction_tension = -0.1 
+				conscription = 0.02
+			}
+		}
+
+
+		###
+
+
 		greenlin_rising = {
 			removal_cost = -1
 			
@@ -386,7 +450,7 @@ ideas = {
 			allowed = {
 				original_TAG = GRN
 			}
-			cost = 75
+			cost = 150
 
 			visible = { has_country_flag = military_restored }
 			
@@ -492,7 +556,7 @@ ideas = {
 			traits = { silent_workhorse }
 
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 
@@ -514,6 +578,10 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
+				modifier = { 
+					factor = 0
+					has_government = democratic
+				}
 			}
 		}
 
