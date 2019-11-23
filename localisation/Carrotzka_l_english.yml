@@ -152,8 +152,9 @@
 
 # traits
  leader_in_battalefield:0 "Leader in battalefield"
- leader_in_battalefield:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
- 
+ leader_in_battalefield_desc:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
+ veteran_special_force_commander:0 "veteran special force commander"
+ veteran_special_force_commander_desc:0 "a veteran commander who can't handdle too many divisions in his army"
 #decision
  invite_sov:0 "Invite Soviet engineers"
  invite_sov_desc:0 "Lets ask our dear friend to send us some Engineers..."

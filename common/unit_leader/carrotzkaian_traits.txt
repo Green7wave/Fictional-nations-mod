@@ -1,7 +1,5 @@
 leader_traits = {
 
-
-
 leader_in_battalefield = { 
     type = land
     trait_type = personality_trait
@@ -22,9 +20,22 @@ leader_in_battalefield = {
     corps_commander_modifier = {
         max_commander_army_size = 6
     }
+  }
+
+  veteran_special_force_commander = { 
+    type = land
+    trait_type = personality_trait
+
+    modifier = {
+        out_of_supply_factor = -0.25
+    }
+
+    corps_commander_modifier = {
+        max_commander_army_size = -17
+    }
     
     non_shared_modifier = {
-        experience_gain_factor = -0.25
+        experience_gain_factor = 1
     }
   }
 }
