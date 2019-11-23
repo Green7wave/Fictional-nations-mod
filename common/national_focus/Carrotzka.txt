@@ -364,10 +364,11 @@ focus_tree = {
 					winter_expert
 					commando
 					trait_mountaineer
+					veteran_special_force_commander
 				}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 2
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
 				planning_skill = 5
 				logistics_skill = 5
 			}
