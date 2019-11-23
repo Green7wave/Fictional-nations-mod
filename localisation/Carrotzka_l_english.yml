@@ -147,9 +147,7 @@
 
 # traits
  leader_in_battalefield:0 "Leader in battalefield"
- leader_in_battalefield_desc:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
- veteran_special_force_commander:0 "veteran special force commander"
- veteran_special_force_commander:0 "a veteran speccial force commander who cant handle having a lot of divisions in their army"
+ leader_in_battalefield:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
  
 #decision
  invite_sov:0 "Invite Soviet engineers"
