@@ -451,6 +451,26 @@ ideas = {
 					smooth_talking_charmer
 				}
 		}
+
+		rick_sanchez = {		
+        	cost = 150
+			allowed = {
+				original_tag = CRZ
+			}		
+			traits = { 
+				fortification_engineer
+			}
+		}
+		
+		niko_belic = {		
+        	cost = 150
+			allowed = {
+				original_tag = CRZ
+			}		
+			traits = { 
+				veteran_communist
+			}
+        }
 	}
 	
 

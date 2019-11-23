@@ -4033,32 +4033,32 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_help_of_anarchists.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_owner_of_the_black_sea"
 		texturefile = "gfx/interface/ideas/idea_owner_of_the_black_sea.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_new_meaning_of_freedom"
 		texturefile = "gfx/interface/ideas/idea_new_meaning_of_freedom.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_Anarchist_society"
 		texturefile = "gfx/interface/ideas/idea_Anarchist_society.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_Call_of_freedom"
 		texturefile = "gfx/interface/ideas/idea_Call_of_freedom.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_Call_of_equality"
 		texturefile = "gfx/interface/ideas/idea_Call_of_equality.dds"
 	}
 
-	SpriteType = {
+	spriteType = {
 		name = "GFX_idea_generic_army_carrotzka_1"
 		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_1.dds"
 	}
@@ -4083,13 +4083,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_carrotzka_5.dds"
 	}
 
-	SpriteType = {
-		name = "GFX_home_of_carrot"
+	spriteType = {
+		name = "GFX_idea_home_of_carrot"
 		texturefile = "gfx/interface/ideas/FRA_scw_intervention_republicans_focus.dds"
 	}
 
-	SpriteType = {
-		name = "GFX_CSI"
+	spriteType = {
+		name = "GFX_idea_CSI"
 		texturefile = "gfx/interface/ideas/nkvd_2.dds"
 	}
 
@@ -4101,6 +4101,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_vaultboy"
 		texturefile = "gfx/interface/ideas/idea_vaultboy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_rick_sanchez"
+		texturefile = "gfx/interface/ideas/idea_rick_sanchez.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_niko_belic"
+		texturefile = "gfx/interface/ideas/idea_niko_belic.dds"
 	}
 
 }
