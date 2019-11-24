@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_focus_mex_triumph_over_the_cristeros
 		x = 11
 		y = 1
-		cost = 10
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_politicalactions }
 		ai_will_do = {
@@ -137,7 +137,7 @@ focus_tree = {
 		icon = GFX_focus_generic_soviet_politics
 		x = 0
 		y = 1
-		cost = 9
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_politicalactions }
 		mutually_exclusive = { focus = CRZ_nospacefortwo }
@@ -222,7 +222,7 @@ focus_tree = {
 		icon = GFX_focus_eng_god_save_the_king
 		x = 7
 		y = 4
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = CRZ_executetheking 
@@ -384,12 +384,13 @@ focus_tree = {
 					winter_expert
 					commando
 					trait_mountaineer
+					veteran_special_force_commander
 				}
-				skill = 4
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 4
-				logistics_skill = 4
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
 			}
 			
 		}
@@ -854,7 +855,7 @@ focus_tree = {
 					icon = GFX_goal_generic_alliance
 					x = 32
 					y = 2
-					cost = 10
+					cost = 5
 					available_if_capitulated = yes
 					prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
 					ai_will_do = {
@@ -1011,24 +1012,6 @@ focus_tree = {
 		}
 
 		focus = {
-			id = CRZ_continue_the_special_forces_program
-			icon = GFX_focus_eng_special_air_service
-			x = 0
-			y = 1
-			relative_position_id = CRZ_battle_tactics
-			cost = 10
-			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_battle_tactics }
-			ai_will_do = {
-				factor = 40
-			}
-			completion_reward = {
-				add_ideas = special_forces
-			}
-		}
-
-
-		focus = {
 			id = CRZ_expand_the_orange_fleet
 			icon = GFX_goal_generic_construct_naval_dockyard
 			x = 34
@@ -1067,7 +1050,7 @@ focus_tree = {
 				icon = GFX_goal_tfv_sever_ties_with_uk
 				x = 3
 				y = 4
-				cost = 10
+				cost = 8
 				available_if_capitulated = yes
 				prerequisite = { 
 					focus = CRZ_executetheking 
@@ -1178,7 +1161,7 @@ focus_tree = {
 				x = 0
 				y = 1
 				relative_position_id = CRZ_atheism
-				cost = 10
+				cost = 5
 				prerequisite = {
 					focus = CRZ_atheism
 				}
@@ -1312,7 +1295,7 @@ focus_tree = {
 						icon = GFX_goal_generic_intelligence_exchange
 						x = 30
 						y = 2
-						cost = 10
+						cost = 0
 						available_if_capitulated = yes
 						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
 						mutually_exclusive = { focus = CRZ_the_new_meaning_of_freedom }
@@ -1336,7 +1319,7 @@ focus_tree = {
 						icon = GFX_focus_ger_great_red_menace
 						x = 28
 						y = 2
-						cost = 10
+						cost = 0
 						available_if_capitulated = yes
 						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
 						mutually_exclusive = { focus = CRZ_True_freedom }
@@ -1392,7 +1375,7 @@ focus_tree = {
 							icon = GFX_goal_generic_support_communism
 							x = 34
 							y = 3
-							cost = 10
+							cost = 6
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1410,7 +1393,7 @@ focus_tree = {
 							icon = GFX_goal_generic_national_unity
 							x = 32
 							y = 3
-							cost = 10
+							cost = 6
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1428,7 +1411,7 @@ focus_tree = {
 							icon = GFX_goal_generic_demand_territory
 							x = 30
 							y = 3
-							cost = 10
+							cost = 6
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1446,7 +1429,7 @@ focus_tree = {
 							icon = GFX_focus_generic_join_comintern
 							x = 28
 							y = 3
-							cost = 10
+							cost = 6
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1499,15 +1482,14 @@ focus_tree = {
 									name = "Sadra Carrot"
 									picture = "Portrait_carrotzka_Sadra_Carrot.dds"
 									traits = { 
-										defensive_doctrine
 										politically_connected
 										leader_in_battalefield
 									}
-									skill = 5
-									attack_skill = 5
-									defense_skill = 5
-									planning_skill = 5
-									logistics_skill = 5
+									skill = 4
+									attack_skill = 4
+									defense_skill = 4
+									planning_skill = 4
+									logistics_skill = 4
 								}							
 							}		
 						}
@@ -1521,7 +1503,7 @@ focus_tree = {
 							prerequisite = {
 								focus = CRZ_carrot_farming
 							}
-							cost = 10
+							cost = 5
 							ai_will_do = {
 								factor = 40 
 							}
@@ -1598,7 +1580,7 @@ focus_tree = {
 								icon = GFX_goal_generic_secret_weapon
 								x = 0
 								y = 1
-								cost = 10
+								cost = 5
 								relative_position_id = CRZ_early_north_korea
 								available_if_capitulated = yes
 								prerequisite = { focus = CRZ_early_north_korea }
