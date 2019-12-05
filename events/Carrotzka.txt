@@ -426,7 +426,7 @@ country_event = {
 		create_production_license = {
 			target = GRN
 			equipment = {
-				type = improved_medium_tank = 1
+				type = improved_medium_tank
 			}
 			cost_factor = 0
 		}
