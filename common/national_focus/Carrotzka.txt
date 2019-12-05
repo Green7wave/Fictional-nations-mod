@@ -1080,87 +1080,6 @@ focus_tree = {
 				}
 			}
 
-			focus = {
-				id = CRZ_carrot_fields_steel_mine
-				icon = GFX_focus_generic_steel
-				x = 25
-				y = 0
-				cost = 10
-				ai_will_do = {
-					factor = 40
-				}
-				completion_reward = {
-					226 = {
-						add_resource = {
-							type = steel
-							amount = 10
-						}
-					}
-				}
-			}
-
-			focus = {
-				id = CRZ_carrotgrad_tungsten_mine
-				icon = GFX_focus_generic_tungsten
-				x = 25
-				y = 1
-				cost = 10
-				prerequisite = { 
-					focus = CRZ_carrot_fields_steel_mine }
-				ai_will_do = {
-					factor = 40
-				}
-				completion_reward = {
-					197 = {
-						add_resource = {
-							type = tungsten
-							amount = 15
-						}
-					}
-				}
-			}
-
-			focus = {
-				id = CRZ_rubber_factory
-				icon = GFX_focus_generic_rubber
-				x = 25
-				y = 2
-				cost = 10
-				prerequisite = { 
-					focus = CRZ_carrotgrad_tungsten_mine }
-				ai_will_do = {
-					factor = 40
-				}
-				completion_reward = {
-					200 = {
-						add_resource = {
-							type = rubber
-							amount = 18
-						}
-					}
-				}
-			}
-
-			focus = {
-				id = CRZ_chromium_mines
-				icon = GFX_focus_generic_chromium
-				x = 25
-				y = 3
-				cost = 10
-				prerequisite = { 
-					focus = CRZ_rubber_factory }
-				ai_will_do = {
-					factor = 40
-				}
-				completion_reward = {
-					202 = {
-						add_resource = {
-							type = chromium
-							amount = 20
-						}
-					}
-				}
-			}
 
 			focus = {
 				id = CRZ_carrot_farming
@@ -1340,26 +1259,6 @@ focus_tree = {
 						}
 					}
 
-					focus = {
-						id = CRZ_aluminum_factory
-						icon = GFX_focus_generic_aluminum
-						x = 25
-						y = 4
-						cost = 10
-						available_if_capitulated = yes
-						prerequisite = { focus = CRZ_chromium_mines }
-						ai_will_do = {
-							factor = 40
-						}
-						completion_reward = {	
-							197 = {
-								add_resource = {
-									type = aluminium
-									amount = 20
-								}
-							}		
-						}
-					}
 
 					focus = {
 						id = CRZ_partisans_suppression

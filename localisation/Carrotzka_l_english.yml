@@ -151,7 +151,6 @@
  vaultboy:0 "Vault Boy"
  rick_sanchez:0 "Rick Sanchez"
  niko_belic:0 "Niko Belic"
-
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1934.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka"
@@ -161,6 +160,7 @@
  leader_in_battalefield_desc:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
  veteran_special_force_commander:0 "veteran special force commander"
  veteran_special_force_commander_desc:0 "a veteran commander who can't handdle too many divisions in his army"
+
 #decision
  invite_sov:0 "Invite Soviet engineers"
  invite_sov_desc:0 "Lets ask our dear friend to send us some Engineers..."
@@ -168,6 +168,12 @@
  invite_grn_desc:0 "Greenlin people's brain got a six pac..."
  grn_techshare:0 "Request Grennlin's Techsharing"
  grn_techshare_desc:0 "I'm sure we can do more than just big brain scientists with Greenlin"
+ develop_carrotfield_aluminium_deposits:0 "Develop Carrotfield aluminium deposits"
+ develop_carrotgrad_steel_deposits:0 "Develop Carrotgrad steel deposits"
+ develop_kiev_chromium_deposits:0 "Develop Kiev chromium deposits"
+ develop_stalino_rubber_plantations:0 "Develop Stalino rubber plantations"
+ develop_stalino_rubber_plantations_2:0 "Develop more Stalino rubber plantations"
+
 
  # Groups
  improve_relations_grn:0 "Relations Improvement"
