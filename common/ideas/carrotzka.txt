@@ -41,29 +41,6 @@ ideas = {
 				neutrality_acceptance = 70
 			}
 		}
-
-		peoples_revolution = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.2
-			}
-
-			modifier = {
-                army_org_factor = 0.3
-				send_volunteer_factor = 1
-				training_time_factor = -0.2
-				partisan_effect = 0.4
-				war_support_factor = 0.2
-			}
-		}
-
 		home_of_carrot = {
 			allowed = {
 				always = no
@@ -81,6 +58,24 @@ ideas = {
 			}
 		}
 
+		peoples_revolution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			modifier = {
+                army_org_factor = 0.1
+				partisan_effect = 0.4
+				war_support_factor = 0.05
+			}
+		}
+
+
 		peoples_revolution_2 = {
 			allowed = {
 				always = no
@@ -91,12 +86,12 @@ ideas = {
 			}
 
 			modifier = {
-                army_org_factor = 0.4
+                army_org_factor = 0.15
 				send_volunteer_factor = 0.5
-				training_time_factor = -0.3
+				training_time_factor = -0.1
 				partisan_effect = 0.5
-				war_support_factor = 0.3
-				army_morale_factor = 0.1
+				war_support_factor = 0.1
+				army_morale_factor = 0.03
 			}
 		}
 
@@ -108,18 +103,21 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-
-			modifier = {
-                army_org_factor = 0.5
-				training_time_factor = -0.4
-			    partisan_effect = 0.6
-				fascism_drift = 0.1
-				war_support_factor = 0.4
-				army_morale_factor = 0.2
-			}
+			
 			rule = {
 				can_use_kamikaze_pilots = yes
-				}
+			}
+
+			modifier = {
+                army_org_factor = 0.2
+				training_time_factor = -0.15
+				send_volunteer_factor = 1
+			    partisan_effect = 0.6
+				fascism_drift = 0.1
+				war_support_factor = 0.15
+				army_morale_factor = 0.05
+			}
+			
 		}
 
 		king_is_dead = {

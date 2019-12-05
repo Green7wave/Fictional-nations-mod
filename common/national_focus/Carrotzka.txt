@@ -501,7 +501,7 @@ focus_tree = {
  	focus = {
 		id = CRZ_recoverd_from_civil_war
 		icon = GFX_goal_generic_military_sphere
-		x = 11
+		x = 10
 		y = 6
 		cost = 0
 		available_if_capitulated = yes
@@ -747,16 +747,49 @@ focus_tree = {
 	  }
   }	
 
+	focus = {
+				id = CRZ_carrotzka_engineering_school
+				icon = GFX_goal_generic_production
+				x = 17
+				y = 4
+				cost = 10
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_expand_military_factories }
+				ai_will_do = {
+					factor = 40
+					modifier = {
+						OR = {
+							has_opinion = {
+							target = GRN
+							value > 75
+							}
+							is_in_faction_with = GRN
+							is_subject_of = GRN
+						}
+						factor = 3
+					}
+				}
+				completion_reward = {
+					add_tech_bonus = {
+						name = secret_bonus
+						bonus = 1.5
+						uses = 3
+						category = electronics
+					}
+				}	
+		}
+
 		focus = {
 		id = CRZ_technological_focus
 		icon = GFX_focus_research
-		x = 9
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = CRZ_carrotzka_engineering_school 
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CRZ_carrotism 
-			focus = CRZ_recoverd_from_civil_war}
+			focus = CRZ_carrotzka_engineering_school 
+			focus = CRZ_extreme_nationalism}
 		ai_will_do = {
 			factor = 80
 		}
@@ -826,11 +859,14 @@ focus_tree = {
 				factor = 40
 			}
 			completion_reward = {
-				remove_ideas = peoples_revolution
-				add_ideas = peoples_revolution_2
-				}
-	
+				swap_ideas = {
+   					remove_idea = peoples_revolution
+  					add_idea = peoples_revolution_2
+ 				}
+
 			}
+	
+		}
 
 			focus = {
 				id = CRZ_extreme_nationalism
@@ -844,11 +880,13 @@ focus_tree = {
 					factor = 40
 				}
 				completion_reward = {
-					remove_ideas = peoples_revolution_2
-					add_ideas = peoples_revolution_3
-					}
-		
+					swap_ideas = {
+   					remove_idea = peoples_revolution_2
+  					add_idea = peoples_revolution_3
+ 					}
 				}
+		
+			}
 
 			focus = {
 					id = CRZ_black_and_red_alliance
@@ -957,37 +995,6 @@ focus_tree = {
 				}
 		}		
 	}
-		focus = {
-			id = CRZ_carrotzka_engineering_school
-			icon = GFX_goal_generic_production
-			x = 17
-			y = 4
-			cost = 10
-			available_if_capitulated = yes
-			prerequisite = { focus = CRZ_expand_military_factories }
-			ai_will_do = {
-				factor = 40
-				modifier = {
-					OR = {
-						has_opinion = {
-    					target = GRN
-   						 value > 75
-						}
-						is_in_faction_with = GRN
-						is_subject_of = GRN
-					}
-					factor = 3
-				}
-			}
-			completion_reward = {
-				add_tech_bonus = {
-					name = secret_bonus
-					bonus = 1.5
-					uses = 3
-					category = electronics
-				}
-			}	
-		}
 		
 		focus = {
 			id = CRZ_battle_tactics
@@ -1004,8 +1011,8 @@ focus_tree = {
 				army_experience = 50
 				add_tech_bonus = {
 					name = land_doc_bonus
-					bonus = 4.0
-					uses = 7
+					bonus = 1
+					uses = 3
 					category = land_doctrine
 				}
 			}
