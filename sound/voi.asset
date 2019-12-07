@@ -2,7 +2,7 @@
 category = 
 {
  name = "Voices"
- souncrzffects = {
+ soundeffects = {
 	CRZ_infantry_idle
 	CRZ_infantry_neutral_combat
 	CRZ_infantry_positive_combat
@@ -47,7 +47,7 @@ soundeffect =
     }
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 0.45
+	volume = 0.65
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15 }
 }
@@ -73,11 +73,11 @@ soundeffect =
     }
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 0.45
+	volume = 0.65
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
-souncrzffect = 
+soundeffect = 
 {
     name = "CRZ_infantry_positive_combat"
     sounds = {
@@ -97,7 +97,7 @@ souncrzffect =
     }
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 0.45
+	volume = 0.65
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -113,7 +113,7 @@ soundeffect =
     }
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 0.45
+	volume = 0.65
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -127,7 +127,7 @@ soundeffect =
     }
 	max_audible = 1
 	max_audible_behaviour = fail
-	volume = 0.45
+	volume = 0.65
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
