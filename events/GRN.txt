@@ -519,7 +519,16 @@
 			}
 		}
 
-		FROM = { puppet = ROOT }
+		if = {
+			limit = {
+				NOT = { tag = PER }
+			}
+			FROM = { puppet = ROOT }
+		
+		} else = {
+			country_event = otr.1 
+		}
+		
 	}
 	#
 	option = {
@@ -599,6 +608,7 @@
 		name = generic.2.g
 		trigger = {
 			is_in_faction = yes
+			NOT = { is_in_faction_with = FROM }
 		}
 		FROM = { 
 			country_event = { id = generic.7 hours = 6 }
