@@ -240,7 +240,7 @@ focus_tree = {
      		     	 ideology = neutrality 
 		    	     popularity = -0.2 
 				}
-			add_stability= 0.3
+			add_stability= 0.2
 			add_political_power= 50
 		}
 	}
@@ -264,7 +264,7 @@ focus_tree = {
        		}
 		add_popularity= {
        			ideology = anarchism
-        		popularity = 0.2 
+        		popularity = 0.05
        		}
 			
 			add_political_power = 200
@@ -1375,7 +1375,7 @@ focus_tree = {
 							icon = GFX_focus_mex_support_general_cedillo
 							x = 13
 							y = 2
-							cost = 10
+							cost = 5
 							available_if_capitulated = yes
 							prerequisite = { 
 								focus = CRZ_civilwarveterans
