@@ -529,19 +529,6 @@ ideas = {
 			}
 		}
 		
-		vasilly_carrot = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-
-			traits = { red_army_organizer }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	navy_chief = {
 		
@@ -678,6 +665,20 @@ ideas = {
 
 			
 			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		vasilly_carrot = {
+			
+			
+			allowed = {
+				original_tag = CRZ
+			}
+
+			traits = { red_army_organizer }
 			
 			ai_will_do = {
 				factor = 1
