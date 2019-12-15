@@ -38,10 +38,26 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		add_stability = 0.1
+			create_country_leader = {
+				name = "Carrot council"
+				desc = ""
+				picture = "gfx/leaders/SOV/Portrait_Carrot_council.dds"
+				expire = "2020.1.1"
+				ideology = liberalism
+				traits = {
+					champion_of_peace_5
+					social_reformer
+				}
+			}	
 			set_party_name= { 
-					ideology = communism 
-					long_name = carrotist_party
-					name = CPC 
+					ideology = democratic 
+					long_name = carrot_council
+					name = CCC 
 			}				
 		}
 	}
