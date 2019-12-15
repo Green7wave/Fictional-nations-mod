@@ -385,6 +385,25 @@ focus_tree = {
 					commando
 					trait_mountaineer
 					veteran_special_force_commander
+					harsh_leader
+					trait_mountaineer
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+
+			create_corps_commander = {
+				name = "Natasha Sokolov"
+				picture = "Portrait_Carrotzka_Natasha_sokolov.dds"
+				traits = { 
+					panzer_expert
+					media_personality
+					armor_officer
+					panzer_leader
+
 				}
 				skill = 5
 				attack_skill = 5

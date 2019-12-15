@@ -4113,4 +4113,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_niko_belic.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_vassily_carrot"
+		texturefile = "gfx/interface/ideas/idea_vassily_carrot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vlad_makhofskey"
+		texturefile = "gfx/interface/ideas/idea_vlad_makhofskey.dds"
+	}
+
 }

@@ -131,7 +131,6 @@ create_country_leader = {
 	ideology = falangism
 	traits = {
 		dictator
-		inexperienced_imperialist
 		unpopular_monarch
 		fascist_militia_leader
 		anti_communist_crusader
@@ -151,9 +150,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nestor makhno"
-	desc = "POLITICS_NESTOR_MAKHNO_DESC"
-    picture = "gfx/leaders/CRZ/Portrait_carrotzka_Nestor_Makhno.tga"
+	name = "dimitri ivanofski"
+	desc = ""
+    picture = "gfx/leaders/CRZ/Portrait_Carrotzka_dimitri_ivanofskey.tga"
 	expire = "1953.3.1"
 	ideology = anarcho_communism
 	traits = {

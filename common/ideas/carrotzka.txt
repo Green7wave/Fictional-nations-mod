@@ -515,19 +515,33 @@ ideas = {
 			}
 		}
 		
-		d = {
+		vlad_makhofskey = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 			}
 
-			traits = { army_chief_maneuver_2 }
+			traits = { great_war_hero }
 			
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+		
+		vasilly_carrot = {
+			
+			
+			allowed = {
+				original_tag = CRZ
+			}
+
+			traits = { red_army_organizer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	navy_chief = {
 		
