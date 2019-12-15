@@ -85,7 +85,7 @@
  CRZ_communism_DEF:0 "the Socialist Republic of Carrotzka"
  CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
  CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
- ACZ_FREE_anarchism:0 "Free Europe"
+ ACZ_FREE_anarchism:0 "Free Society of Eastren Europe"
  ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
 
 # State and province names
@@ -102,6 +102,7 @@
  CRZ_fascism_party:0 "Glorious Carrotzka"
  CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
  CRZ_anarchism_party:0 "Anarchist People"
+ carrot_council:0 "Carrot council of carrotzka"
 
 # ideas
  loyalists:0 "loyalists"
