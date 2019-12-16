@@ -387,7 +387,7 @@ units = {
 
 
 air_wings = {
-	150 = {
+	192 = {
 		fighter_equipment_1 =  {
 			owner = "CRZ" 
 			amount = 150
