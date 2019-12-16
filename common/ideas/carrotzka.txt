@@ -253,8 +253,8 @@ ideas = {
 			modifier = {
 				enemy_justify_war_goal_time = 500
 				drift_defence_factor = 500
-				anarchism_drift = 500
-				training_time_factor = 1000
+				anarchism_drift = 1
+				training_time_factor = 1
 			}
 
 			removal_cost = -1
@@ -469,7 +469,21 @@ ideas = {
 			traits = { 
 				veteran_communist
 			}
-        }
+		}
+		
+		vlad_makhofskey = {
+			
+			
+			allowed = {
+				original_tag = CRZ
+			}
+
+			traits = { great_war_hero }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	
 
@@ -514,15 +528,15 @@ ideas = {
 				factor = 1
 			}
 		}
-		
-		vlad_makhofskey = {
+
+		vasilly_carrot = {
 			
 			
 			allowed = {
 				original_tag = CRZ
 			}
 
-			traits = { great_war_hero }
+			traits = { red_army_organizer }
 			
 			ai_will_do = {
 				factor = 1
@@ -665,20 +679,6 @@ ideas = {
 
 			
 			traits = { army_concealment_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		vasilly_carrot = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-
-			traits = { red_army_organizer }
 			
 			ai_will_do = {
 				factor = 1

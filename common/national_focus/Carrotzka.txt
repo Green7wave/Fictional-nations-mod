@@ -58,6 +58,10 @@ focus_tree = {
 					ideology = democratic 
 					long_name = carrot_council
 					name = CCC 
+			}
+			add_popularity= {
+				ideology = democratic
+			 popularity = 0.4
 			}				
 		}
 	}
