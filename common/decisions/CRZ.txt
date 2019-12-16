@@ -87,3 +87,39 @@ improve_relations_grn = {
     }
 
 }
+
+SOV_great_patriotic_war = {
+
+	SOV_order_227 = {
+
+		icon = generic_army_support
+
+		available = {
+			has_war = yes
+			has_civil_war = no
+			surrender_progress > 0.15
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			#surrender_progress > 0
+		}
+
+		days_remove = 720
+
+		modifier = {
+			army_core_defence_factor = 0.25
+            army_armor_defence_factor = 0.10 
+            army_infantry_defence_factor = 0.10
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.15
+				factor = 10
+			}
+		}
+	}
