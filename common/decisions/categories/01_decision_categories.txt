@@ -14,3 +14,13 @@ improve_relations_grn = {
 		}
 	}
 }
+
+CRZ_great_patriotic_war = {
+	allowed = {
+		original_tag = CRZ
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}

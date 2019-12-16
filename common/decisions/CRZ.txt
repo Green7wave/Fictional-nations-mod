@@ -90,7 +90,7 @@ improve_relations_grn = {
 
 SOV_great_patriotic_war = {
 
-	SOV_order_227 = {
+	CRZ_order_227 = {
 
 		icon = generic_army_support
 

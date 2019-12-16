@@ -150,7 +150,7 @@
  CSI_desc:0 "Carrotzka's security and information is an spying system...not strong as greenlin's but its still something"
  flowy:0 "FLOWY"
  vaultboy:0 "Vault Boy"
- rick_sanchez:0 "Rick Sanchez"
+ rick_sanchez:0 "Rick Sanchez (clone)"
  niko_belic:0 "Niko Belic"
  vasilly_carrot:0 "Vassily Carrot"
  vlad_makhofskey:0 "Vlad Makhofskey"
@@ -176,6 +176,8 @@
  develop_kiev_chromium_deposits:0 "Develop Kiev chromium deposits"
  develop_stalino_rubber_plantations:0 "Develop Stalino rubber plantations"
  develop_stalino_rubber_plantations_2:0 "Develop more Stalino rubber plantations"
+ CRZ_order_227:0 "Order 227"
+ CRZ_order_227_desc:0 ""It is time to finish retreating. Not one step back!""
 
 
  # Groups
