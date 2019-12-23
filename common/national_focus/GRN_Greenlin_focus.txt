@@ -312,8 +312,12 @@ focus_tree = {
 				is_in_faction = yes
 			}
 		}
-		bypass = {
-			GRN = { is_in_faction = yes }
+		prerequisite = {
+			NOT = {
+				GRN = {
+					is_in_faction = yes
+				}
+			}
 		}
 		completion_reward = {
 			create_faction = owl_eyed_faction

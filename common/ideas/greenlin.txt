@@ -341,9 +341,10 @@ ideas = {
 
 			modifier = {
 				justify_war_goal_time = -0.05
-				generate_wargoal_tension = -0.1
-				join_faction_tension = -0.1 
-				conscription = 0.02
+				generate_wargoal_tension = -0.3
+				join_faction_tension = -0.2 
+				war_support_factor = 0.10 
+				conscription = 0.03
 			}
 		}
 
