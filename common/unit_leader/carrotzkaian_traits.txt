@@ -8,18 +8,17 @@ leader_in_battalefield = {
     planning_skill = 2
     
     modifier = {
-        max_dig_in = 1
-        planning_speed = 0.25
-        breakthrough_factor = 0.10
-        land_reinforce_rate = 0.2
+        planning_speed = 0.15
+        breakthrough_factor = 0.05
+        land_reinforce_rate = 0.1
         acclimatization_cold_climate_gain_factor = 0.40
         out_of_supply_factor = -0.25
-        army_infantry_attack_factor = 0.10
+        army_infantry_attack_factor = 0.05
     }
 
-    corps_commander_modifier = {
-        max_commander_army_size = 6
-    }
+    #corps_commander_modifier = {
+   #     max_commander_army_size = 6
+   # } its a foking marshal this doesnt do shit
   }
 
   veteran_special_force_commander = { 
@@ -28,9 +27,10 @@ leader_in_battalefield = {
 
     modifier = {
         out_of_supply_factor = -0.1
+        no_supply_grace = 64
         army_morale_factor = 0.08
-        army_infantry_attack_factor = 0.2
-        experience_loss_factor = -1
+        army_infantry_attack_factor = 0.08
+        experience_loss_factor = -2.5
     }
 
     corps_commander_modifier = {
