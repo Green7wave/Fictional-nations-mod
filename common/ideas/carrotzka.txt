@@ -20,7 +20,6 @@ ideas = {
 
 			modifier = {
                 army_org_factor = -0.5
-				send_volunteer_factor = -0.8
 				industrial_capacity_factory = -0.4
 				training_time_factor = 0.5
 				stability_factor = -0.2
@@ -51,7 +50,7 @@ ideas = {
 
 			modifier = {
 				war_support_factor = 0.1
-				political_power_factor = 0.3
+				political_power_factor = 0.1
 				stability_factor = 0.2
 				drift_defence_factor = 0.5
 			}
@@ -68,6 +67,7 @@ ideas = {
 			
 
 			modifier = {
+				training_time_factor = -0.1
                 army_org_factor = 0.1
 				partisan_effect = 0.4
 				war_support_factor = 0.05
@@ -88,7 +88,7 @@ ideas = {
 			modifier = {
                 army_org_factor = 0.15
 				send_volunteer_factor = 0.5
-				training_time_factor = -0.1
+				training_time_factor = -0.2
 				partisan_effect = 0.5
 				war_support_factor = 0.1
 				army_morale_factor = 0.03
@@ -111,7 +111,7 @@ ideas = {
 
 			modifier = {
                 army_org_factor = 0.2
-				training_time_factor = -0.15
+				training_time_factor = -0.3
 				send_volunteer_factor = 1
 			    partisan_effect = 0.6
 				fascism_drift = 0.1
@@ -271,7 +271,7 @@ ideas = {
 			}
 			
 			modifier = {
-				communism_drift = 0.2
+				communism_drift = 0.4
 				communism_acceptance = 70
 			}
 
@@ -289,7 +289,7 @@ ideas = {
 			}
 			
 			modifier = {
-				anarchism_drift = 0.2
+				anarchism_drift = 0.4
 				anarchism_acceptance = 70
 			}
 
@@ -307,14 +307,13 @@ ideas = {
 			}
 			
 			modifier = {
-				generate_wargoal_tension = 0.1
-				join_faction_tension = 0.01
-				lend_lease_tension = 0
-				send_volunteers_tension = 0
-				guarantee_tension = 0
+				lend_lease_tension = -0.1
+				send_volunteers_tension = -0.1
+				guarantee_tension = -0.1
 				ai_get_ally_desire_factor = 100		
 				send_volunteer_divisions_required = -1
 				subversive_activites_upkeep = -0.5
+				send_volunteer_size = 20
 			}
 			removal_cost = -1
 		}
@@ -421,7 +420,7 @@ ideas = {
 	political_advisor = {
 			
 		felix_kjellberg = {		
-        	cost = 200
+        	cost = 150
 			allowed = {
 				original_tag = CRZ
 			}		
@@ -462,21 +461,31 @@ ideas = {
 		}
 		
 		niko_belic = {		
-        	cost = 150
+        	cost = 150	
 			allowed = {
 				original_tag = CRZ
-			}		
-			traits = { 
-				veteran_communist
-			}
 		}
+		traits = { 
+			veteran_communist
+		}
+	}
 		
+	vladimir_parovski = {		
+			cost = 150
+				allowed = {
+					original_tag = CRZ
+				}		
+				traits = { 
+					social_reformer
+				}
+			}
+
 		vlad_makhofskey = {
-			
+			cost = 150	
 			
 			allowed = {
 				original_tag = CRZ
-			}
+    	}
 
 			traits = { great_war_hero }
 			
@@ -508,7 +517,7 @@ ideas = {
 			allowed = {
 				original_tag = CRZ
 			}			
-			traits = { army_chief_drill_1 }
+			traits = { army_chief_drill_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -529,12 +538,12 @@ ideas = {
 			}
 		}
 
-		vasilly_carrot = {
-			
+		vasily = {
+			cost = 150	
 			
 			allowed = {
 				original_tag = CRZ
-			}
+    	}
 
 			traits = { red_army_organizer }
 			
@@ -609,18 +618,6 @@ ideas = {
 	air_chief = {
 		
 		
-		i = {
-						
-			allowed = {
-				original_tag = CRZ
-
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
 		j = {
 			
 			
@@ -630,21 +627,6 @@ ideas = {
 			}
 		
 			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		k = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-
-			}
-
-			traits = { air_chief_safety_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -715,20 +697,6 @@ ideas = {
 			}
 		}	
 		
-		p = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-			}
-			
-			traits = { air_airborne_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
 		q = {
 			
 			
@@ -738,21 +706,6 @@ ideas = {
 			}
 
 			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		r = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-
-			}
-			
-			traits = { air_air_combat_training_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -767,21 +720,6 @@ ideas = {
 			}			
 			
 			traits = { navy_submarine_2 }
-			
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
-		
-		t = {
-			#Also unit leader: 406
-			
-			allowed = {
-				original_tag = CRZ
-
-			}
-				
-			traits = { navy_capital_ship_2 }
 			
 			ai_will_do = {
 				factor = 0.2

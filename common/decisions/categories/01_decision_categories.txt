@@ -15,7 +15,7 @@ improve_relations_grn = {
 	}
 }
 
-CRZ_great_patriotic_war = {
+CRZ_battale_orders = {
 	allowed = {
 		original_tag = CRZ
 	}

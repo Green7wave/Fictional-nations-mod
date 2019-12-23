@@ -88,9 +88,9 @@ improve_relations_grn = {
 
 }
 
-SOV_great_patriotic_war = {
+CRZ_battale_orders = {
 
-	CRZ_order_227 = {
+	CRZ_order_420 = {
 
 		icon = generic_army_support
 
@@ -101,18 +101,17 @@ SOV_great_patriotic_war = {
 		}
 
 		cost = 50
-		fire_only_once = yes
+		fire_only_once = no
 		visible = {
 			has_war = yes
-			#surrender_progress > 0
 		}
 
 		days_remove = 720
 
 		modifier = {
-			army_core_defence_factor = 0.25
-            army_armor_defence_factor = 0.10 
-            army_infantry_defence_factor = 0.10
+			army_core_defence_factor = 0.35
+            army_armor_defence_factor = 0.20 
+            army_infantry_defence_factor = 0.20
 		}
 
 		ai_will_do = {
@@ -122,4 +121,41 @@ SOV_great_patriotic_war = {
 				factor = 10
 			}
 		}
+    }
+
+    anti_fascism_people_army = {
+        icon = generic_operation
+        cost = 50
+		available = {
+			has_war_with = GER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = no
+		days_remove = 180
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.15
+			defense_bonus_against = 0.15
+		}
+    }
+    
+    use_stored_equipments = {
+        icon = generic_operation
+        cost = 50
+		available = {
+			has_war = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = no
+		days_remove = 60
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2000
+			}
 	}
+}

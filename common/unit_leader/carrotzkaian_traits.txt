@@ -2,7 +2,7 @@ leader_traits = {
 
 leader_in_battalefield = { 
     type = land
-    trait_type = personality_trait
+    trait_type = field_marshal
     
     attack_skill = 2
     planning_skill = 2
@@ -24,12 +24,13 @@ leader_in_battalefield = {
 
   veteran_special_force_commander = { 
     type = land
-    trait_type = personality_trait
+    trait_type = corps_commander
 
     modifier = {
-        out_of_supply_factor = -0.25
-        army_morale_factor = -1
+        out_of_supply_factor = -0.1
+        army_morale_factor = 0.08
         army_infantry_attack_factor = 0.2
+        experience_loss_factor = -1
     }
 
     corps_commander_modifier = {

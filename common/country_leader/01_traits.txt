@@ -61,6 +61,19 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
+    }
+    leader_of_the_workers = {
+        random = no
+        subversive_activites_upkeep = -0.5
+        drift_defence_factor = 0.3
+        weekly_manpower = 250
 
+        ai_will_do = {
+			factor = 1
+		}
+    }
 }
+
+
+
+

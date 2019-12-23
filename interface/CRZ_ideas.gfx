@@ -4114,13 +4114,108 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_vassily_carrot"
-		texturefile = "gfx/interface/ideas/idea_vassily_carrot.dds"
+		name = "GFX_idea_vasily"
+		texturefile = "gfx/interface/ideas/idea_vasily.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_vlad_makhofskey"
 		texturefile = "gfx/interface/ideas/idea_vlad_makhofskey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_vladimir_parovski"
+		texturefile = "gfx/interface/ideas/idea_vladimir_parovski.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_a"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_b"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_c"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_e"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_europe_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_f"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_europe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_g"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_europe_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_h"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_europe_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_j"
+		texturefile = "gfx/interface/ideas/idea_generic_air_europe_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_l"
+		texturefile = "gfx/interface/ideas/idea_generic_air_europe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_m"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_n"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_o"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_q"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_s"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_u"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_w"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_x"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_y"
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_6.dds"
 	}
 
 }

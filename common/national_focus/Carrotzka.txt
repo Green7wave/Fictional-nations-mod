@@ -40,7 +40,7 @@ focus_tree = {
 		completion_reward = {
 		set_politics = {
 			ruling_party = democratic
-			elections_allowed = yes
+			elections_allowed = no
 		}
 		add_stability = 0.1
 			create_country_leader = {
@@ -400,13 +400,10 @@ focus_tree = {
 				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
 				traits = { 
 					brilliant_strategist
-					infantry_officer
 					winter_expert
-					commando
 					trait_mountaineer
 					veteran_special_force_commander
 					harsh_leader
-					trait_mountaineer
 				}
 				skill = 5
 				attack_skill = 5
@@ -420,18 +417,16 @@ focus_tree = {
 				picture = "Portrait_Carrotzka_Natasha_sokolov.dds"
 				traits = { 
 					panzer_expert
-					media_personality
 					armor_officer
 					panzer_leader
 
 				}
-				skill = 5
-				attack_skill = 5
-				defense_skill = 5
-				planning_skill = 5
-				logistics_skill = 5
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
 			}
-			
 		}
 	}
 
@@ -970,7 +965,7 @@ focus_tree = {
 						add_tech_bonus = {
 							name = med_armor_bonus
 							ahead_reduction = 4
-							technology = basic_medium_tank
+							technology = improved_light_tank
 						}
 						add_tech_bonus = {
 							name = armor_bonus
@@ -1405,7 +1400,8 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								add_ideas = support_the_world_revolution								
+								add_ideas = support_the_world_revolution	
+								add_country_leader_trait = leader_of_the_workers							
 							}		
 						}
 

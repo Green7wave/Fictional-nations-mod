@@ -65,9 +65,10 @@
  loved_by_people:0 "Loved by people"
  unquestionable:0 "Unquestionable"
  being_flowy:0 "Flowy"
+ leader_of_the_workers:0 "Leader of the workers"
 
 # Leader Desc
- POLITICS_SADRA_CARROT_DESC:0 "The great leader of Carrotzka, after starting the revolution as a farmer against the cruel king, he has been taking care of the salad reigion."
+ POLITICS_SADRA_CARROT_DESC:0 "Leader of the revolution of carrotzka."
 
 # opinion modifiers
  CRZ_communist_ally:0 "Communist Allies"
@@ -149,11 +150,12 @@
  CSI:0 "CSI"
  CSI_desc:0 "Carrotzka's security and information is an spying system...not strong as greenlin's but its still something"
  flowy:0 "FLOWY"
- vaultboy:0 "Vault Boy"
+ vaultboy:0 "Vault Boi"
  rick_sanchez:0 "Rick Sanchez (clone)"
  niko_belic:0 "Niko Belic"
- vasilly_carrot:0 "Vassily Carrot"
+ vasily:0 "Vasily Carrot"
  vlad_makhofskey:0 "Vlad Makhofskey"
+ vladimir_parovski:0 "Vladimir Parovski'"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."
@@ -176,9 +178,13 @@
  develop_kiev_chromium_deposits:0 "Develop Kiev chromium deposits"
  develop_stalino_rubber_plantations:0 "Develop Stalino rubber plantations"
  develop_stalino_rubber_plantations_2:0 "Develop more Stalino rubber plantations"
- CRZ_order_227:0 "Order 227"
- CRZ_order_227_desc:0 ""It is time to finish retreating. Not one step back!""
-
+ CRZ_battale_orders:0 "we are in war!"
+ CRZ_order_420:0 "Order 420"
+ CRZ_order_420_desc:0 "It is time to finish retreating. Not two step back!"
+ anti_fascism_people_army:0 "anti fascism volunteers"
+ anti_fascism_people_army_desc:0 "our people don't like these fascists thats for sure"
+ use_stored_equipments:0 "use stored equipments"
+ use_stored_equipments_desc:0 "these guns may be outdated but they still kill"
 
  # Groups
  improve_relations_grn:0 "Relations Improvement"
