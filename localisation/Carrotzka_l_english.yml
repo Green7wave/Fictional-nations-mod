@@ -155,7 +155,9 @@
  niko_belic:0 "Niko Belic"
  vasily:0 "Vasily Carrot"
  vlad_makhofskey:0 "Vlad Makhofskey"
- vladimir_parovski:0 "Vladimir Parovski'"
+ vladimir_parovski:0 "Vladimir Parovski"
+ MEX_church_power_1_desc:0 "The Church in Our Country will become a thing of the past. The priests are counter-revolutionaries and peddlers of superstitious nonsense. We will press ever harder to turn This Country into a bastion of rationalism and science!"
+ Nestor_Golivin:0 "Nestor Golivin"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."
@@ -165,6 +167,7 @@
  leader_in_battalefield_desc:0 "when a leader shows up in the army and fight beside their soliders...they actually fighting for their country"
  veteran_special_force_commander:0 "veteran special force commander"
  veteran_special_force_commander_desc:0 "a veteran commander who can't handdle too many divisions in his army"
+ internationalist_guerilla:0 "Internationalist Guerilla"
 
 #decision
  invite_sov:0 "Invite Soviet engineers"
@@ -185,6 +188,15 @@
  anti_fascism_people_army_desc:0 "our people don't like these fascists thats for sure"
  use_stored_equipments:0 "use stored equipments"
  use_stored_equipments_desc:0 "these guns may be outdated but they still kill"
+ CRZ_spanish_civilwar:0 "spanish civil war"
+ CRZ_spanish_civilwar_desc:0 "we should help the spain republic with sending our guerillas and start operations againts franco guy because thats what heroes do"
+ send_guns:0 "Send equipments"
+ send_guns_desc:0 "yeah i guess we have some guns at our storage from our civilwar"
+ sabotage_the_factories:0 "Sabotage factories"
+ sabotage_the_factories_desc:0 "its time for Nestor Golivin to get in the action"
+ steal_equipments:0 "Steal equipments"
+ steal_equipments_desc:0 "unfair? i dont think so"
+ anarchist_spain:0 "Form of anarchist carrotzka"
 
  # Groups
  improve_relations_grn:0 "Relations Improvement"

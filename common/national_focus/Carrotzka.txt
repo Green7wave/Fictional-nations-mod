@@ -20,8 +20,9 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			add_manpower= 800000
-			add_stability= 0.2
+			add_political_power = 200
+			add_manpower= 80000
+			add_ideas = MEX_church_power_1
 		}
 	}
 
@@ -38,30 +39,21 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = no
-		}
 		add_stability = 0.1
 			create_country_leader = {
 				name = "Carrot council"
 				desc = ""
-				picture = "gfx/leaders/SOV/Portrait_Carrot_council.dds"
+				picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
 				expire = "2020.1.1"
-				ideology = liberalism
+				ideology = carrotism
 				traits = {
 					champion_of_peace_5
-					social_reformer
 				}
 			}	
 			set_party_name= { 
-					ideology = democratic 
+					ideology = communism 
 					long_name = carrot_council
 					name = CCC 
-			}
-			add_popularity= {
-				ideology = democratic
-			 popularity = 0.4
 			}				
 		}
 	}
@@ -114,26 +106,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for  of carrotzka
-	focus = {
-		id = CRZ_universityofcarrotzka
-		icon = GFX_goal_generic_scientific_exchange
-		x = 3
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CRZ_nospacefortwo }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			SOV = { exists = no }
-		}
-		completion_reward = {
-			add_research_slot= 2
-		}
-	}
-
 	#Focus for soviet scientists
 	focus = {
 		id = CRZ_sovietscientists
@@ -160,7 +132,6 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_politicalactions }
-		mutually_exclusive = { focus = CRZ_nospacefortwo }
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -201,37 +172,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity= {
-       			ideology = communism
-        		popularity = 0.2 
+       			ideology = neutrality
+        		popularity = -0.2 
        		}
-			add_political_power = 120
+			add_political_power = 200
 			hidden_effect = {
 				add_ai_strategy = {
 					type = antagonize
 					id = "GER"
 					value = 72
 				}
-			}
-		}
-	}
-
-	#Focus for No space for two
-	focus = {
-		id = CRZ_nospacefortwo
-		icon = GFX_focus_ger_strike_at_the_source
-		x = 3
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = CRZ_politicalactions }
-		mutually_exclusive = { focus = CRZ_improverelationswithsoviet }
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			create_wargoal= { 
-				type = annex_everything 
-				target = SOV
 			}
 		}
 	}
@@ -261,7 +211,7 @@ focus_tree = {
 		    	     popularity = -0.2 
 				}
 			add_stability= 0.2
-			add_political_power= 50
+			add_political_power= 200
 		}
 	}
 
@@ -367,7 +317,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability= -0.2
-			add_political_power = 150
+			add_political_power = 200
 			remove_ideas = loyalists
 			add_popularity= { 
 				 ideology = neutrality 
@@ -399,17 +349,15 @@ focus_tree = {
 				name = "Vassily Carrot"
 				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
 				traits = { 
-					brilliant_strategist
 					winter_expert
 					trait_mountaineer
 					veteran_special_force_commander
-					harsh_leader
 				}
-				skill = 5
-				attack_skill = 5
-				defense_skill = 5
-				planning_skill = 5
-				logistics_skill = 5
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
 			}
 
 			create_corps_commander = {
@@ -481,13 +429,23 @@ focus_tree = {
 					mountaineers = { x = 0 y = 0 }	
 					mountaineers = { x = 0 y = 1 }
 					mountaineers = { x = 0 y = 2 }	
+					mountaineers = { x = 0 y = 3 }	
+					mountaineers = { x = 0 y = 4 }
 					mountaineers = { x = 1 y = 0 }
 					mountaineers = { x = 1 y = 1 }
 					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }	
+					mountaineers = { x = 1 y = 4 }
 					mountaineers = { x = 2 y = 0 }	
 					mountaineers = { x = 2 y = 1 }	
-					mountaineers = { x = 2 y = 2 }	
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 2 y = 4 }		
 					mountaineers = { x = 3 y = 0 }	
+					mountaineers = { x = 3 y = 1 }	
+					mountaineers = { x = 3 y = 2 }	
+					mountaineers = { x = 3 y = 3 }	
+					mountaineers = { x = 3 y = 4 }	
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -584,7 +542,7 @@ focus_tree = {
        			ideology = anarchism
         		popularity = -1
        		}
-     		add_political_power = 100
+     		add_political_power = 200
 			release = ACZ
 		    	CRZ = { set_autonomy = { target = ACZ autonomy_state = autonomy_colony } }
 			    	ACZ = {
@@ -650,7 +608,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			navy_experience = 100
-			add_political_power = 150
+			add_political_power = 200
 	}
 }
 
@@ -965,7 +923,7 @@ focus_tree = {
 						add_tech_bonus = {
 							name = med_armor_bonus
 							ahead_reduction = 4
-							technology = improved_light_tank
+							technology = advanced_light_tank
 						}
 						add_tech_bonus = {
 							name = armor_bonus
@@ -1109,7 +1067,7 @@ focus_tree = {
 							 popularity = -0.2 
 						}
 					add_stability= 0.1
-					add_political_power= 100
+					add_political_power= 200
 					remove_ideas = King_cabbagesII_revenge
 				}
 			}
@@ -1269,7 +1227,6 @@ focus_tree = {
 							}	
 							ACZ = { 
 								set_cosmetic_tag = ACZ_FREE
-							add_ideas = Anarchist_society 
 						}					
 					}
 				}
@@ -1401,7 +1358,7 @@ focus_tree = {
 							}
 							completion_reward = {	
 								add_ideas = support_the_world_revolution	
-								add_country_leader_trait = leader_of_the_workers							
+								add_country_leader_trait = leader_of_the_workers						
 							}		
 						}
 
@@ -1550,4 +1507,54 @@ focus_tree = {
 									add_nuclear_bombs = 2
 								}
 							}
+
+							focus = {
+								id = CRZ_support_spain
+								icon = GFX_focus_generic_military_mission
+								x = 3
+								y = 1
+								cost = 5
+								available_if_capitulated = yes
+								prerequisite = { focus = CRZ_politicalactions }
+								ai_will_do = {
+									factor = 0
+								}
+								available = {
+									country_exists= SPR
+								}
+								completion_reward = {
+								   unlock_decision_category_tooltip = CRZ_spanish_civilwar
+								   SPR = {
+									add_opinion_modifier= { 
+										target = CRZ 
+										modifier = offered_support 
+									}
+								   }
+								   add_opinion_modifier= { 
+									target = SPR 
+									modifier = loyalist_spanish_government_support_opinion 
+								}
+							}
+			}
+			
+			focus = {
+				id = invite_spain
+				icon = GFX_goal_generic_national_unity
+				x = 3
+				y = 2
+				cost = 5
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_support_spain }
+				ai_will_do = {
+					factor = 1
 				}
+				available = {
+			       country_exists = SPR
+				}
+				completion_reward = {
+					add_to_faction = SPR
+					add_to_faction = ASP
+
+				}
+			}
+		}

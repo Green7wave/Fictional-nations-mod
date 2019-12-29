@@ -1,36 +1,25 @@
 leader_traits = {
 
 leader_in_battalefield = { 
-    type = land
-    trait_type = field_marshal
-    
-    attack_skill = 2
-    planning_skill = 2
+    type = field_marshal
+    gain_xp = {
+        always = no # not gainable
+    }  
     
     modifier = {
-        planning_speed = 0.15
-        breakthrough_factor = 0.05
-        land_reinforce_rate = 0.1
-        acclimatization_cold_climate_gain_factor = 0.40
-        out_of_supply_factor = -0.25
-        army_infantry_attack_factor = 0.05
+        breakthrough_factor = 0.1
+        army_infantry_attack_factor = 0.1
+        max_army_group_size = 2
     }
-
-    #corps_commander_modifier = {
-   #     max_commander_army_size = 6
-   # } its a foking marshal this doesnt do shit
   }
 
   veteran_special_force_commander = { 
-    type = land
-    trait_type = corps_commander
-
+    type = corps_commander
+    gain_xp = {
+        always = no # not gainable
+    }
     modifier = {
-        out_of_supply_factor = -0.1
-        no_supply_grace = 64
-        army_morale_factor = 0.08
         army_infantry_attack_factor = 0.08
-        experience_loss_factor = -2.5
     }
 
     corps_commander_modifier = {
@@ -38,7 +27,7 @@ leader_in_battalefield = {
     }
     
     non_shared_modifier = {
-        experience_gain_factor = 1
+        experience_loss_factor = -999999999
     }
   }
 }

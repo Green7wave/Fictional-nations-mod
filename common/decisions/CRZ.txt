@@ -159,3 +159,108 @@ CRZ_battale_orders = {
 			}
 	}
 }
+}
+
+CRZ_spanish_civilwar = {
+
+    send_guns = {
+        icon = generic_operation
+        cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = no
+		days_remove = 20
+		complete_effect = {
+            SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+			}
+          }
+          ASP = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+			}
+	      }
+      }
+  }
+
+    sabotage_the_factories = {
+        icon = generic_operation
+        cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = no
+		days_remove = 40
+		complete_effect = {
+            D01 = {
+            random_owned_controlled_state  = {   
+             damage_building = {
+                    type = arms_factory 
+                    damage = 2
+                }
+            }
+        }
+    }
+}
+
+steal_equipments = {
+    icon = generic_operation
+    cost = 50
+    ai_will_do = {
+        factor = 1
+    }
+    fire_only_once = no
+    days_remove = 40
+    complete_effect = {
+        D01 = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -1000
+			}
+        }
+        SPR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+			}
+        }
+    }
+  }
+
+  anarchist_spain = {
+    icon = generic_operation
+    cost = 0
+    ai_will_do = {
+        factor = 1
+    }
+    days_remove = 1
+    fire_only_once = yes
+    complete_effect = {
+        SPR = {
+            release = ASP
+        }
+        ASP = {
+            hidden_effect = {
+                set_politics = {
+                    ruling_party = anarchism
+                    last_election = "1935.11.14"
+                    election_frequency = 48
+                    elections_allowed = no
+                }
+                set_popularities = {
+                    democratic = 0
+                    fascism = 0
+                    communism = 0
+                    neutrality = 0
+                    anarchism = 100
+                }
+            }
+         }
+  }
+ }
+}
+

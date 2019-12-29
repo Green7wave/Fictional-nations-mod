@@ -64,13 +64,22 @@ leader_traits = {
     }
     leader_of_the_workers = {
         random = no
-        subversive_activites_upkeep = -0.5
+        subversive_activites_upkeep = -0.2
         drift_defence_factor = 0.3
         weekly_manpower = 250
 
         ai_will_do = {
 			factor = 1
 		}
+    }
+
+    internationalist_guerilla = {
+        random = no
+        subversive_activites_upkeep = -0.7	
+		opinion_gain_monthly_same_ideology_factor = 3
+        improve_relations_maintain_cost_factor = -0.5
+        non_core_manpower = 0.02
+
     }
 }
 

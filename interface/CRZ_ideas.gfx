@@ -4218,4 +4218,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_europe_6.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_Nestor_Golivin"
+		texturefile = "gfx/interface/ideas/idea_Nestor_Golivin.dds"
+	}
 }

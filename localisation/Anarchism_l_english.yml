@@ -2,17 +2,17 @@
 # Anarchism stuff
  anarchism:0 "Anarchists"
  anarchism_noun:0 "Anarchism"
- anarchism_desc:0 "Anarchist Regime" # Ie. Democratic Regime, Fascist Dictatorship, Anarcho-Capitalist Regime
+ anarchism_desc:0 "Anarchist Society" # Ie. Democratic Regime, Fascist Dictatorship, Anarcho-Capitalist Regime
  anarchism_drift:0 "Daily Anarchist Support"
  anarchism_acceptance:0 "Acceptance of Anarchist Diplomacy"
 
 
 # Factions
- FACTION_NAME_anarchism_1:0 "How the fuck does this faction exist"
+ FACTION_NAME_anarchism_1:0 "Free Nations"
  FACTION_NAME_anarchism_2:0 "United Free People"
- FACTION_NAME_anarchism_3:0 "Freedom of Racism"
- FACTION_NAME_anarchism_4:0 "Anti-law kids"
- FACTION_NAME_anarchism_5:0 "The fake Anarchist countries"
+ FACTION_NAME_anarchism_3:0 "Freedom"
+ FACTION_NAME_anarchism_4:0 ""
+ FACTION_NAME_anarchism_5:0 "Anarchist countries"
 
 # Party names
  AFG_anarchism_party:0 "CCAFU"
@@ -224,6 +224,8 @@
  SPF_anarchism_party_long:0 "Confederación Nacional del Trabajo"
  BSQ_anarchism_party:0 "CNF"
  BSQ_anarchism_party_long:0 "Confederación Nacional del Trabajo"
+ ASP_anarchism_party:0 "APS" 
+ ASP_anarchism_party:0 "Anarchist people of spain"
  
 
 
@@ -514,4 +516,7 @@
  ACZ_anarchism:0 "anarchist carrotzka"
  ACZ_anarchism_ADJ:0 "anarchist carrotzka"
  ACZ_anarchism_DEF:0 "anarchist carrotzka"
+ ASP_anarchism:0 "Anarchist people of spain"
+ ASP_anarchism_ADJ:0 "Anarchist people of spain"
+ ASP_anarchism_DEF:0 "Anarchist people of spain"
 

@@ -240,26 +240,6 @@ ideas = {
 			removal_cost = -1
 		}
 
-		Anarchist_society = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				enemy_justify_war_goal_time = 500
-				drift_defence_factor = 500
-				anarchism_drift = 1
-				training_time_factor = 1
-			}
-
-			removal_cost = -1
-		}
-
 		Call_of_equality = {
 
 			allowed = {
@@ -310,9 +290,7 @@ ideas = {
 				lend_lease_tension = -0.1
 				send_volunteers_tension = -0.1
 				guarantee_tension = -0.1
-				ai_get_ally_desire_factor = 100		
 				send_volunteer_divisions_required = -1
-				subversive_activites_upkeep = -0.5
 				send_volunteer_size = 20
 			}
 			removal_cost = -1
@@ -492,6 +470,20 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+
+		Nestor_Golivin = {
+			cost = 200
+			available = {
+				has_completed_focus = CRZ_support_the_world_revolution
+			}
+			allowed = {
+				original_tag = CRZ
+    	}
+			traits = {
+				internationalist_guerilla
+			}
+
 		}
 	}
 	

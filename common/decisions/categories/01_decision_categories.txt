@@ -24,3 +24,9 @@ CRZ_battale_orders = {
 	}
 		
 }
+
+CRZ_spanish_civilwar = {
+	visible = {
+		has_completed_focus = CRZ_support_spain	
+    }
+}
