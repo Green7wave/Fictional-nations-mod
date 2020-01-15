@@ -79,3 +79,90 @@ news_event = {
 		name = crznews.5.a
 	}
 }
+
+news_event = {
+	id = crznews.420
+	title = crznews.420.t
+	desc = crznews.420.d
+	picture = GFX_news_event_bose_meeting
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.420.a
+		trigger = {
+		NOT = { 
+			TAG = CRZ 
+		} 
+	}
+	}
+
+	option = {
+		name = crznews.420.b
+		trigger = { TAG = CRZ }
+	}
+}
+
+news_event = {
+	id = crznews.69
+	title = crznews.69.t
+	desc = crznews.69.d
+	picture = GFX_news_event_064
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.69.a
+		trigger = {
+		NOT = { 
+			TAG = CRZ 
+		} 
+	}
+	}
+
+	option = {
+		name = crznews.69.b
+		trigger = { TAG = CRZ }
+	}
+}
+
+news_event = {
+	id = crznews.70
+	title = crznews.70.t
+	desc = crznews.70.d
+	picture = news_event_german_reichstag_graffiti_ruins
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.70.a
+		trigger = {
+		NOT = { 
+			TAG = CRZ 
+		} 
+	}
+	}
+
+	option = {
+		set_politics = {
+			ruling_party = neutrality
+		}
+		name = crznews.70.b
+		trigger = { TAG = CRZ }
+		start_civil_war = {
+			ruling_party = communism
+			ideology = communism
+			size = 0.8
+			only_own_territory = no
+			capital = 235
+			states = { 
+				234 218 238 245 235
+			}
+	}
+}

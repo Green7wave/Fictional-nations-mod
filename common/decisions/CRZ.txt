@@ -264,3 +264,62 @@ steal_equipments = {
  }
 }
 
+retake_the_salad_region = {
+
+    ultimatum_to_romania = {
+        icon = generic_operation
+        cost = 150
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 0
+		complete_effect = {
+            ROM = {
+                country_event = {
+                    id = carrotzka.70
+                    days = 1
+                    random = 0
+                }
+            }
+      }
+  }
+
+  ultimatum_to_turkey = {
+    icon = generic_operation
+    cost = 150
+    ai_will_do = {
+        factor = 1
+    }
+    fire_only_once = yes
+    days_remove = 0
+    complete_effect = {
+        TUR = {
+            country_event = {
+                id = carrotzka.71
+                days = 1
+                random = 0
+            }
+        }
+  }
+}
+
+ultimatum_to_poland = {
+    icon = generic_operation
+    cost = 150
+    ai_will_do = {
+        factor = 1
+    }
+    fire_only_once = yes
+    days_remove = 0
+    complete_effect = {
+        POL = {
+            country_event = {
+                id = carrotzka.72
+                days = 1
+                random = 0
+            }
+        }
+  }
+}
+}

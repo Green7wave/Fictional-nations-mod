@@ -23,6 +23,26 @@ ideas = {
 				can_send_volunteers = yes
 			}
 		}
+
+		black_flag = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_rom_balkan_dominance
+
+			modifier = {
+				army_morale_factor = -0.08
+				training_time_factor = -0.05
+			}
+		}
 		#
 
 	} # end of national spirits 

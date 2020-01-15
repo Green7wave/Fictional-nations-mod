@@ -334,6 +334,23 @@ ideas = {
 			removal_cost = -1
 		}
 
+		CRZ_secure_the_air = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_air_base_factor = 0.25
+			}
+			removal_cost = -1
+		}
+
 		#
 
 		crz_soviet_demands = {
@@ -389,8 +406,6 @@ ideas = {
 			}
 		
 		}
-
-
 
 		# end of national focus
 	}
@@ -456,7 +471,12 @@ ideas = {
 				traits = { 
 					social_reformer
 				}
+				available = {
+					NOT = {
+					has_completed_focus = CRZ_purge_parovski
+				}
 			}
+		}
 
 		vlad_makhofskey = {
 			cost = 150	
@@ -555,7 +575,7 @@ ideas = {
 
 			}
 
-			traits = { navy_chief_naval_aviation_1 }
+			traits = { navy_capital_ship_3 }
 			
 			ai_will_do = {
 				factor = 0.2
@@ -618,7 +638,7 @@ ideas = {
 
 			}
 		
-			traits = { air_chief_ground_support_2 }
+			traits = { air_chief_ground_support_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -652,7 +672,7 @@ ideas = {
 			
 
 			
-			traits = { army_concealment_2 }
+			traits = { army_commando_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -668,7 +688,7 @@ ideas = {
 			
 
 			
-			traits = { army_regrouping_2 }
+			traits = { army_regrouping_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -697,7 +717,7 @@ ideas = {
 
 			}
 
-			traits = { air_close_air_support_2 }
+			traits = { army_chief_offensive_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -711,7 +731,7 @@ ideas = {
 
 			}			
 			
-			traits = { navy_submarine_2 }
+			traits = { army_chief_drill_3 }
 			
 			ai_will_do = {
 				factor = 0.2
@@ -724,7 +744,7 @@ ideas = {
 
 			}
 			
-			traits = { navy_amphibious_assault_2 }
+			traits = { army_chief_reform_3 }
 			
 			ai_will_do = {
 				factor = 0.2
@@ -735,24 +755,6 @@ ideas = {
 	
 	theorist = {	
 	
-			
-		v = {
-			
-			
-			allowed = {
-				original_tag = CRZ
-
-			}
-
-			cost = 150
-			
-			research_bonus = {
-				cat_mass_assault = 0.15
-			}
-			
-			# PURGED
-			traits = { mass_assault_expert }
-		}
 		
 		w = {
 			

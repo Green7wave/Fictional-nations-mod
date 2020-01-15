@@ -4222,4 +4222,9 @@ spriteTypes = {
 		name = "GFX_idea_Nestor_Golivin"
 		texturefile = "gfx/interface/ideas/idea_Nestor_Golivin.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_support_the_world_revolution"
+		texturefile = "gfx/interface/ideas/idea_support_the_world_revolution.dds"
+	}
 }

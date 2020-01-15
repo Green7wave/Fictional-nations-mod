@@ -75,10 +75,10 @@ leader_traits = {
 
     internationalist_guerilla = {
         random = no
-        subversive_activites_upkeep = -0.7	
-		opinion_gain_monthly_same_ideology_factor = 3
-        improve_relations_maintain_cost_factor = -0.5
-        non_core_manpower = 0.02
+        subversive_activites_upkeep = -0.3	
+		opinion_gain_monthly_same_ideology_factor = 1.5
+        improve_relations_maintain_cost_factor = -0.2
+        non_core_manpower = 0.01
 
     }
 }

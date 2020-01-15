@@ -36,6 +36,18 @@
  carrotzka.20_d:0 "Greenlin invited us to TIX treaty whitch means they want to get access to produce our tanks, upgrade them and we both get to use it"
  carrotzka.20_a:0 "sign the treaty"
  carrotzka.20_b:0 "How dare they?"
+ crznews.420.t:0 "Vladimir Parovski assissinated"
+ crznews.420.d:0 "Following the recent democrats movement againts vassily's government, Vladimir's wife found him on his office dead, they say he have been poisend by vassily"
+ crznews.420.a:0 "Thats crazy!"
+ crznews.69.t:0 "Vassily moves soliders to free society of easten europe borders"
+ crznews.69.d:0 "After the assassination of Dimitri Ivanofki, Carrotzka moved soliders to free society of eastern europe, it is obvious now that these assassinations were vassily's order"
+ crznews.69.a:0 "they just gonna kill everyone?"
+ crznews.420.b:0 "One more to go"
+ crznews.69.b:0 "Mission acomplished"
+ crznews.70.t:0 "Sadra Carrot assissinated!"
+ crznews.70.d:0 "with propaganda and help from germany, loyalists becamed more powerful and assissinated the leader of carrotzka revolution, Sadra Carrot, after this his brother Vassily Carrot camed to power and said:YOU WANNA FUCKING GO? to loyalists"
+ crznews.70.a:0 "they didnt even lasted a year"
+ crznews.70.b:0 "more coming soon"
 
 
 
@@ -69,6 +81,7 @@
 
 # Leader Desc
  POLITICS_SADRA_CARROT_DESC:0 "Leader of the revolution of carrotzka."
+ POLITICS_VASSILY_CARROT_DESC:0 "An harsh general of carrotzka army that now is the dictator leader of carotzka"
 
 # opinion modifiers
  CRZ_communist_ally:0 "Communist Allies"
@@ -83,7 +96,7 @@
  CRZ_neutrality:0  "Carrotzka Empire"
  CRZ_neutrality_DEF:0 "the Carrotzka Empire"
  CRZ_communism:0 "Carrotzka"
- CRZ_communism_DEF:0 "the Socialist Republic of Carrotzka"
+ CRZ_communism_DEF:0 "Carrotzka"
  CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
  CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
  ACZ_FREE_anarchism:0 "Free Society of Eastren Europe"
@@ -95,7 +108,7 @@
  VICTORY_POINTS_11683:0 "Carrotgrad"
  VICTORY_POINTS_9435:0 "Green Tidings"
  VICTORY_POINTS_11437:0 "Carrot Fields"
- VICTORY_POINTS_8256:0 "Black Sea"
+ STRATEGICREGION_30:0 "Orange sea"
 
 # Parties
  CRZ_communism_party:0 "Communist Party Of Carrotzka"
@@ -158,6 +171,8 @@
  vladimir_parovski:0 "Vladimir Parovski"
  MEX_church_power_1_desc:0 "The Church in Our Country will become a thing of the past. The priests are counter-revolutionaries and peddlers of superstitious nonsense. We will press ever harder to turn This Country into a bastion of rationalism and science!"
  Nestor_Golivin:0 "Nestor Golivin"
+ black_flag:0 "Black carrot flag"
+ black_flag_desc:0 "carrotzkaians...they gonna kill us all...should have not said that...i should NOT have said that!"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."
@@ -197,7 +212,26 @@
  steal_equipments:0 "Steal equipments"
  steal_equipments_desc:0 "unfair? i dont think so"
  anarchist_spain:0 "Form of anarchist carrotzka"
+ retake_the_salad_region:0 "Retake the salad region"
+ retake_the_salad_region_desc:0 "Now we don't want any war here so we just gonna send them ultimatum first"
+ ultimatum_to_romania:0 "Ultimatum to Romania"
+ ultimatum_to_turkey:0 "Ultimatum to Turkey"
+ ultimatum_to_poland:0 "Ultimatum to Poland"
 
  # Groups
  improve_relations_grn:0 "Relations Improvement"
  #improve_relations_grn_desc:0 "Improving relations between countries can do nothing but help our cause"
+
+ #ideologies 
+ anarcho_communism:0 "Anarcho communism"
+ anarcho_collectivism:0 "Anarcho collectivism"
+ anarcho_syndicalism:0 "Anarcho syndicalism"
+ anarcho_mutualism:0 "Mutualist anarchism"
+
+anarcho_communism_desc:0 " is a theory of anarchism that advocates abolition of the state, markets, money, private property (while retaining respect for personal property)and capitalism in favour of common ownership of the means of production."
+
+anarcho_syndicalism_desc:0 "Anarcho-syndicalists view labour unions as a potential force for revolutionary social change, replacing capitalism and the state with a new society democratically self-managed by workers."
+
+ anarcho_collectivism_desc:0 "Collectivist anarchists oppose all private ownership of the means of production, instead advocating that ownership be collectivised."
+
+ anarcho_mutualism_desc:0 "Mutualist anarchism is concerned with reciprocity, free association, voluntary contract, federation and credit and currency reform."

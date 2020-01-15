@@ -16,6 +16,11 @@ bookmarks = {
 				peoples_revolution
 				help_of_anarchists
 			}
+			focuses = {
+				CRZ_thecarrotzkaspurge
+				CRZ_death_to_some_states
+				CRZ_carrotism
+			}
 		}
 
 		"GRN"={

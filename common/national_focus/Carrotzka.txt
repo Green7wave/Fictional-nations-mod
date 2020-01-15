@@ -7,6 +7,7 @@ focus_tree = {
 			tag = CRZ
 		}
 	}
+	continuous_focus_position = { x = 50 y = 1500 }
 	#Focus for atheism!
 	focus = {
 		id = CRZ_atheism
@@ -35,6 +36,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_carrotzkapurged }
+		mutually_exclusive = { focus = CRZ_proletariat_dictatorship }
 		ai_will_do = {
 			factor = 40
 		}
@@ -69,7 +71,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
-				factor = 400
+				factor = 0
 			}
 		}
 		available = {
@@ -95,7 +97,7 @@ focus_tree = {
 			factor = 0.1
 			modifier = {
 				date > 1940.1.1
-				factor = 400
+				factor = 0
 			}
 		}
 		completion_reward = {
@@ -183,6 +185,11 @@ focus_tree = {
 					value = 72
 				}
 			}
+			add_timed_idea = {
+				idea = communist_influence
+				days = 360
+				
+			}
 		}
 	}
 
@@ -238,8 +245,11 @@ focus_tree = {
        		}
 			
 			add_political_power = 200
-			add_stability = 0.5
-		    add_ideas = home_of_carrot
+			add_stability = 0.2
+			add_ideas = home_of_carrot
+			hidden_effect = {
+				set_country_leader_ideology = anarchist_communism
+			}
 	}
 	}
 
@@ -285,18 +295,23 @@ focus_tree = {
 			add_political_power= -65
 			add_stability = 0.2
 			remove_ideas = loyalists
-			custom_effect_tooltip = tip_space
 			add_timed_idea = { idea = king_is_dead days = 50 }
-			custom_effect_tooltip = tip_space
 			add_ideas = King_cabbagesII_revenge
 			hidden_effect = {
 				news_event = {
 					id = crznews.1
 					days = 1
 				}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = communism
 			}
 		}
 	}
+}
 
 	#Focus for imprison the king
 	focus = {
@@ -309,11 +324,7 @@ focus_tree = {
 		prerequisite = { focus = CRZ_thecarrotzkaspurge }
 		mutually_exclusive = { focus = CRZ_executetheking }
 		ai_will_do = {
-			factor = 40
-			modifier = {
-				NOT = { has_completed_focus = CRZ_recoverd_from_civil_war }
-				factor = 100
-			}
+			factor = 0
 		}
 		completion_reward = {
 			add_stability= -0.2
@@ -343,23 +354,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			remove_ideas = CHI_army_corruption_1
 			army_experience = 80
 			add_manpower= 800000
-			create_corps_commander = {
-				name = "Vassily Carrot"
-				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
-				traits = { 
-					winter_expert
-					trait_mountaineer
-					veteran_special_force_commander
-				}
-				skill = 4
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-
 			create_corps_commander = {
 				name = "Natasha Sokolov"
 				picture = "Portrait_Carrotzka_Natasha_sokolov.dds"
@@ -420,6 +417,20 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
+			create_corps_commander = {
+				name = "Vassily Carrot"
+				picture = "Portrait_Carrotzka_Vassily_Carrot.dds"
+				traits = { 
+					winter_expert
+					trait_mountaineer
+					veteran_special_force_commander
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
 			hidden_effect = {
 				division_template = {
 					name = "Carrotzka Revolutionary Division"
@@ -904,7 +915,7 @@ focus_tree = {
 
 			focus = {
 					id = CRZ_military_science
-					icon = GFX_goal_generic_small_arms
+					icon = GFX_focus_generic_license_production
 					x = 17
 					y = 2
 					cost = 10
@@ -1038,8 +1049,12 @@ focus_tree = {
 								create_navy_leader = {
 									name = "Ocean Man"
 									picture = "Portrait_carrotzka_Ocean_man.dds"
-									traits = { superior_tactician }
-									skill = 3
+									traits = {
+										 superior_tactician 
+										 spotter
+										 lone_wolf
+								}
+									skill = 5
 								}
 					}
 				}
@@ -1069,6 +1084,15 @@ focus_tree = {
 					add_stability= 0.1
 					add_political_power= 200
 					remove_ideas = King_cabbagesII_revenge
+					hidden_effect = {
+						set_politics = {
+							ruling_party = fascism
+						}
+						kill_country_leader = yes
+						set_politics = {
+							ruling_party = communism
+						}
+					}
 				}
 			}
 
@@ -1147,6 +1171,7 @@ focus_tree = {
 				}
 				completion_reward = {
 					add_war_support= 0.1
+					unlock_decision_category_tooltip = retake_the_salad_region
 				}
 			}
 
@@ -1269,7 +1294,7 @@ focus_tree = {
 
 					focus = {
 							id = CRZ_invite_south_africa #actually this is estonia
-							icon = GFX_goal_generic_support_communism
+							icon = GFX_goal_generic_propaganda
 							x = 34
 							y = 3
 							cost = 6
@@ -1376,7 +1401,7 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								create_corps_commander = {
+								create_field_marshal = {
 									name = "Sadra Carrot"
 									picture = "Portrait_carrotzka_Sadra_Carrot.dds"
 									traits = { 
@@ -1407,7 +1432,7 @@ focus_tree = {
 							}
 							completion_reward = {
 								add_ideas = closed_economy
-								add_ideas = war_economy
+								add_ideas = tot_economic_mobilisation
 							}
 						}
 
@@ -1557,4 +1582,370 @@ focus_tree = {
 
 				}
 			}
+
+			focus = {
+				id = CRZ_invite_paraguay
+				icon = GFX_focus_generic_military_academy
+				x = 29
+				y = 4
+				cost = 9
+				available_if_capitulated = yes
+				prerequisite = { 
+					focus = CRZ_black_and_red_alliance
+				}
+				ai_will_do = {
+					factor = 40
+				}
+				completion_reward = {	
+					add_to_faction = PAR
+						
+				}		
+			}
+
+			focus = {
+				id = CRZ_ministry_of_defence
+				icon = GFX_focus_generic_self_management
+				x = 6
+				y = 7
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_carrotism }
+				mutually_exclusive = { focus = CRZ_path_to_democracy }
+				ai_will_do = {
+					factor = 90
+				}
+				completion_reward = {	
+					remove_country_leader_trait = champion_of_peace_5
+				}
+			}
+
+			focus = {
+				id = CRZ_free_houses
+				icon = GFX_focus_usa_guarantee_the_american_dream
+				x = 4
+				y = 8
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { 
+					focus = CRZ_ministry_of_defence 
+				    focus =	CRZ_proletariat_dictatorship
+				}
+				ai_will_do = {
+					factor = 90
+				}
+				completion_reward = {	
+					add_ideas = CZE_communism_with_a_human_face
+				}
+			}
+
+			focus = {
+				id = CRZ_path_to_democracy
+				icon = GFX_focus_eng_concessions_to_the_trade_unions
+				x = 8
+				y = 7
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_carrotism }
+				mutually_exclusive = { focus = CRZ_ministry_of_defence }
+				ai_will_do = {
+					factor = 10
+				}
+				completion_reward = {	
+					add_ideas = democratic_influence
+					add_country_leader_trait = social_reformer
+				}
+			}
+
+			focus = {
+				id = CRZ_parovski_on_power
+				icon = GFX_focus_eng_expose_the_belly_of_the_bear
+				x = 8
+				y = 8
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_path_to_democracy }
+				available = {
+					democratic > 0.4
+				}
+				ai_will_do = {
+					factor = 40
+				}
+				completion_reward = {	
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+				}
+			}
+
+			focus = {
+				id = CRZ_join_allies
+				icon = GFX_focus_rom_parties_end
+				x = 8
+				y = 9
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_parovski_on_power }
+				ai_will_do = {
+					factor = 40
+				}
+				completion_reward = {	
+					ENG = {
+						add_to_faction = CRZ
+					}
+				}
+			}
+
+			focus = {
+				id = CRZ_proletariat_dictatorship
+				icon = GFX_focus_generic_support_the_left_right
+				x = 3
+				y = 6
+				cost = 7
+				available_if_capitulated = yes
+				prerequisite = { focus = CRZ_carrotzkapurged }
+				mutually_exclusive = { focus = CRZ_carrotism }
+				ai_will_do = {
+					factor = 40
+				}
+				completion_reward = {
+					add_stability = 0.2
+					add_political_power = 200
+					add_ideas = democratic_opposition_voicing_protests
+					create_country_leader = {
+						name = "Vassily Carrot"
+						desc = "POLITICS_VASSILY_CARROT_DESC"
+						picture = "gfx/leaders/CRZ/Portrait_Vassily_leader.dds"
+						expire = "2000.1.1"
+						ideology = stalinism
+						traits = {
+							revolutionary_general
+							staunch_stalinist
+							anti_democrat
+							unquestionable
+						}
+					}	
+			}
 		}
+
+		focus = {
+			id = CRZ_revolutionary_military_commission
+			icon = GFX_focus_generic_tank_production
+			x = 2
+			y = 7
+			cost = 7
+			available_if_capitulated = yes
+			prerequisite = { focus = CRZ_proletariat_dictatorship }
+			ai_will_do = {
+				factor = 40
+			}
+			completion_reward = {
+				add_ideas = PRC_revolutionary_military_commission
+		}
+	}
+
+	focus = {
+		id = CRZ_defend_the_carrotgrud
+		icon = GFX_goal_generic_fortify_city
+		x = 4
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CRZ_free_houses }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			197 = {
+			add_building_construction = {
+				type = bunker
+				level = 10
+				province = 11683
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 10
+				province = 11683
+				instant_build = yes
+			}
+	    }
+      }  
+	}
+
+	focus = {
+		id = militarism
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = CRZ_revolutionary_military_commission }
+		x = 2
+		y = 8
+		cost = 9
+
+		available_if_capitulated = yes
+
+		completion_reward = {		
+			add_ideas = militarism_focus
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = paramilitarism
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = militarism }
+		x = 2
+		y = 9
+		cost = 9
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = paramilitarism_focus
+		}
+	}
+
+	focus = {
+		id = political_commissars
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CRZ_defend_the_carrotgrud }
+		x = 4
+		y = 10
+		cost = 9
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = political_commissars_focus
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = CRZ_second_purge
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CRZ_proletariat_dictatorship }
+		x = 0
+		y = 7
+		cost = 3
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = reign_of_terror
+		}
+	}
+
+	focus = {
+		id = CRZ_purge_parovski
+		icon = GFX_focus_usa_voter_registration_act
+		prerequisite = { focus = CRZ_second_purge }
+		x = 0
+		y = 8
+		cost = 7
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = democratic_opposition_voicing_protests
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = communism
+			}
+			news_event = {
+				id = crznews.420
+				days = 2
+			}
+		}
+	}
+}
+
+	focus = {
+		id = CRZ_purge_anarchists
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		prerequisite = { focus = CRZ_purge_parovski }
+		x = 0
+		y = 9
+		cost = 7
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal= { 
+				type = annex_everything 
+				target = ACZ
+		}
+		ACZ = {
+			kill_country_leader = yes
+		}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = anarchism
+				}
+				kill_country_leader = yes
+				set_politics = {
+					ruling_party = communism
+				}
+				news_event = {
+					id = crznews.69
+					days = 2
+				}
+	    	}
+	    }
+	}
+	
+	focus = {
+		id = CRZ_two_year_plan
+		icon = GFX_focus_eng_imperial_federation
+		x = 23
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = two_year_plan
+				bonus = 1.5
+				uses = 3
+				category = industry
+			}
+    	}
+	}
+
+	focus = {
+		id = CRZ_secure_air
+		icon = GFX_focus_eng_imperial_federation
+		x = 21
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = { CRZ_two_year_plan	}
+		completion_reward = {
+			add_ideas = CRZ_secure_the_air
+			}
+		}
+		
+		focus = {
+			id = CRZ_more_factories
+			icon = GFX_focus_eng_imperial_federation
+			x = 23
+			y = 1
+			cost = 8
+			ai_will_do = {
+				factor = 10
+			}
+			prerequisite = { CRZ_two_year_plan	}
+			completion_reward = {
+				add_timed_idea = {
+					idea = workers_culture
+					days = 360
+				}
+				}
+			}
+	}

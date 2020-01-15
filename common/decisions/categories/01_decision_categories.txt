@@ -30,3 +30,9 @@ CRZ_spanish_civilwar = {
 		has_completed_focus = CRZ_support_spain	
     }
 }
+
+retake_the_salad_region = {
+	visible = {
+		has_completed_focus = CRZ_retake_the_salad_region	
+    }
+}

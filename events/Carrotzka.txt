@@ -438,3 +438,96 @@ country_event = {
 			 }
 	}
 }
+
+country_event = {
+	id = carrotzka.70
+	title = carrotzka.70.t
+	desc = carrotzka.70.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { 
+			factor = 60 
+		}
+		CRZ = {
+			transfer_state = 78
+			transfer_state = 79
+			transfer_state = 80
+				unlock_national_focus = CRZ_warwithromania
+		}
+	}
+
+	option = {
+		ai_chance = {
+			 factor = 40
+			 }
+			 ROM = {
+				 add_ideas = black_flag
+			 }
+	}
+}
+
+country_event = {
+	id = carrotzka.71
+	title = carrotzka.71.t
+	desc = carrotzka.71.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { 
+			factor = 60 
+		}
+		CRZ = {
+			transfer_state = 352
+			transfer_state = 353
+			transfer_state = 354
+				unlock_national_focus = CRZ_war_with_turkey
+		}
+	}
+
+	option = {
+		ai_chance = {
+			 factor = 40
+			 }
+			 TUR = {
+				add_ideas = black_flag
+			 }
+	}
+}
+
+country_event = {
+	id = carrotzka.72
+	title = carrotzka.72.t
+	desc = carrotzka.72.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { 
+			factor = 60 
+		}
+		CRZ = {
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 93
+				unlock_national_focus = CRZ_war_with_poland
+		}
+	}
+
+	option = {
+		ai_chance = {
+			 factor = 40
+			 }
+			 POL = {
+				 add_ideas = black_flag
+			 }
+	}
+}
