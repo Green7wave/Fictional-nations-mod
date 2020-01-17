@@ -179,6 +179,7 @@ focus_tree = {
        		}
 			add_political_power = 200
 			hidden_effect = {
+				set_major = yes
 				add_ai_strategy = {
 					type = antagonize
 					id = "GER"
@@ -378,7 +379,8 @@ focus_tree = {
 	#Focus for The carrotzka's purge
 	focus = {
 		id = CRZ_thecarrotzkaspurge
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_forceful_
+		
 		x = 7
 		y = 1
 		cost = 10
@@ -1846,6 +1848,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			every_other_country = {
+				limit = { 
+					has_government = democratic
+					num_of_factories > 30
+				}
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = CRZ_not_so_democratic
+				}
+			}
 			remove_ideas = democratic_opposition_voicing_protests
 		hidden_effect = {
 			set_politics = {
@@ -1948,4 +1960,22 @@ focus_tree = {
 				}
 				}
 			}
+
+			focus = {
+				id = CRZ_naval_lagacy
+				icon = GFX_focus_eng_imperial_federation
+				x = 25
+				y = 1
+				cost = 8
+				ai_will_do = {
+					factor = 10
+				}
+				prerequisite = { CRZ_two_year_plan	}
+				completion_reward = {
+					add_timed_idea = {
+						idea = workers_culture
+						days = 360
+					}
+					}
+				}
 	}

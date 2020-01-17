@@ -21,4 +21,8 @@ opinion_modifiers = {
 	CRZ_good_terms {
 		value = 50
 	}
+
+	CRZ_not_so_democratic {
+		value = -40
+	}
 }	

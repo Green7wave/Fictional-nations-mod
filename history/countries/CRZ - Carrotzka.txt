@@ -94,6 +94,7 @@ add_ideas = {
 	peoples_revolution
 	help_of_anarchists
 	CHI_army_corruption_1
+	MTG_naval_treaty_adherent
 }
 
 create_country_leader = {
