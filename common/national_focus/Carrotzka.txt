@@ -1775,7 +1775,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = militarism
+		id = CRZ_militarism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = CRZ_revolutionary_military_commission }
 		x = 2
@@ -1791,9 +1791,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = paramilitarism
+		id = CRZ_paramilitarism
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = militarism }
+		prerequisite = { focus = CRZ_militarism }
 		x = 2
 		y = 9
 		cost = 9
@@ -1806,7 +1806,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = political_commissars
+		id = CRZ_political_commissars
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = CRZ_defend_the_carrotgrud }
 		x = 4
