@@ -4227,4 +4227,9 @@ spriteTypes = {
 		name = "GFX_idea_support_the_world_revolution"
 		texturefile = "gfx/interface/ideas/idea_support_the_world_revolution.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_CRZ_secure_the_air"
+		texturefile = "gfx/interface/ideas/idea_generic_air_research.dds"
+	}
 }
