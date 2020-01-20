@@ -172,18 +172,35 @@ CRZ_spanish_civilwar = {
 		fire_only_once = no
 		days_remove = 20
 		complete_effect = {
-            SPR = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 1000
-			}
-          }
-          ASP = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 500
-			}
-	      }
+            if = {
+                limit = {
+                    ASP = { exists = yes }
+                }
+                ASP = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 1000
+                    }
+                }
+
+            } else = {
+
+                SPR = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 1000
+                    }
+                }
+
+            }
+            
+            ROOT = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = -1000
+                }
+            }
+            
       }
   }
 
@@ -194,40 +211,69 @@ CRZ_spanish_civilwar = {
 			factor = 1
 		}
 		fire_only_once = no
-		days_remove = 40
+		days_remove = 60
 		complete_effect = {
             D01 = {
-            random_owned_controlled_state  = {   
-             damage_building = {
-                    type = arms_factory 
-                    damage = 2
+                random_owned_controlled_state  = {   
+                    limit = {
+                        arms_factory > 0
+                    }
+                    damage_building = {
+                        type = arms_factory 
+                        damage = 1
+                    }
                 }
             }
         }
     }
-}
 
-steal_equipments = {
+  steal_equipments = {
     icon = generic_operation
     cost = 50
     ai_will_do = {
         factor = 1
     }
     fire_only_once = no
-    days_remove = 40
+    days_remove = 20
     complete_effect = {
-        D01 = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = -1000
-			}
+        random_list = {
+            40 = {
+                ROOT = {
+                    add_manpower = -200
+                }
+            }
+
+            60 = {
+                D01 = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = -1000
+                    }
+                }
+                if = {
+                    limit = {
+                        ASP = { exists = yes }
+                    }
+                    ASP = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment_1
+                            amount = 1000
+                        }
+                    }
+
+                } else = {
+
+                    SPR = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment_1
+                            amount = 1000
+                        }
+                    }
+
+                }
+            }
         }
-        SPR = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 500
-			}
-        }
+        
     }
   }
 

@@ -280,6 +280,24 @@
 			}
 
 			modifier = {
+				factor = 0.5
+				GRN = {
+					num_divisions < 20
+				}
+			}
+
+			modifier = {
+				factor = 2
+				GRN = {
+					num_divisions > 20
+				}
+			}
+			
+			modifier = {
+
+			}
+
+			modifier = {
 				factor = 2
 				ai_irrationality > 10
 			}
@@ -316,7 +334,7 @@
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 
 				OR = {
 					tag = PER

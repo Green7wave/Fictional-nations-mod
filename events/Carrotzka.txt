@@ -450,7 +450,7 @@ country_event = {
 
 	option = {
 		ai_chance = { 
-			factor = 60 
+			factor = 80 
 		}
 		CRZ = {
 			transfer_state = 78
@@ -462,7 +462,7 @@ country_event = {
 
 	option = {
 		ai_chance = {
-			 factor = 40
+			 factor = 60
 			 }
 			 ROM = {
 				 add_ideas = black_flag
@@ -481,7 +481,13 @@ country_event = {
 
 	option = {
 		ai_chance = { 
-			factor = 60 
+			factor = 20
+			modifier = {
+				factor = 0.01
+				FROM = {
+					num_divisions < 40
+				}
+			}
 		}
 		CRZ = {
 			transfer_state = 352
@@ -493,7 +499,7 @@ country_event = {
 
 	option = {
 		ai_chance = {
-			 factor = 40
+			 factor = 80
 			 }
 			 TUR = {
 				add_ideas = black_flag
@@ -512,7 +518,7 @@ country_event = {
 
 	option = {
 		ai_chance = { 
-			factor = 60 
+			factor = 10
 		}
 		CRZ = {
 			transfer_state = 91
