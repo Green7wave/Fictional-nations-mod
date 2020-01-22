@@ -4,7 +4,11 @@ state={
 	name="STATE_197"
 	manpower = 1000069
 	
-	state_category = large_city
+	state_category = megalopolis
+
+	resources={
+		steel= 25
+	}
 
 	history={
 		victory_points = {
