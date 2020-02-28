@@ -1384,7 +1384,18 @@ focus_tree = {
 							}
 							completion_reward = {	
 								add_ideas = support_the_world_revolution	
-								add_country_leader_trait = leader_of_the_workers						
+								add_country_leader_trait = leader_of_the_workers	
+								create_operative_leader = {
+									name = "Nestor Golivin"
+									GFX = GFX_portrait_alexander_rado
+									traits = {
+										 operative_commando
+										 operative_natural_orator
+										 operative_tough
+										 }
+									available_to_spy_master = yes
+									nationalities = { CRZ }
+								}					
 							}		
 						}
 

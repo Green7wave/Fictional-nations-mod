@@ -1,67 +1,44 @@
 ideologies = {
-
-	anarchism = {
 	
-		types = {
+anarchism = {
 		
-			anarcho_communism  = {
-			}
-			
-			anarcho_collectivism = {
-			}
-			
-			anarcho_syndicalism = {
-			}
-			
-			anarcho_mutualism = {
-			}
-
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_ANARCHIST_1"
-			"FACTION_NAME_ANARCHIST_2"
-			"FACTION_NAME_ANARCHIST_3"
-			"FACTION_NAME_ANARCHIST_4"
+	types = {
+	
+		anarcho_communism = {
 		}
 		
-		color = { 0 0 0 }
+		anarcho_collectivism = {
+		}
 		
-		rules = {
-			can_puppet = no
-			can_send_volunteers = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = no
-			can_puppet = no
-			can_lower_tension = no
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = no
+		anarcho_syndicalism = {
 		}
-
-		modifiers = {
-			generate_wargoal_tension = 1 
-			join_faction_tension = 0.8
-			lend_lease_tension = 1 
-			drift_defence_factor = -0.25
-			enemy_justify_war_goal_time = 500
-			drift_defence_factor = 500
-			anarchism_drift = 1
-			training_time_factor = 1
+		
+		anarcho_mutualism = {
 		}
-
-		can_host_government_in_exile = no
-		war_impact_on_world_tension = -1
-		faction_impact_on_world_tension = 0.25
-
-		faction_modifiers = {
-		}
-
-		can_be_boosted = no
-		can_collaborate = no
-
-		ai_neutral = yes # 
 	}
-
+	
+	dynamic_faction_names = {
+		"FACTION_NAME_anarchism_1"
+		"FACTION_NAME_anarchism_2"
+		"FACTION_NAME_anarchism_3"
+		"FACTION_NAME_anarchism_5"
+	}
+	
+	color = { 0 0 0 }
+	
+	war_impact_on_world_tension = 0.75
+	faction_impact_on_world_tension = 0.5
+	
+	rules = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = no
+	}
+	
+	faction_modifiers = {
+		
+	}
+  }
 communism = {
 		
 	types = {
