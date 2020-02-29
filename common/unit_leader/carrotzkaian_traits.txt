@@ -27,7 +27,7 @@ leader_in_battalefield = {
     }
     
     non_shared_modifier = {
-        experience_loss_factor = -999999999
+        experience_loss_factor = 999999999
         experience_gain_army_factor = 9999999999
     }
   }
@@ -42,7 +42,7 @@ leader_in_battalefield = {
     }
     
     non_shared_modifier = {
-        experience_loss_factor = -999999999
+        experience_loss_factor = 999999999
         experience_gain_army_factor = 9999999999
     }
   }
