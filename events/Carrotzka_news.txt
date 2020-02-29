@@ -159,7 +159,6 @@ news_event = {
 			ruling_party = communism
 			ideology = communism
 			size = 0.8
-			only_own_territory = no
 			capital = 235
 			states = { 
 				234 218 238 245 235

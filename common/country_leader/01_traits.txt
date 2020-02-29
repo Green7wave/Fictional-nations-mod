@@ -31,7 +31,6 @@ leader_traits = {
         generate_wargoal_tension = -888
         justify_war_goal_time = -666
         war_support_factor = 875
-        enemy_partisan_effect = -8127
 		foreign_subversive_activites = -978
 		non_core_manpower = 8713
 		ai_will_do = {
@@ -54,7 +53,6 @@ leader_traits = {
     terror_itself = {
 		sprite = 13
         # nerfed the first two and buffed the non_core_manpower
-		enemy_partisan_effect = -0.20
 		foreign_subversive_activites = -0.15
 		non_core_manpower = 0.03 
 		
@@ -66,7 +64,7 @@ leader_traits = {
         random = no
         subversive_activites_upkeep = -0.2
         drift_defence_factor = 0.3
-        weekly_manpower = 250
+        weekly_manpower = 1000
 
         ai_will_do = {
 			factor = 1

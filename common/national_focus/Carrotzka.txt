@@ -42,12 +42,13 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_stability = 0.1
+		retire_country_leader = yes
 			create_country_leader = {
 				name = "Carrot council"
 				desc = ""
 				picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
 				expire = "2020.1.1"
-				ideology = carrotism
+				ideology = anarchist_communism
 				traits = {
 					champion_of_peace_5
 				}
@@ -1298,7 +1299,7 @@ focus_tree = {
 							icon = GFX_goal_generic_propaganda
 							x = 34
 							y = 3
-							cost = 6
+							cost = 5
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1316,7 +1317,7 @@ focus_tree = {
 							icon = GFX_goal_generic_national_unity
 							x = 32
 							y = 3
-							cost = 6
+							cost = 5
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1334,7 +1335,7 @@ focus_tree = {
 							icon = GFX_goal_generic_demand_territory
 							x = 30
 							y = 3
-							cost = 6
+							cost = 5
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1352,7 +1353,7 @@ focus_tree = {
 							icon = GFX_focus_generic_join_comintern
 							x = 28
 							y = 3
-							cost = 6
+							cost = 5
 							available_if_capitulated = yes
 							prerequisite = { focus = CRZ_black_and_red_alliance }
 							ai_will_do = {
@@ -1372,13 +1373,10 @@ focus_tree = {
 							y = 4
 							cost = 10
 							available_if_capitulated = yes
-							prerequisite = { 
-								focus = CRZ_black_and_red_alliance
-								focus = CRZ_invite_finland 
-								focus = CRZ_invite_latvania
-								focus = CRZ_invite_south_africa
-								focus = CRZ_invite_venezuela
-							}
+							prerequisite = { focus = CRZ_invite_finland }
+							prerequisite =	{ focus = CRZ_invite_latvania }
+							prerequisite =	{ focus = CRZ_invite_south_africa }
+							prerequisite =	{ focus = CRZ_invite_venezuela }
 							ai_will_do = {
 								factor = 40
 							}
@@ -1387,7 +1385,7 @@ focus_tree = {
 								add_country_leader_trait = leader_of_the_workers	
 								create_operative_leader = {
 									name = "Nestor Golivin"
-									GFX = GFX_portrait_alexander_rado
+									GFX = GFX_Portrait_nestor_golivin
 									traits = {
 										 operative_commando
 										 operative_natural_orator
@@ -1395,6 +1393,26 @@ focus_tree = {
 										 }
 									available_to_spy_master = yes
 									nationalities = { CRZ }
+								}
+								create_corps_commander = {
+									name = "Nestor Golivin"
+									picture = "Portrait_nestor_golivin.dds"
+									traits = { 
+										internationalist_guerilla
+										adaptable
+										commando
+										jungle_rat
+										infantry_expert
+										ambusher
+										camouflage_expert
+										guerilla_fighter
+					
+									}
+									skill = 5
+									attack_skill = 5
+									defense_skill = 5
+									planning_skill = 5
+									logistics_skill = 5
 								}					
 							}		
 						}
@@ -1558,6 +1576,14 @@ focus_tree = {
 			focus = {
 				id = invite_spain
 				icon = GFX_goal_generic_national_unity
+				available = {
+					SPR = {
+						NOT = {
+							is_puppet = yes
+							has_government = fascism
+						}
+					}
+				}
 				x = 3
 				y = 2
 				cost = 5
@@ -1571,7 +1597,6 @@ focus_tree = {
 				}
 				completion_reward = {
 					add_to_faction = SPR
-					add_to_faction = ASP
 
 				}
 			}
@@ -1945,7 +1970,7 @@ focus_tree = {
 			}
 			prerequisite = { focus = CRZ_secure_air }
 			completion_reward = {
-				add_ideas = CRZ_a_bird_a_plane
+				add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 producer = SOV }
 				}
 			}
 		
