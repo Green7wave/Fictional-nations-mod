@@ -37,6 +37,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_carrotzkapurged }
 		mutually_exclusive = { focus = CRZ_proletariat_dictatorship }
+		mutually_exclusive = { focus = CRZ_death_to_state }
 		ai_will_do = {
 			factor = 40
 		}
@@ -507,10 +508,10 @@ focus_tree = {
 		id = CRZ_recoverd_from_civil_war
 		icon = GFX_goal_generic_military_sphere
 		x = 10
-		y = 6
+		y = 5
 		cost = 0
 		available_if_capitulated = yes
-		prerequisite = { focus = CRZ_carrotzkapurged }
+		prerequisite = { focus = CRZ_executethekingsparty }
 		ai_will_do = {
 			factor = 4000
 		}
@@ -522,20 +523,30 @@ focus_tree = {
 	focus = {
 		id = CRZ_death_to_state
 		icon = GFX_goal_anti_comintern_pact
-		x = 27
-		y = 0
+		x = 11
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 0
 		}
-		mutually_exclusive = { focus = CRZ_death_to_some_states }
+		prerequisite = { focus = CRZ_carrotzkapurged }
+		mutually_exclusive = { focus = CRZ_carrotism }
+		mutually_exclusive = { focus = CRZ_proletariat_dictatorship }
 		completion_reward = {
 			add_popularity= {
        			ideology = anarchism
-        		popularity = 0.2 
-       		}
-     		add_political_power = -50
-
+        		popularity = 0.7 
+			   }
+			   set_politics = {
+				ruling_party = anarchism
+			}
+     		add_political_power = 50
+			 hidden_effect = {
+				news_event = {
+					id = crznews.666
+					days = 2
+				}
+		}
 		}
 	}
 
@@ -787,14 +798,14 @@ focus_tree = {
 		focus = {
 		id = CRZ_technological_focus
 		icon = GFX_focus_research
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = CRZ_carrotzka_engineering_school 
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = CRZ_carrotzka_engineering_school 
-			focus = CRZ_extreme_nationalism}
+		}
 		ai_will_do = {
 			factor = 80
 		}
@@ -1122,7 +1133,7 @@ focus_tree = {
 				icon = GFX_goal_generic_propaganda
 				x = 34
 				y = 1
-				cost = 10
+				cost = 2
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_retake_the_salad_region }
 				ai_will_do = {
@@ -1182,7 +1193,7 @@ focus_tree = {
 				icon = GFX_goal_generic_major_war
 				x = 36
 				y = 1
-				cost = 10
+				cost = 2
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_retake_the_salad_region }
 				ai_will_do = {
@@ -1208,7 +1219,7 @@ focus_tree = {
 					icon = GFX_focus_RAJ_lions_of_the_great_war
 					x = 38
 					y = 1
-					cost = 10
+					cost = 2
 					available_if_capitulated = yes
 					prerequisite = { focus = CRZ_retake_the_salad_region }
 					bypass = {POL = {exists = no}}
@@ -1450,14 +1461,13 @@ focus_tree = {
 						focus = {
 					    	id = CRZ_improve_relations_with_grn
 							icon = GFX_greenlin_deal
-							x = -1
+							x = 0
 							y = 1
 							relative_position_id = CRZ_carrotzka_engineering_school
 							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { 
 								focus = CRZ_carrotzka_engineering_school
-								focus = CRZ_extreme_nationalism 
 							}
 							ai_will_do = {
 								factor = 20
@@ -1495,12 +1505,13 @@ focus_tree = {
 						focus = {
 								id = CRZ_soviet_engineers
 								icon = GFX_focus_chi_mission_to_the_soviet_union # focus_research
-								x = 0
-								y = 1
-								relative_position_id = CRZ_improve_relations_with_grn
+								x = 15
+								y = 5
 								cost = 10
 								available_if_capitulated = yes
-								prerequisite = { focus = CRZ_improve_relations_with_grn }
+								prerequisite = {
+									 focus = CRZ_carrotzka_engineering_school
+									 }
 								ai_will_do = {
 									factor = 1								
 								}
@@ -1742,7 +1753,6 @@ focus_tree = {
 						expire = "2000.1.1"
 						ideology = stalinism
 						traits = {
-							revolutionary_general
 							staunch_stalinist
 							anti_democrat
 							unquestionable
@@ -2051,4 +2061,53 @@ focus_tree = {
 						}
 						}
 					}
+
+					focus = {
+						id = CRZ_appropriate_the_means_of_production
+						available = {
+						}
+						prerequisite = { focus = CRZ_death_to_state }
+						
+						icon = GFX_focus_generic_support_the_left_right
+						x = 10
+						y = 7
+						cost = 7
+				
+						available_if_capitulated = yes
+				
+						completion_reward = {
+								add_ideas = SPR_anarchist_society_2
+							}
+						}
+
+						focus = {
+							id = CRZ_class_war
+							prerequisite = { focus = CRZ_death_to_state }
+							
+							icon = GFX_focus_spr_class_war
+							x = 12
+							y = 7
+							cost = 7
+					
+							available_if_capitulated = yes
+							completion_reward = {
+								add_ideas = SPR_class_war_1
+							}
+						}
+						focus = {
+							id = CRZ_all_must_bear_the_torch
+							prerequisite = { focus = CRZ_class_war }
+							prerequisite = { focus = CRZ_appropriate_the_means_of_production }
+							
+							icon = GFX_focus_spr_torchbearers_of_tomorrow
+							x = 11
+							y = 8
+							cost = 7
+					
+							available_if_capitulated = yes
+							completion_reward = {
+								add_ideas = SPR_collectivized_society
+								}
+							}
+						}
 	}

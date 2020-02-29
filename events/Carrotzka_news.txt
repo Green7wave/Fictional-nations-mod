@@ -165,3 +165,17 @@ news_event = {
 			}
 	}
 }
+news_event = {
+	id = crznews.666
+	title = crznews.666.t
+	desc = crznews.666.d
+	picture = GFX_news_event_hungary_refused
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.666.a
+	}
+}
