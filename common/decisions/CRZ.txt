@@ -213,7 +213,7 @@ CRZ_spanish_civilwar = {
 		fire_only_once = no
 		days_remove = 60
 		complete_effect = {
-            D01 = {
+            SPA = {
                 random_owned_controlled_state  = {   
                     limit = {
                         arms_factory > 0
@@ -244,7 +244,7 @@ CRZ_spanish_civilwar = {
             }
 
             60 = {
-                D01 = {
+                SPA = {
                     add_equipment_to_stockpile = {
                         type = infantry_equipment_1
                         amount = -1000

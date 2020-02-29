@@ -1385,14 +1385,14 @@ focus_tree = {
 								add_country_leader_trait = leader_of_the_workers	
 								create_operative_leader = {
 									name = "Nestor Golivin"
-									GFX = GFX_Portrait_nestor_golivin
+									picture = "Portrait_nestor_golivin.dds"
 									traits = {
 										 operative_commando
 										 operative_natural_orator
 										 operative_tough
 										 }
 									available_to_spy_master = yes
-									nationalities = { CRZ }
+									nationalities = { CRZ ITA }
 								}
 								create_corps_commander = {
 									name = "Nestor Golivin"
@@ -1559,6 +1559,11 @@ focus_tree = {
 									country_exists= SPR
 								}
 								completion_reward = {
+									add_timed_idea = {
+										idea = POR_volunteers_in_the_war_nationalist
+										days = 360
+										
+									}
 								   unlock_decision_category_tooltip = CRZ_spanish_civilwar
 								   SPR = {
 									add_opinion_modifier= { 
@@ -1575,7 +1580,7 @@ focus_tree = {
 			
 			focus = {
 				id = invite_spain
-				icon = GFX_goal_generic_national_unity
+				icon = GFX_focus_intervention_spain_republic
 				available = {
 					SPR = {
 						NOT = {
