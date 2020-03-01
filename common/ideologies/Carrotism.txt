@@ -26,8 +26,7 @@ carrotism = {
 	
 	color = { 255 144 0 }
 	
-	stability_weekly = 0.01
-	drift_defence_factor = -0.25
+	
 
 	rules = {
 		can_force_government = yes
@@ -36,7 +35,8 @@ carrotism = {
 	}
 	
 	faction_modifiers = {
-		
+		#stability_weekly = 0.01
+		#drift_defence_factor = -0.25
 	}
   }
 }

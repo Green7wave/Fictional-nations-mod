@@ -120,7 +120,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = fascism
 			}
 			
 			research_bonus = {

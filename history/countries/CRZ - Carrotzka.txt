@@ -125,10 +125,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King CabbageII"
+	name = "King Cabbage II"
     desc = ""
 	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage_II.dds"
-	expire = "1960.6.1"
+	expire = "1980.6.1"
 	ideology = fascism_ideology
 	traits = {
 		dictator
@@ -142,13 +142,25 @@ create_country_leader = {
     name = "king cabbage"
     desc = ""
 	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage.dds"
-	expire = "1912.3.1"
+	expire = "1960.3.1"
 	ideology = oligarchism
 	traits = {
 		autocratic_imperialist
 		anti_communist
 	}
 }
+
+create_country_leader = {
+		name = "Carrot Council"
+		desc = "POLITICS_CARROTIST_COUNCIL_DESC"
+		picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
+		expire = "2020.1.1"
+		ideology = Carrotist
+		traits = {
+			champion_of_peace_5
+		}
+}	
+
 
 #create_country_leader = {
 #	name = "dimitri ivanofski"

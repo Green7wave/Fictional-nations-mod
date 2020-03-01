@@ -152,7 +152,7 @@ news_event = {
 
 	option = {
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = fascism
 		}
 		name = crznews.70.b
 		trigger = { TAG = CRZ }

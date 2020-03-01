@@ -389,7 +389,7 @@ country_event = {
 		tag = CRZ
 		has_idea = loyalists
 		date > 1936.10.1
-		neutrality > 0.35
+		fascism > 0.35
          
 	}
 
@@ -399,7 +399,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.16.a
 		start_civil_war = {
-			ideology = neutrality
+			ideology = fascism
 			size = 0.6
 		}
 		hidden_effect = {

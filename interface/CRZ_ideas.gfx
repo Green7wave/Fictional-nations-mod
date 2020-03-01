@@ -4044,8 +4044,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_carrotist_society"
-		texturefile = "gfx/interface/ideas/idea_carrotist_society.dds"
+		name = "GFX_idea_anarchist_society"
+		texturefile = "gfx/interface/ideas/idea_anarchist_society.dds"
 	}
 
 	spriteType = {

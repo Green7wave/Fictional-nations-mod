@@ -42,23 +42,24 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-		add_stability = 0.1
-		retire_country_leader = yes
-			create_country_leader = {
-				name = "Carrot council"
-				desc = ""
-				picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
-				expire = "2020.1.1"
-				ideology = carrotist_communism
-				traits = {
-					champion_of_peace_5
+			add_stability = 0.05
+			retire_country_leader = yes
+			
+			set_politics = {
+				ruling_party = carrotism
+			}
+			
+			hidden_effect = {
+				add_popularity= {
+					ideology = carrotism
+					popularity = 0.7 
 				}
-			}	
-			set_party_name= { 
-					ideology = communism 
-					long_name = carrot_council
-					name = CCC 
-			}				
+			}
+			#set_party_name= { 
+			#		ideology = communism 
+			#		long_name = carrot_council
+			#		name = CCC 
+			#}				
 		}
 	}
 
@@ -176,7 +177,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity= {
-       			ideology = neutrality
+       			ideology = fascism
         		popularity = -0.2 
        		}
 			add_political_power = 200
@@ -201,7 +202,7 @@ focus_tree = {
 		icon = GFX_focus_eng_god_save_the_king
 		x = 7
 		y = 4
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = CRZ_executetheking 
@@ -216,7 +217,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    	add_popularity= { 
-     		     	 ideology = neutrality 
+     		     	 ideology = fascism 
 		    	     popularity = -0.2 
 				}
 			add_stability= 0.2
@@ -246,7 +247,7 @@ focus_tree = {
         		popularity = 0.05
        		}
 			
-			add_political_power = 200
+			add_political_power = 120
 			add_stability = 0.2
 			add_ideas = home_of_carrot
 			hidden_effect = {
@@ -291,7 +292,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity= { 
-				ideology = neutrality 
+				ideology = fascism 
 				popularity = -0.4
 			}
 			add_political_power= -65
@@ -305,7 +306,7 @@ focus_tree = {
 					days = 1
 				}
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = fascism
 			}
 			kill_country_leader = yes
 			set_politics = {
@@ -333,7 +334,7 @@ focus_tree = {
 			add_political_power = 200
 			remove_ideas = loyalists
 			add_popularity= { 
-				 ideology = neutrality 
+				 ideology = fascism 
 				 popularity = -0.2 
 			}
 			news_event= crznews.3
@@ -399,11 +400,7 @@ focus_tree = {
 				ideology = fascism 
 				popularity = -0.2 
 			}
-			add_popularity= { 
-				ideology = neutrality 
-				popularity = -0.2 
-			}
-			add_stability = 0.2
+			add_stability = 0.15
 		}
 	}
 
@@ -509,7 +506,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 10
 		y = 5
-		cost = 0
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_executethekingsparty }
 		ai_will_do = {
@@ -534,19 +531,19 @@ focus_tree = {
 		mutually_exclusive = { focus = CRZ_proletariat_dictatorship }
 		completion_reward = {
 			add_popularity= {
-       			ideology = carrotism
+       			ideology = neutrality
         		popularity = 0.7 
-			   }
-			   set_politics = {
-				ruling_party = carrotism
+			}
+			set_politics = {
+				ruling_party = neutrality
 			}
      		add_political_power = 50
-			 hidden_effect = {
+			hidden_effect = {
 				news_event = {
 					id = crznews.666
 					days = 2
 				}
-		}
+			}
 		}
 	}
 
@@ -562,7 +559,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = help_of_anarchists
 			add_popularity= {
-       			ideology = carrotism
+       			ideology = neutrality
         		popularity = -1
        		}
      		add_political_power = 200
@@ -571,7 +568,7 @@ focus_tree = {
 			    	ACZ = {
 							hidden_effect = {
 								set_politics = {
-									ruling_party = carrotism
+									ruling_party = neutrality
 									last_election = "1935.11.14"
 									election_frequency = 48
 									elections_allowed = no
@@ -580,8 +577,8 @@ focus_tree = {
 									democratic = 0
 									fascism = 0
 									communism = 0
-									neutrality = 0
-									carrotism = 100
+									neutrality = 100
+									carrotism = 0
 								}
 								news_event = crznews.5
 
@@ -1076,7 +1073,7 @@ focus_tree = {
 				icon = GFX_goal_tfv_sever_ties_with_uk
 				x = 3
 				y = 4
-				cost = 8
+				cost = 10
 				available_if_capitulated = yes
 				prerequisite = { 
 					focus = CRZ_executetheking 
@@ -2076,7 +2073,7 @@ focus_tree = {
 						available_if_capitulated = yes
 				
 						completion_reward = {
-								add_ideas = SPR_carrotist_society_2
+								add_ideas = SPR_anarchist_society_2
 							}
 						}
 

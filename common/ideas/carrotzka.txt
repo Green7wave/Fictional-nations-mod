@@ -36,7 +36,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				neutrality_drift = 0.3
+				fascism_drift = 0.06
 			}
 		}
 		home_of_carrot = {
@@ -179,6 +179,7 @@ ideas = {
 
 			modifier = {
 				war_support_factor = -0.05
+				neutrality_drift = 0.05
 			}
 		}
 
@@ -375,7 +376,7 @@ ideas = {
 		
 		}
 		
-		}
+		
 		sov_soviet_demands = {
 		
 			removal_cost = -1
@@ -458,13 +459,13 @@ ideas = {
         	cost = 150	
 			allowed = {
 				original_tag = CRZ
+			}
+			traits = { 
+				veteran_communist
+			}
 		}
-		traits = { 
-			veteran_communist
-		}
-	}
 		
-	vladimir_parovski = {		
+		vladimir_parovski = {		
 			cost = 150
 				allowed = {
 					original_tag = CRZ
