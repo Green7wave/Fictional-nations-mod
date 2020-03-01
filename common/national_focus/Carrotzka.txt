@@ -564,8 +564,8 @@ focus_tree = {
 					days = 2
 				}
 			}
-		}
 	}
+
 
 	focus = {
 		id = CRZ_death_to_some_states
