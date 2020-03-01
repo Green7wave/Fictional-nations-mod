@@ -55,7 +55,6 @@ ideas = {
 			picture = GIS
 			
 			modifier = {
-				partisan_effect = 0.2
 				subversive_activites_upkeep = -0.45
 				recon_factor = 0.2
 				decryption_factor = 0.8

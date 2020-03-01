@@ -159,10 +159,23 @@ news_event = {
 			ruling_party = communism
 			ideology = communism
 			size = 0.8
-			only_own_territory = no
 			capital = 235
 			states = { 
 				234 218 238 245 235
 			}
+	}
+}
+news_event = {
+	id = crznews.666
+	title = crznews.666.t
+	desc = crznews.666.d
+	picture = GFX_news_event_hungary_refused
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.666.a
 	}
 }

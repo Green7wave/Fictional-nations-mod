@@ -69,7 +69,6 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.1
                 army_org_factor = 0.1
-				partisan_effect = 0.4
 				war_support_factor = 0.05
 				communism_acceptance = 70
 			}
@@ -89,7 +88,6 @@ ideas = {
                 army_org_factor = 0.15
 				send_volunteer_factor = 0.5
 				training_time_factor = -0.2
-				partisan_effect = 0.5
 				war_support_factor = 0.1
 				army_morale_factor = 0.03
 				communism_acceptance = 30
@@ -113,7 +111,6 @@ ideas = {
                 army_org_factor = 0.2
 				training_time_factor = -0.3
 				send_volunteer_factor = 1
-			    partisan_effect = 0.6
 				fascism_drift = 0.1
 				war_support_factor = 0.15
 				army_morale_factor = 0.05
@@ -501,7 +498,6 @@ ideas = {
 
 		vlad_makhofskey = {
 			cost = 150	
-			
 			allowed = {
 				original_tag = CRZ
     	}
@@ -534,7 +530,7 @@ ideas = {
 		
 		
 		a = {
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 			}			
@@ -546,7 +542,7 @@ ideas = {
 		}
 		
 		b = {
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 			}			
@@ -558,7 +554,7 @@ ideas = {
 		}
 		
 		c = {
-			
+			ledger = military
 			
 			allowed = {
 				original_tag = CRZ
@@ -573,7 +569,7 @@ ideas = {
 
 		vasily = {
 			cost = 150	
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
     	}
@@ -589,7 +585,7 @@ ideas = {
 	navy_chief = {
 		
 		e = {
-			
+			ledger = navy
 			
 			allowed = {
 				original_tag = CRZ
@@ -604,7 +600,7 @@ ideas = {
 		}
 		
 		f = {
-			
+			ledger = navy
 			
 			allowed = {
 				original_tag = CRZ
@@ -618,7 +614,7 @@ ideas = {
 		}
 		
 		g = {
-			
+			ledger = navy
 			
 			allowed = {
 				original_tag = CRZ
@@ -633,7 +629,7 @@ ideas = {
 		}
 		
 		h = {
-			
+			ledger = navy
 			
 			allowed = {
 				original_tag = CRZ
@@ -652,8 +648,7 @@ ideas = {
 		
 		
 		j = {
-			
-			
+			ledger = air
 			allowed = {
 				original_tag = CRZ
 
@@ -667,8 +662,7 @@ ideas = {
 		}
 		
 		l = {
-			
-			
+			ledger = air
 			allowed = {
 				original_tag = CRZ
 
@@ -686,7 +680,7 @@ ideas = {
 	high_command = {
 	
 		m = {
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 			}
@@ -701,7 +695,7 @@ ideas = {
 		}
 		
 		n = {
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 
@@ -717,7 +711,7 @@ ideas = {
 		}
 		
 		o = {	
-
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 
@@ -731,8 +725,7 @@ ideas = {
 		}	
 		
 		q = {
-			
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 
@@ -746,7 +739,7 @@ ideas = {
 		}	
 		
 		s = {
-			
+			ledger = military
 			allowed = {
 				original_tag = CRZ
 
@@ -760,9 +753,9 @@ ideas = {
 		}
 		
 		u = {
+			ledger = military
 			allowed = {
 				original_tag = CRZ
-
 			}
 			
 			traits = { army_chief_reform_3 }
@@ -775,7 +768,7 @@ ideas = {
 	
 	
 	theorist = {	
-	
+		ledger = military
 		
 		w = {
 			
@@ -793,26 +786,35 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		x = {
+		CRZ_council_of_theorists = { # Anarchists
+			ledger = military
 			
-			
+			picture = SPR_anarchist_council
+					
 			allowed = {
-				original_tag = CRZ # Unlocked via focus
-
+				original_tag = CRZ
 			}
-		
-			cost = 150
+
+			visible = {
+				has_completed_focus = CRZ_death_to_state
+			}
+
+			available = {
+				has_completed_focus = CRZ_communal_military_strategies
+			}
 			
 			research_bonus = {
-				cat_mass_assault = 0.15
+				land_doctrine = 0.05
+				naval_doctrine = 0.05
+				air_doctrine = 0.05
 			}
 			
-			traits = { mass_assault_expert }
+			traits = { council_of_theorists }
 		}
 		
 		y = {
 			
-			
+			ledger = navy
 			allowed = {
 				original_tag = CRZ
 
