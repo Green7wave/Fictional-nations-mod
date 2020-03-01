@@ -116,7 +116,7 @@ create_country_leader = {
 	desc = "POLITICS_SADRA_CARROT_DESC"
     picture = "gfx/leaders/CRZ/Portrait_carrotzka_Sadra_Carrot.tga"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = anarchist_communism
 	traits = {
 		unquestionable
 		connected_citizen
@@ -143,7 +143,7 @@ create_country_leader = {
     desc = ""
 	picture = "gfx/leaders/CRZ/Portrait_carrotzka_King_cabbage.dds"
 	expire = "1960.3.1"
-	ideology = oligarchism
+	ideology = falangism
 	traits = {
 		autocratic_imperialist
 		anti_communist
@@ -155,7 +155,7 @@ create_country_leader = {
 		desc = "POLITICS_CARROTIST_COUNCIL_DESC"
 		picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
 		expire = "2020.1.1"
-		ideology = Carrotist
+		ideology = collectivist_carrotism
 		traits = {
 			champion_of_peace_5
 		}

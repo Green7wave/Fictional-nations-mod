@@ -54,12 +54,16 @@ focus_tree = {
 					ideology = carrotism
 					popularity = 0.7 
 				}
+				news_event = {
+					id = crznews.69420
+					days = 2
+				}
 			}
-			#set_party_name= { 
-			#		ideology = communism 
-			#		long_name = carrot_council
-			#		name = CCC 
-			#}				
+			set_party_name= { 
+					ideology = carroitsm 
+					long_name = carrot_council
+					name = CCC 
+			}				
 		}
 	}
 
@@ -250,9 +254,6 @@ focus_tree = {
 			add_political_power = 120
 			add_stability = 0.2
 			add_ideas = home_of_carrot
-			hidden_effect = {
-				set_country_leader_ideology = carrotist_communism
-			}
 	}
 	}
 
@@ -539,6 +540,25 @@ focus_tree = {
 			}
      		add_political_power = 50
 			hidden_effect = {
+				If = {
+					limit = { 
+						country_exists= ACZ
+					   }
+				   CRZ ={ 
+					   annex_country = {
+					target = ACZ
+					transfer_troops = yes
+				}
+			 }			  
+		  }
+				If = {
+					limit = { 
+						has_idea = help_of_anarchists
+					   }
+					   remove_ideas = help_of_anarchists
+			 }			  
+		  }
+		  
 				news_event = {
 					id = crznews.666
 					days = 2
@@ -1313,8 +1333,15 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								EST = {
-								 add_ideas = Call_of_equality 
+								If = {
+								  limit = { 
+									CRZ = { ruling_party = Carrotism }
+									 }
+								 EST ={ add_ideas = call_of_freedom }
+								
+								}
+								Else = {
+									 EST = { add_ideas = call_of_equality }
 								}
 							}		
 						}
@@ -1331,11 +1358,18 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								LIT = {
-									add_ideas = Call_of_freedom
+									If = {
+									  limit = { 
+										CRZ = { ruling_party = Carrotism }
+										 }
+									 LIT ={ add_ideas = call_of_freedom }
+									
+									}
+									Else = {
+										 LIT = { add_ideas = call_of_equality }
+									}
 								}
-							}		
-						}
+							}
 
 						focus = {
 							id = CRZ_invite_latvania
@@ -1349,11 +1383,18 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								LAT = {
-									add_ideas = Call_of_freedom
+									If = {
+									  limit = { 
+										CRZ = { ruling_party = Carrotism }
+										 }
+									 LAT ={ add_ideas = call_of_freedom }
+									
+									}
+									Else = {
+										 LAT = { add_ideas = call_of_equality }
+									}
 								}
 							}		
-						}
 
 						focus = {
 							id = CRZ_invite_finland
@@ -1367,11 +1408,18 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-								FIN = {
-									add_ideas = Call_of_equality
+									If = {
+									  limit = { 
+										CRZ = { ruling_party = Carrotism }
+										 }
+									 FIN ={ add_ideas = call_of_freedom }
+									
+									}
+									Else = {
+										 FIN = { add_ideas = call_of_equality }
+									}
 								}
 							}		
-						}
 						
 						focus = {
 							id = CRZ_support_the_world_revolution
@@ -1740,6 +1788,10 @@ focus_tree = {
 					factor = 40
 				}
 				completion_reward = {
+					start_civil_war = {
+						ideology = democratic
+						size = 0.2
+				  }
 					add_stability = 0.2
 					add_political_power = 200
 					add_ideas = democratic_opposition_voicing_protests
@@ -1755,6 +1807,12 @@ focus_tree = {
 							unquestionable
 						}
 					}	
+					hidden_effect = {
+						news_event = {
+							id = crznews.69420
+							days = 1
+						}
+					}
 			}
 		}
 
