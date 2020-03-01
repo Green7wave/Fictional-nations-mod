@@ -819,6 +819,7 @@ ideas = {
 	high_command = {
 
 		bogun_maxim = {
+			ledger = army
 
 			picture = generic_army_europe_4
 
@@ -830,6 +831,7 @@ ideas = {
 		}
 		
 		hector_deeps = {
+			ledger = army
 
 			picture = generic_army_europe_6
 
@@ -841,6 +843,7 @@ ideas = {
 		}
 
 		nickolas_vales = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -852,6 +855,7 @@ ideas = {
 		}
 
 		silvestrov_yuriy  = {
+			ledger = army
 
 			picture = generic_army_europe_5
 
@@ -863,7 +867,8 @@ ideas = {
 		}
 
 		bob_ross = {
-
+			ledger = army
+			
 			cost = 250
 
 			allowed = {
@@ -881,6 +886,7 @@ ideas = {
 	theorist = {
 
 		desmond_laster = {
+			ledger = army
 
 			picture = generic_army_asia_4
 
@@ -896,6 +902,7 @@ ideas = {
 		}
 	
 		sonya_tangleter = {
+			ledger = navy
 
 			picture = generic_political_advisor_female_europe
 			
@@ -912,6 +919,7 @@ ideas = {
 		}
 
 		pyryev_yadovki  = {
+			ledger = air 
 
 			picture = generic_army_south_america_1
 
@@ -927,7 +935,7 @@ ideas = {
 		}
 
 		markiplier = {
-			
+			ledger = army
 			
 			allowed = {
 				original_tag = GRN
