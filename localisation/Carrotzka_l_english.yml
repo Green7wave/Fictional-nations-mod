@@ -98,18 +98,18 @@
  CRZ_good_terms:0 "us and them are in good terms" 
 
 # Country names
- CRZ_fascism:0  "Greater Carrotzka"
- CRZ_fascism_DEF:0 "Nationalist Carrotzka"
+ CRZ_neutrality:0 "Free orange lands"
+ CRZ_neutrality_DEF:0 "FRee orange lands"
  CRZ_democratic:0  "Carrotzka Republic"
  CRZ_democratic_DEF:0 "the Carrotzka Republic"
- CRZ_fascism:0  "Carrotzka Empire"
- CRZ_fascism_DEF:0 "the Carrotzka Empire"
+ CRZ_fascism:0  "cabbageska"
+ CRZ_fascism_DEF:0 "cabbageska"
  CRZ_communism:0 "Carrotzka"
  CRZ_communism_DEF:0 "Carrotzka"
  CRZ_carrotism:0 "carrotist People's Republic Of Carrotzka"
  CRZ_carrotism:0 "carrotist People's Republic Of Carrotzka"
- ACZ_FREE_carrotism:0 "Free Society of Eastren Europe"
- ACZ_FREE_carrotism_DEF:0 "Free Society of Eastren Europe"
+ ACZ_FREE_anarchism:0 "Free Society of Eastren Europe"
+ ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
 
 # State and province names
  STATE_197:0 "Emerald Valley"
@@ -121,11 +121,11 @@
 
 # Parties
  CRZ_communism_party:0 "Communist Party Of Carrotzka"
- CRZ_fascism_party:0 "Anarchist people of carrotzka"
+ CRZ_fascism_party:0 "loyalists"
  CRZ_fascism_party:0 "Loyalists"
  CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
- CRZ_carrotism_party:0 "carrotist People"
- carrot_council:0 "Carrot council of carrotzka"
+ CRZ_carrotism_party:0 "carrotist carrotzka"
+ carrot_council:0 "Carrot council of people"
 
 # ideas
  loyalists:0 "loyalists"

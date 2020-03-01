@@ -565,7 +565,6 @@ focus_tree = {
 				}
 			}
 		}
-	}
 
 	focus = {
 		id = CRZ_death_to_some_states
