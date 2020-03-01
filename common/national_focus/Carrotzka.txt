@@ -54,6 +54,10 @@ focus_tree = {
 					ideology = carrotism
 					popularity = 0.7 
 				}
+				news_event = {
+					id = crznews.69420
+					days = 2
+				}
 			}
 			set_party_name= { 
 					ideology = carroitsm 
@@ -1784,6 +1788,10 @@ focus_tree = {
 					factor = 40
 				}
 				completion_reward = {
+					start_civil_war = {
+						ideology = democratic
+						size = 0.2
+				  }
 					add_stability = 0.2
 					add_political_power = 200
 					add_ideas = democratic_opposition_voicing_protests
@@ -1799,6 +1807,12 @@ focus_tree = {
 							unquestionable
 						}
 					}	
+					hidden_effect = {
+						news_event = {
+							id = crznews.69420
+							days = 1
+						}
+					}
 			}
 		}
 
