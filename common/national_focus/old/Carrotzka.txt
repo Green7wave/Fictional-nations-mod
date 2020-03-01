@@ -107,22 +107,22 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			SOV = { exists = no }
+			 = { exists = no }
 		}
 		completion_reward = {
 			add_research_slot= 2
 		}
 	}
 
-	#Focus for soviet scientists
+	#Focus for iet scientists
 	focus = {
-		id = CRZ_sovietscientists
+		id = CRZ_ietscientists
 		icon = GFX_focus_generic_socialist_science
 		x = 0
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = CRZ_improverelationswithsoviet }
+		prerequisite = { focus = CRZ_improverelationswithiet }
 		ai_will_do = {
 			factor = 40
 		}
@@ -131,10 +131,10 @@ focus_tree = {
 		}
 	}
 
-	#Focus for improve relations with soviet
+	#Focus for improve relations with iet
 	focus = {
-		id = CRZ_improverelationswithsoviet
-		icon = GFX_focus_chi_mission_to_the_soviet_union
+		id = CRZ_improverelationswithiet
+		icon = GFX_focus_chi_mission_to_the_iet_union
 		x = 0
 		y = 1
 		cost = 9
@@ -150,7 +150,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier= { 
-				target = SOV 
+				target =  
 				modifier = CRZ_communist_ally 
 			}
 		}
@@ -185,14 +185,14 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_politicalactions }
-		mutually_exclusive = { focus = CRZ_improverelationswithsoviet }
+		mutually_exclusive = { focus = CRZ_improverelationswithiet }
 		ai_will_do = {
 			factor = 0
 		}
 		completion_reward = {
 			create_wargoal= { 
 				type = annex_everything 
-				target = SOV
+				target = 
 			}
 		}
 	}
@@ -839,7 +839,7 @@ random_owned_controlled_state = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = CRZ_sovietscientists }
+		prerequisite = { focus = CRZ_ietscientists }
 		ai_will_do = {
 			factor = 40
 		}
@@ -851,7 +851,7 @@ random_owned_controlled_state = {
 					add_state_claim= 235
 					add_state_claim= 230
 			}
-			SOV = {
+			 = {
 				country_event= {
                   days = 1 
                  id = carrotzka.1
@@ -1793,7 +1793,7 @@ random_owned_controlled_state = {
 						#	}
 						#	completion_reward = {
 						#		unlock_decision_tooltip = { decision = invite_grn show_effect_tooltip = yes show_modifiers = yes }
-						#		unlock_decision_tooltip = { decision = invite_sov show_effect_tooltip = yes show_modifiers = yes }
+						#		unlock_decision_tooltip = { decision = invite_ show_effect_tooltip = yes show_modifiers = yes }
 						#	}
 						#} # i made a category so this is wrong, sry
 
@@ -1831,8 +1831,8 @@ random_owned_controlled_state = {
 						}
 
 						focus = {
-								id = CRZ_soviet_engineers
-								icon = GFX_CHI_mission_to_the_soviet_union # focus_research
+								id = CRZ_iet_engineers
+								icon = GFX_CHI_mission_to_the_iet_union # focus_research
 								x = 45
 								y = 1
 								cost = 10
@@ -1841,8 +1841,8 @@ random_owned_controlled_state = {
 									factor = 1								
 								}
 								completion_reward = {
-									add_ideas = soviet_scientists
-									# modifier = CHI_mission_to_the_soviet_union
+									add_ideas = iet_scientists
+									# modifier = CHI_mission_to_the_iet_union
 								}
 							}
 				}

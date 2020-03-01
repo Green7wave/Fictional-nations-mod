@@ -143,12 +143,11 @@ news_event = {
 	option = {
 		name = crznews.70.a
 		trigger = {
-		NOT = { 
-			TAG = CRZ 
-		} 
+			NOT = { 
+				TAG = CRZ 
+			} 
+		}
 	}
-	}
-}
 
 	option = {
 		set_politics = {
@@ -164,6 +163,7 @@ news_event = {
 			states = { 
 				234 218 238 245 235
 			}
+		}
 	}
 }
 news_event = {

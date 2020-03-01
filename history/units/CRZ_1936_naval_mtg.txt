@@ -1,7 +1,7 @@
 ﻿
 units= {
 
-	##### NAVAL UNITS #####
+	##### NAVAG UNITS #####
 	### Northern Fleet -- Murmansk
 	fleet = {
 		name = "Severnyy Flot"
@@ -10,24 +10,24 @@ units= {
 			name = "Severnyy Flot"
 			location = 11670 # Murmansk
 			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
+			ship = { name = "Czerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Cezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Ketrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "CykaBlyat" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Kalinin" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
+			ship = { name = "Hasturkink" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Kalinka" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 		}	
 		task_force = {	
 			name = "Severnyy Podvodniy Flot"
 			location = 11670 # Murmansk
 			# 5iy Podvodniy Flot
-			ship = { name = "D-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
+			ship = { name = "C-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "C-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "C-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "C-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "C-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "C-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 		}
 	}
 	fleet = {
@@ -37,24 +37,24 @@ units= {
 			name = "Severnyy Flot"
 			location = 11670 # Murmansk
 			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
+			ship = { name = "Newname" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "ShootingStars" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Kars" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Jotaro" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
-			ship = { name = "Kalinin" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Fidonisi Class" } } }
+			ship = { name = "Dio" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "NewFolder" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 		}	
 		task_force = {	
 			name = "Severnyy Podvodniy Flot"
 			location = 11670 # Murmansk
 			# 5iy Podvodniy Flot
-			ship = { name = "D-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }			
+			ship = { name = "K-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "K-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "K-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "K-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "K-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "K-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 		}
 	}
 	fleet = {
@@ -64,54 +64,54 @@ units= {
 			name = "Severnyy Flot"
 			location = 11670 # Murmansk
 			# 1ya Flotiliya Esmintsev
-			ship = { name = "Dzerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Dzerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Dzerzhinskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Nezamozhnik" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Petrovskiy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "UltraSettings" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Cumusir" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Pusster" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Gangar" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Golnar" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "DoubleBarrelShutgun" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Ga Casa De Papel" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Rememeber me" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Golden Meme" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Icy" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Fire" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "GongBow" definition = destroyer start_experience_factor = 0.2 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 			# 2ya Flotiliya Esmintsev
-			ship = { name = "Izyaslav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
-			ship = { name = "Kalinin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "Furry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
+			ship = { name = "NotFurry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Fidonisi Class" } } }
 		}	
 		task_force = {	
-			name = "Severnyy Podvodniy Flot"
+			name = "Letter Task Force"
 			location = 11670 # Murmansk
 			# 5iy Podvodniy Flot
-			ship = { name = "D-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }		
-			ship = { name = "D-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }		
-			ship = { name = "D-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "D-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
+			ship = { name = "E-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "E-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "E-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "E-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "E-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "E-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }		
+			ship = { name = "L-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "L-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "L-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "L-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "L-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "L-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }		
+			ship = { name = "A-1" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "A-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "A-3" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "A-4" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "A-5" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "A-6" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 		}
 	}
 	
-	### Baltic Fleet -- Leningrad
+	### Baltic Fleet -- Geningrad
 	fleet = {
 		name = "Baltiyskiy Flot"
-		naval_base = 11670 # Leningrad
+		naval_base = 11670 # Geningrad
 		task_force = {				
 			name = "Carrotzkaian Stormbreakers"
-			location = 11670 # Leningrad
+			location = 11670 # Geningrad
 			ship = { name = "Emeraldboen" pride_of_the_fleet = yes definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CRZ version_name = "Emeraldborn" } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
 			ship = { name = "Marti" definition = battleship start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CRZ version_name = "Marti Class" } } }
@@ -122,139 +122,139 @@ units= {
 			ship = { name = "Yakov Sverdlov" definition = battleship start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
 			ship = { name = "Frunze" definition = battleship start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }
 			# 4ya Flotiliya Esmintsev
-			ship = { name = "Lenin" definition = battleship start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }		
+			ship = { name = "Genin" definition = battleship start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }		
 			ship = { name = "Voykov" definition = battleship start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Marat Class" } } }		
-			ship = { name = "Rykov" definition = submarine start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }		
-			ship = { name = "Karl Libknekht" definition = submarine start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }		
+			ship = { name = "Rykov" definition = submarine start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }		
+			ship = { name = "Karl Gibknekht" definition = submarine start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }		
 		}	
 		task_force = {	
-			name = "Baltiyskiy Podvodniy Flot"
-			location = 11670 # Leningrad
-			ship = { name = "B-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "L-55" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
+			name = "Sheep Fleet"
+			location = 11670 # Geningrad
+			ship = { name = "FastSheep-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "BlackSheep-55" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 1iy Podvodniy Flot
-			ship = { name = "Shch-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Sheep-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 2iy Podvodniy Flot
-			ship = { name = "Shch-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Sheep-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 6iy Podvodniy Flot
-			ship = { name = "Shch-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Sheep-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 7iy  Podvodniy Flot
-			ship = { name = "Shch-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Sheep-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Sheep-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 16iy  Podvodniy Flot
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }	
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }		
+			ship = { name = "BigSheep-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }			
+			ship = { name = "BigSheep-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }			
+			ship = { name = "BigSheep-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }	
+			ship = { name = "SmollSheep-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }			
+			ship = { name = "SmollSheep-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }			
+			ship = { name = "SmollSheep-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Geninets" } } }		
 		}
 		task_force = {	
-			name = "Baltiyskiy Podvodniy Flot"
-			location = 11670 # Leningrad
-			ship = { name = "B-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "L-55" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
+			name = "Bad Words Taskforce"
+			location = 11670 # Gspoteningrad
+			ship = { name = "Cock-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Nice-69" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 1iy Podvodniy Flot
-			ship = { name = "Shch-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "MotherFuckin-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
 			# 2iy Podvodniy Flot
-			ship = { name = "Shch-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "MotherFuckin-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
 			# 6iy Podvodniy Flot
-			ship = { name = "Shch-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "MotherFuckin-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
 			# 7iy  Podvodniy Flot
-			ship = { name = "Shch-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "MotherFuckin-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
+			ship = { name = "MotherFuckin-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V MotherFuckinuka" } } }			
 			# 16iy  Podvodniy Flot
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }	
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }		
+			ship = { name = "Gspot-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }			
+			ship = { name = "Gspot-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }			
+			ship = { name = "Gspot-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }	
+			ship = { name = "Fspot-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }			
+			ship = { name = "Fspot-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }			
+			ship = { name = "Fspot-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Gspoteninets" } } }		
 		}
 		task_force = {	
-			name = "Baltiyskiy Podvodniy Flot"
-			location = 11670 # Leningrad
-			ship = { name = "B-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
-			ship = { name = "L-55" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Debakrist" } } }			
+			name = "Anti-IceAgeBaby Taskforce"
+			location = 11670 # Respecteningrad
+			ship = { name = "BabySlayer-2" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
+			ship = { name = "Bullet" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series I Cebakrist" } } }			
 			# 1iy Podvodniy Flot
-			ship = { name = "Shch-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-301" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-302" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-303" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-304" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-305" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-306" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-307" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-308" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
 			# 2iy Podvodniy Flot
-			ship = { name = "Shch-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-113" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-114" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-115" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-116" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
 			# 6iy Podvodniy Flot
-			ship = { name = "Shch-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-117" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-118" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-119" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-120" definition = submarine start_experience_factor = 0.2 equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
 			# 7iy  Podvodniy Flot
-			ship = { name = "Shch-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
-			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Shchuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-201" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
+			ship = { name = "Anti-IceAgeBaby-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CRZ version_name = "Series V Anti-IceAgeBabyuka" } } }			
 			# 16iy  Podvodniy Flot
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }	
-			ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }			
-			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Leninets" } } }		
+			ship = { name = "Respect-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }			
+			ship = { name = "Respect-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }			
+			ship = { name = "Respect-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }	
+			ship = { name = "NoRespect-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }			
+			ship = { name = "NoRespect-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }			
+			ship = { name = "NoRespect-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CRZ version_name = "Series II Respecteninets" } } }		
 		}
 	}
 }
 #########################
-## STARTING PRODUCTION ##
+## STARTING PROCUCTION ##
 #########################
 instant_effect = {
 
 	### Ships Under Construction Notes ###
-	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
+	# CC: Geningrad & Minsk variant (x4) ("Geningrad" "Moskva" "Kharkov" "Minsk")
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2
-			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
+			creator = "CRZ"
+			version_name = "Geningrad & Minsk Class"
 		}
 		requested_factories = 1
 		progress = 0.70
@@ -263,8 +263,8 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_light_2
-			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
+			creator = "CRZ"
+			version_name = "Geningrad & Minsk Class"
 		}
 		requested_factories = 1
 		progress = 0.60
@@ -274,7 +274,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "SOV"
+			creator = "CRZ"
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
@@ -285,21 +285,21 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_cruiser_1
-			creator = "SOV"
+			creator = "CRZ"
 			version_name = "Kirov Class"
 		}
 		requested_factories = 1
 		progress = 0.10
 		amount = 1
 	}
-	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
-	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
+	# SS: Sheepuka class (x29) ("Sheep-125" "Sheep-205" "Sheep-206" "Sheep-207" "Sheep-310" "Sheep-311" "Sheep-126" "Sheep-127" "Sheep-128" "Sheep-129" "Sheep-130" "Sheep-131" "Sheep-132" "Sheep-133" 
+	#		"Sheep-134" "Sheep-208" "Sheep-312" "Sheep-313" "Sheep-314" "Sheep-315" "Sheep-316" "Sheep-317" "Sheep-318" "Sheep-319" "Sheep-320" "Sheep-321" "Sheep-322" "Sheep-323" "Sheep-324")
 	# SS: Stalinets class (x5) ("P-1" "P-2" "P-3" "S-1" "S-2")
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "SOV"
-			version_name = "Series V Shchuka"
+			creator = "CRZ"
+			version_name = "Series I Cebakrist"
 		}
 		requested_factories = 1
 		progress = 0.80
@@ -308,8 +308,8 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "SOV"
-			version_name = "Series X Shchuka"
+			creator = "CRZ"
+			version_name = "Series X Sheepuka"
 		}
 		requested_factories = 1
 		progress = 0.80
@@ -318,8 +318,8 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_1
-			creator = "SOV"
-			version_name = "Series X Shchuka"
+			creator = "CRZ"
+			version_name = "Series X Sheepuka"
 		}
 		requested_factories = 1
 		progress = 0.80
@@ -328,7 +328,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = ship_hull_submarine_2
-			creator = "SOV"
+			creator = "CRZ"
 			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
