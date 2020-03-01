@@ -79,7 +79,7 @@ set_popularities = {
 	fascism = 10
 	communism = 32
     neutrality = 28
-	anarchism = 27
+	carrotism = 27
 }
 
 set_politics = {
@@ -92,7 +92,7 @@ add_ideas = {
     recovery_from_civil_war
 	loyalists
 	peoples_revolution
-	help_of_anarchists
+	help_of_carrotists
 	CHI_army_corruption_1
 	MTG_naval_treaty_adherent
 }

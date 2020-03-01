@@ -1,8 +1,8 @@
 spriteTypes = {
 	
 	spriteType = {
-		name = "GFX_Anarchist_carrotzka_formed"
-		texturefile = "gfx/event_pictures/Anarchist_carrotzka_formed.dds"
+		name = "GFX_carrotist_carrotzka_formed"
+		texturefile = "gfx/event_pictures/carrotist_carrotzka_formed.dds"
 	}
 
 }

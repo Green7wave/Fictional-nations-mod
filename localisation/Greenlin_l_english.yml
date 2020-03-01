@@ -29,8 +29,8 @@
  GRN_fascism_party:0 "GGS Party"
  GRN_fascism_party_long:0 "Gloryious Greenlin Supporters Party"
  GRN_democratic_party:0 "People's Freewill Party"
- GRN_anarchism_party_long:0 "Greenlin's United Free People"
- GRN_anarchism_party:0 "GUFP"
+ GRN_carrotism_party_long:0 "Greenlin's United Free People"
+ GRN_carrotism_party:0 "GUFP"
 
 # Tool tips (§G§!) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."

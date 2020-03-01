@@ -49,7 +49,7 @@ focus_tree = {
 				desc = ""
 				picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
 				expire = "2020.1.1"
-				ideology = anarchist_communism
+				ideology = carrotist_communism
 				traits = {
 					champion_of_peace_5
 				}
@@ -242,7 +242,7 @@ focus_tree = {
         		popularity = 0.2 
        		}
 		add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = 0.05
        		}
 			
@@ -250,7 +250,7 @@ focus_tree = {
 			add_stability = 0.2
 			add_ideas = home_of_carrot
 			hidden_effect = {
-				set_country_leader_ideology = anarchist_communism
+				set_country_leader_ideology = carrotist_communism
 			}
 	}
 	}
@@ -534,11 +534,11 @@ focus_tree = {
 		mutually_exclusive = { focus = CRZ_proletariat_dictatorship }
 		completion_reward = {
 			add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = 0.7 
 			   }
 			   set_politics = {
-				ruling_party = anarchism
+				ruling_party = carrotism
 			}
      		add_political_power = 50
 			 hidden_effect = {
@@ -560,9 +560,9 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			remove_ideas = help_of_anarchists
+			remove_ideas = help_of_carrotists
 			add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = -1
        		}
      		add_political_power = 200
@@ -571,7 +571,7 @@ focus_tree = {
 			    	ACZ = {
 							hidden_effect = {
 								set_politics = {
-									ruling_party = anarchism
+									ruling_party = carrotism
 									last_election = "1935.11.14"
 									election_frequency = 48
 									elections_allowed = no
@@ -581,7 +581,7 @@ focus_tree = {
 									fascism = 0
 									communism = 0
 									neutrality = 0
-									anarchism = 100
+									carrotism = 100
 								}
 								news_event = crznews.5
 
@@ -636,7 +636,7 @@ focus_tree = {
 }
 
 		focus = {
-		id = CRZ_support_for_anarchist_carrotzka
+		id = CRZ_support_for_carrotist_carrotzka
 		icon = GFX_focus_generic_industry_3
 		x = 31
 		y = 1
@@ -910,7 +910,7 @@ focus_tree = {
 					y = 2
 					cost = 5
 					available_if_capitulated = yes
-					prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+					prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 					ai_will_do = {
 						factor = 40
 						modifier = {
@@ -1252,7 +1252,7 @@ focus_tree = {
 						y = 2
 						cost = 0
 						available_if_capitulated = yes
-						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+						prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 						mutually_exclusive = { focus = CRZ_the_new_meaning_of_freedom }
 						ai_will_do = {
 							factor = 40
@@ -1275,7 +1275,7 @@ focus_tree = {
 						y = 2
 						cost = 0
 						available_if_capitulated = yes
-						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+						prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 						mutually_exclusive = { focus = CRZ_True_freedom }
 						ai_will_do = {
 							factor = 40
@@ -1907,7 +1907,7 @@ focus_tree = {
 }
 
 	focus = {
-		id = CRZ_purge_anarchists
+		id = CRZ_purge_carrotists
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		prerequisite = { focus = CRZ_purge_parovski }
 		x = 0
@@ -1926,7 +1926,7 @@ focus_tree = {
 		}
 			hidden_effect = {
 				set_politics = {
-					ruling_party = anarchism
+					ruling_party = carrotism
 				}
 				kill_country_leader = yes
 				set_politics = {
@@ -2076,7 +2076,7 @@ focus_tree = {
 						available_if_capitulated = yes
 				
 						completion_reward = {
-								add_ideas = SPR_anarchist_society_2
+								add_ideas = SPR_carrotist_society_2
 							}
 						}
 

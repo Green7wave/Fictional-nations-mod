@@ -14,7 +14,7 @@ bookmarks = {
 				recovery_from_civil_war
 				loyalists
 				peoples_revolution
-				help_of_anarchists
+				help_of_carrotists
 			}
 			focuses = {
 				CRZ_thecarrotzkaspurge

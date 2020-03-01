@@ -13,7 +13,7 @@ country_event = {
 			has_completed_focus = CRZ_death_to_some_states
 		}
 		date > 1937.5.1
-		anarchism > 0.3
+		carrotism > 0.3
          
 	}
 
@@ -23,7 +23,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.2.a
 		start_civil_war = {
-			ideology = anarchism
+			ideology = carrotism
 			size = 0.5
 		}
 		news_event= crznews.2
@@ -166,7 +166,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		LIT = {
-			has_government = anarchism
+			has_government = carrotism
 		}
          
 	}
@@ -212,7 +212,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		LAT = {
-			has_government = anarchism
+			has_government = carrotism
 		}
          
 	}
@@ -258,7 +258,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		LAT = {
-			anarchism > 0.5
+			carrotism > 0.5
 		}
          
 	}
@@ -269,7 +269,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
 		LAT = {
-			set_politics = { ruling_party = anarchism }
+			set_politics = { ruling_party = carrotism }
 		}
 	}
 }
@@ -283,7 +283,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		LIT = {
-			anarchism > 0.5
+			carrotism > 0.5
 		}
          
 	}
@@ -294,7 +294,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
 		LIT ={ 
-			set_politics = { ruling_party = anarchism }
+			set_politics = { ruling_party = carrotism }
 		}
 	}
 }

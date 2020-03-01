@@ -70,11 +70,11 @@ set_popularities = {
 	fascism = 0
 	communism = 0
     neutrality = 0
-	anarchism = 100
+	carrotism = 100
 }
 
 set_politics = {
-	ruling_party = anarchism
+	ruling_party = carrotism
 	last_election = "1934.10.28"
 	elections_allowed = no
 }

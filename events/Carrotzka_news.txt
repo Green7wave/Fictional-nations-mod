@@ -69,7 +69,7 @@ news_event = {
 	id = crznews.5
 	title = crznews.5.t
 	desc = crznews.5.d
-	picture = GFX_Anarchist_carrotzka_formed
+	picture = GFX_carrotist_carrotzka_formed
 	
 	major = yes
 	

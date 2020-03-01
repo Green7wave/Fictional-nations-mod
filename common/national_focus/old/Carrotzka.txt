@@ -244,7 +244,7 @@ focus_tree = {
         		popularity = 0.2 
        		}
 		add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = 0.2 
        		}
 			
@@ -783,7 +783,7 @@ random_owned_controlled_state = {
 		mutually_exclusive = { focus = CRZ_death_to_some_states }
 		completion_reward = {
 			add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = 0.2 
        		}
      		add_political_power = -50
@@ -802,9 +802,9 @@ random_owned_controlled_state = {
 		}
 		mutually_exclusive = { focus = CRZ_death_to_state }
 		completion_reward = {
-			remove_ideas = help_of_anarchists
+			remove_ideas = help_of_carrotists
 			add_popularity= {
-       			ideology = anarchism
+       			ideology = carrotism
         		popularity = -1
        		}
      		add_political_power = 100
@@ -813,7 +813,7 @@ random_owned_controlled_state = {
 			    	ACZ = {
 							hidden_effect = {
 								set_politics = {
-									ruling_party = anarchism
+									ruling_party = carrotism
 									last_election = "1935.11.14"
 									election_frequency = 48
 									elections_allowed = no
@@ -823,7 +823,7 @@ random_owned_controlled_state = {
 									fascism = 0
 									communism = 0
 									neutrality = 0
-									anarchism = 100
+									carrotism = 100
 								}
 								news_event = crznews.5
 
@@ -878,7 +878,7 @@ random_owned_controlled_state = {
 }
 
 		focus = {
-		id = CRZ_support_for_anarchist_carrotzka
+		id = CRZ_support_for_carrotist_carrotzka
 		icon = GFX_focus_generic_industry_3
 		x = 31
 		y = 1
@@ -1117,7 +1117,7 @@ random_owned_controlled_state = {
 					y = 2
 					cost = 10
 					available_if_capitulated = yes
-					prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+					prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 					ai_will_do = {
 						factor = 40
 						modifier = {
@@ -1561,7 +1561,7 @@ random_owned_controlled_state = {
 						y = 2
 						cost = 10
 						available_if_capitulated = yes
-						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+						prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 						mutually_exclusive = { focus = CRZ_the_new_meaning_of_freedom }
 						ai_will_do = {
 							factor = 40
@@ -1573,7 +1573,7 @@ random_owned_controlled_state = {
 							}	
 							ACZ = { 
 								set_cosmetic_tag = ACZ_FREE
-							add_ideas = Anarchist_society 
+							add_ideas = carrotist_society 
 						}					
 					}
 				}
@@ -1585,7 +1585,7 @@ random_owned_controlled_state = {
 						y = 2
 						cost = 10
 						available_if_capitulated = yes
-						prerequisite = { focus = CRZ_support_for_anarchist_carrotzka }
+						prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 						mutually_exclusive = { focus = CRZ_True_freedom }
 						ai_will_do = {
 							factor = 40

@@ -168,19 +168,19 @@ ideas = {
 			}
 		}
 
-			help_of_anarchists = {
+			help_of_carrotists = {
 				allowed = {
 					always = no
 				}
 	
 				allowed_civil_war = {
-					has_government = anarchism
+					has_government = carrotism
 				}
 	
 				modifier = {
-					anarchism_drift = 0.1
+					carrotism_drift = 0.1
 					war_support_factor = -0.01
-					anarchism_acceptance = 70
+					carrotism_acceptance = 70
 				}
 			}
 
@@ -266,8 +266,8 @@ ideas = {
 			}
 			
 			modifier = {
-				anarchism_drift = 0.4
-				anarchism_acceptance = 70
+				carrotism_drift = 0.4
+				carrotism_acceptance = 70
 			}
 
 			removal_cost = -1

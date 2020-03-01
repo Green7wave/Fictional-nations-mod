@@ -6,8 +6,8 @@
  Black_And_Red_Alliance:0 "United left front"
 
 # events
- carrotzka.2.t:0 "anarchist peoples want freedom"
- carrotzka.2.d:0 "we promised a lawless society to anarchist peoples that helped us in civil war, and now anarchist peoples want what they fighted for"
+ carrotzka.2.t:0 "carrotist peoples want freedom"
+ carrotzka.2.d:0 "we promised a lawless society to carrotist peoples that helped us in civil war, and now carrotist peoples want what they fighted for"
  carrotzka.2.a:0 "i thought we are friends!"
  carrotzka.1.t:0 "carrotzka demands the caucause"
  carrotzka.1.d:0 "carrotzka demanded caucause from us what should we do"
@@ -51,12 +51,12 @@
  crznews.1.t:0 "king cabbage excuted"
  crznews.1.d:0 "following the carrotzka civil war, carrotzkaian revolutionary council decided the king's fate.\nhe sentenced to death"
  crznews.1.a:0 "he got what he deserved"
- crznews.666.t:0 "Sadra carrot decleard Anarchism in Carrottzka"
- crznews.666.d:0 "today Sadra carrot, the leader of carrotzka decleard Anarchism in carrotzka he said "i was always an anarchism but the platform wasn't ready for such thing yet, but now it is and im happy to say that carrotzka will be known as anarchist society of carrots" "
+ crznews.666.t:0 "Sadra carrot decleard carrotism in Carrottzka"
+ crznews.666.d:0 "today Sadra carrot, the leader of carrotzka decleard carrotism in carrotzka he said "i was always an carrotism but the platform wasn't ready for such thing yet, but now it is and im happy to say that carrotzka will be known as carrotist society of carrots" "
  crznews.666.a:0 "Whatever works for them..."
   #
  crznews.2.t:0 "second carrotzkaian civil war!"
- crznews.2.d:0 "leader of carrotzka, sadra carrot promised a lawless society to anarchist peoples that helped him in civil war, looks like all of those were empty promises and now anarchist peoples want what they fighted for"
+ crznews.2.d:0 "leader of carrotzka, sadra carrot promised a lawless society to carrotist peoples that helped him in civil war, looks like all of those were empty promises and now carrotist peoples want what they fighted for"
  crznews.2.a:0 "oh?"
   #
  crznews.3.t:0 "king cabbage imprisoned"
@@ -67,8 +67,8 @@
   crznews.4.d:0 "Soviet Union after some lettering between the two countries, has accpeted Carrotzka's demands for taking their southren area, what Carrotzka gave to them remains unknown and this movement has met a lot of criticisms which now the people who did them are in gulag.\nWhat will this new event bring is still unknown to the world"
   crznews.4.a:0 "Hope they enjoy the beaches"
   #
-  crznews.5.t:0 "Anarchist carrotzka formed"
-  crznews.5.d:0 "following the meeting beetwen sadra carrot and nestor makhno, anarchist carrotzka will be formed under controll of carrotzka until they choose what to do with them"
+  crznews.5.t:0 "Anarchist Carrotzka formed"
+  crznews.5.d:0 "following the meeting beetwen sadra carrot and nestor makhno, Anarchist Carrotzka will be formed under controll of carrotzka until they choose what to do with them"
   crznews.5.a:0 "they got what they fought for"
 
 # Leader Traits
@@ -96,10 +96,10 @@
  CRZ_neutrality_DEF:0 "the Carrotzka Empire"
  CRZ_communism:0 "Carrotzka"
  CRZ_communism_DEF:0 "Carrotzka"
- CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
- CRZ_anarchism:0 "Anarchist People's Republic Of Carrotzka"
- ACZ_FREE_anarchism:0 "Free Society of Eastren Europe"
- ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
+ CRZ_carrotism:0 "carrotist People's Republic Of Carrotzka"
+ CRZ_carrotism:0 "carrotist People's Republic Of Carrotzka"
+ ACZ_FREE_carrotism:0 "Free Society of Eastren Europe"
+ ACZ_FREE_carrotism_DEF:0 "Free Society of Eastren Europe"
 
 # State and province names
  STATE_197:0 "Emerald Valley"
@@ -114,7 +114,7 @@
  CRZ_neutrality_party:0 "Loyalists"
  CRZ_fascism_party:0 "Glorious Carrotzka"
  CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
- CRZ_anarchism_party:0 "Anarchist People"
+ CRZ_carrotism_party:0 "carrotist People"
  carrot_council:0 "Carrot council of carrotzka"
 
 # ideas
@@ -135,18 +135,18 @@
  carrot_farming_focus:0 "Carrot farming focus"
  carrot_farming_focus_desc:0 "what a carrotzka called without carrot farming? ZKA LOL"
  felix_kjellberg:0 "Felix Kjellberg"
- help_of_anarchists:0 "help of anarchists"
- help_of_anarchists_desc:0 "anarchist people of our country helped us in our civil war, we may want to make it up for them or they will get angry..."
+ help_of_carrotists:0 "help of carrotists"
+ help_of_carrotists_desc:0 "carrotist people of our country helped us in our civil war, we may want to make it up for them or they will get angry..."
  owner_of_the_black_sea:0 "Owner of the black sea"
  owner_of_the_black_sea_desc:0 "we are the owner of the black sea...nothing can stop our navy"
  new_meaning_of_freedom:0 "new meaning of freedom"
- new_meaning_of_freedom_desc:0 "anarchist people of carrotzka, you are being rescued...\nplease do not resist
+ new_meaning_of_freedom_desc:0 "carrotist people of carrotzka, you are being rescued...\nplease do not resist
  recovery_from_civil_war:0 "recovery from civil war"
  recovery_from_civil_war_desc:0 "that was a tough fight, very tough fight"
  peoples_revolution:0 "peoples revolution"
  peoples_revolution_desc:0 "other than loyalists we don't have any other parties againts us...because communism is what people have choosed and now they will do their best for their country"
- Anarchist_society:0 "Anarchist Society"
- Anarchist_society_desc:0 "We're not looking for any trouble here..."
+ carrotist_society:0 "carrotist Society"
+ carrotist_society_desc:0 "We're not looking for any trouble here..."
  Call_of_equality:0 "Call Of Equality"
  Call_of_equality_desc:0 "people of our country look intrested in equalitty"
  Call_of_freedom:0 "Call Of Freedom"
@@ -212,7 +212,7 @@
  sabotage_the_factories_desc:0 "its time for Nestor Golivin to get in the action"
  steal_equipments:0 "Steal equipments"
  steal_equipments_desc:0 "unfair? i dont think so"
- anarchist_spain:0 "Form of anarchist carrotzka"
+ carrotist_spain:0 "Form of Anarchist Carrotzka"
  retake_the_salad_region:0 "Retake the salad region"
  retake_the_salad_region_desc:0 "Now we don't want any war here so we just gonna send them ultimatum first"
  ultimatum_to_romania:0 "Ultimatum to Romania"
@@ -227,12 +227,12 @@
  anarcho_communism:0 "Anarcho communism"
  anarcho_collectivism:0 "Anarcho collectivism"
  anarcho_syndicalism:0 "Anarcho syndicalism"
- anarcho_mutualism:0 "Mutualist anarchism"
+ anarcho_mutualism:0 "Mutualist carrotism"
 
-anarcho_communism_desc:0 " is a theory of anarchism that advocates abolition of the state, markets, money, private property (while retaining respect for personal property)and capitalism in favour of common ownership of the means of production."
+anarcho_communism_desc:0 " is a theory of carrotism that advocates abolition of the state, markets, money, private property (while retaining respect for personal property)and capitalism in favour of common ownership of the means of production."
 
 anarcho_syndicalism_desc:0 "Anarcho-syndicalists view labour unions as a potential force for revolutionary social change, replacing capitalism and the state with a new society democratically self-managed by workers."
 
- anarcho_collectivism_desc:0 "Collectivist anarchists oppose all private ownership of the means of production, instead advocating that ownership be collectivised."
+ anarcho_collectivism_desc:0 "Collectivist carrotists oppose all private ownership of the means of production, instead advocating that ownership be collectivised."
 
- anarcho_mutualism_desc:0 "Mutualist anarchism is concerned with reciprocity, free association, voluntary contract, federation and credit and currency reform."
+ anarcho_mutualism_desc:0 "Mutualist carrotism is concerned with reciprocity, free association, voluntary contract, federation and credit and currency reform."
