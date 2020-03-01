@@ -148,6 +148,7 @@ news_event = {
 		} 
 	}
 	}
+}
 
 	option = {
 		set_politics = {

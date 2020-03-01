@@ -559,7 +559,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-		mutually_exclusive = { focus = CRZ_death_to_state }
 		completion_reward = {
 			remove_ideas = help_of_anarchists
 			add_popularity= {
@@ -1739,6 +1738,7 @@ focus_tree = {
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_carrotzkapurged }
 				mutually_exclusive = { focus = CRZ_carrotism }
+				mutually_exclusive = { focus = CRZ_death_to_state }
 				ai_will_do = {
 					factor = 40
 				}

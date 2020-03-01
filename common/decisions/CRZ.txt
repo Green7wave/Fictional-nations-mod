@@ -172,27 +172,12 @@ CRZ_spanish_civilwar = {
 		fire_only_once = no
 		days_remove = 20
 		complete_effect = {
-            if = {
-                limit = {
-                    ASP = { exists = yes }
-                }
-                ASP = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment_1
-                        amount = 1000
-                    }
-                }
-
-            } else = {
-
                 SPR = {
                     add_equipment_to_stockpile = {
                         type = infantry_equipment_1
                         amount = 1000
                     }
                 }
-
-            }
             
             ROOT = {
                 add_equipment_to_stockpile = {
@@ -249,20 +234,6 @@ CRZ_spanish_civilwar = {
                         type = infantry_equipment_1
                         amount = -1000
                     }
-                }
-                if = {
-                    limit = {
-                        ASP = { exists = yes }
-                    }
-                    ASP = {
-                        add_equipment_to_stockpile = {
-                            type = infantry_equipment_1
-                            amount = 1000
-                        }
-                    }
-
-                } else = {
-
                     SPR = {
                         add_equipment_to_stockpile = {
                             type = infantry_equipment_1

@@ -376,26 +376,6 @@ ideas = {
 			}
 		
 		}
-
-		CRZ_a_bird_a_plane = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {
-				equipment_bonus = {
-					fighter_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
-				}
-			}
 		
 		}
 		sov_soviet_demands = {
@@ -466,6 +446,11 @@ ideas = {
 			allowed = {
 				original_tag = CRZ
 			}		
+			research_bonus = {
+				land_doctrine = 0.05
+				naval_doctrine = 0.05
+				air_doctrine = 0.05
+			}
 			traits = { 
 				fortification_engineer
 			}
@@ -768,10 +753,9 @@ ideas = {
 	
 	
 	theorist = {	
-		ledger = military
 		
 		w = {
-			
+			ledger = military
 			
 			allowed = {
 				original_tag = CRZ
@@ -784,32 +768,6 @@ ideas = {
 			}
 			
 			traits = { military_theorist }
-		}
-		
-		CRZ_council_of_theorists = { # Anarchists
-			ledger = military
-			
-			picture = SPR_anarchist_council
-					
-			allowed = {
-				original_tag = CRZ
-			}
-
-			visible = {
-				has_completed_focus = CRZ_death_to_state
-			}
-
-			available = {
-				has_completed_focus = CRZ_communal_military_strategies
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.05
-				naval_doctrine = 0.05
-				air_doctrine = 0.05
-			}
-			
-			traits = { council_of_theorists }
 		}
 		
 		y = {
