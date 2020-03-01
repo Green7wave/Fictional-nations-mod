@@ -111,8 +111,8 @@
 
 # Parties
  CRZ_communism_party:0 "Communist Party Of Carrotzka"
- CRZ_neutrality_party:0 "Loyalists"
- CRZ_fascism_party:0 "Glorious Carrotzka"
+ CRZ_neutrality_party:0 "Anarchist people of carrotzka"
+ CRZ_fascism_party:0 "Loyalists"
  CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
  CRZ_carrotism_party:0 "carrotist People"
  carrot_council:0 "Carrot council of carrotzka"
@@ -224,15 +224,15 @@
  #improve_relations_grn_desc:0 "Improving relations between countries can do nothing but help our cause"
 
  #ideologies 
- anarcho_communism:0 "Anarcho communism"
- anarcho_collectivism:0 "Anarcho collectivism"
- anarcho_syndicalism:0 "Anarcho syndicalism"
- anarcho_mutualism:0 "Mutualist carrotism"
+ consultative_carrotism:0 "Consultative carrotism"
+ anarcho_carrotism:0 "Anarcho carrotism"
+ collectivist_carrotism:0 "Collectivist carrotismm"
+ social_carrotism:0 "Social carrotism"
+ 
+ consultative_carrotism_desc:0 "consultative carrotism is a form of goverment with the one council in center of power icluding members from all parties in the country"
 
-anarcho_communism_desc:0 " is a theory of carrotism that advocates abolition of the state, markets, money, private property (while retaining respect for personal property)and capitalism in favour of common ownership of the means of production."
+anarcho_carrotism_desc:0 "is a far left form of carrotism whitch leader powers are limited to guidance, anarcho carrotist countries are usualy protected by a foreign power againts foreign threats"
 
-anarcho_syndicalism_desc:0 "Anarcho-syndicalists view labour unions as a potential force for revolutionary social change, replacing capitalism and the state with a new society democratically self-managed by workers."
+collectivist_carrotism_desc:0 "Power in collectivist carrotism are shared with leader in power and people in council, however leader have absolute power and armed people's council is always ready to take power if leader ever got out of control"
 
- anarcho_collectivism_desc:0 "Collectivist carrotists oppose all private ownership of the means of production, instead advocating that ownership be collectivised."
-
- anarcho_mutualism_desc:0 "Mutualist carrotism is concerned with reciprocity, free association, voluntary contract, federation and credit and currency reform."
+social_carrotism_desc:0 "freedom, equality, solidarity"
