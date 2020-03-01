@@ -564,7 +564,8 @@ focus_tree = {
 					days = 2
 				}
 			}
-		}
+	}
+
 
 	focus = {
 		id = CRZ_death_to_some_states
@@ -1334,7 +1335,7 @@ focus_tree = {
 							completion_reward = {	
 								If = {
 								  limit = { 
-									CRZ = { ruling_party = Carrotism }
+									CRZ = { has_government= Carrotism } 
 									 }
 								 EST ={ add_ideas = call_of_freedom }
 								
@@ -1359,7 +1360,7 @@ focus_tree = {
 							completion_reward = {	
 									If = {
 									  limit = { 
-										CRZ = { ruling_party = Carrotism }
+										CRZ = { has_government= Carrotism } 
 										 }
 									 LIT ={ add_ideas = call_of_freedom }
 									
@@ -1382,18 +1383,18 @@ focus_tree = {
 								factor = 40
 							}
 							completion_reward = {	
-									If = {
+									if = {
 									  limit = { 
-										CRZ = { ruling_party = Carrotism }
+										CRZ = { has_government= Carrotism } 
 										 }
 									 LAT ={ add_ideas = call_of_freedom }
 									
 									}
-									Else = {
+									else = {
 										 LAT = { add_ideas = call_of_equality }
 									}
-								}
-							}		
+							}
+						}		
 
 						focus = {
 							id = CRZ_invite_finland
@@ -1409,7 +1410,7 @@ focus_tree = {
 							completion_reward = {	
 									If = {
 									  limit = { 
-										CRZ = { ruling_party = Carrotism }
+										CRZ = { has_government= Carrotism } 
 										 }
 									 FIN ={ add_ideas = call_of_freedom }
 									
