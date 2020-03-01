@@ -560,7 +560,7 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			remove_ideas = help_of_carrotists
+			remove_ideas = help_of_anarchists
 			add_popularity= {
        			ideology = carrotism
         		popularity = -1

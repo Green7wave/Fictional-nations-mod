@@ -802,7 +802,7 @@ random_owned_controlled_state = {
 		}
 		mutually_exclusive = { focus = CRZ_death_to_state }
 		completion_reward = {
-			remove_ideas = help_of_carrotists
+			remove_ideas = help_of_anarchists
 			add_popularity= {
        			ideology = carrotism
         		popularity = -1

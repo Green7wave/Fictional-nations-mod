@@ -168,21 +168,19 @@ ideas = {
 			}
 		}
 
-			help_of_carrotists = {
-				allowed = {
-					always = no
-				}
-	
-				allowed_civil_war = {
-					has_government = carrotism
-				}
-	
-				modifier = {
-					carrotism_drift = 0.1
-					war_support_factor = -0.01
-					carrotism_acceptance = 70
-				}
+		help_of_anarchists = {
+			allowed = {
+				always = no
 			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = -0.05
+			}
+		}
 
 		carrot_farming_focus = {
 			allowed = {

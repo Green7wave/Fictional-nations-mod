@@ -92,7 +92,7 @@ add_ideas = {
     recovery_from_civil_war
 	loyalists
 	peoples_revolution
-	help_of_carrotists
+	help_of_anarchists
 	CHI_army_corruption_1
 	MTG_naval_treaty_adherent
 }
@@ -150,17 +150,17 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "dimitri ivanofski"
-	desc = ""
-    picture = "gfx/leaders/CRZ/Portrait_Carrotzka_dimitri_ivanofski.dds"
-	expire = "1953.3.1"
-	ideology = anarcho_communism
-	traits = {
-		loved_by_people
-		revolutionary_general
-	}
-}
+#create_country_leader = {
+#	name = "dimitri ivanofski"
+#	desc = ""
+#    picture = "gfx/leaders/CRZ/Portrait_Carrotzka_dimitri_ivanofski.dds"
+#	expire = "1953.3.1"
+#	ideology = anarcho_communism
+#	traits = {
+#		loved_by_people
+#		revolutionary_general
+#	}
+#}
 
 create_field_marshal = {
 	name = "Vlad_Makhofskey"

@@ -102,12 +102,13 @@ set_politics = {
 #}
 
 create_country_leader = {
-	name = "Dimitri_Ivanofski"
-	desc = "POLITICS_NESTOR_MAKHNO_DESC"
-	picture = "gfx/leaders/CRZ/Portrait_Carrotzka_dimitri_ivanofski.dds"
-	expire = "1953.3.1"
-	ideology = anarcho_communism
+	name = "Anarchist Commune"
+	desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+	picture = "GFX_portrait_SPR_anarchist_commune"
+	expire = "1965.1.1"
+	ideology = anarchism
 	traits = {
+		our_right_to_survive
         loved_by_people
 	}
 }
