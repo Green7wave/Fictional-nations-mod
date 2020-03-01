@@ -24,7 +24,7 @@ carrotism = {
 		"FACTION_NAME_carrotism_5"
 	}
 	
-	color = { 255 144 0 }
+	color = { 255 109 0 }
 	
 	
 
