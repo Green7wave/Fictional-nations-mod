@@ -46,4 +46,34 @@ leader_in_battalefield = {
         experience_gain_army_factor = 9999999999
     }
   }
+###################################################################
+####operative traits#######
+###################################################################
+
+guerilla_fighter_2 = {
+    type = operative
+    trait_type = basic_trait
+
+    new_commander_weight = {
+        factor = 0
+    }
+
+    gain_xp_leader = {
+        OR = {
+            operative_leader_mission = propaganda
+            operative_leader_mission = boost_ideology
+            operative_leader_mission = root_out_resistance
+            operative_leader_operation = operation_make_resistance_contacts
+            operative_leader_operation = operation_rescue_operative
+        }
+    }
+    
+    cost = 400
+    modifier = {
+        operation_coup_government_risk = -0.65
+        operation_coup_government_cost = -0.65
+        boost_ideology_mission_factor = 0.40
+        own_operative_detection_chance_factor = -0.2
+       }
+   }
 }

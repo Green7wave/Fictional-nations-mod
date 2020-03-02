@@ -37,7 +37,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				fascism_drift = 0.06
+				fascism_drift = 0.4
 			}
 		}
 		home_of_carrot = {

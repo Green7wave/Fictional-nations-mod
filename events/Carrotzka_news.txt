@@ -167,7 +167,7 @@ news_event = {
 	}
 }
 news_event = {
-	id = crznews.666
+	id = crznews.666 #anarchism
 	title = crznews.666.t
 	desc = crznews.666.d
 	picture = GFX_news_event_061
@@ -182,9 +182,24 @@ news_event = {
 }
 
 news_event = {
-	id = crznews.69420
+	id = crznews.69420 #carrotism
 	title = crznews.69420.t
 	desc = crznews.69420.d
+	picture = GFX_news_event_019
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.69420.a
+	}
+}
+
+news_event = {
+	id = crznews.69421 #vassily
+	title = crznews.69421.t
+	desc = crznews.69421.d
 	picture = GFX_news_event_064
 	
 	major = yes
@@ -192,6 +207,6 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = crznews.666.a
+		name = crznews.69421.a
 	}
 }

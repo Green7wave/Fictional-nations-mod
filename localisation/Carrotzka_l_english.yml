@@ -75,7 +75,7 @@
  crznews.69420.d:0 "after the end of terror and purges in carrotzka, Sadra carrot leader of carrotzka officialy declared the formation of carrot council at the end of his speech he said this will be a new era for freedom "
  crznews.69420.1:0 "Lets see how long it last"
  #
- crznews.69421.t:0 "Second Carrotzkaian civil war!"
+ crznews.69421.t:0 "Carrotzkaian civil war!"
  crznews.69421.d:0 "following the recent election in carrotzka, vladimir parovski from social democratic party camed to power minutes after that vassily carrot and a big part of army started a coup againts the parovski's government"
  crznews.69421.1:0 "looks like they can't abolish dictatorship"
 
@@ -99,7 +99,7 @@
 
 # Country names
  CRZ_neutrality:0 "Free orange lands"
- CRZ_neutrality_DEF:0 "FRee orange lands"
+ CRZ_neutrality_DEF:0 "Free orange lands"
  CRZ_democratic:0  "Carrotzka Republic"
  CRZ_democratic_DEF:0 "the Carrotzka Republic"
  CRZ_fascism:0  "cabbageska"
@@ -194,6 +194,8 @@
  veteran_special_force_commander:0 "veteran special force commander"
  veteran_special_force_commander_desc:0 "a veteran commander who can't handdle too many divisions in his army"
  internationalist_guerilla:0 "Internationalist Guerilla"
+ guerilla_fighter_2:0 "Guerilla fighter"
+ guerilla_fighter_2_desc:0 "As the leader of IWA it is his job to travel around the world make propaganda, and help workers to unite againts capitalism and fascism"
 
 #decision
  invite_sov:0 "Invite Soviet engineers"
