@@ -42,7 +42,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.1
 			retire_country_leader = yes
 			
 			set_politics = {
@@ -141,6 +141,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_politicalactions }
+		mutually_exclusive = { focus = CRZ_support_spain }
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -203,8 +204,8 @@ focus_tree = {
 	#Focus for Execute The King's Party
 	focus = {
 		id = CRZ_executethekingsparty
-		icon = GFX_focus_eng_god_save_the_king
-		x = 7
+		icon = GFX_focus_generic_monarchy_1
+		x = 8
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -238,6 +239,7 @@ focus_tree = {
 		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_executethekingsparty }
+		prerequisite = { focus = CRZ_excutethekingcabbageII }
 		ai_will_do = {
 			factor = 40
 		}
@@ -1091,7 +1093,7 @@ focus_tree = {
 		focus = {
 				id = CRZ_excutethekingcabbageII
 				icon = GFX_goal_tfv_sever_ties_with_uk
-				x = 3
+				x = 6
 				y = 4
 				cost = 10
 				available_if_capitulated = yes
@@ -1442,9 +1444,7 @@ focus_tree = {
 									name = "Nestor Golivin"
 									picture = "Portrait_nestor_golivin.dds"
 									traits = {
-										 operative_commando
-										 operative_natural_orator
-										 operative_tough
+										 guerilla_fighter_2
 										 }
 									available_to_spy_master = yes
 									nationalities = { CRZ ITA }
@@ -1454,7 +1454,6 @@ focus_tree = {
 									picture = "Portrait_nestor_golivin.dds"
 									traits = { 
 										internationalist_guerilla
-										adaptable
 										commando
 										jungle_rat
 										infantry_expert
@@ -1565,30 +1564,13 @@ focus_tree = {
 							}
 
 							focus = {
-								id = CRZ_CSI
-								icon = GFX_goal_generic_secret_weapon
-								x = 0
-								y = 1
-								cost = 5
-								relative_position_id = CRZ_carrot_farming
-								available_if_capitulated = yes
-								prerequisite = { focus = CRZ_carrot_farming }
-								ai_will_do = {
-									factor = 40
-								}
-								completion_reward = {	
-									add_ideas = CSI
-								}		
-							}
-
-							focus = {
 								id = CRZ_area_sixty_nine
 								icon = GFX_focus_wonderweapons
 								x = 0
 								y = 1
-								relative_position_id = CRZ_CSI
+								relative_position_id = CRZ_carrot_farming
 								prerequisite = {
-									focus = CRZ_CSI
+									focus = CRZ_carrot_farming
 								}
 								cost = 10
 								ai_will_do = {
@@ -1606,6 +1588,7 @@ focus_tree = {
 								y = 1
 								cost = 5
 								available_if_capitulated = yes
+								mutually_exclusive = { focus = CRZ_improverelationswithsoviet }
 								prerequisite = { focus = CRZ_politicalactions }
 								ai_will_do = {
 									factor = 0
@@ -1685,7 +1668,7 @@ focus_tree = {
 				icon = GFX_focus_generic_self_management
 				x = 6
 				y = 7
-				cost = 7
+				cost = 5
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_carrotism }
 				mutually_exclusive = { focus = CRZ_path_to_democracy }
@@ -1809,7 +1792,7 @@ focus_tree = {
 					}	
 					hidden_effect = {
 						news_event = {
-							id = crznews.69420
+							id = crznews.69421
 							days = 1
 						}
 					}
@@ -2162,6 +2145,269 @@ focus_tree = {
 							available_if_capitulated = yes
 							completion_reward = {
 								add_ideas = SPR_collectivized_society
+								}
+							}
+
+						focus = {
+							id = CRZ_shared_burdens
+							prerequisite = { focus = CRZ_all_must_bear_the_torch }
+							
+							icon = GFX_goal_generic_consumer_goods
+							x = 10
+							y = 9
+							cost = 5
+					
+							available_if_capitulated = yes
+							completion_reward = {
+								if = {
+									limit = {
+										has_idea = SPR_anarchist_society_2
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_2
+										add_idea = SPR_anarchist_society_5
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_5
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_5
+										add_idea = SPR_anarchist_society_8
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_3
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_3
+										add_idea = SPR_anarchist_society_6
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_6
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_6
+										add_idea = SPR_anarchist_society_9
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_4
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_4
+										add_idea = SPR_anarchist_society_7
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_7
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_7
+										add_idea = SPR_anarchist_society_10
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_15
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_15
+										add_idea = SPR_anarchist_society_16
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_17
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_17
+										add_idea = SPR_anarchist_society_18
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_18
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_18
+										add_idea = SPR_anarchist_society_19
+									}
+								}
+								else = {
+									effect_tooltip = {
+										swap_ideas = {
+											remove_idea = SPR_anarchist_society_2
+											add_idea = SPR_anarchist_society_5
+										}
+									}
+								}
+							}
+						}
+
+						focus = {
+							id = CRZ_agrarian_collectivization
+							prerequisite = { focus = CRZ_all_must_bear_the_torch }
+							
+							icon = GFX_goal_generic_national_unity
+							x = 12
+							y = 9
+							cost = 5
+					
+							available_if_capitulated = yes
+							completion_reward = {
+								if = {
+									limit = {
+										has_idea = SPR_anarchist_society_2
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_2
+										add_idea = SPR_anarchist_society_5
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_5
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_5
+										add_idea = SPR_anarchist_society_8
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_3
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_3
+										add_idea = SPR_anarchist_society_6
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_6
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_6
+										add_idea = SPR_anarchist_society_9
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_4
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_4
+										add_idea = SPR_anarchist_society_7
+									}
+								}
+								else_if = {
+									limit = {
+										has_idea = SPR_anarchist_society_7
+									}
+									swap_ideas = {
+										remove_idea = SPR_anarchist_society_7
+										add_idea = SPR_anarchist_society_10
+									}
+								}
+								else = {
+									effect_tooltip = {
+										swap_ideas = {
+											remove_idea = SPR_anarchist_society_2
+											add_idea = SPR_anarchist_society_5
+										}
+									}
+								}
+							}
+						}
+
+						focus = {
+							id = CRZ_volunteer_scientists
+							icon = GFX_goal_tfv_generic_tech_sharing
+							x = 3
+							y = 3
+							cost = 5
+							available_if_capitulated = yes
+							prerequisite = { focus = invite_spain }
+							ai_will_do = {
+								factor = 40
+							}
+							completion_reward = {	
+								add_research_slot= 1
+								}
+							}
+
+							focus = {
+								id = CRZ_spread_carrotism
+								icon = GFX_focus_spr_anarchism_knows_no_borders
+								prerequisite = { focus = CRZ_ministry_of_defence }
+								x = 6
+								y = 8
+								cost = 11
+						
+								available_if_capitulated = yes
+						
+								completion_reward = {
+									every_other_country = {
+										limit = { 
+											num_of_factories < 15
+										}
+										add_timed_idea = {
+											idea = call_of_freedom
+											days = 200
+											
+										}
+									}
+							}
+						}
+
+						focus = {
+							id = CRZ_anarchism_knows_no_borders
+
+							prerequisite = { focus = CRZ_shared_burdens }
+							prerequisite = { focus = CRZ_agrarian_collectivization }
+							
+							icon = GFX_focus_spr_anarchism_knows_no_borders
+							x = 11
+							y = 10
+							cost = 10
+					
+							available_if_capitulated = yes
+							completion_reward = {
+								add_ideas = SPR_anarchism_knows_no_borders
+							}
+						}
+
+						focus = {
+							id = CRZ_plant_the_seeds_of_revolution
+
+							prerequisite = { focus = CRZ_anarchism_knows_no_borders }
+							
+							icon = GFX_focus_prc_infiltration
+							x = 11
+							y = 11
+							cost = 10
+					
+							available_if_capitulated = yes
+					
+							completion_reward = {
+								custom_effect_tooltip = SPR_plant_the_seeds_of_revolution_tt
+								division_template = {
+									name = "Anarchist Militia"
+									priority = 1
+									is_locked = yes
+									division_names_group = SPD_INF_06
+									regiments = {
+										infantry = { x = 0 y = 0 }
+										infantry = { x = 0 y = 1 }
+										infantry = { x = 0 y = 2 }
+									}
 								}
 							}
 						}
