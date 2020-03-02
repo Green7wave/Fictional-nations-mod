@@ -29,8 +29,8 @@
  GRN_fascism_party:0 "GGS Party"
  GRN_fascism_party_long:0 "Gloryious Greenlin Supporters Party"
  GRN_democratic_party:0 "People's Freewill Party"
- GRN_carrotism_party_long:0 "Greenlin's United Free People"
- GRN_carrotism_party:0 "GUFP"
+ GRN_carrotism_party_long:0 "Council of Greenlin"
+ GRN_carrotism_party:0 "COS"
 
 # Tool tips (§G§!) 
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
@@ -90,8 +90,8 @@
  special_democracy_desc:0 "Greenlin's way of democracy is, 'diffrent', than how other countries have it. the leader favors the system and says 'its no problem because people still love it'"
  gis:0 "GIS"
  gis_desc:0 "Being aware and knowing what lies in the dark is crucial for a country to stay stabilized and survive, the Global Intellegnce Securance is taking care of this work in greenlin."
- nis:0 "NIS"
- nis_desc:0 "The National Information Security takes care of spies, internal crisis and watches greenlin's residents closely to ensure the stabilization of the land."
+ gis2:0 "GIS"
+ gis2_desc:0 "Being aware and knowing what lies in the dark is crucial for a country to stay stabilized and survive, the Global Intellegnce Securance is taking care of this work in greenlin."
  grl:0 "GRL"
  grl_desc:0 "Green Research Laboratorian is a nationwide research organization which focuses on improving research speed and also gaining funds for various research programs."
  the_cruel_king:0 "King's cruelty"

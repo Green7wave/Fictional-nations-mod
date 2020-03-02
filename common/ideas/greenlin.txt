@@ -18,11 +18,11 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.04
-				lend_lease_tension = -0.20 
-				send_volunteers_tension = -0.20 
+				lend_lease_tension = -0.40 
+				send_volunteers_tension = -0.40 
 				justify_war_goal_time = -0.1
-				generate_wargoal_tension = -0.6
-				join_faction_tension = -0.20  
+				generate_wargoal_tension = -0.7
+				join_faction_tension = -0.60  
 				guarantee_cost = -0.2 
 			}
 			rule = {
@@ -56,12 +56,15 @@ ideas = {
 			
 			modifier = {
 				subversive_activites_upkeep = -0.45
-				recon_factor = 0.2
-				decryption_factor = 0.8
+				intel_network_gain_factor = 0.3
+				operative_slot = 3
+				enemy_operative_detection_chance_factor = 0.05
+				own_operative_detection_chance_factor = -0.3
+			  #	resistance_damage_to_garrison = -0.05
 			}
 		}
 		#
-		nis = {
+		gis2 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -74,14 +77,16 @@ ideas = {
 				    has_government = democratic
 				}
 			}
-			
-			picture = generic_spy_intel
 
+			picture = GIS
+			
 			modifier = {
-				subversive_activites_upkeep = -0.05
-				encryption_factor = 0.8
-				enemy_justify_war_goal_time = 0.05
-				drift_defence_factor = 0.5
+				subversive_activites_upkeep = -0.5
+				intel_network_gain_factor = 0.6
+				operative_slot = 4
+				enemy_operative_detection_chance_factor = 0.35
+				own_operative_detection_chance_factor = -0.35
+			  #	resistance_damage_to_garrison = -0.05
 			}
 		}
 		#
@@ -504,7 +509,7 @@ ideas = {
 		
 		siknestor = {
 
-			cost = 100
+			cost = 150
 			allowed = {
 				original_tag = GRN
 			}
@@ -521,13 +526,25 @@ ideas = {
 					}
 
 				}
+				has_intelligence_agency = yes
+				has_done_agency_upgrade = upgrade_form_department
 			}
-			
-			traits = { terror_itself }
 
 			ai_will_do = {
-				factor = 2
+				factor = 1
+				modifier = {
+					has_political_power < 150
+					factor = 0
+				}
 			}
+
+			allowed = {
+				original_tag = GRN
+				has_dlc = "La Resistance" 
+			}
+			
+			traits = { mastermind_code_cracker }
+
 		}
 
 		maxwell_blackmore = {
