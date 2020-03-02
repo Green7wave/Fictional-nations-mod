@@ -46,10 +46,10 @@ focus_tree = {
 		id = GRN_thepeoplesfreedomofchoice
 		icon = GFX_goal_support_democracy
 		x = 3
-		y = 1
+		y = 0
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_downwiththeking }
+		prerequisite = {}
 		ai_will_do = {
 			factor = 80
 		}
@@ -68,10 +68,10 @@ focus_tree = {
 		id = GRN_equalityaboveall
 		icon = GFX_goal_support_communism
 		x = 7
-		y = 1
+		y = 0
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_downwiththeking }
+		prerequisite = { }
 		mutually_exclusive = { focus = GRN_thepeoplesfreedomofchoice }
 		ai_will_do = {
 			factor = 80
@@ -85,6 +85,7 @@ focus_tree = {
 		}
 	}
 
+
 	#Focus for Start the revolution
 	focus = {
 		id = GRN_starttherevolution
@@ -94,8 +95,7 @@ focus_tree = {
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GRN_thepeoplesfreedomofchoice
-			focus = GRN_equalityaboveall
+			focus = GRN_armtherevolution
 		}
 		ai_will_do = {
 			factor = 40
@@ -237,7 +237,7 @@ focus_tree = {
 	focus = {
 		id = GRN_organizationofgrl
 		icon = GFX_focus_research2
-		x = 0
+		x = 3
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -254,27 +254,8 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Down With The King
-	focus = {
-		id = GRN_downwiththeking
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 5
-		y = 0
-		cost = 8
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 4000
-		}
-		completion_reward = {
-			add_popularity= { 
-				ideology = neutrality 
-				popularity = -0.05
-			}
-			add_stability = -0.01
-		}
-	}
 
-	#Focus for Eyes of Shadows
+	#Focus for National security
 	focus = {
 		id = GRN_nationalsecurity
 		icon = GFX_formthegis
@@ -291,6 +272,42 @@ focus_tree = {
    			 remove_idea = gis
    			 add_idea = gis2
 			}
+		}
+	}
+
+	#Focus for The Special Democracy
+	focus = {
+		id = GRN_specialdemocracy
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_starttherevolution }
+		available = { has_government = communism }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = special_democracy
+		}
+	}
+
+	#Focus for Full Controll
+	focus = {
+		id = GRN_fullcontrol
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_starttherevolution }
+		available = { has_government = communism }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = full_control
 		}
 	}
 
@@ -558,18 +575,18 @@ focus_tree = {
 
 	}
 
-	# focus for 
 
 	#Focus for Enhanced technology
 	focus = {
 		id = GRN_enhancedtechnology
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 0
+		x = 4
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_organizationofgrl }
-		mutually_exclusive = { focus = GRN_technologysharing }
+		prerequisite = { focus = GRN_fixtheindustryissue }
+		mutually_exclusive = { }
 		ai_will_do = {
 			factor = 40
 		}
@@ -601,56 +618,25 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Ask the neigbour
+	#Focus for Arm the revolution
 	focus = {
-		id = GRN_asktheneigbour
-		icon = GFX_asktheneigbour
-		x = 6
-		y = 2
-		cost = 8
+		id = GRN_armtherevolution
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 1
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GRN_thepeoplesfreedomofchoice
 			focus = GRN_equalityaboveall
 		}
 		ai_will_do = {
-			factor = 320
-		}
-		bypass = {
-			OR ={
-				CRZ = { NOT = {has_government = communism}}
-				CRZ = { exists = no }
-				has_completed_focus = GRN_starttherevolution
-			}
-			
-		}
-		completion_reward = {
-			#custom_effect_tooltip = tip_asktheneigbour
-		
-			CRZ = {country_event = grn.2}
-		
-		}
-	}
-
-	#Focus for Arm the revolution
-	focus = {
-		id = GRN_armtherevolution
-		icon = GFX_goal_generic_small_arms
-		x = 6
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = GRN_asktheneigbour }
-		ai_will_do = {
 			factor = 80
-		}
-		bypass = {
-			has_completed_focus = GRN_starttherevolution
 		}
 		completion_reward = {
 			custom_effect_tooltip = tip_armtherevolution
 			hidden_effect = {
-				set_country_flag = revolution_armed_flag
+				set_country_flag = arming_revolution
 			}
 		}
 	}
@@ -1303,7 +1289,7 @@ focus_tree = {
 	focus = {
 		id = GRN_indirectionalclout
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 17
+		x = 18
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1335,15 +1321,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-
-				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
 			}
+
+			add_ideas = war_economy
 		}
 	}
 

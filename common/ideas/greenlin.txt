@@ -38,6 +38,26 @@ ideas = {
 		}
 		#
 
+		grn_political_turmoil  = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+		#
 		gis = {
 			removal_cost = -1
 			
