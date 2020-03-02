@@ -1463,7 +1463,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Gates of the Red Sea
+	#Focus for Gates of the Black Sea
 	focus = {
 		id = GRN_gatesoftheredsea
 		icon = GFX_focus_generic_coastal_fort
