@@ -205,7 +205,7 @@ focus_tree = {
 	focus = {
 		id = CRZ_executethekingsparty
 		icon = GFX_focus_generic_monarchy_1
-		x = 7
+		x = 8
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -239,6 +239,7 @@ focus_tree = {
 		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_executethekingsparty }
+		prerequisite = { focus = CRZ_excutethekingcabbageII }
 		ai_will_do = {
 			factor = 40
 		}
@@ -1092,7 +1093,7 @@ focus_tree = {
 		focus = {
 				id = CRZ_excutethekingcabbageII
 				icon = GFX_goal_tfv_sever_ties_with_uk
-				x = 3
+				x = 6
 				y = 4
 				cost = 10
 				available_if_capitulated = yes
@@ -2355,7 +2356,7 @@ focus_tree = {
 								completion_reward = {
 									every_other_country = {
 										limit = { 
-											num_of_factories < 20
+											num_of_factories < 15
 										}
 										add_timed_idea = {
 											idea = call_of_freedom
