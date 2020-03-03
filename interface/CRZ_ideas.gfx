@@ -4237,4 +4237,9 @@ spriteTypes = {
 		name = "GFX_idea_CRZ_a_bird_a_plane"
 		texturefile = "gfx/interface/ideas/idea_generic_fighter_production_diverted.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_workers_volunteerde"
+		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
+	}
 }

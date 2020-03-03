@@ -40,6 +40,15 @@ ideas = {
 				fascism_drift = 0.4
 			}
 		}
+
+		workers_volunteerd = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				weekly_manpower = 1500
+			}
+		}
 		home_of_carrot = {
 			allowed = {
 				always = no
@@ -322,7 +331,6 @@ ideas = {
 			}
 			
 			modifier = {
-				generate_wargoal_tension = -0.1
 				subversive_activites_upkeep = -0.2
 				enemy_justify_war_goal_time = 0.1
 				decryption_factor = 0.1

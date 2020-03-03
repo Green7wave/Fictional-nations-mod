@@ -44,6 +44,26 @@
  crznews.69.a:0 "they just gonna kill everyone?"
  crznews.420.b:0 "One more to go"
  crznews.69.b:0 "Mission acomplished"
+ carrotzka.73.t:0 "Carrotzka asking for cooperation with GIS"
+ carrotzka.73.d:0 "Since we have the strongest spy agency in region(and probably the whole world) sending one of our spy to Carrotzka wont hurt anyone will it?"
+ carrotzka.73.a:0 "sure"
+ carrotzka.73.b:0 "what next? they want ownership of GIS?"
+ carrotzka.80.t:0 "volunteers on both sides are ready"
+ carrotzka.80.d:0 ""
+ carrotzka.80.a:0 "excelent"
+ carrotzka.75.t:0 "soviet aggred to help us"
+ carrotzka.75.d:0 ""
+ carrotzka.75.a:0 "They have proven themselves"
+ carrotzka.74.t:0 "IWA asking for our help"
+ carrotzka.74.d:0 "following the power strugle in carrotzka and disbandation of IWA, they(IWA) planning to take the power from vassily should we help them?"
+ carrotzka.74.a:0 "We will stay loyal to carrotzka"
+ carrotzka.74.b:0 "It's true that vassily not giving shit about carrotzkaian workers anymore...we must help them"
+ carrotzka.81.t:0 "Civil war ignited"
+ carrotzka.81.d:0 "We are ready"
+ carrotzka.81.a:0 "the downfall"
+ carrotzka.82.t:0 "Help arrived!"
+ carrotzka.82.d:0 ""
+ carrotzka.82.a:0 "Real battale has truly begun"
 
 
 
@@ -73,11 +93,17 @@
  #
  crznews.69420.t:0 "Carrot council formed in Carrotzka"
  crznews.69420.d:0 "after the end of terror and purges in carrotzka, Sadra carrot leader of carrotzka officialy declared the formation of carrot council at the end of his speech he said this will be a new era for freedom "
- crznews.69420.1:0 "Lets see how long it last"
+ crznews.69420.a:0 "Lets see how long it last"
  #
  crznews.69421.t:0 "Carrotzkaian civil war!"
  crznews.69421.d:0 "following the recent election in carrotzka, vladimir parovski from social democratic party camed to power minutes after that vassily carrot and a big part of army started a coup againts the parovski's government"
- crznews.69421.1:0 "looks like they can't abolish dictatorship"
+ crznews.69421.a:0 "looks like they can't abolish dictatorship"
+ crznews.100.t:0 "Greenlin accepted our demand"
+ crznews.100.d:0 ""
+ crznews.100.a:0 "egg-celent!"
+ crznews.101.t:0 "Greenlin rejected our demands"
+ crznews.101.d:0 ""
+ crznews.101.a:0 "Stronzo"
 
 
 
@@ -128,6 +154,8 @@
  carrot_council:0 "Carrot council of people"
 
 # ideas
+ workers_volunteerd:0 "Workers volunteered"
+ workers_volunteerd_desc:0 "We called for help and now they will join us"
  loyalists:0 "loyalists"
  loyalists_desc:0 "some people still fighting for king and calling themselves loyalists, if we dont stop them they can cause trouble in near future"
  peoples_revolution:0 "peoples revolution"
@@ -230,6 +258,24 @@
  ultimatum_to_romania:0 "Ultimatum to Romania"
  ultimatum_to_turkey:0 "Ultimatum to Turkey"
  ultimatum_to_poland:0 "Ultimatum to Poland"
+ help_iwa:0 "Help IWA"
+ help_iwa:0 "We have to help them with what we have"
+ send_weapon:0 "Send weapon"
+ taking_out_the_evil:0 "Taking out the devil"
+ taking_out_the_evil_desc:0 "Now that carrot is not leader anymore, vassily have absolute power and he is not anything diffrent than king cabbage, as IWA member it is our job to stop him...with all the help we can get"
+ ignite_bearhunt:0 "Operation Bear hunt"
+ ignite_bearhunt_desc:0 "Vassily's time has come...operation Bear hunt is a go"
+ volunteer_the_workers:0 "Volunteer workers"
+ greenlin_help:0 "Seek help from greenlin"
+ soviet_help:0 "Seek help from soviet"
+ ask_carrot:0 "Bring Carrot to army"
+ ask_carrot_desc:0 "We know he still have something inside him...he cant let vassily destroy his dream"
+ international_army:0 "International army"
+ international_army_desc:0 "Carrotzka is the home of IWA and if we losse it, it means that the revolution of workers is defeated so we need everyone to help us"
+ train_liberation_army:0 "Train liberation army"
+ train_liberation_army_desc:0 "Liberation armies are special forces of IWA, we need to train more of them"
+ death_before_surrender:0 "Death before surrender"
+ purchase_weapon:0 "purchase weapons"
 
  # Groups
  improve_relations_grn:0 "Relations Improvement"

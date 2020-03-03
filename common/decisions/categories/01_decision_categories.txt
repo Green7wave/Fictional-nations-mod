@@ -36,3 +36,27 @@ retake_the_salad_region = {
 		has_completed_focus = CRZ_retake_the_salad_region	
     }
 }
+
+taking_out_the_evil = {
+	allowed = {
+		original_tag = CRZ
+	}
+	visible = {
+		CRZ = {
+			has_completed_focus = CRZ_disband_iwa
+		}
+	}
+}
+
+help_iwa = {
+	allowed = {
+		ROOT = {
+		has_country_flag = helping_iwa
+	}
+}
+	visible = {
+		ROOT = {
+			has_country_flag = helping_iwa
+		}
+	}
+}

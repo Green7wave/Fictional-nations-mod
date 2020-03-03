@@ -308,3 +308,174 @@ ultimatum_to_poland = {
   }
 }
 }
+
+taking_out_the_evil = {
+
+    ignite_bearhunt = {
+        icon = generic_operation
+        cost = 300
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            country_event = {
+                id = carrotzka.80
+                days = 1
+            }
+      }
+    }
+
+    volunteer_the_workers = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            set_country_flag = CRZ_volunteers
+      }
+    }
+
+    greenlin_help = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            GRN = {
+                country_event = {
+                    id = carrotzka.74
+                    days = 2
+                    random = 10
+                }
+            }
+      }
+    }
+
+    soviet_help = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            SOV = {
+                country_event = {
+                    id = carrotzka.75
+                    days = 2
+                    random = 10
+                }
+            }
+      }
+    }
+
+    ask_carrot = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            random_list = {
+                40 = {
+                    set_country_flag = CRZ_carrot
+                }
+    
+                60 = {
+
+                }
+            }
+      }
+    }
+
+    international_army = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            set_country_flag = international_army
+      }
+    }
+
+    train_liberation_army = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            set_country_flag = trained_liberation_army
+      }
+    }
+
+    death_before_surrender = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            set_country_flag = no_surrender
+      }
+    }
+
+    purchase_weapon = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            set_country_flag = bought_gun
+       }
+      }
+    }
+
+    help_iwa = {
+
+        send_weapon = {
+            icon = generic_operation
+            cost = 150
+            ai_will_do = {
+                factor = 1
+            }
+            fire_only_once = no
+            days_remove = 40
+            complete_effect = {
+                ROOT = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = -1000
+                    }
+                }
+                CRZ = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 1000
+                        producer = SOV
+                    }
+                }
+           }
+      }
+  }

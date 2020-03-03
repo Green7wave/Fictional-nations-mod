@@ -112,6 +112,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Anarchist Commune"
+	desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+	picture = "GFX_portrait_SPR_anarchist_commune"
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+		our_right_to_survive
+        loved_by_people
+	}
+}
+
+create_country_leader = {
 	name = "Sadra Carrot"
 	desc = "POLITICS_SADRA_CARROT_DESC"
     picture = "gfx/leaders/CRZ/Portrait_carrotzka_Sadra_Carrot.tga"
@@ -159,7 +171,7 @@ create_country_leader = {
 		traits = {
 			champion_of_peace_5
 		}
-}	
+}
 
 
 #create_country_leader = {
