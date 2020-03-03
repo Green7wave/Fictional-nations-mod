@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = GRN_reconstructionofthecountry
 		icon = GFX_goal_generic_production
-		x = 28
+		x = 33
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -46,10 +46,10 @@ focus_tree = {
 		id = GRN_thepeoplesfreedomofchoice
 		icon = GFX_goal_support_democracy
 		x = 3
-		y = 1
+		y = 0
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_downwiththeking }
+		prerequisite = {}
 		ai_will_do = {
 			factor = 80
 		}
@@ -68,10 +68,10 @@ focus_tree = {
 		id = GRN_equalityaboveall
 		icon = GFX_goal_support_communism
 		x = 7
-		y = 1
+		y = 0
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_downwiththeking }
+		prerequisite = { }
 		mutually_exclusive = { focus = GRN_thepeoplesfreedomofchoice }
 		ai_will_do = {
 			factor = 80
@@ -85,6 +85,7 @@ focus_tree = {
 		}
 	}
 
+
 	#Focus for Start the revolution
 	focus = {
 		id = GRN_starttherevolution
@@ -94,8 +95,7 @@ focus_tree = {
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = GRN_thepeoplesfreedomofchoice
-			focus = GRN_equalityaboveall
+			focus = GRN_armtherevolution
 		}
 		ai_will_do = {
 			factor = 40
@@ -237,7 +237,7 @@ focus_tree = {
 	focus = {
 		id = GRN_organizationofgrl
 		icon = GFX_focus_research2
-		x = 0
+		x = 3
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
@@ -254,30 +254,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Down With The King
-	focus = {
-		id = GRN_downwiththeking
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 10
-		y = 0
-		cost = 8
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 4000
-		}
-		completion_reward = {
-			add_popularity= { 
-				ideology = neutrality 
-				popularity = -0.05
-			}
-			add_stability = -0.01
-		}
-	}
 
-	#Focus for National Security
+	#Focus for National security
 	focus = {
 		id = GRN_nationalsecurity
-		icon = GFX_nationalsecurity
+		icon = GFX_formthegis
 		x = 7
 		y = 5
 		cost = 10
@@ -287,8 +268,46 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			add_ideas = nis
+			swap_ideas = {
+   			 remove_idea = gis
+   			 add_idea = gis2
+			}
+		}
+	}
 
+	#Focus for The Special Democracy
+	focus = {
+		id = GRN_specialdemocracy
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_starttherevolution }
+		available = { has_government = communism }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = special_democracy
+		}
+	}
+
+	#Focus for Full Controll
+	focus = {
+		id = GRN_fullcontrol
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_starttherevolution }
+		available = { has_government = communism }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = full_control
 		}
 	}
 
@@ -296,11 +315,18 @@ focus_tree = {
 	focus = {
 		id = GRN_specialalliance
 		icon = GFX_goal_generic_national_unity
-		x = 3
+		x = 22
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_countrysstabilization }
+		prerequisite = { focus = GRN_politicalalignment }
+		mutually_exclusive = {
+			focus = GRN_followingthestatusquo
+			focus = GRN_theslavicties
+		}
+		
+		
+		
 		ai_will_do = {
 			factor = 80
 			modifier = {
@@ -314,9 +340,7 @@ focus_tree = {
 		}
 		available = {
 				GRN = {
-					NOT = {
-						is_in_faction = yes
-					}
+					is_in_faction = no
 				}
 		}
 		completion_reward = {
@@ -469,48 +493,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Technology Sharing
-	focus = {
-		id = GRN_technologysharing
-		icon = GFX_goal_generic_scientific_exchange
-		x = -1
-		y = 1
-		relative_position_id = GRN_specialalliance
-		cost = 8
-		available_if_capitulated = yes
-		continue_if_invalid = yes
-		cancel_if_invalid = no
-		prerequisite = { focus = GRN_specialalliance }
-		mutually_exclusive = { focus = GRN_enhancedtechnology }
-		available = {
-			num_faction_members > 0
-		}
-
-		ai_will_do = {
-			factor = 40
-		}
-		available = {
-			is_in_faction= yes
-		}
-		completion_reward = {
-			#GRN = { add_to_tech_sharing_group = green_research }
-			every_country = {
-				limit = {
-					is_in_faction_with = GRN
-				}
-				hidden_effect = {
-					add_to_tech_sharing_group = green_research
-				}
-   				custom_effect_tooltip = tip_technologysharing
-			}
-		}
-	}
-
 	# focus for Pressure the samller countries
 	focus = {
 		id = GRN_pressuretheweak
 		icon = GFX_goal_generic_forceful_treaty
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GRN_specialalliance
 		cost = 10
@@ -588,18 +575,18 @@ focus_tree = {
 
 	}
 
-	# focus for 
 
 	#Focus for Enhanced technology
 	focus = {
 		id = GRN_enhancedtechnology
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 0
+		x = 4
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_organizationofgrl }
-		mutually_exclusive = { focus = GRN_technologysharing }
+		prerequisite = { focus = GRN_fixtheindustryissue }
+		mutually_exclusive = { }
 		ai_will_do = {
 			factor = 40
 		}
@@ -631,56 +618,25 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Ask the neigbour
+	#Focus for Arm the revolution
 	focus = {
-		id = GRN_asktheneigbour
-		icon = GFX_asktheneigbour
-		x = 6
-		y = 2
-		cost = 8
+		id = GRN_armtherevolution
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 1
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = GRN_thepeoplesfreedomofchoice
 			focus = GRN_equalityaboveall
 		}
 		ai_will_do = {
-			factor = 320
-		}
-		bypass = {
-			OR ={
-				CRZ = { NOT = {has_government = communism}}
-				CRZ = { exists = no }
-				has_completed_focus = GRN_starttherevolution
-			}
-			
-		}
-		completion_reward = {
-			#custom_effect_tooltip = tip_asktheneigbour
-		
-			CRZ = {country_event = grn.2}
-		
-		}
-	}
-
-	#Focus for Arm the revolution
-	focus = {
-		id = GRN_armtherevolution
-		icon = GFX_goal_generic_small_arms
-		x = 6
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = GRN_asktheneigbour }
-		ai_will_do = {
 			factor = 80
-		}
-		bypass = {
-			has_completed_focus = GRN_starttherevolution
 		}
 		completion_reward = {
 			custom_effect_tooltip = tip_armtherevolution
 			hidden_effect = {
-				set_country_flag = revolution_armed_flag
+				set_country_flag = arming_revolution
 			}
 		}
 	}
@@ -689,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = GRN_militarysorganization
 		icon = GFX_militarysorganization
-		x = 21
+		x = 27
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -751,7 +707,7 @@ focus_tree = {
 	focus = {
 		id = GRN_wherethemenfly
 		icon = GFX_goal_generic_air_bomber
-		x = 30
+		x = 35
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -791,7 +747,7 @@ focus_tree = {
 	focus = {
 		id = GRN_navalbuildings
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
+		x = 33
 		y = 2
 		cost = 14
 		available_if_capitulated = yes
@@ -838,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = GRN_repairthedamage
 		icon = GFX_goal_generic_construct_civilian
-		x = 29
+		x = 34
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -876,7 +832,7 @@ focus_tree = {
 	focus = {
 		id = GRN_fightersandcas
 		icon = GFX_goal_generic_air_fighter2
-		x = 20
+		x = 28
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -909,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = GRN_submarineanddestroyers
 		icon = GFX_goal_generic_navy_submarine
-		x = 22
+		x = 26
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -935,17 +891,17 @@ focus_tree = {
 	focus = {
 		id = GRN_divisionprograms
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 19
+		x = 25
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GRN_militarysorganization }
-		mutually_exclusive = { 
-			focus = GRN_thehawks 
-		}
+		prerequisite = { focus = GRN_militarysorganization	}
+		#prerequisite = { focus = GRN_greenlinspart	}
+
+		# mutually_exclusive = { focus = GRN_thehawks }
 		# mutually_exclusive = { focus = GRN_greenlinsbreakers }
 		ai_will_do = {
-			factor = 1
+			factor = 60
 		}
 	}
 
@@ -953,13 +909,13 @@ focus_tree = {
 	focus = {
 		id = GRN_greenlinsbreakers
 		icon = GFX_goal_generic_army_tanks
-		x = 23
+		x = 29
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_militarysorganization }
 		# mutually_exclusive = { focus = GRN_divisionprograms }
-		# mutually_exclusive = { focus = GRN_thehawks }
+		mutually_exclusive = { focus = GRN_thehawks }
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = wise_shots
@@ -975,13 +931,13 @@ focus_tree = {
 	focus = {
 		id = GRN_thehawks
 		icon = GFX_focus_generic_paratrooper
-		x = 21
+		x = 27
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_militarysorganization }
-		mutually_exclusive = { focus = GRN_divisionprograms }
-		# mutually_exclusive = { focus = GRN_greenlinsbreakers }
+		# mutually_exclusive = { focus = GRN_divisionprograms }
+		mutually_exclusive = { focus = GRN_greenlinsbreakers }
 		ai_will_do = {
 			factor = 80
 		}
@@ -1074,7 +1030,7 @@ focus_tree = {
 	#Focus for Form the GIS
 	focus = {
 		id = GRN_formthegis
-		icon = GFX_formthegis
+		icon = GFX_goal_generic_secret_weapon
 		x = 7
 		y = 4
 		cost = 10
@@ -1085,6 +1041,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = gis
+			#create_intelligence_agency = {
+			#	name = "GIS"
+			#	icon = default
+			#}
 		}
 	}
 
@@ -1092,7 +1052,7 @@ focus_tree = {
 	focus = {
 		id = GRN_radartechnology
 		icon = GFX_radartechnology
-		x = 26
+		x = 31
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -1135,7 +1095,7 @@ focus_tree = {
 	focus = {
 		id = GRN_thefissionreaction
 		icon = GFX_focus_wonderweapons
-		x = 26
+		x = 31
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
@@ -1166,7 +1126,7 @@ focus_tree = {
 	focus = {
 		id = GRN_bettermathmaticalmachines
 		icon = GFX_bettermathmaticalmachines
-		x = 26
+		x = 31
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -1200,7 +1160,7 @@ focus_tree = {
 	focus = {
 		id = GRN_technological_factories
 		icon = GFX_goal_generic_construction
-		x = 31
+		x = 36
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -1253,6 +1213,370 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Joint Naval Training
+	focus = {
+		id = GRN_jointnavaltraining
+		icon = GFX_goal_generic_navy_battleship
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_theslavicties }
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for All to stop Fascists
+	focus = {
+		id = GRN_alltostopfascists
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_expandedinfluence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Hold our lines
+	focus = {
+		id = GRN_holdourlines
+		icon = GFX_goal_generic_fortify_city
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_jointnavaltraining }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expanded influence
+	focus = {
+		id = GRN_expandedinfluence
+		icon = GFX_goal_generic_trade
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_followingthestatusquo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Defense
+	focus = {
+		id = GRN_navaldefense
+		icon = GFX_goal_generic_defence
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_warpreparations }
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Indirectional Clout
+	focus = {
+		id = GRN_indirectionalclout
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_politicalalignment }
+		ai_will_do = {
+			factor = 30
+		}
+	}
+
+	#Focus for War Preparations
+	focus = {
+		id = GRN_warpreparations
+		icon = GFX_focus_generic_tank_production
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_greenlinspart }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_ideas = war_economy
+		}
+	}
+
+	#Focus for Owl Eyed Research
+	focus = {
+		id = GRN_owleyedresearch
+		icon = GFX_goal_generic_scientific_exchange
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_followingthestatusquo
+			focus = GRN_specialalliance 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Greenish Volenteers
+	focus = {
+		id = GRN_greenishvolenteers
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_theslavicties
+			focus = GRN_specialalliance
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Operation Lion
+	focus = {
+		id = GRN_operationlion
+		icon = GFX_focus_hol_united_netherlands
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_afriendlyrequest 
+			focus = GRN_romaniasfuture 
+		}
+		prerequisite = { 
+			focus = GRN_formthegis 
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Romania's Future
+	focus = {
+		id = GRN_romaniasfuture
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_reclaimthelostlands }
+		mutually_exclusive = { focus = GRN_afriendlyrequest }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 30
+		}
+	}
+
+	#Focus for A Friendly Request
+	focus = {
+		id = GRN_afriendlyrequest
+		icon = GFX_goal_generic_improve_relations
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_reclaimthelostlands }
+		mutually_exclusive = { focus = GRN_romaniasfuture }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Demand the North West
+	focus = {
+		id = GRN_demandthenorthwest
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_afriendlyrequest 
+			focus = GRN_romaniasfuture 
+		}
+		mutually_exclusive = { focus = GRN_cooperativestrike }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Cooperative Strike
+	focus = {
+		id = GRN_cooperativestrike
+		icon = GFX_goal_generic_military_deal
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_afriendlyrequest 
+			focus = GRN_romaniasfuture 
+		}
+		mutually_exclusive = { focus = GRN_demandthenorthwest }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for Gates of the Black Sea
+	focus = {
+		id = GRN_gatesoftheredsea
+		icon = GFX_focus_generic_coastal_fort
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_cooperativestrike 
+			focus = GRN_demandthenorthwest 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Greenlin's Part
+	focus = {
+		id = GRN_greenlinspart
+		icon = GFX_nationalsecurity
+		x = 19
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim the lost lands
+	focus = {
+		id = GRN_reclaimthelostlands
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_greenlinspart }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	#Focus for The Slavic Ties
+	focus = {
+		id = GRN_theslavicties
+		icon = GFX_goal_generic_dangerous_deal
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_politicalalignment }
+		mutually_exclusive = { 
+			focus = GRN_followingthestatusquo 
+			focus = GRN_specialalliance
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Following the Status Quo
+	focus = {
+		id = GRN_followingthestatusquo
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_politicalalignment }
+		mutually_exclusive = { 
+			focus = GRN_theslavicties 
+			focus = GRN_specialalliance
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Alignment
+	focus = {
+		id = GRN_politicalalignment
+		icon = GFX_goal_generic_major_alliance
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GRN_greenlinspart }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Not One Inch of Land
+	focus = {
+		id = GRN_notoneinchofland
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GRN_afriendlyrequest 
+			focus = GRN_romaniasfuture 
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 
 #End of focuses 

@@ -15,6 +15,20 @@ improve_relations_grn = {
 	}
 }
 
+GRN_arming_the_revolution = {
+	icon = generic_political_actions # generic_foreign_policy
+
+	allowed = {
+		tag = GRN 
+	}
+
+	visible = {
+		GRN = {
+			has_completed_focus = GRN_armtherevolution
+		}
+	}
+}
+
 CRZ_battale_orders = {
 	allowed = {
 		original_tag = CRZ
