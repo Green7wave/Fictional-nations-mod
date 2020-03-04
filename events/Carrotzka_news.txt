@@ -202,7 +202,37 @@ news_event = {
 	desc = crznews.69421.d
 	picture = GFX_news_event_064
 	
-	major = yes
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.69421.a
+	}
+}
+
+news_event = {
+	id = crznews.100
+	title = crznews.100.t
+	desc = crznews.100.d
+	picture = GFX_news_event_por_salazar_franco
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.69421.a
+	}
+}
+
+news_event = {
+	id = crznews.101
+	title = crznews.101.t
+	desc = crznews.101.d
+	picture = GFX_news_event_por_salazar_franco
+	
+	major = no
 	
 	is_triggered_only = yes
 	

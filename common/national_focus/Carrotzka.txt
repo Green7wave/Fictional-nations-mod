@@ -1443,6 +1443,7 @@ focus_tree = {
 								create_operative_leader = {
 									name = "Nestor Golivin"
 									picture = "Portrait_nestor_golivin.dds"
+									id = 69420
 									traits = {
 										 guerilla_fighter_2
 										 }
@@ -1452,6 +1453,7 @@ focus_tree = {
 								create_corps_commander = {
 									name = "Nestor Golivin"
 									picture = "Portrait_nestor_golivin.dds"
+									id = 420
 									traits = { 
 										internationalist_guerilla
 										commando
@@ -1488,6 +1490,7 @@ focus_tree = {
 								create_field_marshal = {
 									name = "Sadra Carrot"
 									picture = "Portrait_carrotzka_Sadra_Carrot.dds"
+									id = 69
 									traits = { 
 										politically_connected
 										leader_in_battalefield
@@ -1771,10 +1774,6 @@ focus_tree = {
 					factor = 40
 				}
 				completion_reward = {
-					start_civil_war = {
-						ideology = democratic
-						size = 0.2
-				  }
 					add_stability = 0.2
 					add_political_power = 200
 					add_ideas = democratic_opposition_voicing_protests
@@ -1796,6 +1795,8 @@ focus_tree = {
 							days = 1
 						}
 					}
+					remove_unit_leader = 420
+					remove_unit_leader = 69420
 			}
 		}
 
@@ -1959,17 +1960,8 @@ focus_tree = {
 				type = annex_everything 
 				target = ACZ
 		}
-		ACZ = {
-			kill_country_leader = yes
-		}
+		remove_unit_leader = 69
 			hidden_effect = {
-				set_politics = {
-					ruling_party = carrotism
-				}
-				kill_country_leader = yes
-				set_politics = {
-					ruling_party = communism
-				}
 				news_event = {
 					id = crznews.69
 					days = 2
@@ -2409,6 +2401,51 @@ focus_tree = {
 										infantry = { x = 0 y = 2 }
 									}
 								}
+							}
+						}
+
+						focus = {
+					    	id = CRZ_cooperation_with_GIS
+							icon = GFX_focus_generic_treaty
+							x = 0
+							y = 1
+							relative_position_id = CRZ_improve_relations_with_grn
+							cost = 7
+							available_if_capitulated = yes
+							prerequisite = { 
+								focus = CRZ_improve_relations_with_grn
+							}
+							ai_will_do = {
+								factor = 20								
+							}
+							completion_reward = {
+								GRN = {
+									country_event= {
+										days = 1 
+									 	 id = carrotzka.73
+									  }
+								}
+							}
+						}
+
+						focus = {
+					    	id = CRZ_disband_iwa
+							icon = GFX_focus_spr_crush_the_revolution
+							x = 1
+							y = 1
+							relative_position_id = CRZ_purge_carrotists
+							cost = 7
+							available_if_capitulated = yes
+							prerequisite = { 
+								focus = paramilitarism_focus
+								focus = CRZ_purge_carrotists
+							}
+							ai_will_do = {
+								factor = 20								
+							}
+							completion_reward = {
+								unlock_decision_category_tooltip = taking_out_the_evil
+								add_ideas = CSI
 							}
 						}
 	}
