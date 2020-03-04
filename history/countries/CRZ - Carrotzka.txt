@@ -480,7 +480,7 @@ if = {
 
 	create_equipment_variant = {
 		name = "Emeraldborn"					
-		type = ship_hull_heavy_3
+		type = ship_hull_heavy_2
 		name_group = SOV_BB_HISTORICAL
 		parent_version = 0
 		modules = {

@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = GRN_thepeoplesfreedomofchoice
 		icon = GFX_goal_support_democracy
-		x = 3
+		x = 2
 		y = 0
 		cost = 8
 		available_if_capitulated = yes
@@ -63,11 +63,11 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Equlity Above All
+	#Focus for Equality Above All
 	focus = {
 		id = GRN_equalityaboveall
 		icon = GFX_goal_support_communism
-		x = 7
+		x = 6
 		y = 0
 		cost = 8
 		available_if_capitulated = yes
@@ -159,9 +159,6 @@ focus_tree = {
         			}
         
         		}
-        
-        
-        		add_ideas = special_democracy
 			}
 			# commie choice
 			if = {
@@ -284,7 +281,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_starttherevolution }
-		available = { has_government = communism }
+		available = { has_government = democratic }
 		ai_will_do = {
 			factor = 80
 		}
@@ -634,6 +631,7 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
+			unlock_decision_category_tooltip = GRN_arming_the_revolution
 			custom_effect_tooltip = tip_armtherevolution
 			hidden_effect = {
 				set_country_flag = arming_revolution
@@ -749,7 +747,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 33
 		y = 2
-		cost = 14
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_repairthedamage }
 		ai_will_do = {
@@ -1428,7 +1426,7 @@ focus_tree = {
 		id = GRN_demandthenorthwest
 		icon = GFX_goal_generic_demand_territory
 		x = 13
-		y = 4
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -1447,7 +1445,7 @@ focus_tree = {
 		id = GRN_cooperativestrike
 		icon = GFX_goal_generic_military_deal
 		x = 11
-		y = 4
+		y = 3
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -1466,7 +1464,7 @@ focus_tree = {
 		id = GRN_gatesoftheredsea
 		icon = GFX_focus_generic_coastal_fort
 		x = 12
-		y = 6
+		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 

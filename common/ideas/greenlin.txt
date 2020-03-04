@@ -36,8 +36,29 @@ ideas = {
 
 			}
 		}
+		
 		#
+		full_control = {
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = special_democracy
+
+			modifier = {
+				political_power_factor = 0.04
+				justify_war_goal_time = -0.2
+			}
+		}
+
+		#
 		grn_political_turmoil  = {
 			removal_cost = -1
 			
