@@ -287,26 +287,26 @@ retake_the_salad_region = {
             }
         }
   }
-}
-
-ultimatum_to_poland = {
-    icon = generic_operation
-    cost = 150
-    ai_will_do = {
-        factor = 1
     }
-    fire_only_once = yes
-    days_remove = 0
-    complete_effect = {
-        POL = {
-            country_event = {
-                id = carrotzka.72
-                days = 1
-                random = 0
-            }
+
+    ultimatum_to_poland = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
         }
-  }
-}
+        fire_only_once = yes
+        days_remove = 0
+        complete_effect = {
+            POL = {
+                country_event = {
+                    id = carrotzka.72
+                    days = 1
+                    random = 0
+                }
+            }
+    }
+    }
 }
 
 taking_out_the_evil = {
@@ -337,7 +337,7 @@ taking_out_the_evil = {
         days_remove = 0
         complete_effect = {
             set_country_flag = CRZ_volunteers
-      }
+        }
     }
 
     greenlin_help = {

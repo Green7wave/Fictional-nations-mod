@@ -433,31 +433,9 @@ country_event = {
 	option = {
 		ai_chance = {
 			 factor = 40
-			 }
-			 POL = {
-				 add_ideas = black_flag
-			 }
-	}
-}
-
-country_event = {
-	id = carrotzka.72
-	title = carrotzka.72.t
-	desc = carrotzka.72.d
-	picture = GFX_report_event_soviet_finnish_pact
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { 
-			factor = 10
 		}
-		CRZ = {
-			transfer_state = 91
-			transfer_state = 89
-			transfer_state = 93
-				unlock_national_focus = CRZ_war_with_poland
+			POL = {
+				 add_ideas = black_flag
 		}
 	}
 }
@@ -561,180 +539,180 @@ option = {
 		 }
 	}
 
-	country_event = {
-		id = carrotzka.75
-		title = carrotzka.75.t
-		desc = carrotzka.75.d
-		picture = GFX_report_event_soviet_finnish_pact
-		
-		fire_only_once = yes
-		is_triggered_only = yes
+country_event = {
+	id = carrotzka.75
+	title = carrotzka.75.t
+	desc = carrotzka.75.d
+	picture = GFX_report_event_soviet_finnish_pact
 	
-		option = {
-			name = carrotzka.75.a
-			ai_chance = { 
-				factor = 10
-			}
-			CRZ = {
-				country_event = {
-					id = carrotzka.76
-                    days = 2
-				}
-						}
-		}
-	}
+	fire_only_once = yes
+	is_triggered_only = yes
 
-	country_event = {
-		id = carrotzka.80
-		title = carrotzka.80.t
-		desc = carrotzka.80.d
-		picture = GFX_report_event_spain_civil_war_volunteers_02
-		
-		fire_only_once = yes
-		is_triggered_only = yes
-	
-		option = {
-			name = carrotzka.80.a
-			ai_chance = { 
-				factor = 10
+	option = {
+		name = carrotzka.75.a
+		ai_chance = { 
+			factor = 10
+		}
+		CRZ = {
+			country_event = {
+				id = carrotzka.76
+				days = 2
 			}
-			CRZ = {
-				division_template = {
-					name = "civilwar"
-					division_names_group = CRZ_INF_01
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 0 y = 4 }
 					}
+	}
+}
+
+country_event = {
+	id = carrotzka.80
+	title = carrotzka.80.t
+	desc = carrotzka.80.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.80.a
+		ai_chance = { 
+			factor = 10
+		}
+		CRZ = {
+			division_template = {
+				name = "civilwar"
+				division_names_group = CRZ_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
 				}
-					random_owned_controlled_state = {
-						prioritize = { 197 }
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}          
-					} 
+			}
+				random_owned_controlled_state = {
+					prioritize = { 197 }
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
+					create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}          
+				} 
 			country_event = {
 				id = carrotzka.81
 				days = 0
@@ -793,9 +771,9 @@ country_event = {
 			if = {
 				limit = {
 					CRZ = {
-					has_country_flag = CRZ_volunteers
+						has_country_flag = CRZ_volunteers
+					}
 				}
-			}
 				CRZ = {
 					add_ideas = workers_volunteerd
 				}

@@ -60,7 +60,7 @@ focus_tree = {
 				}
 			}
 			set_party_name= { 
-					ideology = carroitsm 
+					ideology = carrotism 
 					long_name = carrot_council
 					name = CCC 
 			}				
@@ -575,6 +575,9 @@ focus_tree = {
 		x = 31
 		y = 0
 		cost = 10
+		bypass = {
+			has_completed_focus = CRZ_death_to_state
+		}
 		ai_will_do = {
 			factor = 80
 		}
@@ -607,8 +610,9 @@ focus_tree = {
 	                    	}
 	                     }
                        }
-                	}
+        }
 
+		
 		focus = {
 		id = CRZ_ask_for_caucasus
 		icon = GFX_goal_generic_dangerous_deal
@@ -661,6 +665,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
+		bypass = {
+			has_completed_focus = CRZ_death_to_state
+		}
 		prerequisite = { focus = CRZ_death_to_some_states }
 		ai_will_do = {
 			factor = 40
@@ -1271,6 +1278,9 @@ focus_tree = {
 						y = 2
 						cost = 0
 						available_if_capitulated = yes
+						bypass = {
+							has_completed_focus = CRZ_death_to_state
+						}
 						prerequisite = { focus = CRZ_support_for_carrotist_carrotzka }
 						mutually_exclusive = { focus = CRZ_the_new_meaning_of_freedom }
 						ai_will_do = {
@@ -2066,7 +2076,7 @@ focus_tree = {
 				}
 				prerequisite = { focus = CRZ_two_year_plan	}
 				completion_reward = {
-					add_ideas = continuous_naval_production
+					add_ideas = bureau_of_ships_focus
 					}
 				}
 
@@ -2117,7 +2127,7 @@ focus_tree = {
 							icon = GFX_focus_spr_class_war
 							x = 12
 							y = 7
-							cost = 7
+							cost = 10
 					
 							available_if_capitulated = yes
 							completion_reward = {
@@ -2434,7 +2444,7 @@ focus_tree = {
 							x = 1
 							y = 1
 							relative_position_id = CRZ_purge_carrotists
-							cost = 7
+							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { 
 								focus = paramilitarism_focus
