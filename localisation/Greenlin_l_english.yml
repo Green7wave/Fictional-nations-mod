@@ -16,6 +16,7 @@
  GRN_neutrality_DEF:0 "the Greenlin Empire"
  GRN_communism:0 "Socialist Greenlin"
  GRN_communism_DEF:0 "the Socialist Greenlin"
+ 
 
 # City and state names
  VICTORY_POINTS_6923:0 "Grensofer"
@@ -117,7 +118,7 @@
  hawks_desc:0 "Greenlin's special forces or Hawks are paratroopers unlike any other, Greenlin has special focus on them and people know them as heros."
  greenlin_rising:0 "Industrial Rising"
  greenlin_rising_desc:0 "After a long fall, Greenlin has finally started to rise, and it's time to reconstruct the country!"
- army_of_green:0 "People's Army"
+ army_of_green:0 "Greenlin's Army"
  army_of_green_desc:0 "The people of Greenlin have suffered enough for the king, the shall not suffer again becuase of forgien attacks, the people of Greenlin attack!"
  clear_loss:0 "Clear Loss"
  clear_loss_desc:0 "The royal servants can not stop the might of upcoming attacks, the king himself doesn't believe a way out of this, we can only accept... defeat."

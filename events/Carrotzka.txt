@@ -179,24 +179,35 @@ country_event = {
 	title = carrotzka.9.t
 	desc = carrotzka.9.d
 	picture = GFX_report_event_ger_civil_war
-	
-	fire_only_once = no
+
 	trigger = {
 		NOT = {
 			has_government = carrotism
 			tag = CRZ
+			has_country_flag = got_carrotisted
 		}
-			carrotism > 0.5
+		carrotism > 0.7
+		has_civil_war = no
          
 	}
-
-	mean_time_to_happen = { days = 1 } 
 	
+	mean_time_to_happen = { days = 0 }
+
 	option = {
 		ai_chance = { factor = 40 }
 		name = carrotzka.6.a
 		ROOT = {
 			set_politics = { ruling_party = carrotism }
+		}
+		set_country_flag = got_carrotisted
+	}
+
+	option = {
+		ai_chance = { factor = 20 }
+		name = carrotzka.6.b
+		start_civil_war = {
+			ideology = carrotism
+			size = 0.7
 		}
 	}
 }

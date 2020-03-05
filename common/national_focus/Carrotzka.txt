@@ -2447,7 +2447,7 @@ focus_tree = {
 							cost = 10
 							available_if_capitulated = yes
 							prerequisite = { 
-								focus = paramilitarism_focus
+								# focus = paramilitarism_focus - wtf
 								focus = CRZ_purge_carrotists
 							}
 							ai_will_do = {

@@ -38,6 +38,43 @@ ideas = {
 		}
 		
 		#
+		special_democracy_2 = {
+			name = special_democracy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = special_democracy
+
+			modifier = {
+				political_power_factor = 0.04
+				lend_lease_tension = -1
+				send_volunteers_tension = -0.5
+				justify_war_goal_time = -0.2
+				generate_wargoal_tension = -0.7
+				join_faction_tension = -0.60  
+				guarantee_cost = -0.2 
+			}
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_lower_tension = yes
+				can_only_justify_war_on_threat_country = no
+				can_guarantee_other_ideologies = yes
+
+
+			}
+		}
+
+		#
 		full_control = {
 			
 			allowed = {
@@ -50,11 +87,36 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = special_democracy
+			picture = SPR_masters_of_our_own_fate
 
 			modifier = {
 				political_power_factor = 0.04
 				justify_war_goal_time = -0.2
+				
+			}
+		}
+		#
+
+		full_control_2 = {
+			name = full_control
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			picture = SPR_masters_of_our_own_fate
+
+			modifier = {
+				political_power_factor = 0.04
+				justify_war_goal_time = -0.2
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.5
 			}
 		}
 
@@ -166,7 +228,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = neutrality
 			}
 			
 			research_bonus = {
@@ -382,7 +444,7 @@ ideas = {
 			}
 		
 
-			picture = idea_mex_politicised_army_2
+			picture = generic_manpower_bonus
 
 			modifier = {
 				justify_war_goal_time = -0.05

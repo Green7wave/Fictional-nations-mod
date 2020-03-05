@@ -8,6 +8,28 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = GRN_test
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 0
+		cost = 0
+		available_if_capitulated = yes
+		prerequisite = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_popularity = {
+  			  ideology = var:GRN.current_party_ideology_group
+  			  popularity = -0.5
+			}
+		}
+	}
+
+
+
 	#Focus for Reconstruction of the country
 	focus = {
 		id = GRN_reconstructionofthecountry
@@ -618,7 +640,7 @@ focus_tree = {
 	#Focus for Arm the revolution
 	focus = {
 		id = GRN_armtherevolution
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_generic_manpower
 		x = 4
 		y = 1
 		cost = 6
@@ -1249,9 +1271,37 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_jointnavaltraining }
+		available = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					any_neighbor_state = {
+						is_controlled_by = var:GRN.enemies
+					}
+				}
+				
+			
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			
 		}
 	}
 
@@ -1281,6 +1331,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 60
 		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_fully_controlled_by = GRN
+					naval_base > 0
+				}
+				add_building_construction = {
+					type = coastal_bunker 
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
 	}
 
 	#Focus for Indirectional Clout
@@ -1293,7 +1360,34 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_politicalalignment }
 		ai_will_do = {
-			factor = 30
+			factor = 60
+			modifier = {
+				factor = 0
+				AND = {
+					NOT = { has_idea = full_control }
+					NOT = { has_idea = special_democracy }
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = full_control
+				}
+				swap_ideas = {
+					remove_idea = full_control
+					add_idea =  full_control_2
+				}
+			} 
+			else_if = {
+				limit = {
+					has_idea = special_democracy
+				}
+				swap_ideas = {
+					remove_idea = special_democracy
+					add_idea =  special_democracy_2
+				}
+			}
 		}
 	}
 
@@ -1306,6 +1400,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_greenlinspart }
+		available = { threat > 0.20 }
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
 			factor = 1
@@ -1483,10 +1578,13 @@ focus_tree = {
 		icon = GFX_nationalsecurity
 		x = 19
 		y = 0
-		cost = 10
+		cost = 9
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 60
+		}
+		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 
@@ -1502,6 +1600,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
 			factor = 60
+		}
+
+		completion_reward = {
+			add_state_claim = 46
+			add_state_claim = 81	
+			add_state_claim = 108	
+			add_state_claim = 105	
+			add_state_claim = 341
 		}
 	}
 
@@ -1539,7 +1645,105 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 60
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = democratic
+					is_faction_leader = yes
+					is_major = yes
+				}
+				set_variable = {
+    				var = democratic_guy
+  				  	value = PREV
+				}
+
+			}
+			
+			
+			
+			
+			if = {
+				limit = {
+					ENG = { has_government = neutrality }
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = { has_government = democratic }
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = { has_government = fascism }
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = { has_government = communism }
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+
+			add_opinion_modifier = {
+				target = ENG
+				modifier = anglo_mexican_diplomacy
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = anglo_mexican_diplomacy
+				}
+			}
+			if = {
+				limit = {
+					ENG = { is_faction_leader = yes }
+				}
+				ENG = {
+					country_event = {
+						id = mexico.8
+						days = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						is_in_faction = yes
+					}
+				}
+				random_other_country = {
+					limit = {
+						is_faction_leader = yes
+						is_in_faction_with = ENG
+					}
+					country_event = generic.2
+				}
+			}
+			else = {
+				create_faction = MEX_focus_community_of_nations
+				ENG = {
+					country_event = generic.5
+				}
+			}
+
 		}
 	}
 
@@ -1554,7 +1758,11 @@ focus_tree = {
 		prerequisite = { focus = GRN_greenlinspart }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 120
+		}
+		completion_reward = {
+			remove_ideas = grn_political_turmoil
+			add_political_power = 120
 		}
 	}
 

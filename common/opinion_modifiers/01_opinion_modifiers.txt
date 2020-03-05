@@ -15,14 +15,18 @@ opinion_modifiers = {
 	}
 
 	CRZ_tech_partner {
-		value = 50
+		value = 25
 	}
 
 	CRZ_good_terms {
-		value = 50
+		value = 25
 	}
 
 	CRZ_not_so_democratic {
-		value = -40
+		value = -35
+	}
+
+	GRN_friends_for_power {
+		value = 15
 	}
 }	
