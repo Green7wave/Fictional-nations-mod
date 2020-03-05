@@ -10,23 +10,23 @@
 
 opinion_modifiers = {
 
-	CRZ_communist_ally {
+	CRZ_communist_ally = {
 		value = 50
 	}
 
-	CRZ_tech_partner {
+	CRZ_tech_partner = {
 		value = 25
 	}
 
-	CRZ_good_terms {
+	CRZ_good_terms = {
 		value = 25
 	}
 
-	CRZ_not_so_democratic {
+	CRZ_not_so_democratic = {
 		value = -35
 	}
 
-	GRN_friends_for_power {
+	GRN_friends_for_power = {
 		value = 15
 	}
 }	
