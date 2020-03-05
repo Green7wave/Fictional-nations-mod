@@ -469,7 +469,7 @@ taking_out_the_evil = {
                         amount = -1000
                     }
                 }
-                CRZ = {
+                ACZ = {
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
                         amount = 1000
@@ -477,5 +477,54 @@ taking_out_the_evil = {
                     }
                 }
            }
+      }
+  }
+  cripple_carrotzka = {
+
+    damage_railway = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 20
+        complete_effect = {
+            damage_building = {
+                type = infrastructure
+                damage = 3
+            }
+       }
+      }
+
+      damage_mil_factory = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 20
+        complete_effect = {
+            set_country_flag = bought_gun
+       }
+      }
+
+      damage_civ_factory = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = yes
+        days_remove = 20
+        complete_effect = {
+           CRZ = {
+            damage_building = {
+                type = arms_factory
+                damage = 3
+            }
+           }
+       }
       }
   }

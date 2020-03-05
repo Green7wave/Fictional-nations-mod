@@ -53,7 +53,7 @@ retake_the_salad_region = {
 
 taking_out_the_evil = {
 	allowed = {
-		original_tag = CRZ
+		original_tag = ACZ
 	}
 	visible = {
 		CRZ = {
@@ -72,5 +72,14 @@ help_iwa = {
 		ROOT = {
 			has_country_flag = helping_iwa
 		}
+	}
+}
+
+cripple_carrotzka = {
+	allowed = {
+		original_tag = ACZ
+	}
+	visible = {
+		has_completed_focus = CRZ_cripple_the_industry
 	}
 }

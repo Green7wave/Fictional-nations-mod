@@ -2454,8 +2454,27 @@ focus_tree = {
 								factor = 20								
 							}
 							completion_reward = {
-								unlock_decision_category_tooltip = taking_out_the_evil
 								add_ideas = CSI
+								release = ACZ
+								ACZ = { change_tag_from = ROOT }
+								ACZ = {
+									create_country_leader = {
+									   name = "Nestor golivin"
+									   desc = "POLITICS_VASSILY_CARROT_DESC"
+									   picture = "gfx/leaders/CRZ/Portrait_nestor_golivin.dds"
+									   expire = "2000.1.1"
+									   ideology = marxism
+									   traits = {
+										   loved_by_people
+										   unquestionable
+									   }
+								   }
+								   unlock_decision_category_tooltip = taking_out_the_evil
+								   load_focus_tree = carrotzka_nst
+								   set_politics = {
+									ruling_party = communism
+								}
+						   }
 							}
 						}
 	}
