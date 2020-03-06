@@ -4242,4 +4242,9 @@ spriteTypes = {
 		name = "GFX_idea_workers_volunteerde"
 		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_unstable_government"
+		texturefile = "gfx/interface/ideas/idea_jap_the_unthinkable_option.dds"
+	}
 }
