@@ -61,7 +61,7 @@ GRN_arming_the_revolution = {
 
     arm_people = {
         
-        icon = generic_army_support
+        icon = generic_prepare_civil_war
 
         cost = 50
         fire_only_once = yes
@@ -87,5 +87,36 @@ GRN_arming_the_revolution = {
     }
 
 
+
+}
+
+GRN_oprations = {
+    
+    commence_operation_bitter = {
+
+        icon = generic_army_support
+
+        cost = 100
+        fire_only_once = yes
+        days_remove = 180
+
+        visible = {
+            tag = GRN
+            has_completed_focus = GRN_romaniasfuture
+            NOT = {
+                has_country_flag = in_war_with_romania
+                has_war_with = ROM
+            }
+        }
+
+        targeted_modifier = {
+			tag = ROM
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+        ai_will_do = {
+            factor = 4000
+        }
+    }
 
 }

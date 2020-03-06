@@ -1527,8 +1527,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = tip_romaniasfuture
 			hidden_effect = {
-				
-
+				set_country_flag = attacking_romania
 			}
 		}
 	}

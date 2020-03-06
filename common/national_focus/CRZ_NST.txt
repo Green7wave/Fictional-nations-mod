@@ -188,67 +188,8 @@ focus_tree = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	focus = {
-		id = CHI_invite_foreign_investors 
+		id = CRZ_invite_foreign_investors 
 		icon = GFX_focus_generic_concessions
 		x = 40
 		y = 0
@@ -294,12 +235,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_mission_to_germany
+		id = CRZ_mission_to_germany
 		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = CHI_invite_foreign_investors }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
 		x = -10
 		y = 1
-		relative_position_id = CHI_invite_foreign_investors
+		relative_position_id = CRZ_invite_foreign_investors
 		cost = 10
 	
 		ai_will_do = {
@@ -365,12 +306,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_give_falkenhausen_citizenship
+		id = CRZ_give_falkenhausen_citizenship
 		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = CHI_mission_to_germany }
+		prerequisite = { focus = CRZ_mission_to_germany }
 		x = -1
 		y = 1
-		relative_position_id = CHI_mission_to_germany
+		relative_position_id = CRZ_mission_to_germany
 	
 		cost = 10
 	
@@ -416,13 +357,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_chinese_general_staff
+		id = CRZ_chinese_general_staff
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = CHI_give_falkenhausen_citizenship }
-		prerequisite = { focus = CHI_closer_ties_with_germany }
+		prerequisite = { focus = CRZ_give_falkenhausen_citizenship }
+		prerequisite = { focus = CRZ_closer_ties_with_germany }
 		x = 0
 		y = 1
-		relative_position_id = CHI_give_falkenhausen_citizenship
+		relative_position_id = CRZ_give_falkenhausen_citizenship
 	
 		cost = 10
 	
@@ -465,12 +406,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_wargaming_division
+		id = CRZ_wargaming_division
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = CHI_chinese_general_staff }
+		prerequisite = { focus = CRZ_chinese_general_staff }
 		x = -1
 		y = 1
-		relative_position_id = CHI_chinese_general_staff
+		relative_position_id = CRZ_chinese_general_staff
 	
 		cost = 10
 	
@@ -503,13 +444,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_closer_ties_with_germany
+		id = CRZ_closer_ties_with_germany
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = CHI_mission_to_germany }
-		mutually_exclusive = { focus = CHI_rapprochement_with_soviet_union }
+		prerequisite = { focus = CRZ_mission_to_germany }
+		mutually_exclusive = { focus = CRZ_rapprochement_with_soviet_union }
 		x = 1
 		y = 1
-		relative_position_id = CHI_mission_to_germany
+		relative_position_id = CRZ_mission_to_germany
 	
 		cost = 10
 	
@@ -545,12 +486,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_purchase_tanks
+		id = CRZ_purchase_tanks
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = CHI_closer_ties_with_germany focus = CHI_rapprochement_with_soviet_union }
+		prerequisite = { focus = CRZ_closer_ties_with_germany focus = CHI_rapprochement_with_soviet_union }
 		x = 1
 		y = 1
-		relative_position_id = CHI_closer_ties_with_germany
+		relative_position_id = CRZ_closer_ties_with_germany
 	
 		cost = 10
 	
@@ -609,13 +550,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_chinese_panzers
+		id = CRZ_chinese_panzers
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = CHI_purchase_tanks }
-		prerequisite = { focus = CHI_closer_ties_with_germany }
+		prerequisite = { focus = CRZ_purchase_tanks }
+		prerequisite = { focus = CRZ_closer_ties_with_germany }
 		x = -2
 		y = 1
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -648,12 +589,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_tank_plant
+		id = CRZ_tank_plant
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_chinese_panzers }
+		prerequisite = { focus = CRZ_chinese_panzers }
 		x = -2
 		y = 3
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -709,12 +650,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_experimental_mechanised_unit
+		id = CRZ_experimental_mechanised_unit
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = CHI_purchase_tanks }
+		prerequisite = { focus = CRZ_purchase_tanks }
 		x = 0
 		y = 2
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -937,12 +878,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_combined_arms_warfare
+		id = CRZ_combined_arms_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CHI_experimental_mechanised_unit }
+		prerequisite = { focus = CRZ_experimental_mechanised_unit }
 		x = 0
 		y = 4
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -980,13 +921,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_hire_soviet_designer
+		id = CRZ_hire_soviet_designer
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = CHI_purchase_tanks }
-		prerequisite = { focus = CHI_rapprochement_with_soviet_union }
+		prerequisite = { focus = CRZ_purchase_tanks }
+		prerequisite = { focus = CRZ_rapprochement_with_soviet_union }
 		x = 2
 		y = 1
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -1023,12 +964,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_joint_tank_development
+		id = CRZ_joint_tank_development
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = CHI_hire_soviet_designer }
+		prerequisite = { focus = CRZ_hire_soviet_designer }
 		x = 2
 		y = 3
-		relative_position_id = CHI_purchase_tanks
+		relative_position_id = CRZ_purchase_tanks
 	
 		cost = 10
 	
@@ -1059,12 +1000,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_mission_to_the_soviet_union
+		id = CRZ_mission_to_the_soviet_union
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = CHI_invite_foreign_investors }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
 		x = 4
 		y = 0
-		relative_position_id = CHI_mission_to_germany
+		relative_position_id = CRZ_mission_to_germany
 	
 		cost = 10
 	
@@ -1130,13 +1071,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_rapprochement_with_soviet_union
+		id = CRZ_rapprochement_with_soviet_union
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = CHI_mission_to_the_soviet_union }
-		mutually_exclusive = { focus = CHI_closer_ties_with_germany }
+		prerequisite = { focus = CRZ_mission_to_the_soviet_union }
+		mutually_exclusive = { focus = CRZ_closer_ties_with_germany }
 		x = -1
 		y = 1
-		relative_position_id = CHI_mission_to_the_soviet_union
+		relative_position_id = CRZ_mission_to_the_soviet_union
 	
 		cost = 10
 	
@@ -1169,12 +1110,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_invite_soviet_advisers
+		id = CRZ_invite_soviet_advisers
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = CHI_mission_to_the_soviet_union }
+		prerequisite = { focus = CRZ_mission_to_the_soviet_union }
 		x = 1
 		y = 1
-		relative_position_id = CHI_mission_to_the_soviet_union
+		relative_position_id = CRZ_mission_to_the_soviet_union
 	
 		cost = 10
 	
@@ -1224,12 +1165,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_the_soviet_volunteer_group
+		id = CRZ_the_soviet_volunteer_group
 		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = CHI_invite_soviet_advisers }
+		prerequisite = { focus = CRZ_invite_soviet_advisers }
 		x = 0
 		y = 1
-		relative_position_id = CHI_invite_soviet_advisers
+		relative_position_id = CRZ_invite_soviet_advisers
 	
 		cost = 10
 	
@@ -1265,13 +1206,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_reach_out_to_france
+		id = CRZ_reach_out_to_france
 		icon = GFX_focus_chi_reach_out_to_france
-		mutually_exclusive = { focus = CHI_british_cooperation }
-		prerequisite = { focus = CHI_invite_foreign_investors }
+		mutually_exclusive = { focus = CRZ_british_cooperation }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
 		x = 5
 		y = 0
-		relative_position_id = CHI_mission_to_the_soviet_union
+		relative_position_id = CRZ_mission_to_the_soviet_union
 	
 		cost = 10
 	
@@ -1329,12 +1270,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_small_arms_expertise
+		id = CRZ_small_arms_expertise
 		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = CHI_reach_out_to_france }
+		prerequisite = { focus = CRZ_reach_out_to_france }
 		x = -2
 		y = 1
-		relative_position_id = CHI_reach_out_to_france
+		relative_position_id = CRZ_reach_out_to_france
 	
 		cost = 10
 	
@@ -1365,12 +1306,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_elite_mountaineers
+		id = CRZ_elite_mountaineers
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = CHI_invite_soviet_advisers focus = CHI_small_arms_expertise }
+		prerequisite = { focus = CRZ_invite_soviet_advisers focus = CHI_small_arms_expertise }
 		x = 0
 		y = 1
-		relative_position_id = CHI_small_arms_expertise
+		relative_position_id = CRZ_small_arms_expertise
 	
 		cost = 10
 	
@@ -1441,12 +1382,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_heavy_weapons
+		id = CRZ_heavy_weapons
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CHI_elite_mountaineers }
+		prerequisite = { focus = CRZ_elite_mountaineers }
 		x = 0
 		y = 2
-		relative_position_id = CHI_small_arms_expertise
+		relative_position_id = CRZ_small_arms_expertise
 		
 		cost = 10
 	
@@ -1485,12 +1426,12 @@ focus_tree = {
 	
 	
 	focus = {
-		id = CHI_guarantee_the_hanoi_route
+		id = CRZ_guarantee_the_hanoi_route
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = CHI_reach_out_to_france }
+		prerequisite = { focus = CRZ_reach_out_to_france }
 		x = 0
 		y = 1
-		relative_position_id = CHI_reach_out_to_france
+		relative_position_id = CRZ_reach_out_to_france
 	
 		cost = 10
 	
@@ -1548,12 +1489,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_construction_battalions
+		id = CRZ_construction_battalions
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CHI_guarantee_the_hanoi_route focus = CHI_burma_road }
+		prerequisite = { focus = CRZ_guarantee_the_hanoi_route focus = CHI_burma_road }
 		x = 1
 		y = 1
-		relative_position_id = CHI_guarantee_the_hanoi_route
+		relative_position_id = CRZ_guarantee_the_hanoi_route
 	
 		cost = 10
 	
@@ -1588,12 +1529,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_french_military_mission
+		id = CRZ_french_military_mission
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = CHI_guarantee_the_hanoi_route }
+		prerequisite = { focus = CRZ_guarantee_the_hanoi_route }
 		x = 0
 		y = 3
-		relative_position_id = CHI_reach_out_to_france
+		relative_position_id = CRZ_reach_out_to_france
 	
 		cost = 10
 	
@@ -1682,13 +1623,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_french_drill
+		id = CRZ_french_drill
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = CHI_heavy_weapons }
-		prerequisite = { focus = CHI_french_military_mission }
+		prerequisite = { focus = CRZ_heavy_weapons }
+		prerequisite = { focus = CRZ_french_military_mission }
 		x = 0
 		y = 5
-		relative_position_id = CHI_reach_out_to_france
+		relative_position_id = CRZ_reach_out_to_france
 	
 		cost = 10
 	
@@ -1717,12 +1658,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_modern_logistics
+		id = CRZ_modern_logistics
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = CHI_french_drill focus = CHI_ledo_road }
+		prerequisite = { focus = CRZ_french_drill focus = CHI_ledo_road }
 		x = 1
 		y = 1
-		relative_position_id = CHI_french_drill
+		relative_position_id = CRZ_french_drill
 	
 		cost = 10
 	
@@ -1771,13 +1712,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_british_cooperation
+		id = CRZ_british_cooperation
 		icon = GFX_focus_chi_british_cooperation
-		mutually_exclusive = { focus = CHI_reach_out_to_france }
-		prerequisite = { focus = CHI_invite_foreign_investors }
+		mutually_exclusive = { focus = CRZ_reach_out_to_france }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
 		x = 2
 		y = 0
-		relative_position_id = CHI_reach_out_to_france
+		relative_position_id = CRZ_reach_out_to_france
 	
 		cost = 10
 	
@@ -1843,12 +1784,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_burma_road
+		id = CRZ_burma_road
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = CHI_british_cooperation }
+		prerequisite = { focus = CRZ_british_cooperation }
 		x = 0
 		y = 1
-		relative_position_id = CHI_british_cooperation
+		relative_position_id = CRZ_british_cooperation
 	
 		cost = 10
 	
@@ -1929,13 +1870,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_ledo_road
+		id = CRZ_ledo_road
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CHI_burma_road }
-		prerequisite = { focus = CHI_the_hump }
+		prerequisite = { focus = CRZ_burma_road }
+		prerequisite = { focus = CRZ_the_hump }
 		x = 0
 		y = 5
-		relative_position_id = CHI_british_cooperation
+		relative_position_id = CRZ_british_cooperation
 	
 		cost = 10
 	
@@ -2016,12 +1957,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_fighter_purchases
+		id = CRZ_fighter_purchases
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = CHI_british_cooperation focus = CHI_mission_to_the_us }
+		prerequisite = { focus = CRZ_british_cooperation focus = CHI_mission_to_the_us }
 		x = 3
 		y = 1
-		relative_position_id = CHI_british_cooperation
+		relative_position_id = CRZ_british_cooperation
 	
 		cost = 10
 	
@@ -2084,12 +2025,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_camco
+		id = CRZ_camco
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_fighter_purchases }
+		prerequisite = { focus = CRZ_fighter_purchases }
 		x = 0
 		y = 1
-		relative_position_id = CHI_fighter_purchases
+		relative_position_id = CRZ_fighter_purchases
 	
 		cost = 10
 	
@@ -2130,13 +2071,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_local_fighter_production
+		id = CRZ_local_fighter_production
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = CHI_burma_road }
-		prerequisite = { focus = CHI_camco }
+		prerequisite = { focus = CRZ_burma_road }
+		prerequisite = { focus = CRZ_camco }
 		x = -2
 		y = 2
-		relative_position_id = CHI_fighter_purchases
+		relative_position_id = CRZ_fighter_purchases
 	
 		cost = 10
 	
@@ -2163,9 +2104,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_local_bomber_production
+		id = CRZ_local_bomber_production
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = CHI_local_fighter_production }
+		prerequisite = { focus = CRZ_local_fighter_production }
 		x = 0
 		y = 1
 		relative_position_id =  CHI_local_fighter_production
@@ -2195,13 +2136,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_the_hump
+		id = CRZ_the_hump
 		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = CHI_camco }
-		prerequisite = { focus = CHI_hire_chennault }
+		prerequisite = { focus = CRZ_camco }
+		prerequisite = { focus = CRZ_hire_chennault }
 		x = 1
 		y = 3
-		relative_position_id = CHI_fighter_purchases
+		relative_position_id = CRZ_fighter_purchases
 	
 		cost = 10
 	
@@ -2279,12 +2220,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_chinese_expeditionary_force
+		id = CRZ_chinese_expeditionary_force
 		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = CHI_the_hump }
+		prerequisite = { focus = CRZ_the_hump }
 		x = 0
 		y = 1
-		relative_position_id = CHI_the_hump
+		relative_position_id = CRZ_the_hump
 	
 		cost = 10
 	
@@ -2320,12 +2261,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_the_chu_x_po
+		id = CRZ_the_chu_x_po
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = CHI_camco }
+		prerequisite = { focus = CRZ_camco }
 		x = 0
 		y = 1
-		relative_position_id = CHI_camco
+		relative_position_id = CRZ_camco
 	
 		cost = 10
 	
@@ -2359,13 +2300,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_mission_to_the_us
+		id = CRZ_mission_to_the_us
 		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { focus = CHI_invite_foreign_investors }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
 		x = 8
 		y = 0
-		mutually_exclusive = { focus = CHI_collaboration_with_the_japanese }
-		relative_position_id = CHI_british_cooperation
+		mutually_exclusive = { focus = CRZ_collaboration_with_the_japanese }
+		relative_position_id = CRZ_british_cooperation
 	
 		cost = 10
 	
@@ -2426,12 +2367,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_hire_chennault
+		id = CRZ_hire_chennault
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = CHI_mission_to_the_us }
+		prerequisite = { focus = CRZ_mission_to_the_us }
 		x = -3
 		y = 3
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CRZ_mission_to_the_us
 	
 		cost = 10
 	
@@ -2465,12 +2406,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_invite_the_flying_tigers
+		id = CRZ_invite_the_flying_tigers
 		icon = GFX_focus_chi_flying_tigers
-		prerequisite = { focus = CHI_hire_chennault }
+		prerequisite = { focus = CRZ_hire_chennault }
 		x = 1
 		y = 1
-		relative_position_id = CHI_hire_chennault
+		relative_position_id = CRZ_hire_chennault
 	
 		cost = 10
 	
@@ -2505,12 +2446,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_sino_american_cooperative_organization
+		id = CRZ_sino_american_cooperative_organization
 		icon = GFX_focus_generic_paratrooper
-		prerequisite = { focus = CHI_invite_the_flying_tigers }
+		prerequisite = { focus = CRZ_invite_the_flying_tigers }
 		x = 1
 		y = 2
-		relative_position_id = CHI_hire_chennault
+		relative_position_id = CRZ_hire_chennault
 	
 		cost = 10
 	
@@ -2546,13 +2487,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_light_cruiser_project
+		id = CRZ_light_cruiser_project
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = CHI_mission_to_the_us }
-		prerequisite = { focus = CHI_order_destroyers }
+		prerequisite = { focus = CRZ_mission_to_the_us }
+		prerequisite = { focus = CRZ_order_destroyers }
 		x = 0
 		y = 3
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CRZ_mission_to_the_us
 	
 		cost = 10
 	
@@ -2583,12 +2524,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_heavy_cruiser_project
+		id = CRZ_heavy_cruiser_project
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = CHI_light_cruiser_project }
+		prerequisite = { focus = CRZ_light_cruiser_project }
 		x = 0
 		y = 2
-		relative_position_id = CHI_light_cruiser_project
+		relative_position_id = CRZ_light_cruiser_project
 	
 		cost = 10
 	
@@ -2619,12 +2560,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_naval_aviation
+		id = CRZ_naval_aviation
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = CHI_heavy_cruiser_project focus = CHI_coastal_patrol_planes }
+		prerequisite = { focus = CRZ_heavy_cruiser_project focus = CHI_coastal_patrol_planes }
 		x = 1
 		y = 1
-		relative_position_id = CHI_heavy_cruiser_project
+		relative_position_id = CRZ_heavy_cruiser_project
 	
 		cost = 10
 	
@@ -2659,12 +2600,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_carrier_air_wing
+		id = CRZ_carrier_air_wing
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = CHI_naval_aviation }
+		prerequisite = { focus = CRZ_naval_aviation }
 		x = 0
 		y = 1
-		relative_position_id = CHI_naval_aviation
+		relative_position_id = CRZ_naval_aviation
 	
 		cost = 10
 	
@@ -2698,12 +2639,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_investment_into_shipbuilding
+		id = CRZ_investment_into_shipbuilding
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = CHI_mission_to_the_us focus = CHI_collaboration_with_the_japanese }
+		prerequisite = { focus = CRZ_mission_to_the_us focus = CHI_collaboration_with_the_japanese }
 		x = 1
 		y = 1
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CRZ_mission_to_the_us
 	
 		cost = 10
 	
@@ -2760,12 +2701,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_order_destroyers
+		id = CRZ_order_destroyers
 		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = CHI_investment_into_shipbuilding }
+		prerequisite = { focus = CRZ_investment_into_shipbuilding }
 		x = 0
 		y = 1
-		relative_position_id = CHI_investment_into_shipbuilding
+		relative_position_id = CRZ_investment_into_shipbuilding
 	
 		cost = 10
 	
@@ -2799,12 +2740,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_train_marines
+		id = CRZ_train_marines
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = CHI_order_destroyers }
+		prerequisite = { focus = CRZ_order_destroyers }
 		x = 0
 		y = 3
-		relative_position_id = CHI_investment_into_shipbuilding
+		relative_position_id = CRZ_investment_into_shipbuilding
 	
 		cost = 10
 	
@@ -2839,13 +2780,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_collaboration_with_the_japanese
+		id = CRZ_collaboration_with_the_japanese
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = CHI_invite_foreign_investors }
-		mutually_exclusive = { focus = CHI_mission_to_the_us }
+		prerequisite = { focus = CRZ_invite_foreign_investors }
+		mutually_exclusive = { focus = CRZ_mission_to_the_us }
 		x = 2
 		y = 0
-		relative_position_id = CHI_mission_to_the_us
+		relative_position_id = CRZ_mission_to_the_us
 	
 		cost = 10
 	
@@ -2901,13 +2842,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_modern_submarines
+		id = CRZ_modern_submarines
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = CHI_collaboration_with_the_japanese }
-		prerequisite = { focus = CHI_order_destroyers }
+		prerequisite = { focus = CRZ_collaboration_with_the_japanese }
+		prerequisite = { focus = CRZ_order_destroyers }
 		x = 0
 		y = 3
-		relative_position_id = CHI_collaboration_with_the_japanese
+		relative_position_id = CRZ_collaboration_with_the_japanese
 	
 		cost = 10
 	
@@ -2938,12 +2879,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_coastal_patrol_planes
+		id = CRZ_coastal_patrol_planes
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = CHI_modern_submarines }
+		prerequisite = { focus = CRZ_modern_submarines }
 		x = 0
 		y = 2
-		relative_position_id = CHI_modern_submarines
+		relative_position_id = CRZ_modern_submarines
 	
 		cost = 10
 	

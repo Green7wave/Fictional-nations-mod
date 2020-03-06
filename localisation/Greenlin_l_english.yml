@@ -40,7 +40,7 @@
  GRN_carrotism_party:0 "COS"
 
 # Tool tips (§G§!) 
- tip_romaniasfuture:0 "Unlocks §YOperation Bitter§! decisions, which gives bonuses against Romania"
+ tip_romaniasfuture:0 "Unlocks §YOperation Bitter§! decisions, which gives bonuses against [ROM.GetName]"
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will unlock decisions that will change the odds of the civil war in the players favor, taking some of the decisions is needed to win the civil war"
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§! \n"
