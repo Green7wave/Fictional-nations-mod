@@ -1838,13 +1838,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			197 = {
-			add_building_construction = {
-				type = bunker
-				level = 10
-				province = 11683
-				instant_build = yes
-			}
+			197 = {			
 			add_building_construction = {
 				type = coastal_bunker
 				level = 10
@@ -2458,6 +2452,8 @@ focus_tree = {
 								release = ACZ
 								ACZ = { change_tag_from = ROOT }
 								ACZ = {
+									add_ideas = unstable_government
+									add_ideas = workers_volunteerd
 									create_country_leader = {
 									   name = "Nestor golivin"
 									   desc = "POLITICS_VASSILY_CARROT_DESC"

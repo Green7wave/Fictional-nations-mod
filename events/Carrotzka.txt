@@ -751,7 +751,7 @@ country_event = {
 	id = carrotzka.83
 	title = carrotzka.83.t
 	desc = carrotzka.83.d
-	picture = GFX_report_event_soviet_finnish_pact
+	picture = GFX_report_event_spr_nationalist_soldiers
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -775,7 +775,7 @@ country_event = {
 	}
 
 	option = {
-		name = carrotzka.75.a
+		name = carrotzka.84.a
 		ai_chance = { 
 			factor = 10
 		}
@@ -786,7 +786,7 @@ country_event = {
 	id = carrotzka.84
 	title = carrotzka.84.t
 	desc = carrotzka.84.d
-	picture = GFX_report_event_soviet_finnish_pact
+	picture = GFX_report_event_spr_italian_volunteers
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -830,7 +830,7 @@ country_event = {
 	}
 	random_owned_controlled_state = {
 		limit = { ROOT = { has_full_control_of_state = PREV } }
-		prioritize = { 197 }
+		prioritize = { 259 }
 		create_unit = {
 			division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
 			owner = ACZ
@@ -860,5 +860,56 @@ country_event = {
 			owner = ACZ
 		}
 	}
+}
 
+country_event = {
+	id = carrotzka.85
+	title = carrotzka.85.t
+	desc = carrotzka.85.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.85.a
+		ai_chance = { 
+			factor = 90
+		}
+		CRZ = {
+			transfer_navy = {
+				target = ACZ
+			}
+		}
+		ACZ = {
+			country_event = {
+				id = carrotzka.86
+				days = 1
+			}
+		}
 	}
+
+	option = {
+		name = carrotzka.85.a
+		ai_chance = { 
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = carrotzka.86
+	title = carrotzka.86.t
+	desc = carrotzka.86.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.86.a
+		ai_chance = { 
+			factor = 90
+		}
+	}
+}
