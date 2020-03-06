@@ -69,6 +69,12 @@
  carrotzka.84.t:0 "Revolutionary army joined us"
  carrotzka.84.d:0 "Revolutionary army accepted our offer and now they are ready to fight in our side"
  carrotzka.84.a:0 "they showed their loyality to revolution"
+ carrotzka.85.t:0 "Nestor golivin offers amnesty to navy"
+ carrotzka.85.d:0 ""
+ carrotzka.85.a:0 "Join them, this revolution is corrupted"
+ carrotzka.86.t:0 "Carrotzka navy accepted our offer"
+ carrotzka.86.d:0 ""
+ carrotzka.86.a:0 "Togheter we take out vassily"
 
  # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
@@ -215,6 +221,8 @@
  black_flag_desc:0 "carrotzkaians...they gonna kill us all...should have not said that...i should NOT have said that!"
  CRZ_a_bird_a_plane:0 "Its a bird? Its a plane!"
  CRZ_a_bird_a_plane_desc:0 "wow what are thoseeeee"
+ unstable_government:0 "Unstable government"
+ unstable_government_desc:0 "We cant have stability until we become an actuall country"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."
