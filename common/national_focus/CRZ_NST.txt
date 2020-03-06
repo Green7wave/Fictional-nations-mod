@@ -49,8 +49,40 @@ focus_tree = {
 		completion_reward = {
 			add_war_support= 0.1
 			add_manpower= 80000
+			259 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 3557
+					instant_build = yes
+				}
+			}
+			259 = {
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 9413
+						instant_build = yes
+					}
+				}
+				259 = {
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 6605
+						instant_build = yes
+					}
+				}
+				259 = {
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 3584
+						instant_build = yes
+					}
+				}
+			}
 		}
-	}
 
 	focus = {
 		id = CRZ_end_civil_war
@@ -66,6 +98,38 @@ focus_tree = {
 		completion_reward = {
 			add_war_support= 0.1
 			add_manpower= 80000
+			259 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 511
+					instant_build = yes
+				}
+			}
+			259 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 6507
+					instant_build = yes
+				}
+			}
+			259 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 6495
+					instant_build = yes
+				}
+			}
+			259 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 9519
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -81,7 +145,12 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-
+			CRZ = {
+				country_event = {
+					id = carrotzka.83
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -97,7 +166,12 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-
+			CRZ = {
+				country_event = {
+					id = carrotzka.85
+					days = 1
+				}
+			}
 		}
 	}
 
@@ -122,10 +196,12 @@ focus_tree = {
 		id = CRZ_organise_anarchists
 		icon = GFX_focus_spr_no_pasaran
 		x = 5
-		y = 4
+		y = 5
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
+		mutually_exclusive = { focus = CRZ_organise_democrats }
+		mutually_exclusive = { focus = CRZ_organise_carrotist }
 		ai_will_do = {
 			factor = 40
 		}
@@ -140,12 +216,14 @@ focus_tree = {
 
 	focus = {
 		id = CRZ_organise_democrats
-		icon = GFX_goal_generic_support_democracy
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 7
 		y = 5
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
+		mutually_exclusive = { focus = CRZ_organise_anarchists }
+		mutually_exclusive = { focus = CRZ_organise_carrotist }
 		ai_will_do = {
 			factor = 40
 		}
@@ -162,10 +240,12 @@ focus_tree = {
 		id = CRZ_organise_carrotist
 		icon = GFX_focus_YUG_pan_slavic_congress
 		x = 9
-		y = 4
+		y = 5
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
+		mutually_exclusive = { focus = CRZ_organise_democrats }
+		mutually_exclusive = { focus = CRZ_organise_anarchists }
 		ai_will_do = {
 			factor = 40
 		}
