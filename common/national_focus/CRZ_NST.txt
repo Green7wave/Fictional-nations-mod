@@ -258,6 +258,107 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = CRZ_ignite_civilwar_anarchist
+		icon = GFX_focus_secret_rearmament
+		x = 5
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CRZ_organise_anarchists
+		 }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			CRZ = {
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.3
+			  }
+		}
+	}	
+}
+
+focus = {
+	id = CRZ_ignite_civilwar_democratic
+	icon = GFX_focus_secret_rearmament
+	x = 7
+	y = 6
+	cost = 4
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = CRZ_organise_carrotist
+	 }
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		CRZ = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+		  }
+	}
+}	
+}
+
+focus = {
+	id = CRZ_ignite_civilwar_carrotist
+	icon = GFX_focus_secret_rearmament
+	x = 9
+	y = 6
+	cost = 4
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = CRZ_organise_carrotist
+	 }
+	ai_will_do = {
+		factor = 40
+	}
+	completion_reward = {
+		CRZ = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.3
+		  }
+	}
+}	
+}
+
+focus = {
+	id = CRZ_negotiate_about_carrotzka
+	icon = GFX_focus_secret_rearmament
+	x = 7
+	y = 7
+	cost = 4
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = CRZ_ignite_civilwar_carrotist
+		focus = CRZ_ignite_civilwar_anarchist
+		focus = CRZ_ignite_civilwar_democratic
+	 }
+	ai_will_do = {
+		factor = 40
+	}
+	available = {
+		ACZ = {
+			NOT = {
+				has_idea = unstable_government
+			}
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = carrotzka.41144
+			days = 1
+		}
+}	
+}
+
+
+
 
 
 

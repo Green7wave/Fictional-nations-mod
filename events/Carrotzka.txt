@@ -828,9 +828,7 @@ country_event = {
 			}
 		}
 	}
-	random_owned_controlled_state = {
-		limit = { ROOT = { has_full_control_of_state = PREV } }
-		prioritize = { 259 }
+	259 = {
 		create_unit = {
 			division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0" 
 			owner = ACZ
