@@ -375,6 +375,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				ACZ = { country_event = grn.5 }
@@ -388,6 +389,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				CRZ = { country_event = grn.5 }
@@ -405,7 +407,7 @@ focus_tree = {
 								has_completed_focus = ROM_appoint_german_friendly_government
 							}
 						}
-						has_war = no
+						NOT = { has_war_with = GRN }
 						OR = {
 							is_subject = no
 							is_subject_of = GRN
@@ -423,6 +425,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				PER = { country_event = grn.5 }
@@ -437,6 +440,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				AFG = { country_event = grn.5 }
@@ -450,6 +454,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				IRQ = { country_event = grn.5 }
@@ -477,6 +482,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				YUG = { country_event = grn.5 }
@@ -490,6 +496,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				TUR = { country_event = grn.5 }
@@ -503,6 +510,7 @@ focus_tree = {
 							is_subject = no
 							is_subject_of = GRN
 						}
+						NOT = { has_war_with = GRN }
 					}
 				}
 				SAU = { country_event = grn.5 }
@@ -549,33 +557,18 @@ focus_tree = {
 					GRN = { is_in_faction = yes }
 				}
 				PER = {
-					add_ai_strategy = {
-							type = alliance
-							id = "GRN"
-							value = 200
-					}
 					country_event = {
    						id = grn.8
    						random = 10
 					}
 				}
 				AFG = {
-					add_ai_strategy = {
-							type = alliance
-							id = "GRN"
-							value = 200
-					}
 					country_event = {
    						id = grn.8
    						random = 10
 					}
 				}
 				IRQ = {
-					add_ai_strategy = {
-							type = alliance
-							id = "GRN"
-							value = 200
-					}
 					country_event = {
    						id = grn.8
    						random = 10
@@ -898,6 +891,7 @@ focus_tree = {
 			factor = 39
 		}
 		completion_reward = {
+			navy_experience = 25
 			add_tech_bonus = {
 				name = naval_equipment_bonus
 				bonus = 1
@@ -1245,6 +1239,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 60
 		}
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = SPR_navy_modernization
+				bonus = 1
+				uses = 3
+				category = naval_doctrine
+			}
+		}
 	}
 
 	#Focus for All to stop Fascists
@@ -1316,6 +1319,9 @@ focus_tree = {
 		prerequisite = { focus = GRN_followingthestatusquo }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = expanded_influence
 		}
 	}
 
@@ -1442,6 +1448,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 60
 		}
+
+		completion_reward = {
+			ROOT = {
+				add_to_tech_sharing_group = green_research
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_to_tech_sharing_group = green_research
+
+			}
+
+		}
 	}
 
 	#Focus for Greenish Volenteers
@@ -1498,6 +1518,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 30
 		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROM
+				generator = { 81 46 }
+			}
+			custom_effect_tooltip = tip_romaniasfuture
+			hidden_effect = {
+				
+
+			}
+		}
 	}
 
 	#Focus for A Friendly Request
@@ -1510,9 +1543,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GRN_reclaimthelostlands }
 		mutually_exclusive = { focus = GRN_romaniasfuture }
+		available = {
+			ROM = {
+				controls_state = 46
+				controls_state = 81
+			}
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ROM
+			}
+			NOT = {
+				has_war_with = ROM
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 60
+			factor = 80
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = HUN_demands_tt		
+			ROM = { country_event = { id = grn.14 } }
+			hidden_effect = {
+				news_event = { id = news.300 }
+			}
 		}
 	}
 
@@ -1626,7 +1680,56 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 180
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					CRZ = {
+						is_faction_leader = yes
+					}
+				}
+				CRZ = {
+					country_event = generic.2
+				}
+
+			}
+			else_if = {
+				limit = {
+					POL = {
+						is_faction_leader = yes
+					}
+				}
+				POL = {
+					country_event = generic.2
+				}
+
+			}
+			else_if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+					}
+				}
+				SOV = {
+					country_event = generic.2
+				}
+
+			}
+			else = {
+				random_other_country = {
+					limit = {
+						is_faction_leader = yes
+						OR = {
+							is_in_faction_with = CRZ
+							tag = YUG
+							tag = ROM
+						}
+					}
+					country_event = generic.2
+				}					
+			}
+
 		}
 	}
 
@@ -1649,21 +1752,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_country = {
-				limit = {
-					has_government = democratic
-					is_faction_leader = yes
-					is_major = yes
-				}
-				set_variable = {
-    				var = democratic_guy
-  				  	value = PREV
-				}
-
-			}
-			
-			
-			
 			
 			if = {
 				limit = {
@@ -1704,12 +1792,12 @@ focus_tree = {
 
 			add_opinion_modifier = {
 				target = ENG
-				modifier = anglo_mexican_diplomacy
+				modifier = GRN_friends_for_power
 			}
 			ENG = {
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = anglo_mexican_diplomacy
+					modifier = GRN_friends_for_power
 				}
 			}
 			if = {

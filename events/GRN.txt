@@ -322,7 +322,7 @@
 				AND = {
 					OR = {
 						tag = ROM
-						tag = HUN
+						tag = GRN
 						tag = YUG
 						tag = TUR
 					}
@@ -468,7 +468,7 @@
 			}
 		}
 		ai_chance = {
-			base = 50
+			base = 80
 			modifier = {
 				factor = 0.5
 				has_war = no
@@ -480,7 +480,7 @@
 			modifier = {
 				factor = 0.5
 				NOT = {
-					has_government = neutrality
+					has_government = ROOT
 				}
 			}
 			
@@ -513,38 +513,7 @@
 			is_in_faction_with = FROM
 		}
 		ai_chance = {
-			base = 50
-			modifier = {
-				factor = 0.5
-				has_war = no
-				FROM = {
-					has_war = yes
-				}
-			}
-			
-			modifier = {
-				factor = 0.5
-				NOT = {
-					has_government = neutrality
-				}
-			}
-			
-			modifier = {
-				factor = 0.75
-				FROM = {
-					is_major = no
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = { tag = PER }
-			}
-			FROM = { puppet = ROOT }
-		
-		} else = {
-			country_event = otr.1 
+			base = 4000
 		}
 		
 	}
@@ -878,12 +847,286 @@
  	}
 
 }
- 
+
+
+# Greenlin wants their old lands from romania
+country_event = {
+	id = grn.14
+	title = grn.14.t
+	desc = grn.14.d
+	picture = GFX_report_event_vienna_award_negotiations
+	
+	is_triggered_only = yes
+
+	option = {#yes 
+		name = grn.14.a
+		ai_chance = {
+			factor = 10
+			modifier = {
+				ROM_is_on_historical_plan_trigger = yes
+				factor = 0
+			}
+			modifier = {
+				strength_ratio = { tag = GRN ratio < 0.8 }
+				factor = 2
+			}
+		}
+		GRN = { country_event = { id = grn.15 } }
+		add_stability = -0.25
+		add_war_support = -0.1
+
+	}
+
+	option = {#no 
+		name = grn.14.b
+		ai_chance = {
+			factor = 90
+		}
+		GRN = { country_event = { id = grn.16 } }
+	}
+}
+
+
+# Romania hands over the lands
+country_event = {
+	id = grn.15
+	title = grn.15.t
+	desc = grn.15.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = Balkan_crisis_mediation_requested
+		}
+	}
+
+	option = {
+		name = grn.15.a
+		GRN = {
+			if = {
+				limit = {
+					ROM = {
+						controls_state = 46
+					}
+				}
+				transfer_state = 46
+			}
+
+			if = {
+				limit = {
+					ROM = {
+						controls_state = 81
+					}
+				}
+				transfer_state = 81
+			}
+		}
+		add_threat = -1
+		hidden_effect = {
+			news_event = { id = news.301 days = 1 }
+		}
+	}
+}
+
+#Romania refuses to hand over the lands
+country_event = {
+	id = grn.16
+	title = grn.16.t
+	desc = grn.16.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {# Let it go
+		name = grn.16.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				strength_ratio = { tag = ROM ratio < 1 } #weaker than Romania
+				factor = 2
+			}
+		}
+		add_stability = -0.2
+		add_war_support = -0.1
+		remove_state_claim = 46
+		remove_state_claim = 81
+		add_threat = -1
+	}
+
+	option = {# Prepare for war!
+		name = grn.16.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				strength_ratio = { tag = ROM ratio > 1.2 }
+				factor = 3
+			}
+		}
+		ROM = { country_event = { id = grn.17 hours = 24} }
+		add_war_support = 0.1
+		add_threat = 2
+		hidden_effect = {
+			news_event = { id = news.302 days = 1 }
+		}
+	}
+}
+
+
+
+# Romania is told Greenlin is going to send nukes
+country_event = {
+	id = grn.17
+	title = grn.17.t
+	desc = grn.17.d
+	picture = GFX_report_event_hungarian_soldiers
+	
+	is_triggered_only = yes
+
+	option = {# Back down
+		name = grn.17.a
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = HUN ratio < 0.8 }
+				factor = 0.5
+			}
+			modifier = {
+				is_in_faction = yes
+				factor = 0 #we got friends
+			}
+		}
+		add_stability = -0.15
+		HUN = {
+			country_event = { id = grn.15 }
+		}
+	}
+
+	option = {# Prepare for war!
+		name = grn.17.b
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = HUN ratio > 1 }
+				factor = 0.5
+			}
+			modifier = {
+				has_completed_focus = ROM_balkans_dominance
+				factor = 10 
+			}
+			modifier = { 
+				is_in_faction = yes
+				factor = 2
+			}
+		}
+		GRN = { country_event = { id = grn.18 hours = 24 } }
+		add_ideas = ROM_war_preparation
+		add_war_support = 0.1
+		add_threat = 1
+	}
+
+}
+
+# Greenlin told that Romania is mobilizing
+country_event = {
+	id = grn.18
+	title = grn.18.t
+	desc = grn.18.d
+	picture = GFX_report_event_romanian_soldiers
+	
+	is_triggered_only = yes
+
+	option = {# Back down
+		name = grn.18.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				strength_ratio = { tag = ROM ratio < 0.5 } #weaker than Romania
+				factor = 4000
+			}
+		}
+		add_stability = -0.15
+		remove_state_claim = 81
+		remove_state_claim = 46
+		add_threat = -1
+		ROM = {	country_event = { id = grn.19 } }
+		
+	}
+
+	option = {# To war!
+		name = grn.18.b
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = ROM ratio > 1.25 } #stronger than Romania
+				factor = 2
+			}
+		}
+		declare_war_on = {
+				target = ROM
+				type = take_state_focus
+				generator = { 81 46} 
+			}
+
+	}
+
+	option = {# To war... With Carrot!
+		name = grn.18.c
+		trigger = {
+			CRZ = { is_in_faction_with = ROOT }
+		}
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = ROM ratio > 1.25 } #stronger than Romania
+				factor = 4000
+			}
+		}
+		declare_war_on = {
+				target = ROM
+				type = take_state_focus
+				generator = { 81 46} 
+		}
+		CRZ = {
+			declare_war_on = {
+				target = ROM
+				type = take_state_focus
+				generator = { 776 78} 
+			}
+		}
+
+	}
+}
+
+#Greenlin backs down - Romania triumphant
+country_event = {
+	id = grn.19
+	title = grn.19.t
+	desc = grn.19.d
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = Balkan_crisis_mediation_requested
+		}
+	}
+
+	option = {# well done us
+		name = grn.19.a
+		add_stability = 0.05
+		remove_ideas = ROM_war_preparation
+	
+	}
+}
+
 # civil war is going for 5 months, time for a big debuff
  country_event = {
- 	id = grn.14
- 	title = grn.14.t
- 	desc = grn.14.d
+ 	id = grn.20
+ 	title = grn.20.t
+ 	desc = grn.20.d
  	picture = GFX_report_event_generic_read_write
  
  	fire_only_once = no
@@ -899,7 +1142,7 @@
 	 }
  	
  	option = { 
- 		name = grn.14.a 
+ 		name = grn.20.a 
 		if = {
 			limit = {
 				NOT = { has_government = neutrality }
@@ -916,5 +1159,3 @@
  
  	
 }
-
-

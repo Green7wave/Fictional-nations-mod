@@ -1,8 +1,13 @@
 ﻿l_english:
 # news
+  # civil war end
   grnnews.1.t:0 "Greenlin's Civil war reaches an end"
   grnnews.1.d:0 "Greenlin, the country that was previously gone into a civil war has finally reached its own peace. \n This civil war ended with the freedom of choice party winning over the previous one, however the new leader's brother, mehrad the cruel has been found dead after battle. \n Green wave the new leader has mourned over his brothers dead body, funeral will happen in the following next days."
   grnnews.1.a:0 "Rest in pieces"
+  # Greenlin asking land
+  # Romania Accepting
+  # War with Romania
+  
 
   
 # events
@@ -61,3 +66,32 @@
   grn.13.t:0 "Sergei Wave gives leadership to his brother"
   grn.13.d:0 "The currrent communist leader of Greenlin has declared his brother as the new leader, people were shocked.\n in a formal speech he said 'My brother always knew the Marxist ways and is a better leader then what i will be, i'm sure he will do anything for his people'"
   grn.13.a:0 "Unexpected"
+  # Green wants lands from Romania
+  grn.14.t:0 "Greenlin requests southren Romania"
+  grn.14.d:0 "as of the old days, Greenlin had lost the two states to romania in a war but never got over it as the Wave family always called it Greenlin's, now they have taken their claims a step further and request the states to be tranasformed"
+  grn.14.a:0 "We don't want bloodshed, they can have it"
+  grn.14.b:0 "Or what? no way we giving it"
+  # Romania hands it over
+  grn.15.t:0 "Romania accepted to transfer states"
+  grn.15.d:0 "They said yes..."
+  grn.15.a:0 "Nice"
+  # Romania says NO
+  grn.16.t:0 "Romania refuses the request to transfer lands"
+  grn.16.d:0 "Afer reviewing our request, Romania's current leader has refused to give us our lands\n\nWhat shall we respond?"
+  grn.16.a:0 "Let it be..."
+  grn.16.b:0 "They asked for blood"
+  # Romania is told Green wave wants their head
+  grn.17.t:0 "Greenlin is mobilizing it's army"
+  grn.17.d:0 "After our response to their request of Southren Romania, the Greenish have started to mobilize their army for an attack"
+  grn.17.a:0 "Wait no thats too much"
+  grn.17.b:0 "Then we will answer their call"
+  # Greenlin told Romania is getting ready
+  grn.18.t:0 "Romania is getting ready for war"
+  grn.18.d:0 "After our mobilization they chose to get their defenses ready for a war"
+  grn.18.a:0 "Wait we can't do this"
+  grn.18.b:0 "So they chose... death"
+  grn.18.c:0 "Call our brother, we're doing a threesome"
+  # Greenlin backs down
+  grn.19.t:0 "Greenlin backs down"
+  grn.19.d:0 "Impossible"
+  grn.19.a:0 "Must be an AIs work"

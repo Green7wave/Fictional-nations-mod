@@ -16,7 +16,13 @@
  GRN_neutrality_DEF:0 "the Greenlin Empire"
  GRN_communism:0 "Socialist Greenlin"
  GRN_communism_DEF:0 "the Socialist Greenlin"
- 
+ GRN_fascism_ADJ:0 "Greenish"
+ GRN_democratic_ADJ:0 "Greenish"
+ GRN_neutrality_ADJ:0 "Greenish"
+ GRN_communism_ADJ:0 "Greenish"
+ GRN:0 "Greenlin"
+ GRN_DEF:0 "Greenlin"
+ GRN_ADJ:0 "Greenish"
 
 # City and state names
  VICTORY_POINTS_6923:0 "Grensofer"
@@ -34,6 +40,7 @@
  GRN_carrotism_party:0 "COS"
 
 # Tool tips (§G§!) 
+ tip_romaniasfuture:0 "Unlocks §YOperation Bitter§! decisions, which gives bonuses against Romania"
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will unlock decisions that will change the odds of the civil war in the players favor, taking some of the decisions is needed to win the civil war"
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§! \n"
@@ -88,6 +95,8 @@
 
 
  # national spirits
+ expanded_influence:0 "Expanded Influence"
+ expanded_influence_desc:0 "Greenlin is one of those countries that hates pure capitalism and goes against it, but when you're talking with capitalists, you have to answer fire with fire"
  full_control:0 "Full Control"
  full_control_desc:0 "having full control in these times is necessary for Greenlin to make it out of this war in one piece, having the full power now, makes diplomatic actions easier"
  special_democracy:0 "Special Democracy"
@@ -127,11 +136,12 @@
  grn_political_turmoil:0 "Political Turmoil"
  grn_political_turmoil_desc:0 "Greenlin's politics are in confusion as the fascists rise in the west and communists in the east while also people like the idea of democratic nation, a more direction to the politics is needed"
 
-# Tech sharing Group
+# Tech sharing Group and Opinion
  green_research_name:0 "Owl Eyed Research"
  green_research_desc:0 "Reduced research time for technologies researched by other Owl Eyed countries."
  crz_grn_research_name:0 "Carrotzka-Greenlin Research"
  crz_grn_research_desc:0 "Reduced research time for technologies researched by the other country."
+ GRN_friends_for_power:0 "Powerful Friends"
 
 # factions
  owl_eyed_faction:0 "Owl Eyed Nations" 
