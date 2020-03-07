@@ -1,0 +1,10 @@
+
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_crz
+	names = { "IWA" }
+	
+	default = { tag = CRZ }
+	available = { original_tag = CRZ }
+}
