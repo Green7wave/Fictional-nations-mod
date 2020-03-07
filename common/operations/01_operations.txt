@@ -16,10 +16,11 @@ operation_coup_lion = { ### 7 1/70
 
 	visible = {
 		network_strength = {
-			target = GRN
+			target = PER
 			value > 35
 		}
-		ROOT = { tag = PER }
+		ROOT = { tag = GRN }
+		FROM = { tag = PER }
 	}
 
 	equipment = {
@@ -30,7 +31,7 @@ operation_coup_lion = { ### 7 1/70
 		is_capital = no
 	}
 	selection_target = {
-		targets = { FROM }
+		targets = { PER }
 	}
 	allowed = {
 		NOT = {
