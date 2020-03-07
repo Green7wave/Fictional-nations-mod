@@ -1161,7 +1161,7 @@ country_event = {
 }
 
 
-# 
+# Hidden event for flag control
 country_event = {
  	id = grn.21
  	title = grn.21.t
@@ -1186,4 +1186,153 @@ country_event = {
 	}
  
  	
+}
+
+# Greenlin asks to join Faction
+country_event = {
+	id = grn.22
+	title = grn.22.t
+	desc = grn.22.d
+	
+	picture = GFX_report_event_canadian_tank
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_inviter
+			FROM = { save_event_target_as = alliance_applicant }
+		}
+	}
+	
+	option = {
+		name = grn.22.a
+		
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_to_tech_sharing_group = MEX_ENG_tech_group
+			
+			FROM = {
+				add_to_tech_sharing_group = MEX_ENG_tech_group
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = GER
+			}
+			add_to_tech_sharing_group = MEX_GER_tech_group
+			
+			FROM = {
+				add_to_tech_sharing_group = MEX_GER_tech_group
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = SOV
+			}
+			add_to_tech_sharing_group = MEX_SOV_tech_group
+			
+			FROM = {
+				add_to_tech_sharing_group = MEX_SOV_tech_group
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_to_tech_sharing_group = MEX_USA_tech_group
+			
+			FROM = {
+				add_to_tech_sharing_group = MEX_USA_tech_group
+			}
+		}
+		
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			add_to_faction = FROM
+			hidden_effect = {
+				news_event = { id = news.289 hours = 12 }
+			}
+			FROM = { country_event = { id = generic.3 hours = 6 } }
+		}
+		
+		if = {
+			limit = {
+				is_faction_leader = no
+			}
+			random_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					is_faction_leader = yes
+				}
+				country_event = {
+					id = mexico.9
+					days = 1
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2.0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				MEX = {
+					has_war = yes
+					any_enemy_country = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				MEX = {
+					has_war = yes
+					any_enemy_country = {
+						NOT = {
+							has_war_with = ROOT
+						}
+						OR = {
+							has_government = ROOT
+							is_major = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = grn.22.b
+		
+		FROM = { 
+			country_event = { id = generic.4 hours = 6 }
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.1
+				MEX = {
+					OR = {
+						has_government = ROOT
+						is_major = yes
+						is_ai = no
+					}
+				}
+			}
+		}
+	}
 }

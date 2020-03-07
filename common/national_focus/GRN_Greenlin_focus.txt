@@ -1805,7 +1805,7 @@ focus_tree = {
 				}
 				ENG = {
 					country_event = {
-						id = mexico.8
+						id = grn.21
 						days = 1
 					}
 				}

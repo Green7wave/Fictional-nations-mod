@@ -95,3 +95,8 @@
   grn.19.t:0 "Greenlin backs down"
   grn.19.d:0 "Impossible"
   grn.19.a:0 "Must be an AIs work"
+  # This an AI event
+  grn.20.t:0 ""
+  # Greenlin wants to join a faction
+  grn.22.t:0 "[From.GetAdjective] Entry Into The [Root.GetFactionName]"
+  grn.22.d:0 "[From.GetLeader] has submitted a request to join the [Root.GetFactionName]. Whether he seeks mutual protection or foreign expansion is unknown, but Greenlin's large amount of Chromium is a lucrative asset to have on our side."

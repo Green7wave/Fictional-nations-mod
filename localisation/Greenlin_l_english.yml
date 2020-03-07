@@ -149,3 +149,7 @@
 # traits
  temmies_special:0 "Cute Charming Convincer"
  terror_itself:0 "Terror Itself"
+
+# decisions
+ commence_operation_bitter:0 "Commence Operation Bitter"
+ commence_operation_bitter_desc:0 "We have the operation against Romania ready, we just have to put them in motion"
