@@ -703,16 +703,16 @@ country_event = {
 }
 
 country_event = {
-	id = carrotzka.41144
-	title = carrotzka.41144.t
-	desc = carrotzka.41144.d
+	id = carrotzka.95
+	title = carrotzka.95.t
+	desc = carrotzka.95.d
 	picture = GFX_report_event_ast_navy
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = carrotzka.41144.a
+		name = carrotzka.95.a
 		ai_chance = { 
 			factor = 20
 		}
@@ -731,33 +731,32 @@ country_event = {
 				loved_by_people
 			}
 		}
-		load_focus_tree = Carrotish_focus
 	}
 
 	option = {
-		name = carrotzka.41144.b
+		name = carrotzka.95.b
 		ai_chance = { 
 			factor = 10
 		}
 		set_politics = {
-			add_political_power = 200
+			ruling_party = communism
 		}
+		add_political_power = 200
 		load_focus_tree = Carrotish_focus
 	}
 
 	option = {
-		name = carrotzka.41144.c
+		name = carrotzka.95.c
 		ai_chance = { 
 			factor = 0
 		}
 		set_politics = {
 			ruling_party = democratic
 		}
-		load_focus_tree = Carrotish_focus
 	}
 
 	option = {
-		name = carrotzka.41144.q
+		name = carrotzka.95.q
 		ai_chance = { 
 			factor = 70
 		}
@@ -768,19 +767,18 @@ country_event = {
 		create_country_leader = {
 			name = "Sadra Carrot"
 			desc = "POLITICS_SADRA_CARROT_DESC"
-			picture = "Portrait_carrotzka_Sadra_Carrot.tga"
-			expire = "1965.1.1"
+			picture = "gfx/leaders/CRZ/Portrait_carrotzka_Sadra_Carrot.tga"
+			expire = "1953.3.1"
 			ideology = anarchist_communism
 			traits = {
 				unquestionable
 				connected_citizen
 			}
 		}
-		load_focus_tree = Carrotish_focus
 	}
 
 	option = {
-		name = carrotzka.41144.e
+		name = carrotzka.95.e
 		ai_chance = { 
 			factor = 20
 		}
@@ -789,16 +787,14 @@ country_event = {
 		}
 		retire_country_leader = yes
 		create_country_leader = {
-			name = "Sadra Carrot"
-			desc = "POLITICS_SADRA_CARROT_DESC"
-			picture = "Portrait_carrotzka_Sadra_Carrot.tga"
-			expire = "1965.1.1"
+			name = "Carrot Council"
+			desc = "POLITICS_CARROTIST_COUNCIL_DESC"
+			picture = "gfx/leaders/CRZ/Portrait_Carrot_council.dds"
+			expire = "2020.1.1"
 			ideology = collectivist_carrotism
 			traits = {
-				unquestionable
-				connected_citizen
+				champion_of_peace_5
 			}
-		}
-		load_focus_tree = Carrotish_focus
+	}
 	}
 }

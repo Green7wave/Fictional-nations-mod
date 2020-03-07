@@ -395,7 +395,7 @@ taking_out_the_evil = {
                 60 = {
                     create_corps_commander = {
                         name = "Sadra carrot"
-                        picture = "Portrait_carrotzka_Sadra_Carrot.tga"
+                        picture = "gfx/leaders/CRZ/Portrait_carrotzka_Sadra_Carrot.tga"
                         traits = { 
                             trickster
                              brilliant_strategist

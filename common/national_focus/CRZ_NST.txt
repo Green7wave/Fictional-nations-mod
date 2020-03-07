@@ -27,7 +27,7 @@ focus_tree = {
 			add_stability = 0.1
 			create_corps_commander = {
 				name = "Nestor Golivin"
-				picture = "Portrait_nestor_golivin.dds"
+				picture = "gfx/leaders/CRZ/Portrait_nestor_golivin.dds"
 				id = 420
 				traits = { 
 					internationalist_guerilla
@@ -349,7 +349,7 @@ focus = {
 	completion_reward = {
 		CRZ = {
 			start_civil_war = {
-				ideology = democratic
+				ideology = carrotism
 				size = 0.3
 		  }
 	}
@@ -378,10 +378,151 @@ focus = {
 	}
 	completion_reward = {
 		country_event = {
-			id = carrotzka.41144
+			id = carrotzka.95
 			days = 1
 		}
 }	
+}
+
+focus = {
+	id = ACZ_expand_military_factories
+	icon = GFX_focus_generic_combined_arms
+	x = 12
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = CRZ_new_government }
+	ai_will_do = {
+		factor = 40
+	}
+completion_reward = {
+	random_owned_controlled_state = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {	
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+		}
+	}
+}		
+}
+focus = {
+	id = ACZ_battle_tactics
+	icon = GFX_goal_generic_position_armies
+	x = 10
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = CRZ_new_government }
+	ai_will_do = {
+		factor = 60
+	}
+	completion_reward = {
+		army_experience = 50
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1
+			uses = 3
+			category = land_doctrine
+		}
+	}
+}
+
+focus = {
+	id = ACZ_political_commissars
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = ACZ_battle_tactics }
+	x = 10
+	y = 2
+	cost = 9
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = political_commissars_focus
+		add_political_power = 200
+	}
+}
+
+focus = {
+	id = ACZ_carrot_farming
+	icon = GFX_focus_generic_industry_1
+	x = 12
+	y = 1
+	cost = 5
+	prerequisite = {
+		focus = ACZ_new_government
+	}
+	ai_will_do = {
+		factor = 40 # make this go 40 when u done with it
+	}
+	completion_reward = {
+		add_ideas = carrot_farming_focus
+	}
+}
+
+focus = {
+	id = ACZ_free_houses
+	icon = GFX_focus_usa_guarantee_the_american_dream
+	x = 12
+	y = 2
+	cost = 7
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = ACZ_carrot_farming
+	}
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {	
+		add_ideas = CZE_communism_with_a_human_face
+	}
+}
+
+focus = {
+	id = ACZ_hunting_resource
+	icon = GFX_focus_generic_steel
+	x = 14
+	y = 2
+	cost = 7
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = ACZ_carrot_farming
+	}
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {	
+		add_resource = {
+			type = steel
+			amount = 18
+			state = 259
+		}
+	}
 }
 
 
@@ -399,7 +540,7 @@ focus = {
 	focus = {
 		id = CRZ_invite_foreign_investors 
 		icon = GFX_focus_generic_concessions
-		x = 40
+		x = 80
 		y = 0
 		offset = {
 			x = -6

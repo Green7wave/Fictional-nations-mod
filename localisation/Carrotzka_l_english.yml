@@ -75,13 +75,13 @@
  carrotzka.86.t:0 "Carrotzka navy accepted our offer"
  carrotzka.86.d:0 ""
  carrotzka.86.a:0 "Togheter we take out vassily"
- carrotzka.41144.t:0 "Treaty of Yel"
- carrotzka.41144.d:0 "Now that civilwar is finally over, its time to talk about the future of carrotzka, all parties from carrotzka are gathered under a spruce."
- carrotzka.41144.a:0 "Anarchist were fighting for their right for a long time"
- carrotzka.41144.b:0 "Nestor golivin stays in power"
- carrotzka.41144.c:0 "Time for carrotzka to taste democracy"
- carrotzka.41144.q:0 "Bring sadra carrot to power, leader of true revolution"
- carrotzka.41144.e:0 "It's finally time to test carrotism"
+ carrotzka.95.t:0 "Treaty of Yel"
+ carrotzka.95.d:0 "Now that civilwar is finally over, its time to talk about the future of carrotzka, all parties from carrotzka are gathered under a spruce."
+ carrotzka.95.a:0 "Anarchist were fighting for their right for a long time"
+ carrotzka.95.b:0 "Nestor golivin stays in power"
+ carrotzka.95.c:0 "Time for carrotzka to taste democracy"
+ carrotzka.95.q:0 "Bring sadra carrot to power, leader of true revolution"
+ carrotzka.95.e:0 "It's finally time to test carrotism"
 
  # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
@@ -155,6 +155,14 @@
  CRZ_carrotism:0 "Carrotzka"
  ACZ_FREE_anarchism:0 "Free Society of Eastren Europe"
  ACZ_FREE_anarchism_DEF:0 "Free Society of Eastren Europe"
+ ACZ_neutrality:0 "Free orange lands"
+ ACZ_neutrality_DEF:0 "Free orange lands"
+ ACZ_democratic:0  "Carrotzka Republic"
+ ACZ_democratic_DEF:0 "the Carrotzka Republic"
+ ACZ_communism:0 "International workers army"
+ ACZ_communism_DEF:0 "International workers army"
+ ACZ_carrotism:0 "Carrotzka"
+ ACZ_carrotism:0 "Carrotzka"
 
 # State and province names
  STATE_197:0 "Emerald Valley"
@@ -167,10 +175,14 @@
 # Parties
  CRZ_communism_party:0 "Communist Party Of Carrotzka"
  CRZ_fascism_party:0 "loyalists"
- CRZ_fascism_party:0 "Loyalists"
+ CRZ_neutrality_party:0 "Anarchist people of carrotzka"
  CRZ_democratic_party:0 "Democratic Party Of Carrotzka"
  CRZ_carrotism_party:0 "carrotist carrotzka"
  carrot_council:0 "Carrot council of people"
+ ACZ_communism_party:0 "IWA"
+ ACZ_neutrality_party:0 "Anarchists
+ ACZ_carrotism_party:0 "Carrotists"
+ ACZ_democratic_party:0 "Democrats"
 
 # ideas
  workers_volunteerd:0 "Workers volunteered"
@@ -234,7 +246,7 @@
  unstable_government:0 "Unstable popular government"
  unstable_government_desc:0 "We cant have stability until we become an actuall country"
  unpopular_government:0 "stable unpopular government"
- unpopular_government:0 "Well at least we own a country not a jungle"
+ unpopular_government_desc:0 "Well at least we own a country not a jungle am i right people?...........people?"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."
