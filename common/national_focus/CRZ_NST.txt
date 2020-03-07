@@ -25,12 +25,25 @@ focus_tree = {
 			add_political_power = 200
 			add_manpower= 80000
 			add_stability = 0.1
-			set_popularities = {
-				democratic = 10
-				neutrality = 20
-				fascism = 0
-				communism = 50
-				carrotism = 20
+			create_corps_commander = {
+				name = "Nestor Golivin"
+				picture = "Portrait_nestor_golivin.dds"
+				id = 420
+				traits = { 
+					internationalist_guerilla
+					commando
+					jungle_rat
+					infantry_expert
+					ambusher
+					camouflage_expert
+					guerilla_fighter
+
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
 			}
 		}
 	}
@@ -130,6 +143,22 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_state_core = 218
+			add_state_core = 221
+			add_state_core = 203
+			add_state_core = 201
+			add_state_core = 202
+			add_state_core = 198
+			add_state_core = 199
+			add_state_core = 200
+			add_state_core = 196
+			add_state_core = 197
+			add_state_core = 192
+			add_state_core = 228
+			add_state_core = 234
+			add_state_core = 259
+			add_state_core = 226
+			add_state_core = 227
 		}
 	}
 
@@ -260,7 +289,7 @@ focus_tree = {
 
 	focus = {
 		id = CRZ_ignite_civilwar_anarchist
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_focus_focus_fra_revolution_upmost
 		x = 5
 		y = 6
 		cost = 4
@@ -283,13 +312,13 @@ focus_tree = {
 
 focus = {
 	id = CRZ_ignite_civilwar_democratic
-	icon = GFX_focus_secret_rearmament
+	icon = GFX_focus_usa_recruit_the_free_corps
 	x = 7
 	y = 6
 	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { 
-		focus = CRZ_organise_carrotist
+		focus = CRZ_organise_democrats
 	 }
 	ai_will_do = {
 		factor = 40
@@ -306,7 +335,7 @@ focus = {
 
 focus = {
 	id = CRZ_ignite_civilwar_carrotist
-	icon = GFX_focus_secret_rearmament
+	icon = GFX_focus_eng_liberate_the_home_of_marx
 	x = 9
 	y = 6
 	cost = 4
@@ -329,10 +358,10 @@ focus = {
 
 focus = {
 	id = CRZ_negotiate_about_carrotzka
-	icon = GFX_focus_secret_rearmament
+	icon = GFX_focus_hol_the_fourth_ally
 	x = 7
 	y = 7
-	cost = 4
+	cost = 3
 	available_if_capitulated = yes
 	prerequisite = { 
 		focus = CRZ_ignite_civilwar_carrotist
@@ -343,11 +372,9 @@ focus = {
 		factor = 40
 	}
 	available = {
-		ACZ = {
 			NOT = {
-				has_idea = unstable_government
+				country_exists = CRZ
 			}
-		}
 	}
 	completion_reward = {
 		country_event = {

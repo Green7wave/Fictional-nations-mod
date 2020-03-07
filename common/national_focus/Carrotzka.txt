@@ -2452,11 +2452,18 @@ focus_tree = {
 								release = ACZ
 								ACZ = { change_tag_from = ROOT }
 								ACZ = {
+									set_popularities = {
+										democratic = 10
+										neutrality = 20
+										fascism = 0
+										communism = 50
+										carrotism = 20
+									}
 									add_ideas = unstable_government
 									add_ideas = workers_volunteerd
 									create_country_leader = {
 									   name = "Nestor golivin"
-									   desc = "POLITICS_VASSILY_CARROT_DESC"
+									   desc = "POLITICS_NESTOR_GOLIVIN_DESC"
 									   picture = "gfx/leaders/CRZ/Portrait_nestor_golivin.dds"
 									   expire = "2000.1.1"
 									   ideology = marxism
@@ -2471,6 +2478,10 @@ focus_tree = {
 									ruling_party = communism
 								}
 						   }
-							}
+						   CRZ = {
+							add_country_leader_trait = is_in_civilwar
+							add_ideas = unpopular_government
+						   }
 						}
-	}
+					}
+				}

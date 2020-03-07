@@ -132,7 +132,6 @@ create_country_leader = {
 	traits = {
 		unquestionable
 		connected_citizen
-		political_dancer
 	}
 }
 

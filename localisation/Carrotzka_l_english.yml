@@ -75,6 +75,13 @@
  carrotzka.86.t:0 "Carrotzka navy accepted our offer"
  carrotzka.86.d:0 ""
  carrotzka.86.a:0 "Togheter we take out vassily"
+ carrotzka.41144.t:0 "Treaty of Yel"
+ carrotzka.41144.d:0 "Now that civilwar is finally over, its time to talk about the future of carrotzka, all parties from carrotzka are gathered under a spruce."
+ carrotzka.41144.a:0 "Anarchist were fighting for their right for a long time"
+ carrotzka.41144.b:0 "Nestor golivin stays in power"
+ carrotzka.41144.c:0 "Time for carrotzka to taste democracy"
+ carrotzka.41144.q:0 "Bring sadra carrot to power, leader of true revolution"
+ carrotzka.41144.e:0 "It's finally time to test carrotism"
 
  # Carrotzka news
  crznews.1.t:0 "king cabbage excuted"
@@ -122,10 +129,13 @@
  unquestionable:0 "Unquestionable"
  being_flowy:0 "Flowy"
  leader_of_the_workers:0 "Leader of the workers"
+ is_in_civilwar:0 "Is in civilwar"
+ is_in_civilwar_desc:0 "what will other countries say if i call ally in civilwar?"
 
 # Leader Desc
  POLITICS_SADRA_CARROT_DESC:0 "Leader of the revolution of carrotzka."
  POLITICS_VASSILY_CARROT_DESC:0 "An harsh general of carrotzka army that now is the dictator leader of carotzka"
+ POLITICS_NESTOR_GOLIVIN_DESC:0 "Leader of IWA who opposing Vassily's government, he belives that revolution is not what workers fought for anymore"
 
 # opinion modifiers
  CRZ_communist_ally:0 "Communist Allies"
@@ -221,8 +231,10 @@
  black_flag_desc:0 "carrotzkaians...they gonna kill us all...should have not said that...i should NOT have said that!"
  CRZ_a_bird_a_plane:0 "Its a bird? Its a plane!"
  CRZ_a_bird_a_plane_desc:0 "wow what are thoseeeee"
- unstable_government:0 "Unstable government"
+ unstable_government:0 "Unstable popular government"
  unstable_government_desc:0 "We cant have stability until we become an actuall country"
+ unpopular_government:0 "stable unpopular government"
+ unpopular_government:0 "Well at least we own a country not a jungle"
  
 # Bookmarks
  CRZ_GATHERING_STORM_DESC:0 "in 1935.10.28 the revolutionary army of carrotzka managed to take over the power in carrotzka, they first used leninism ways and purged the country and the terrors ended with found of carrotism and the council of carrotzka whitch turned the country into a left democratic system leading by parties of the country and focusing on sharing lifestyle and trying to establish and stateless society."

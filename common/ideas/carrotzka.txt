@@ -51,6 +51,16 @@ ideas = {
 			}
 		}
 
+		unpopular_government = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = 1
+				war_support_weekly = -1
+			}
+		}
+
 		workers_volunteerd = {
 			allowed = {
 				always = no
