@@ -515,7 +515,7 @@ country_event = {
 			factor = 10
 		}
 		SOV = {
-			set_country_flag = helping_iwa
+			unlock_decision_category_tooltip = help_iwa
 		}
 	}
 }
@@ -541,210 +541,10 @@ option = {
 	ai_chance = {
 		 factor = 90
 		 }
-		 CRZ = {
-			 set_country_flag = greenlin_help
-			 }
 		GRN = {
-			set_country_flag = helping_iwa
+			unlock_decision_category_tooltip = help_iwa
 		}
-		 }
-	}
-
-country_event = {
-	id = carrotzka.75
-	title = carrotzka.75.t
-	desc = carrotzka.75.d
-	picture = GFX_report_event_soviet_finnish_pact
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = carrotzka.75.a
-		ai_chance = { 
-			factor = 10
-		}
-		CRZ = {
-			country_event = {
-				id = carrotzka.76
-				days = 2
-			}
-					}
-	}
-}
-country_event = {
-	id = carrotzka.81
-	title = carrotzka.81.t
-	desc = carrotzka.81.d
-	picture = GFX_report_event_ger_civil_war
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = carrotzka.81.a
-		ai_chance = { 
-			factor = 10
-		}
-		CRZ = {
-				 create_country_leader = {
-					name = "Nestor golivin"
-					desc = "POLITICS_VASSILY_CARROT_DESC"
-					picture = "gfx/leaders/CRZ/Portrait_nestor_golivin.dds"
-					expire = "2000.1.1"
-					ideology = marxism
-					traits = {
-						loved_by_people
-						unquestionable
-					}
-				}
-				load_focus_tree = carrotzka_nst
-		}
-	}
-}
-
-country_event = {
-	id = carrotzka.82
-	title = carrotzka.82.t
-	desc = carrotzka.82.d
-	picture = GFX_report_event_spain_civil_war_soldiers
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { 
-			factor = 10
-		}
-############################		
-			if = {
-				limit = {
-					ACZ = {
-						has_country_flag = CRZ_volunteers
-					}
-				}
-				ACZ = {
-					add_ideas = workers_volunteerd
-				}
-
-			}
-##############################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = greenlin_help
-				}
-			}
-			ACZ = {
-					unlock_decision_category_tooltip = help_iwa
-				}
-
-			}
-############################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = soviet_help
-				}
-			}
-				SOV = {
-					unlock_decision_category_tooltip = help_iwa
-				}
-
-			}
-###########################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = CRZ_carrot
-				}
-			}
-			ACZ = {
-					create_field_marshal = {
-						name = "Sadra Carrot"
-						picture = "Portrait_carrotzka_Sadra_Carrot.dds"
-						id = 69
-						traits = { 
-							politically_connected
-							leader_in_battalefield
-						}
-						skill = 5
-						attack_skill = 5
-						defense_skill = 5
-						planning_skill = 5
-						logistics_skill = 5
-					}
-				}
-
-			}
-########################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = international_army
-				}
-			}
-			ACZ = {
-					random_owned_controlled_state = {
-						prioritize = { 197 }
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-						create_unit = {	division = "name = \"volunteers\" division_template = \"civilwar\" start_experience_factor = 0.1" 	owner = CRZ	}
-				}
-
-			}
-		}
-#######################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = trained_liberation_army
-				}
-			}
-			ACZ = {
-					random_owned_controlled_state = {
-						limit = { ROOT = { has_full_control_of_state = PREV } }
-						prioritize = { 197 }
-						create_unit = {	division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0"	owner = CRZ	}
-						create_unit = {	division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0"	owner = CRZ	}
-						create_unit = {	division = "name = \"1st Carrotzka Revolutionary Division\" division_template = \"Carrotzka Revolutionary Division\" start_experience_factor = 1.0"	owner = CRZ	}
-					}
-				}
-		}
-##########################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = no_surrender
-				}
-			}
-			ACZ = {
-					add_ideas = SPR_death_before_surrender
-				}
-		}
-###########################
-			if = {
-				limit = {
-					ACZ = {
-					has_country_flag = bought_gun
-				}
-			}
-				ACZ = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-						producer = USA
-					}
-				}
-		}
-	}
+	 }
 }
 
 country_event = {
@@ -899,5 +699,106 @@ country_event = {
 		ai_chance = { 
 			factor = 90
 		}
+	}
+}
+
+country_event = {
+	id = carrotzka.41144
+	title = carrotzka.41144.t
+	desc = carrotzka.41144.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.41144.a
+		ai_chance = { 
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Anarchist Commune"
+			desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+			picture = "GFX_portrait_SPR_anarchist_commune"
+			expire = "1965.1.1"
+			ideology = anarchism
+			traits = {
+				our_right_to_survive
+				loved_by_people
+			}
+		}
+		load_focus_tree = Carrotish_focus
+	}
+
+	option = {
+		name = carrotzka.41144.b
+		ai_chance = { 
+			factor = 10
+		}
+		set_politics = {
+			add_political_power = 200
+		}
+		load_focus_tree = Carrotish_focus
+	}
+
+	option = {
+		name = carrotzka.41144.c
+		ai_chance = { 
+			factor = 0
+		}
+		set_politics = {
+			ruling_party = democratic
+		}
+		load_focus_tree = Carrotish_focus
+	}
+
+	option = {
+		name = carrotzka.41144.q
+		ai_chance = { 
+			factor = 70
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Sadra Carrot"
+			desc = "POLITICS_SADRA_CARROT_DESC"
+			picture = "Portrait_carrotzka_Sadra_Carrot.tga"
+			expire = "1965.1.1"
+			ideology = anarchist_communism
+			traits = {
+				unquestionable
+				connected_citizen
+			}
+		}
+		load_focus_tree = Carrotish_focus
+	}
+
+	option = {
+		name = carrotzka.41144.e
+		ai_chance = { 
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = carrotism
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Sadra Carrot"
+			desc = "POLITICS_SADRA_CARROT_DESC"
+			picture = "Portrait_carrotzka_Sadra_Carrot.tga"
+			expire = "1965.1.1"
+			ideology = collectivist_carrotism
+			traits = {
+				unquestionable
+				connected_citizen
+			}
+		}
+		load_focus_tree = Carrotish_focus
 	}
 }
