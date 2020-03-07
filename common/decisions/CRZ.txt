@@ -518,8 +518,8 @@ taking_out_the_evil = {
         ai_will_do = {
             factor = 1
         }
-        fire_only_once = yes
-        days_remove = 20
+        fire_only_once = no
+        days_remove = 10
         complete_effect = {
             add_equipment_to_stockpile = {
                 type = infantry_equipment
@@ -539,7 +539,7 @@ taking_out_the_evil = {
                 factor = 1
             }
             fire_only_once = no
-            days_remove = 40
+            days_remove = 10
             complete_effect = {
                 ROOT = {
                     add_equipment_to_stockpile = {
@@ -569,6 +569,7 @@ taking_out_the_evil = {
         days_remove = 20
         complete_effect = {
             CRZ = {
+                random_owned_controlled_state = {
             damage_building = {
                 type = infrastructure
                 damage = 3
@@ -576,7 +577,7 @@ taking_out_the_evil = {
        }
       }
     }
-
+  }
       damage_mil_factory = {
         icon = generic_operation
         cost = 50
@@ -587,6 +588,8 @@ taking_out_the_evil = {
         days_remove = 20
         complete_effect = {
             CRZ = {
+                random_owned_controlled_state = {
+
             damage_building = {
                 type = arms_factory
                 damage = 3
@@ -594,6 +597,7 @@ taking_out_the_evil = {
        }
       }
     }
+}
 
       damage_civ_factory = {
         icon = generic_operation
@@ -605,6 +609,7 @@ taking_out_the_evil = {
         days_remove = 20
         complete_effect = {
            CRZ = {
+               random_owned_controlled_state = {
             damage_building = {
                 type = industrial_complex
                 damage = 3
@@ -613,3 +618,4 @@ taking_out_the_evil = {
        }
       }
   }
+}

@@ -48,6 +48,9 @@ ideas = {
 			modifier = {
 				stability_weekly = -1
 				war_support_weekly = 1
+				conscription = 1
+				training_time_factor = -0.2
+				research_speed_factor = -0.20
 			}
 		}
 
@@ -58,6 +61,9 @@ ideas = {
 			modifier = {
 				stability_weekly = 1
 				war_support_weekly = -1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 

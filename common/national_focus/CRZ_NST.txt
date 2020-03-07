@@ -22,6 +22,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SPR_collectivized_society
+			add_ideas = closed_economy
+			add_ideas = scraping_the_barrel
 			add_political_power = 200
 			add_manpower= 80000
 			add_stability = 0.1
@@ -99,7 +101,7 @@ focus_tree = {
 
 	focus = {
 		id = CRZ_end_civil_war
-		icon = GFX_focus_spr_masters_of_our_own_fate
+		icon = GFX_focus_SAF_colonialist_crusade
 		x = 7
 		y = 2
 		cost = 8
@@ -289,7 +291,7 @@ focus_tree = {
 
 	focus = {
 		id = CRZ_ignite_civilwar_anarchist
-		icon = GFX_focus_focus_fra_revolution_upmost
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		x = 5
 		y = 6
 		cost = 4
@@ -433,11 +435,11 @@ completion_reward = {
 focus = {
 	id = ACZ_battle_tactics
 	icon = GFX_goal_generic_position_armies
-	x = 10
-	y = 1
+	x = 12
+	y = 2
 	cost = 10
 	available_if_capitulated = yes
-	prerequisite = { focus = CRZ_new_government }
+	prerequisite = { focus = ACZ_expand_military_factories }
 	ai_will_do = {
 		factor = 60
 	}
@@ -456,8 +458,8 @@ focus = {
 	id = ACZ_political_commissars
 	icon = GFX_goal_generic_forceful_treaty
 	prerequisite = { focus = ACZ_battle_tactics }
-	x = 10
-	y = 2
+	x = 12
+	y = 3
 	cost = 9
 
 	available_if_capitulated = yes
@@ -471,11 +473,11 @@ focus = {
 focus = {
 	id = ACZ_carrot_farming
 	icon = GFX_focus_generic_industry_1
-	x = 12
+	x = 10
 	y = 1
 	cost = 5
 	prerequisite = {
-		focus = ACZ_new_government
+		focus = CRZ_new_government
 	}
 	ai_will_do = {
 		factor = 40 # make this go 40 when u done with it
@@ -488,7 +490,7 @@ focus = {
 focus = {
 	id = ACZ_free_houses
 	icon = GFX_focus_usa_guarantee_the_american_dream
-	x = 12
+	x = 10
 	y = 2
 	cost = 7
 	available_if_capitulated = yes
@@ -507,11 +509,11 @@ focus = {
 	id = ACZ_hunting_resource
 	icon = GFX_focus_generic_steel
 	x = 14
-	y = 2
+	y = 1
 	cost = 7
 	available_if_capitulated = yes
 	prerequisite = { 
-		focus = ACZ_carrot_farming
+		focus = CRZ_new_government
 	}
 	ai_will_do = {
 		factor = 90
@@ -521,6 +523,26 @@ focus = {
 			type = steel
 			amount = 18
 			state = 259
+		}
+	}
+}
+
+focus = {
+	id = ACZ_build_inside_mountains
+	icon = GFX_goal_generic_construction2
+	x = 14
+	y = 2
+	cost = 7
+	available_if_capitulated = yes
+	prerequisite = { 
+		focus = ACZ_hunting_resource
+	}
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {	
+		random_owned_controlled_state = {	
+			add_extra_state_shared_building_slots = 15
 		}
 	}
 }

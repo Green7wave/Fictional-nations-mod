@@ -565,3 +565,5 @@ CRZ_appropriate_the_means_of_production_desc:0 "Gone are the days when we worked
  ACZ_political_commissars_desc:0 "Political commissars"
  ACZ_hunting_resource:0 "Hunt for resources"
  ACZ_hunting_resource_desc:0 "We need resource to run our factories"
+ ACZ_build_inside_mountains:0 "Build inside caves"
+ ACZ_build_inside_mountains_desc:0 "Just like cavemen"
