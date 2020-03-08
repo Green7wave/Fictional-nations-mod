@@ -23,7 +23,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SPR_collectivized_society
 			add_ideas = closed_economy
-			add_ideas = scraping_the_barrel
 			add_political_power = 200
 			add_manpower= 80000
 			add_stability = 0.1
