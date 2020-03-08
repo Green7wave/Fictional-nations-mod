@@ -6,6 +6,17 @@
   grnnews.1.a:0 "Rest in pieces"
   # Greenlin asking land
   # Romania Accepting
+  grnnews.2.t:0 "Romania Returns Northren Greenlin lands"
+  grnnews.2.d:0 "Romania has announced that it will accept the Greenish demands for a return of Southren Romania. Accordingly, the territory has now been reunited with the country, greatly increasing its size and strength. It is unlikely that a success of this magnitude will deter the Greenishs from issuing further demands for their remaining lost territories."
+  grnnews.2.a:0 "We are on the path to greatness!"
+  grnnews.2.b:0 "We had no choice."
+  grnnews.2.c:0 "At least peace was preserved."
+  # Romamia refusing
+  grnnews.3.t:0 "Romania Rejects Greenish Demands"
+  grnnews.3.d:0 "The ultimatum's deadline has come and gone without a Romanian reply. Outraged Greenish officials have already denounced Romania's government, claiming they are 'destabalizing the region' with their insistence to adhere to 'unlawful treaties'. Both nations seem to be preparing for a war that may well erupt at any day."
+  grnnews.3.a:0 "If strength is all they will listen to..."
+  grnnews.3.b:0 "Let them come!"
+  grnnews.3.c:0 "Stone-headed fools..."
   # War with Romania
   
 
@@ -98,6 +109,28 @@
   grn.19.a:0 "Must be an AIs work"
   # This an AI event
   grn.20.t:0 ""
+  # Greenlin sends ultimatum to Yugoslavia
+  grn.22.t:0 "Greenish Ultimatum"
+  grn.22.d:0 "Greenlin's leader, being bitter because of their lost lands, has issued an ultimatum to us to regain power over those lands. the Ultimatum requests two states of northren Yugoslavia, how would we respond?"
+  grn.22.a:0 "We have no choice, we cannot let bloodshed happen"
+  grn.22.b:0 "Tell them to bring it on"
+  # Yugoslavia says yes to demands
+  grn.23.t:0 "Yugoslavia accepts our demands"
+  grn.23.d:0 "Yes"
+  grn.23.a:0 "Nice"
+  # Yugoslavia refuses
+  grn.23.t:0 "Yugoslavia refuses our demands"
+  grn.23.d:0 "Yugoslavia has left us without any answers but we're sure they have gotten the Ultimatumm, how would we respond?"
+  grn.23.a:0 "We can't get into a war..."
+  grn.23.b:0 "Time for them to collapse"
+
   # Greenlin wants to join a faction
-  grn.22.t:0 "[From.GetAdjective] Entry Into The [Root.GetFactionName]"
-  grn.22.d:0 "[From.GetLeader] has submitted a request to join the [Root.GetFactionName]. Whether he seeks mutual protection or foreign expansion is unknown, but Greenlin's large amount of Chromium is a lucrative asset to have on our side."
+  grn.25.t:0 "[From.GetAdjective] Entry Into The [Root.GetFactionName]"
+  grn.25.d:0 "[From.GetLeader] has submitted a request to join the [Root.GetFactionName]. Whether he seeks mutual protection or foreign expansion is unknown, but Greenlin's large amount of Chromium is a lucrative asset to have on our side."
+  grn.25.a:0 "They are a useful ally, they can join"
+  grn.25.b:0 "We don't want them in our faction"
+  # template
+  grn.69.t:0 ""
+  grn.69.d:0 ""
+  grn.69.a:0 ""
+  grn.69.b:0 ""

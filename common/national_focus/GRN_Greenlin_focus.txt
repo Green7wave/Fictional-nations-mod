@@ -1500,7 +1500,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 60
+			factor = 120
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = tip_oprationlion
 		}
 	}
 
@@ -1518,6 +1522,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 30
 		}
+
+		available = {
+			is_puppet = no
+			NOT = {
+				is_in_faction_with = ROM
+			}
+			NOT = {
+				has_war_with = ROM
+			}
+		} 
 
 		completion_reward = {
 			create_wargoal = {
@@ -1555,6 +1569,17 @@ focus_tree = {
 				has_war_with = ROM
 			}
 		}
+		bypass = {
+			OR = {
+				NOT = {
+					ROM = { owns_state = 46 }
+					ROM = { owns_state = 81 }
+				}
+				has_war_with = ROM
+				is_in_faction_with = ROM
+				ROM = { is_subject_of = GRN }
+			}
+		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 80
@@ -1581,10 +1606,34 @@ focus_tree = {
 			focus = GRN_afriendlyrequest 
 			focus = GRN_romaniasfuture 
 		}
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 499999 } #ca 50 div
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					YUG = { owns_state = 108 }
+					YUG = { owns_state = 105 }
+				}
+				has_war_with = YUG
+				is_in_faction_with = YUG
+				YUG = { is_subject_of = GRN }
+			}
+		}
 		mutually_exclusive = { focus = GRN_cooperativestrike }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
 			factor = 60
+		}
+		completion_reward = {
+			YUG = {
+				country_event = {
+					id = grn.22
+					days = 1
+				}
+			}
+		
 		}
 	}
 
@@ -1600,10 +1649,37 @@ focus_tree = {
 			focus = GRN_afriendlyrequest 
 			focus = GRN_romaniasfuture 
 		}
+		available = {
+			is_subject = no
+			OR = {
+				is_in_faction = yes
+				NOT = { has_war_with = CRZ}
+			}
+		}
 		mutually_exclusive = { focus = GRN_demandthenorthwest }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 60
+			factor = 30
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+				every_other_country = {
+					limit = {
+						is_faction_leader = yes
+						is_in_faction_with = ROOT
+					}
+
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_war_with = CRZ }
+				}
+			}
 		}
 	}
 
@@ -1689,7 +1765,7 @@ focus_tree = {
 					}
 				}
 				CRZ = {
-					country_event = generic.2
+					country_event = grn.25
 				}
 
 			}
@@ -1700,7 +1776,7 @@ focus_tree = {
 					}
 				}
 				POL = {
-					country_event = generic.2
+					country_event = grn.25
 				}
 
 			}
@@ -1711,7 +1787,7 @@ focus_tree = {
 					}
 				}
 				SOV = {
-					country_event = generic.2
+					country_event = grn.25
 				}
 
 			}
@@ -1725,7 +1801,7 @@ focus_tree = {
 							tag = ROM
 						}
 					}
-					country_event = generic.2
+					country_event = grn.25
 				}					
 			}
 
@@ -1805,7 +1881,7 @@ focus_tree = {
 				}
 				ENG = {
 					country_event = {
-						id = grn.21
+						id = grn.25
 						days = 1
 					}
 				}

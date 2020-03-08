@@ -54,6 +54,7 @@
  sergei_retired:0 " §YSergei Wave§! has retired"
  available_theoriest:0 "Available as a §YMilitary Theroiest§!:\n"
  available_high_command:0 "Available as an §YHigh Command§!:\n"
+ tip_oprationlion:0 "Unlocks a special §Yagency operation§! against [PER.GetName], the opration will install a friendly government to us and coup [PER.GetName]"
 
 # Ideas
 

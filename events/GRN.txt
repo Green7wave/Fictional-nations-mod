@@ -928,7 +928,7 @@ country_event = {
 		}
 		add_threat = -1
 		hidden_effect = {
-			news_event = { id = news.301 days = 1 }
+			news_event = { id = grnnews.2 days = 1 }
 		}
 	}
 }
@@ -971,7 +971,7 @@ country_event = {
 		add_war_support = 0.1
 		add_threat = 2
 		hidden_effect = {
-			news_event = { id = news.302 days = 1 }
+			news_event = { id = grnnews.3 days = 1 }
 		}
 	}
 }
@@ -1070,7 +1070,7 @@ country_event = {
 				target = ROM
 				type = take_state_focus
 				generator = { 81 46} 
-			}
+		}
 
 	}
 
@@ -1191,11 +1191,158 @@ country_event = {
  	
 }
 
-# Greenlin asks to join Faction
+# Greenlin wants their old lands from yugoslavia
 country_event = {
 	id = grn.22
 	title = grn.22.t
 	desc = grn.22.d
+	picture = GFX_report_event_vienna_award_negotiations
+	
+	is_triggered_only = yes
+
+	option = {#yes 
+		name = grn.22.a
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = GRN ratio < 0.8 }
+				factor = 0.5
+			}
+			modifier = { 
+				strength_ratio = { tag = GRN ratio > 1.25 }
+				factor = 2
+			}
+			modifier = {
+				is_in_faction = yes
+				factor = 0 #we got friends
+			}
+		}
+		GRN = { country_event = { id = grn.23 } }
+		add_stability = -0.25
+		add_war_support = -0.1
+
+	}
+
+	option = {#no 
+		name = grn.22.b
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = GRN ratio < 1 }
+				factor = 2
+			}
+			modifier = { 
+				is_in_faction = yes
+				factor = 2
+			}
+		}
+		GRN = { country_event = { id = grn.24 } }
+	}
+}
+
+
+# Yugoslavia hands over the lands
+country_event = {
+	id = grn.23
+	title = grn.23.t
+	desc = grn.23.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = Balkan_crisis_mediation_requested
+		}
+	}
+
+	option = {
+		name = grn.23.a
+		GRN = {
+			if = {
+				limit = {
+					YUG = {
+						controls_state = 108
+					}
+				}
+				transfer_state = 108
+			}
+
+			if = {
+				limit = {
+					YUG = {
+						controls_state = 105
+					}
+				}
+				transfer_state = 105
+			}
+		}
+		add_threat = -1
+		hidden_effect = {
+			news_event = { id = grnnews.2 days = 1 }
+		}
+	}
+}
+
+#Yugoslavia refuses to hand over the lands
+country_event = {
+	id = grn.24
+	title = grn.24.t
+	desc = grn.24.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {# Let it go
+		name = grn.24.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				strength_ratio = { tag = YUG ratio < 1 } #weaker than YUG
+				factor = 2
+			}
+		}
+		add_stability = -0.2
+		add_war_support = -0.1
+		remove_state_claim = 108
+		remove_state_claim = 105
+		add_threat = -1
+	}
+
+	option = {# war!
+		name = grn.24.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				strength_ratio = { tag = YUG ratio > 1.2 }
+				factor = 1.5
+			}
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = YUG ratio > 1.25 } #stronger than YUG
+				factor = 2
+			}
+		}
+
+		declare_war_on = {
+				target = ROM
+				type = take_state_focus
+				generator = { 81 46} 
+		}
+		add_war_support = 0.1
+		add_threat = 3
+		hidden_effect = {
+			news_event = { id = grnnews.3 days = 1 }
+		}
+	}
+}
+
+
+# Greenlin asks to join Faction
+country_event = {
+	id = grn.25
+	title = grn.25.t
+	desc = grn.25.d
 	
 	picture = GFX_report_event_canadian_tank
 	
@@ -1204,66 +1351,22 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			save_event_target_as = alliance_inviter
-			FROM = { save_event_target_as = alliance_applicant }
+			GRN = { save_event_target_as = alliance_applicant }
 		}
 	}
 	
 	option = {
-		name = grn.22.a
-		
-		if = {
-			limit = {
-				original_tag = ENG
-			}
-			add_to_tech_sharing_group = MEX_ENG_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_ENG_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = GER
-			}
-			add_to_tech_sharing_group = MEX_GER_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_GER_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = SOV
-			}
-			add_to_tech_sharing_group = MEX_SOV_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_SOV_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = USA
-			}
-			add_to_tech_sharing_group = MEX_USA_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_USA_tech_group
-			}
-		}
+		name = grn.25.a
 		
 		if = {
 			limit = {
 				is_faction_leader = yes
 			}
-			add_to_faction = FROM
+			add_to_faction = GRN
 			hidden_effect = {
 				news_event = { id = news.289 hours = 12 }
 			}
-			FROM = { country_event = { id = generic.3 hours = 6 } }
+			GRN = { country_event = { id = generic.3 hours = 6 } }
 		}
 		
 		if = {
@@ -1276,7 +1379,7 @@ country_event = {
 					is_faction_leader = yes
 				}
 				country_event = {
-					id = mexico.9
+					id = grn.25
 					days = 1
 				}
 			}
@@ -1290,7 +1393,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				MEX = {
+				GRN = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -1301,7 +1404,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				MEX = {
+				GRN = {
 					has_war = yes
 					any_enemy_country = {
 						NOT = {
@@ -1318,9 +1421,9 @@ country_event = {
 	}
 	
 	option = {
-		name = grn.22.b
+		name = grn.25.b
 		
-		FROM = { 
+		GRN = { 
 			country_event = { id = generic.4 hours = 6 }
 		}
 		
@@ -1328,7 +1431,7 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0.1
-				MEX = {
+				GRN = {
 					OR = {
 						has_government = ROOT
 						is_major = yes

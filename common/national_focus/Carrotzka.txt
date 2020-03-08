@@ -1158,7 +1158,7 @@ focus_tree = {
 				icon = GFX_goal_generic_propaganda
 				x = 34
 				y = 1
-				cost = 2
+				cost = 10
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_retake_the_salad_region }
 				ai_will_do = {
@@ -1218,7 +1218,7 @@ focus_tree = {
 				icon = GFX_goal_generic_major_war
 				x = 36
 				y = 1
-				cost = 2
+				cost = 10
 				available_if_capitulated = yes
 				prerequisite = { focus = CRZ_retake_the_salad_region }
 				ai_will_do = {
@@ -1244,7 +1244,7 @@ focus_tree = {
 					icon = GFX_focus_RAJ_lions_of_the_great_war
 					x = 38
 					y = 1
-					cost = 2
+					cost = 10
 					available_if_capitulated = yes
 					prerequisite = { focus = CRZ_retake_the_salad_region }
 					bypass = {POL = {exists = no}}
@@ -1763,10 +1763,40 @@ focus_tree = {
 				ai_will_do = {
 					factor = 40
 				}
-				completion_reward = {	
-					ENG = {
-						add_to_faction = CRZ
+				completion_reward = {
+					if = {
+						limit = {
+							ENG = {
+								is_faction_leader = yes
+							}
+						}
+						ENG = {
+							country_event = {
+								days = 1
+								id = generic.2
+							}
+						}
 					}
+					else_if = {
+						limit = {
+							any_country = {
+								has_government = democratic
+								is_faction_leader = yes
+								is_major = yes
+								NOT = { tag = CRZ }
+							}
+						}
+						PREV = {
+							country_event = {
+								days = 1
+								id = generic.2
+							}
+						}
+					}
+					else = {
+						create_faction = Black_And_Red_Alliance
+					}
+						
 				}
 			}
 
@@ -1839,14 +1869,28 @@ focus_tree = {
 		}
 		completion_reward = {
 			197 = {			
-			add_building_construction = {
-				type = coastal_bunker
-				level = 10
-				province = 11683
-				instant_build = yes
-			}
-	    }
-      }  
+				add_building_construction = {
+					type = coastal_bunker
+					level = 6
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					instant_build = yes
+				}
+	    	}
+			196 = {			
+				add_building_construction = {
+					type = coastal_bunker
+					level = 6
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+					instant_build = yes
+				}
+	    	}
+      	}  
 	}
 
 	focus = {

@@ -5,28 +5,95 @@
 add_namespace = grnnews
 
 # civil war ends
- news_event = {
- 	id = grnnews.1
- 	title = grnnews.1.t
- 	desc = grnnews.1.d
- 	picture = GFX_news_event_073
- 	fire_only_once = yes
- 	trigger = {
+news_event = {
+	id = grnnews.1
+	title = grnnews.1.t
+	desc = grnnews.1.d
+	picture = GFX_news_event_073
+	fire_only_once = yes
+	trigger = {
 		tag = GRN
 		has_country_flag = greenlin_in_civil_war
 		has_civil_war = no
 	}
 
- 	major = yes
+	major = yes
 
- 	mean_time_to_happen = {
- 		days = 1
- 	}
- 	
- 	option = { 
- 		name = grnnews.1.a 
- 	}
- 	
- }
+	mean_time_to_happen = {
+		days = 1
+	}
 
-#
+	option = { 
+		name = grnnews.1.a 
+	}
+
+}
+
+# Romania gives us our lands
+news_event = {
+	id = grnnews.2
+	title = grnnews.2.t
+	desc = grnnews.2.d
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = grnnews.2.a
+		trigger = {
+			TAG = HUN
+		}
+	}
+	option = {
+		name = grnnews.2.b
+		trigger = { 
+			TAG = ROM
+		}
+	}
+	option = {
+		name = grnnews.2.c
+		trigger = { 
+			NOT = {
+				TAG = HUN
+				TAG = ROM
+			}
+		}
+	}
+}
+
+# Romania Refuses to Give our lands
+news_event = {
+	id = grnnews.3
+	title = grnnews.3.t
+	desc = grnnews.3.desc
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = grnnews.3.a
+		trigger = {
+			TAG = HUN
+		}
+	}
+	option = {
+		name = grnnews.3.b
+		trigger = { 
+			TAG = ROM
+		}
+	}
+	option = {
+		name = grnnews.3.c
+		trigger = { 
+			NOT = {
+				TAG = HUN
+				TAG = ROM
+			}
+		}
+	}
+}
+
