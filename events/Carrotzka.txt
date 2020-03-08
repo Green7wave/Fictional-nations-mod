@@ -731,6 +731,13 @@ country_event = {
 				loved_by_people
 			}
 		}
+		news_event= crznews.102
+		remove_ideas = unstable_government
+		remove_ideas = workers_volunteerd
+		add_popularity = {
+			ideology = neutrality
+			popularity = 1
+		}
 	}
 
 	option = {
@@ -741,8 +748,15 @@ country_event = {
 		set_politics = {
 			ruling_party = communism
 		}
+		add_popularity = {
+			ideology = communism
+			popularity = 1
+		}
 		add_political_power = 200
-		load_focus_tree = Carrotish_focus
+		news_event= crznews.103
+		remove_ideas = unstable_government
+		remove_ideas = SPR_collectivized_society
+		remove_ideas = closed_economy
 	}
 
 	option = {
@@ -753,6 +767,15 @@ country_event = {
 		set_politics = {
 			ruling_party = democratic
 		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 1
+		}
+		news_event= crznews.104
+		remove_ideas = unstable_government
+		remove_ideas = workers_volunteerd
+		remove_ideas = SPR_collectivized_society
+		remove_ideas = closed_economy
 	}
 
 	option = {
@@ -762,6 +785,10 @@ country_event = {
 		}
 		set_politics = {
 			ruling_party = communism
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 1
 		}
 		retire_country_leader = yes
 		create_country_leader = {
@@ -775,6 +802,11 @@ country_event = {
 				connected_citizen
 			}
 		}
+		news_event= crznews.105
+		remove_ideas = unstable_government
+		remove_ideas = workers_volunteerd
+		remove_ideas = SPR_collectivized_society
+		remove_ideas = closed_economy
 	}
 
 	option = {
@@ -784,6 +816,10 @@ country_event = {
 		}
 		set_politics = {
 			ruling_party = carrotism
+		}
+		add_popularity = {
+			ideology = carrotism
+			popularity = 1
 		}
 		retire_country_leader = yes
 		create_country_leader = {
@@ -796,5 +832,10 @@ country_event = {
 				champion_of_peace_5
 			}
 	}
+	news_event= crznews.106
+	remove_ideas = unstable_government
+	remove_ideas = workers_volunteerd
+	remove_ideas = SPR_collectivized_society
+	remove_ideas = closed_economy
 	}
 }

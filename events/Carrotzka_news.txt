@@ -240,3 +240,78 @@ news_event = {
 		name = crznews.69421.a
 	}
 }
+
+news_event = {
+	id = crznews.102
+	title = crznews.102.t
+	desc = crznews.102.d
+	picture = GFX_news_event_019
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.102.a
+	}
+}
+
+news_event = {
+	id = crznews.103
+	title = crznews.103.t
+	desc = crznews.103.d
+	picture = GFX_news_event_generic_strike
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.103.a
+	}
+}
+
+news_event = {
+	id = crznews.104
+	title = crznews.104.t
+	desc = crznews.104.d
+	picture = GFX_news_event_king_speech
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.104.a
+	}
+}
+
+news_event = {
+	id = crznews.105
+	title = crznews.105.t
+	desc = crznews.105.d
+	picture = GFX_news_event_herman_goring
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.105.a
+	}
+}
+
+news_event = {
+	id = crznews.106
+	title = crznews.106.t
+	desc = crznews.106.d
+	picture = GFX_news_event_romania_parliament
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = crznews.106.a
+	}
+}
