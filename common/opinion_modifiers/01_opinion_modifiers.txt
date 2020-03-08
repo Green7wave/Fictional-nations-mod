@@ -29,4 +29,8 @@ opinion_modifiers = {
 	GRN_friends_for_power = {
 		value = 15
 	}
+
+	opinion_anti_fascist_propoganda = {
+		value = -50
+	}
 }	

@@ -55,6 +55,7 @@
  available_theoriest:0 "Available as a §YMilitary Theroiest§!:\n"
  available_high_command:0 "Available as an §YHigh Command§!:\n"
  tip_oprationlion:0 "Unlocks a special §Yagency operation§! against [PER.GetName], the opration will install a friendly government to us and coup [PER.GetName]"
+ tip_yugcoopattack:0 "§RIf the other country agrees war will immediately start, otherwise we will get a wargoal§!"
 
 # Ideas
 
@@ -96,6 +97,8 @@
 
 
  # national spirits
+ anti_fascist_propoganda:0 "Anti-Fascist Propoganda"
+ anti_fascist_propoganda_desc:0 "whether with Mehrad the Cruel or Mani Wave, Greenlin's politics would always be anti-fascist as there was no one near power that could support fascism and now Greenlin has heavy Anti-fascist propoganda, making it clear as day Greenlin is not with Fascists"
  expanded_influence:0 "Expanded Influence"
  expanded_influence_desc:0 "Greenlin is one of those countries that hates pure capitalism and goes against it, but when you're talking with capitalists, you have to answer fire with fire"
  full_control:0 "Full Control"
@@ -143,6 +146,7 @@
  crz_grn_research_name:0 "Carrotzka-Greenlin Research"
  crz_grn_research_desc:0 "Reduced research time for technologies researched by the other country."
  GRN_friends_for_power:0 "Powerful Friends"
+ opinion_anti_fascist_propoganda:0 "Anti-Fascist Propoganda"
 
 # factions
  owl_eyed_faction:0 "Owl Eyed Nations" 

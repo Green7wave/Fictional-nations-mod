@@ -97,6 +97,29 @@ ideas = {
 		}
 		#
 
+		anti_fascist_propoganda = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = fascism }
+			}
+
+			removal_cost = -1
+			
+			picture = generic_fascism_banned
+
+			modifier = {
+				fascism_acceptance = -69
+				conscription = 0.02
+				
+			}
+		}
+
+		#
+
 		full_control_2 = {
 			name = full_control
 

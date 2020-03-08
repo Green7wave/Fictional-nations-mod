@@ -129,6 +129,15 @@
   grn.25.d:0 "[From.GetLeader] has submitted a request to join the [Root.GetFactionName]. Whether he seeks mutual protection or foreign expansion is unknown, but Greenlin's large amount of Chromium is a lucrative asset to have on our side."
   grn.25.a:0 "They are a useful ally, they can join"
   grn.25.b:0 "We don't want them in our faction"
+  #Cooperative Strike on Yugoslavi
+  grn.26.t:0 "[GRN.GetName] and [ROOT.GetName]'s cooperative strike on [YUG.GetName]'"
+  grn.26.d:0 "Greenlin's leader has personally wrote a letter to us and asked for a cooperative strike on Yugoslavia, he has promised lands or our other interests in this matter."
+  grn.26.a:0 "Seems interesting, we shall start the strike"
+  grn.26.b:0 "They are alone in this unfortunately"
+  #
+  grn.27.t:0 "[From.GetName] has refused our offer"
+  grn.27.d:0 "The [From.GetAdj] has refused our offer for a cooperative strike on Yugoslavia, as plans have been drawn we still can attack or postpone our efforts"
+  grn.27.a:0 "Aw man..."
   # template
   grn.69.t:0 ""
   grn.69.d:0 ""

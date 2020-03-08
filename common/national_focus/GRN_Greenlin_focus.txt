@@ -1464,7 +1464,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Greenish Volenteers
+	#Focus for Anti Fascist Propoganda
 	focus = {
 		id = GRN_greenishvolenteers
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
@@ -1478,7 +1478,29 @@ focus_tree = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 80
+		}
+		
+		completion_reward = {
+			add_ideas = anti_fascist_propoganda
+			every_other_country = {
+				limit = {
+					has_government = fascism
+					is_major = yes
+				}
+				
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = opinion_anti_fascist_propoganda
+				}
+				
+				GRN = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = opinion_anti_fascist_propoganda
+					}
+				}
+			}
 		}
 	}
 
@@ -1664,6 +1686,18 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
+					NOT = { has_war_with = CRZ }
+				}
+				CRZ = {
+					country_event = {
+						id = grn.26
+						days = 1
+					}
+				}
+
+			}
+			else_if = {
+				limit = {
 					is_in_faction = yes
 					is_faction_leader = no
 				}
@@ -1672,14 +1706,13 @@ focus_tree = {
 						is_faction_leader = yes
 						is_in_faction_with = ROOT
 					}
-
+					country_event = {
+						id = grn.26
+						days = 1
+					}
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_war_with = CRZ }
-				}
-			}
+			custom_effect_tooltip = tip_yugcoopattack
 		}
 	}
 
