@@ -530,34 +530,35 @@ taking_out_the_evil = {
       }
     }
 
-    help_iwa = {
+help_iwa = {
 
-        send_weapon = {
-            icon = generic_operation
-            cost = 150
-            ai_will_do = {
-                factor = 1
+    send_weapon = {
+        icon = generic_operation
+        cost = 150
+        ai_will_do = {
+            factor = 1
+        }
+        fire_only_once = no
+        days_remove = 10
+        complete_effect = {
+            ROOT = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = -1000
+                }
             }
-            fire_only_once = no
-            days_remove = 10
-            complete_effect = {
-                ROOT = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = -1000
-                    }
+            ACZ = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 1000
+                    producer = SOV
                 }
-                ACZ = {
-                    add_equipment_to_stockpile = {
-                        type = infantry_equipment
-                        amount = 1000
-                        producer = SOV
-                    }
-                }
-           }
-      }
-  }
-  cripple_carrotzka = {
+            }
+        }
+    }
+}
+
+cripple_carrotzka = {
 
     damage_railway = {
         icon = generic_operation
@@ -570,15 +571,16 @@ taking_out_the_evil = {
         complete_effect = {
             CRZ = {
                 random_owned_controlled_state = {
-            damage_building = {
-                type = infrastructure
-                damage = 3
+                    damage_building = {
+                       type = infrastructure
+                        damage = 3
+                    }
+                }
             }
-       }
-      }
+        }
     }
-  }
-      damage_mil_factory = {
+    
+    damage_mil_factory = {
         icon = generic_operation
         cost = 50
         ai_will_do = {
@@ -590,16 +592,16 @@ taking_out_the_evil = {
             CRZ = {
                 random_owned_controlled_state = {
 
-            damage_building = {
-                type = arms_factory
-                damage = 3
+                    damage_building = {
+                        type = arms_factory
+                        damage = 3
+                    }
+                }
             }
-       }
-      }
+        }
     }
-}
 
-      damage_civ_factory = {
+    damage_civ_factory = {
         icon = generic_operation
         cost = 50
         ai_will_do = {
@@ -610,12 +612,12 @@ taking_out_the_evil = {
         complete_effect = {
            CRZ = {
                random_owned_controlled_state = {
-            damage_building = {
-                type = industrial_complex
-                damage = 3
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 3
+                    }
+                }
             }
-           }
-       }
-      }
-  }
+        }
+    }
 }

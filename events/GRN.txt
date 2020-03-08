@@ -616,7 +616,11 @@
  	
  	option = { # let the ling come back
  		name = grn.9.a 
+		trigger = {
+			NOT = { has_country_flag = ling_was_forgiven }
+		}
 		add_political_power = -120
+		set_country_flag = ling_was_forgiven
 		set_country_flag = ling_forgiven
 		random_list = {
 			80 = {
@@ -749,7 +753,7 @@
  	option = { 
  		name = grn.12.a 
 		add_stability = -0.1
-		set_war_support = -0.15
+		add_political_power = -60
 		hidden_effect = {
 			country_event = {
 				id = grn.10
@@ -762,12 +766,11 @@
 	option = {
 		name = grn.12.b 
 		add_political_power = -30
-		hidden_effect = {
-			country_event = {
-				id = grn.10
-				days = 7
-				random = 10
-			}
+		clr_country_flag = ling_forgiven
+		country_event = {
+			id = grn.8
+			days = 7
+			random = 10
 		}
 	}
 
@@ -989,7 +992,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 			modifier = { 
-				strength_ratio = { tag = HUN ratio < 0.8 }
+				strength_ratio = { tag = GRN ratio < 0.8 }
 				factor = 0.5
 			}
 			modifier = {
@@ -998,7 +1001,7 @@ country_event = {
 			}
 		}
 		add_stability = -0.15
-		HUN = {
+		GRN = {
 			country_event = { id = grn.15 }
 		}
 	}
@@ -1008,7 +1011,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 			modifier = { 
-				strength_ratio = { tag = HUN ratio > 1 }
+				strength_ratio = { tag = GRN ratio > 1 }
 				factor = 0.5
 			}
 			modifier = {

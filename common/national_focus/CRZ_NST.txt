@@ -219,7 +219,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			unlock_decision_tooltip = cripple_carrotzka
+			#unlock_decision_tooltip = cripple_carrotzka
 		}
 	}
 
@@ -2480,7 +2480,7 @@ focus = {
 		prerequisite = { focus = CRZ_local_fighter_production }
 		x = 0
 		y = 1
-		relative_position_id =  CHI_local_fighter_production
+		relative_position_id =  CRZ_local_fighter_production
 	
 		cost = 10
 	
