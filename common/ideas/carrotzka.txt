@@ -51,6 +51,7 @@ ideas = {
 				conscription = 1
 				training_time_factor = -0.2
 				research_speed_factor = -0.20
+				mobilization_speed = 1
 			}
 		}
 
