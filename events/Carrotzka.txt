@@ -716,10 +716,13 @@ country_event = {
 		ai_chance = { 
 			factor = 20
 		}
+		CRZ = {
+			kill_country_leader = yes
+		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = neutrality
 		}
-		retire_country_leader = yes
 		create_country_leader = {
 			name = "Anarchist Commune"
 			desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
@@ -732,11 +735,15 @@ country_event = {
 			}
 		}
 		news_event= crznews.102
-		remove_ideas = unstable_government
-		remove_ideas = workers_volunteerd
 		add_popularity = {
 			ideology = neutrality
 			popularity = 1
+		}
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
 		}
 	}
 
@@ -745,6 +752,10 @@ country_event = {
 		ai_chance = { 
 			factor = 10
 		}
+		CRZ = {
+			kill_country_leader = yes
+		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = communism
 		}
@@ -752,11 +763,25 @@ country_event = {
 			ideology = communism
 			popularity = 1
 		}
+		create_country_leader = {
+			name = "Nestor golivin"
+			desc = "POLITICS_NESTOR_GOLIVIN_DESC"
+			picture = "gfx/leaders/CRZ/Portrait_nestor_golivin.dds"
+			expire = "2000.1.1"
+			ideology = marxism
+			traits = {
+				loved_by_people
+				unquestionable
+			}
+		}
 		add_political_power = 200
 		news_event= crznews.103
-		remove_ideas = unstable_government
-		remove_ideas = SPR_collectivized_society
-		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -764,6 +789,10 @@ country_event = {
 		ai_chance = { 
 			factor = 0
 		}
+		CRZ = {
+			kill_country_leader = yes
+		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = democratic
 		}
@@ -772,10 +801,12 @@ country_event = {
 			popularity = 1
 		}
 		news_event= crznews.104
-		remove_ideas = unstable_government
-		remove_ideas = workers_volunteerd
-		remove_ideas = SPR_collectivized_society
-		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -783,6 +814,10 @@ country_event = {
 		ai_chance = { 
 			factor = 70
 		}
+		CRZ = {
+			kill_country_leader = yes
+		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = communism
 		}
@@ -803,10 +838,12 @@ country_event = {
 			}
 		}
 		news_event= crznews.105
-		remove_ideas = unstable_government
-		remove_ideas = workers_volunteerd
-		remove_ideas = SPR_collectivized_society
-		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -814,6 +851,10 @@ country_event = {
 		ai_chance = { 
 			factor = 20
 		}
+		CRZ = {
+			kill_country_leader = yes
+		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = carrotism
 		}
@@ -833,9 +874,41 @@ country_event = {
 			}
 	}
 	news_event= crznews.106
-	remove_ideas = unstable_government
-	remove_ideas = workers_volunteerd
-	remove_ideas = SPR_collectivized_society
-	remove_ideas = closed_economy
+	CRZ = {
+		country_event = {
+			id = carrotzka.96
+			days = 2
+		}
+	}
+	}
+}
+
+country_event = {
+	id = carrotzka.96
+	title = carrotzka.86.t
+	desc = carrotzka.86.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.96.a
+		ai_chance = { 
+			factor = 90
+		}
+		annex_country = {
+			target = ACZ
+			transfer_troops = yes
+		}
+	ACZ = {
+		transfer_navy = {
+			target = CRZ
+			}
+		}
+		remove_ideas = unpopular_government
+		remove_ideas = strikes_3
+		remove_ideas = draft_dodging_3
+		remove_ideas = mutiny_3
 	}
 }
