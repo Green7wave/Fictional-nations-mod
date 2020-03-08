@@ -10,9 +10,13 @@ operation_coup_lion = { ### 7 1/70
 	desc = operation_coup_lion_desc
 	priority = 7
 
-	days = 120
-	network_strength = 80
-	operatives = 2
+	#days = 120
+	#network_strength = 80
+	#operatives = 2
+
+	days = 1
+	network_strength = 1
+	operatives = 1
 
 	visible = {
 		network_strength = {
@@ -25,8 +29,11 @@ operation_coup_lion = { ### 7 1/70
 	}
 
 	equipment = {
-		infantry_equipment = 12000
+		infantry_equipment = 12
 	}
+	#equipment = {
+	#	infantry_equipment = 12000
+	#}
 	# Can spawn a civil war in the capital ;)
 	selection_target_state = {
 		is_capital = yes
@@ -125,7 +132,7 @@ operation_coup_lion = { ### 7 1/70
 				add_to_temp_variable = { civil_war_navy_fraction = 0.15 }
 			}
 
-			# COMMUNIST IRAN, RAIISEE
+			# IRAN, RAIISEE
 			start_civil_war = {
 				capital = coup_civil_war_capital
 				size = civil_war_size
@@ -134,11 +141,41 @@ operation_coup_lion = { ### 7 1/70
 				navy_ratio = civil_war_navy_fraction
 				air_ratio = civil_war_airforce_fraction
 			}
-			ROOT = { puppet = PREV }
-			PREV = {
+			PER = {
+				# set political stuff
+				GRN = { puppet = PREV }
+				
 				set_politics = {
-						ruling_party = communism
+					ruling_party = neutrality
 				}
+				create_country_leader = {
+					name = "Mohammad Reza Pahlavi"
+					desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+					picture = "gfx/leaders/PER/Portrait_Persia_Mohammad_Reza_Pahlavi.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						
+					}
+				}
+				set_popularities = {
+					democratic = 10
+					neutrality = 80
+					fascism = 3
+					communism = 7
+					carrotism = 0
+				}
+
+			}
+			every_country = {
+				limit = {
+					original_tag = PER
+					NOT = { tag = PER }
+					has_war_with = PER
+				}
+				
+
+
 			}
 
 			# Clear State
@@ -157,7 +194,7 @@ operation_coup_lion = { ### 7 1/70
 	outcome_potential = {
 		FROM = {
 			start_civil_war = {
-				ideology = communism
+				ideology = democratic
 			}
 		}
 	}
