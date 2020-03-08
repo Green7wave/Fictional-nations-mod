@@ -716,6 +716,7 @@ country_event = {
 		ai_chance = { 
 			factor = 20
 		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = neutrality
 		}
@@ -738,6 +739,12 @@ country_event = {
 			ideology = neutrality
 			popularity = 1
 		}
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -745,6 +752,7 @@ country_event = {
 		ai_chance = { 
 			factor = 10
 		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = communism
 		}
@@ -757,6 +765,12 @@ country_event = {
 		remove_ideas = unstable_government
 		remove_ideas = SPR_collectivized_society
 		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -764,6 +778,7 @@ country_event = {
 		ai_chance = { 
 			factor = 0
 		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = democratic
 		}
@@ -776,6 +791,12 @@ country_event = {
 		remove_ideas = workers_volunteerd
 		remove_ideas = SPR_collectivized_society
 		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -783,6 +804,7 @@ country_event = {
 		ai_chance = { 
 			factor = 70
 		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = communism
 		}
@@ -807,6 +829,12 @@ country_event = {
 		remove_ideas = workers_volunteerd
 		remove_ideas = SPR_collectivized_society
 		remove_ideas = closed_economy
+		CRZ = {
+			country_event = {
+				id = carrotzka.96
+				days = 2
+			}
+		}
 	}
 
 	option = {
@@ -814,6 +842,7 @@ country_event = {
 		ai_chance = { 
 			factor = 20
 		}
+		CRZ = { change_tag_from = ROOT }
 		set_politics = {
 			ruling_party = carrotism
 		}
@@ -837,5 +866,32 @@ country_event = {
 	remove_ideas = workers_volunteerd
 	remove_ideas = SPR_collectivized_society
 	remove_ideas = closed_economy
+	CRZ = {
+		country_event = {
+			id = carrotzka.96
+			days = 2
+		}
+	}
+	}
+}
+
+country_event = {
+	id = carrotzka.96
+	title = carrotzka.86.t
+	desc = carrotzka.86.d
+	picture = GFX_report_event_ast_navy
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = carrotzka.96.a
+		ai_chance = { 
+			factor = 90
+		}
+		annex_country = {
+			target = ACZ
+			transfer_troops = yes
+		}
 	}
 }
