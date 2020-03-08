@@ -2481,6 +2481,9 @@ focus_tree = {
 						   CRZ = {
 							add_country_leader_trait = is_in_civilwar
 							add_ideas = unpopular_government
+							add_ideas = strikes_3
+							add_ideas = draft_dodging_3
+							add_ideas = mutiny_3
 						   }
 						}
 					}
