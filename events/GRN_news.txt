@@ -102,7 +102,7 @@ news_event = {
 	id = grnnews.4
 	title = grnnews.4.t
 	desc = grnnews.4.d
-	picture = GFX_news_event_hungarian_soldiers
+	picture = GFX_news_event_009
 	
 	major = yes
 	
@@ -136,7 +136,7 @@ news_event = {
 	id = grnnews.5
 	title = grnnews.5.t
 	desc = grnnews.5.d
-	picture = GFX_news_event_hungarian_soldiers
+	picture = GFX_news_event_048
 	
 	major = yes
 	
@@ -170,7 +170,7 @@ news_event = {
 	id = grnnews.6
 	title = grnnews.6.t
 	desc = grnnews.6.d
-	picture = GFX_news_event_hungarian_soldiers
+	picture = GFX_news_event_019
 	
 	major = yes
 	
