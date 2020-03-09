@@ -534,7 +534,10 @@ help_iwa = {
 
     send_weapon = {
         icon = generic_operation
-        ai_will_do = {
+        ai_will_do = { 
+            factor = 10
+        }
+        cost = 80
         days_remove = 10
         available = {
             has_equipment = {
