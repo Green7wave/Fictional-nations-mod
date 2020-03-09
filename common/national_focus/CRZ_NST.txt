@@ -15,7 +15,7 @@ focus_tree = {
 		icon = GFX_focus_eng_decolonization
 		x = 12
 		y = 0
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 40
@@ -54,7 +54,7 @@ focus_tree = {
 		icon = GFX_focus_generic_provoke_border_clashes
 		x = 17
 		y = 2
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_new_government }
 		ai_will_do = {
@@ -103,7 +103,7 @@ focus_tree = {
 		icon = GFX_focus_SAF_colonialist_crusade
 		x = 7
 		y = 2
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_new_government }
 		ai_will_do = {
@@ -168,7 +168,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		x = 5
 		y = 3
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_end_civil_war }
 		ai_will_do = {
@@ -189,7 +189,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		x = 9
 		y = 3
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_end_civil_war }
 		ai_will_do = {
@@ -210,7 +210,7 @@ focus_tree = {
 		icon = GFX_focus_prc_infiltration
 		x = 7
 		y = 4
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_offer_amnesty_to_navy }
 		prerequisite = { focus = CRZ_offer_amnesty_to_revolutionary_army }
@@ -227,7 +227,7 @@ focus_tree = {
 		icon = GFX_focus_spr_no_pasaran
 		x = 5
 		y = 5
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
 		mutually_exclusive = { focus = CRZ_organise_democrats }
@@ -249,7 +249,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		x = 7
 		y = 5
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
 		mutually_exclusive = { focus = CRZ_organise_anarchists }
@@ -271,7 +271,7 @@ focus_tree = {
 		icon = GFX_focus_YUG_pan_slavic_congress
 		x = 9
 		y = 5
-		cost = 8
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = CRZ_cripple_the_industry }
 		mutually_exclusive = { focus = CRZ_organise_democrats }
@@ -390,7 +390,7 @@ focus = {
 	icon = GFX_focus_generic_combined_arms
 	x = 12
 	y = 1
-	cost = 10
+	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { focus = CRZ_new_government }
 	ai_will_do = {
@@ -436,7 +436,7 @@ focus = {
 	icon = GFX_goal_generic_position_armies
 	x = 12
 	y = 2
-	cost = 10
+	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { focus = ACZ_expand_military_factories }
 	ai_will_do = {
@@ -459,7 +459,7 @@ focus = {
 	prerequisite = { focus = ACZ_battle_tactics }
 	x = 12
 	y = 3
-	cost = 9
+	cost = 4
 
 	available_if_capitulated = yes
 
@@ -474,7 +474,7 @@ focus = {
 	icon = GFX_focus_generic_industry_1
 	x = 10
 	y = 1
-	cost = 5
+	cost = 4
 	prerequisite = {
 		focus = CRZ_new_government
 	}
@@ -491,7 +491,7 @@ focus = {
 	icon = GFX_focus_usa_guarantee_the_american_dream
 	x = 10
 	y = 2
-	cost = 7
+	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { 
 		focus = ACZ_carrot_farming
@@ -509,7 +509,7 @@ focus = {
 	icon = GFX_focus_generic_steel
 	x = 14
 	y = 1
-	cost = 7
+	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { 
 		focus = CRZ_new_government
@@ -531,7 +531,7 @@ focus = {
 	icon = GFX_goal_generic_construction2
 	x = 14
 	y = 2
-	cost = 7
+	cost = 4
 	available_if_capitulated = yes
 	prerequisite = { 
 		focus = ACZ_hunting_resource
@@ -578,7 +578,7 @@ focus = {
 			}
 		}
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -611,7 +611,7 @@ focus = {
 		x = -10
 		y = 1
 		relative_position_id = CRZ_invite_foreign_investors
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -683,7 +683,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_mission_to_germany
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -735,7 +735,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_give_falkenhausen_citizenship
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -783,7 +783,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_chinese_general_staff
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -822,7 +822,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_mission_to_germany
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -863,7 +863,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_closer_ties_with_germany
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -928,7 +928,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -966,7 +966,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1027,7 +1027,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1255,7 +1255,7 @@ focus = {
 		y = 4
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1299,7 +1299,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1341,7 +1341,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_purchase_tanks
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1377,7 +1377,7 @@ focus = {
 		y = 0
 		relative_position_id = CRZ_mission_to_germany
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1449,7 +1449,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_mission_to_the_soviet_union
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1487,7 +1487,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_mission_to_the_soviet_union
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1542,7 +1542,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_invite_soviet_advisers
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1584,7 +1584,7 @@ focus = {
 		y = 0
 		relative_position_id = CRZ_mission_to_the_soviet_union
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1647,7 +1647,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_reach_out_to_france
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1683,7 +1683,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_small_arms_expertise
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 2
@@ -1759,7 +1759,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_small_arms_expertise
 		
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1803,7 +1803,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_reach_out_to_france
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1866,7 +1866,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_guarantee_the_hanoi_route
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -1906,7 +1906,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_reach_out_to_france
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2001,7 +2001,7 @@ focus = {
 		y = 5
 		relative_position_id = CRZ_reach_out_to_france
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2035,7 +2035,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_french_drill
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2090,7 +2090,7 @@ focus = {
 		y = 0
 		relative_position_id = CRZ_reach_out_to_france
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2161,7 +2161,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_british_cooperation
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1		
@@ -2248,7 +2248,7 @@ focus = {
 		y = 5
 		relative_position_id = CRZ_british_cooperation
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2334,7 +2334,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_british_cooperation
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2402,7 +2402,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_fighter_purchases
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2449,7 +2449,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_fighter_purchases
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2481,7 +2481,7 @@ focus = {
 		y = 1
 		relative_position_id =  CRZ_local_fighter_production
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2514,7 +2514,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_fighter_purchases
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2597,7 +2597,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_the_hump
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2638,7 +2638,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_camco
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2678,7 +2678,7 @@ focus = {
 		mutually_exclusive = { focus = CRZ_collaboration_with_the_japanese }
 		relative_position_id = CRZ_british_cooperation
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2744,7 +2744,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_mission_to_the_us
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2783,7 +2783,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_hire_chennault
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2823,7 +2823,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_hire_chennault
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2865,7 +2865,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_mission_to_the_us
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2901,7 +2901,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_light_cruiser_project
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2937,7 +2937,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_heavy_cruiser_project
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -2977,7 +2977,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_naval_aviation
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3016,7 +3016,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_mission_to_the_us
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3078,7 +3078,7 @@ focus = {
 		y = 1
 		relative_position_id = CRZ_investment_into_shipbuilding
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3117,7 +3117,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_investment_into_shipbuilding
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3158,7 +3158,7 @@ focus = {
 		y = 0
 		relative_position_id = CRZ_mission_to_the_us
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3220,7 +3220,7 @@ focus = {
 		y = 3
 		relative_position_id = CRZ_collaboration_with_the_japanese
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
@@ -3256,7 +3256,7 @@ focus = {
 		y = 2
 		relative_position_id = CRZ_modern_submarines
 	
-		cost = 10
+		cost = 4
 	
 		ai_will_do = {
 			factor = 1
