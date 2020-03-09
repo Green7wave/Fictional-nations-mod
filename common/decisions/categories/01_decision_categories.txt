@@ -30,7 +30,7 @@ GRN_arming_the_revolution = {
 }
 
 GRN_oprations = {
-	icon = usa_intervention_mandate # generic_foreign_policy
+	icon = usa_intervention_mandate
 
 	allowed = {
 		tag = GRN 

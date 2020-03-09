@@ -119,4 +119,139 @@ GRN_oprations = {
         }
     }
 
+    opration_blacklife = {
+		icon = generic_operation
+		available = {
+			has_war_with = GER
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            GER = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+
+		fire_only_once = yes
+		days_remove = 120
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+    opration_monaliza = {
+		icon = generic_operation
+		available = {
+			has_war_with = ITA
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            ITA = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+		fire_only_once = yes
+		days_remove = 120
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+    operation_horthy = {
+		icon = generic_operation
+		available = {
+			has_war_with = HUN
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            HUN = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+		fire_only_once = yes
+		days_remove = 120
+		targeted_modifier = {
+			tag = HUN
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+    operation_badanime = {
+		icon = generic_operation
+		available = {
+			has_war_with = JAP
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            JAP = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+		fire_only_once = yes
+		days_remove = 120
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+    operation_thirdrep = {
+		icon = generic_operation
+		available = {
+			has_war_with = SPR
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            SPR = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+		fire_only_once = yes
+		days_remove = 120
+		targeted_modifier = {
+			tag = SPR
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+    operation_royalreturn = {
+		icon = generic_operation
+		available = {
+			has_war_with = ENG
+		}
+		visible = {
+			has_completed_focus = GRN_alltostopfascists
+            ENG = { has_government = fascism }
+		}
+		ai_will_do = {
+			factor = 60
+        }
+        cost = 120
+		fire_only_once = yes
+		days_remove = 80
+		targeted_modifier = {
+			tag = ENG
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+        modifier = {
+            amphibious_invasion = 0.2
+        }
+	}
 }

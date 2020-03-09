@@ -43,7 +43,7 @@ news_event = {
 	option = {
 		name = grnnews.2.a
 		trigger = {
-			TAG = HUN
+			TAG = GRN
 		}
 	}
 	option = {
@@ -56,7 +56,7 @@ news_event = {
 		name = grnnews.2.c
 		trigger = { 
 			NOT = {
-				TAG = HUN
+				TAG = GRN
 				TAG = ROM
 			}
 		}
@@ -67,7 +67,7 @@ news_event = {
 news_event = {
 	id = grnnews.3
 	title = grnnews.3.t
-	desc = grnnews.3.desc
+	desc = grnnews.3.d
 	picture = GFX_news_event_hungarian_soldiers
 	
 	major = yes
@@ -77,7 +77,7 @@ news_event = {
 	option = {
 		name = grnnews.3.a
 		trigger = {
-			TAG = HUN
+			TAG = GRN
 		}
 	}
 	option = {
@@ -90,8 +90,110 @@ news_event = {
 		name = grnnews.3.c
 		trigger = { 
 			NOT = {
-				TAG = HUN
+				TAG = GRN
 				TAG = ROM
+			}
+		}
+	}
+}
+
+# Greenlin demands istanbul
+news_event = {
+	id = grnnews.4
+	title = grnnews.4.t
+	desc = grnnews.4.d
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = grnnews.4.a
+		trigger = {
+			TAG = GRN
+		}
+	}
+	option = {
+		name = grnnews.4.b
+		trigger = { 
+			TAG = TUR
+		}
+	}
+	option = {
+		name = grnnews.4.c
+		trigger = { 
+			NOT = {
+				TAG = GRN
+				TAG = TUR
+			}
+		}
+	}
+}
+
+# Istanbul is not given
+news_event = {
+	id = grnnews.5
+	title = grnnews.5.t
+	desc = grnnews.5.d
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = grnnews.5.a
+		trigger = {
+			TAG = GRN
+		}
+	}
+	option = {
+		name = grnnews.5.b
+		trigger = { 
+			TAG = TUR
+		}
+	}
+	option = {
+		name = grnnews.5.c
+		trigger = { 
+			NOT = {
+				TAG = GRN
+				TAG = TUR
+			}
+		}
+	}
+}
+
+# Istanbul is given
+news_event = {
+	id = grnnews.6
+	title = grnnews.6.t
+	desc = grnnews.6.d
+	picture = GFX_news_event_hungarian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = grnnews.6.a
+		trigger = {
+			TAG = GRN
+		}
+	}
+	option = {
+		name = grnnews.6.b
+		trigger = { 
+			TAG = TUR
+		}
+	}
+	option = {
+		name = grnnews.6.c
+		trigger = { 
+			NOT = {
+				TAG = GRN
+				TAG = TUR
 			}
 		}
 	}

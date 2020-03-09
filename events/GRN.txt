@@ -1278,9 +1278,9 @@ country_event = {
 			}
 		}
 		add_threat = -1
-		hidden_effect = {
-			news_event = { id = grnnews.2 days = 1 }
-		}
+		#hidden_effect = {
+		#	news_event = { id = grnnews.2 days = 1 }
+		#}
 	}
 }
 
@@ -1324,16 +1324,16 @@ country_event = {
 			}
 		}
 
-		declare_war_on = {
-				target = ROM
+		create_wargoal = {
+				target = YUG
 				type = take_state_focus
-				generator = { 81 46} 
+				generator = { 108 105 } 
 		}
 		add_war_support = 0.1
 		add_threat = 3
-		hidden_effect = {
-			news_event = { id = grnnews.3 days = 1 }
-		}
+		#hidden_effect = {
+		#	news_event = { id = grnnews.3 days = 1 }
+		#}
 	}
 }
 
@@ -1486,25 +1486,162 @@ country_event = {
 
 # They refuse Cooperative strike
 country_event = {
-	id = grn.26
-	title = grn.26.t
-	desc = grn.26.d
+	id = grn.27
+	title = grn.27.t
+	desc = grn.27.d
 	picture = GFX_report_event_generic_sign_treaty1
 	
 	is_triggered_only = yes
 
 	option = { 
-		name = grn.26.a
+		name = grn.27.a
 		ai_chance = {
 			factor = 10
 		}
 		create_wargoal = {
-			create_wargoal = {
-				type = conquer
+				type = take_state
 				target = YUG
-			}
 		}
 
 	}
 }
 
+# Greenlin wants instanbul from Turkey
+country_event = {
+	id = grn.28
+	title = grn.28.t
+	desc = grn.28.d
+	picture = GFX_report_event_vienna_award_negotiations
+	
+	is_triggered_only = yes
+
+	option = {#yes 
+		name = grn.28.a
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = GRN ratio < 0.8 }
+				factor = 0.5
+			}
+			modifier = { 
+				strength_ratio = { tag = GRN ratio > 1.25 }
+				factor = 2
+			}
+			modifier = {
+				is_in_faction = yes
+				factor = 0 #we got friends
+			}
+		}
+		GRN = { country_event = { id = grn.29 } }
+		add_stability = -0.25
+		add_war_support = -0.1
+		
+	}
+
+	option = {#no 
+		name = grn.28.b
+		ai_chance = {
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = GRN ratio < 1 }
+				factor = 2
+			}
+			modifier = { 
+				strength_ratio = { tag = GRN ratio > 1.25 }
+				factor = 0.5
+			}
+			modifier = { 
+				is_in_faction = yes
+				factor = 2
+			}
+		}
+		GRN = { country_event = { id = grn.30 } }
+		hidden_effect = {
+			news_event = { id = grnnews.5 days = 1}
+		}
+	}
+}
+
+
+# Turkey gives instanbul
+country_event = {
+	id = grn.29
+	title = grn.29.t
+	desc = grn.29.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = Balkan_crisis_mediation_requested
+		}
+	}
+
+	option = {
+		name = grn.29.a
+		GRN = {
+			if = {
+				limit = {
+					TUR = {
+						controls_state = 341
+					}
+				}
+				transfer_state = 341
+			}
+		}
+		add_threat = -1
+		hidden_effect = {
+			news_event = { id = grnnews.6 days = 1 }
+		}
+	}
+}
+
+# Turkey refuses to give instanbul
+country_event = {
+	id = grn.30
+	title = grn.30.t
+	desc = grn.30.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	option = {# Let it go
+		name = grn.30.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				strength_ratio = { tag = TUR ratio < 1 } #weaker than TUR
+				factor = 2
+			}
+		}
+		add_stability = -0.2
+		add_war_support = -0.1
+		remove_state_claim = 341
+		add_threat = -1
+	}
+
+	option = {# war!
+		name = grn.30.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				strength_ratio = { tag = TUR ratio > 1.2 }
+				factor = 1.5
+			}
+			factor = 35
+			modifier = { 
+				strength_ratio = { tag = TUR ratio > 1.25 } #stronger than TUR
+				factor = 2
+			}
+		}
+
+		create_wargoal = {
+				target = TUR
+				type = take_state_focus
+				generator = { 341 } 
+		}
+		add_war_support = 0.1
+		add_threat = 3
+	}
+}
