@@ -48,10 +48,11 @@ ideas = {
 			modifier = {
 				stability_weekly = -1
 				war_support_weekly = 1
-				conscription = 0.8
-				training_time_factor = -0.2
+				conscription = 0.85
+				training_time_factor = -0.25
 				research_speed_factor = -0.20
-				mobilization_speed = 1
+				mobilization_speed = 10
+				industrial_capacity_factory = 0.2
 			}
 		}
 
