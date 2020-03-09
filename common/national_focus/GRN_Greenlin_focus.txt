@@ -917,6 +917,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 60
 		}
+
+		completion_reward = {
+			add_ideas = grn_division_programs
+		}
 	}
 
 	#Focus for Greenlin's Breakers
@@ -1263,6 +1267,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 60
 		}
+		completion_reward = {
+			custom_effect_tooltip = tip_stopfascists
+		}
 	}
 
 	#Focus for Hold our lines
@@ -1288,11 +1295,14 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					any_other_country = {
+						has_war_with = GRN
+						
+					}
 					any_neighbor_state = {
-						is_controlled_by = var:GRN.enemies
+						is_controlled_by = PREV
 					}
 				}
-				
 			
 				add_building_construction = {
 					type = bunker
@@ -1728,9 +1738,39 @@ focus_tree = {
 			focus = GRN_cooperativestrike 
 			focus = GRN_demandthenorthwest 
 		}
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 699999 } #ca 50 div
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					TUR = { owns_state = 341 }
+				}
+				#has_war_with = TUR
+				is_in_faction_with = TUR
+				TUR = { is_subject_of = GRN }
+			}
+		}
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 60
+		}
+		completion_reward = {
+			TUR = {
+				country_event = {
+					id = grn.28
+					days = 1
+				}
+			}
+			hidden_effect = {
+				news_event = {
+					id = newsgrn.4
+					days = 1
+					random = 3
+				}
+			}
+
 		}
 	}
 

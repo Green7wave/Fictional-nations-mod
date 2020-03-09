@@ -36,8 +36,9 @@ ideas = {
 
 			}
 		}
-		
 		#
+		
+
 		special_democracy_2 = {
 			name = special_democracy
 
@@ -120,6 +121,28 @@ ideas = {
 
 		#
 
+		grn_division_programs = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SPA_la_division_azul
+
+			modifier = {
+				army_org_factor = 0.08
+				experience_loss_factor = -0.03
+			}
+			
+		}
+
+		#
 		full_control_2 = {
 			name = full_control
 

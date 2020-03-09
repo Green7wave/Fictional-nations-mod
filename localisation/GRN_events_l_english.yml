@@ -17,8 +17,24 @@
   grnnews.3.a:0 "If strength is all they will listen to..."
   grnnews.3.b:0 "Let them come!"
   grnnews.3.c:0 "Stone-headed fools..."
-  # War with Romania
-  
+  # Greenlin asking istanbul
+  grnnews.4.t:0 "Greenlin Issues Ultiamtum for Istanbul"
+  grnnews.4.d:0 "the [GRN.GetAdj] government has issued a Ultimatum to Turkey regarding Istanbul, after their expansions in the balkans, export politicans had been expecting such behaviours, the question lies if Turkey approves, as if not it may led to a horrible bloodshed"
+  grnnews.4.a:0 "Let them all know of the glory"
+  grnnews.4.b:0 "Outragous"
+  grnnews.4.c:0 "Just how much expansion?"
+  # No istanbul for Greenlin
+  grnnews.5.t:0 "Greenlin's Ultimatum Refused"
+  grnnews.5.d:0 "The Turkish officials have decided to reject the demands of Greenlin, this will potentially cause a war to break out between Turkey and Greenlin."
+  grnnews.5.a:0 "Many will die"
+  grnnews.5.b:0 "We will not stand down"
+  grnnews.5.c:0 "This can't go good"
+  # Istanbul for Greenlin
+  grnnews.6.t:0 "Turkey approves Greenish demands"
+  grnnews.6.d:0 "The Turkish officials have decided to approve the demands of Greenlin, thus after this the state of Istanbul is to be known a Greenish state and will be ruled by the Greenlin rulers. Whether this is the last of Greenlin's exandetory behaviour is unclear"
+  grnnews.6.a:0 "Reunited as one"
+  grnnews.6.b:0 "We only wanted the best"
+  grnnews.6.c:0 "Tragic yet peace was achieved"
 
   
 # events
@@ -134,10 +150,24 @@
   grn.26.d:0 "Greenlin's leader has personally wrote a letter to us and asked for a cooperative strike on Yugoslavia, he has promised lands or our other interests in this matter."
   grn.26.a:0 "Seems interesting, we shall start the strike"
   grn.26.b:0 "They are alone in this unfortunately"
-  #
+  # Cooprative Strike gets refused
   grn.27.t:0 "[From.GetName] has refused our offer"
   grn.27.d:0 "The [From.GetAdj] has refused our offer for a cooperative strike on Yugoslavia, as plans have been drawn we still can attack or postpone our efforts"
   grn.27.a:0 "Aw man..."
+  # Asking instanbul from turkey
+  grn.28.t:0 "Greenlin asks for Istanbul"
+  grn.28.d:0 "[GRN.GetName] has issued an ultimatum regarding istanbul, they have said it is their land and they want it back or else"
+  grn.28.a:0 "Cannot let blood be spilled for this"
+  grn.28.b:0 "No"
+  # They Accept
+  grn.29.t:0 "Turkey Approves our request of Istanbul"
+  grn.29.d:0 "They gave instanbul back"
+  grn.29.a:0 "Ez"
+  # They refuse
+  grn.30.t:0 "Turkey rejects our ultimatum"
+  grn.30.d:0 "The Turkish government has refused to give istanbul to his real owner, as they have sent a letter regarding this and calling it unfair for us to regain control over the land"
+  grn.30.a:0 "We weren't serious anyways..."
+  grn.30.b:0 "So they want war"
   # template
   grn.69.t:0 ""
   grn.69.d:0 ""

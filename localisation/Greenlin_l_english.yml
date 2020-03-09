@@ -39,8 +39,8 @@
  GRN_carrotism_party_long:0 "Council of Greenlin"
  GRN_carrotism_party:0 "COS"
 
-# Tool tips (§G§!) 
- tip_romaniasfuture:0 "Unlocks §YOperation Bitter§! decisions, which gives bonuses against [ROM.GetName]"
+# Tool tips (§Y§!) 
+ tip_romaniasfuture:0 "Unlocks §YOperation Bitter§! decision, which gives bonuses against [ROM.GetName]"
  tip_asktheneigbour:0 "This focus will send an event to the available allies, if they accept the civil war odds will change in players favor."
  tip_armtherevolution:0 "This focus will unlock decisions that will change the odds of the civil war in the players favor, taking some of the decisions is needed to win the civil war"
  tip_starttherevolution:0 "§RThis focus will cause an civil war!§! \n"
@@ -56,6 +56,7 @@
  available_high_command:0 "Available as an §YHigh Command§!:\n"
  tip_oprationlion:0 "Unlocks a special §Yagency operation§! against [PER.GetName], the opration will install a friendly government to us and coup [PER.GetName]"
  tip_yugcoopattack:0 "§RIf the other country agrees war will immediately start, otherwise we will get a wargoal§!"
+ tip_stopfascists:0 "Unlocks §YAnti-Fascist Operation Decisions§! which will give bonuses against those countries"
 
 # Ideas
 
@@ -97,6 +98,8 @@
 
 
  # national spirits
+ grn_division_programs:0 "Divsion Programs"
+ grn_division_programs_desc:0 "Greenlin's special division programs has made Greenlin infantry slightly better, while keeping the funding as low as possible as our divisions are good enough already"
  anti_fascist_propoganda:0 "Anti-Fascist Propoganda"
  anti_fascist_propoganda_desc:0 "whether with Mehrad the Cruel or Mani Wave, Greenlin's politics would always be anti-fascist as there was no one near power that could support fascism and now Greenlin has heavy Anti-fascist propoganda, making it clear as day Greenlin is not with Fascists"
  expanded_influence:0 "Expanded Influence"
@@ -156,8 +159,17 @@
  terror_itself:0 "Terror Itself"
 
 # decisions
- commence_operation_bitter:0 "Commence Operation Bitter"
+ 
+ GRN_operations:0 "Operations"
+ #
+ commence_operation_bitter:0 "Execute Operation Bitter"
  commence_operation_bitter_desc:0 "We have the operation against Romania ready, we just have to put them in motion"
+ opration_blacklife:0 "Execute Operation Black Life"
+ opration_monaliza:0 "Execute Operation Monalisa"
+ operation_horthy:0 "Execute Operation Horthy"
+ operation_badanime:0 "Execute Operation Bad Anime"
+ operation_thirdrep:0 "Execute Operation Third Rep"
+ operation_royalreturn:0 "Execute Operation Royal Return"
 
 # other (operation)
  operation_coup_lion:0 "Operation Lion"
