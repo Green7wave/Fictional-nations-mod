@@ -78,9 +78,9 @@ taking_out_the_evil = {
 help_iwa = {
 	allowed = {
 		ROOT = {
-		has_country_flag = helping_iwa
+			has_country_flag = helping_iwa
+		}
 	}
-}
 	visible = {
 		ROOT = {
 			has_country_flag = helping_iwa

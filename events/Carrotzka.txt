@@ -500,27 +500,6 @@ country_event = {
 }
 
 country_event = {
-	id = carrotzka.76
-	title = carrotzka.76.t
-	desc = carrotzka.76.d
-	picture = GFX_report_event_stalin_propaganda
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = carrotzka.76.a
-		set_country_flag = soviet_help
-		ai_chance = { 
-			factor = 10
-		}
-		SOV = {
-			unlock_decision_category_tooltip = help_iwa
-		}
-	}
-}
-
-country_event = {
 	id = carrotzka.74
 	title = carrotzka.74.t
 	desc = carrotzka.74.d
@@ -529,22 +508,42 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-option = {
-	name = carrotzka.74.a
-	ai_chance = {
-		 factor = 10
-		 }
-}
+	option = {
+		name = carrotzka.74.a
+		ai_chance = {
+			factor = 10
+		}
+	}
 
-option = {
-	name = carrotzka.74.b
-	ai_chance = {
-		 factor = 90
-		 }
-		GRN = {
+	option = {
+		name = carrotzka.74.b
+		ai_chance = {
+			factor = 90
+		}
+		if = {
+			limit = {
+				tag = SOV
+			}
+			ACZ = { set_country_flag = soviet_help }
+			diplomatic_relation = {
+				country = ACZ
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		else_if = {
+			limit = {
+				tag = GRN
+			}
+			ACZ = { set_country_flag = greenlin_help }
+		}
+		ROOT = {
 			unlock_decision_category_tooltip = help_iwa
 		}
-	 }
+		hidden_effect = {
+			ROOT = { set_country_flag = helping_iwa }
+		}
+	}
 }
 
 country_event = {
@@ -734,7 +733,19 @@ country_event = {
 				loved_by_people
 			}
 		}
-		news_event= crznews.102
+		hidden_effect = {
+			news_event= { id = crznews.102 days = 1}
+			add_ai_strategy = {
+				type = alliance
+				id = GRN
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ACZ
+				value = 200
+			}
+		}
 		add_popularity = {
 			ideology = neutrality
 			popularity = 1
@@ -775,7 +786,19 @@ country_event = {
 			}
 		}
 		add_political_power = 200
-		news_event= crznews.103
+		hidden_effect = {
+			news_event= crznews.103
+			add_ai_strategy = {
+				type = alliance
+				id = GRN
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ACZ
+				value = 200
+			}
+		} 
 		CRZ = {
 			country_event = {
 				id = carrotzka.96
@@ -800,7 +823,19 @@ country_event = {
 			ideology = democratic
 			popularity = 1
 		}
-		news_event= crznews.104
+		hidden_effect = {
+			add_ai_strategy = {
+				type = alliance
+				id = GRN
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ACZ
+				value = 200
+			}
+			 news_event= crznews.104
+		}
 		CRZ = {
 			country_event = {
 				id = carrotzka.96
@@ -837,7 +872,19 @@ country_event = {
 				connected_citizen
 			}
 		}
-		news_event= crznews.105
+		hidden_effect = {
+			add_ai_strategy = {
+				type = alliance
+				id = GRN
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = ACZ
+				value = 200
+			}
+			news_event= crznews.105
+		}
 		CRZ = {
 			country_event = {
 				id = carrotzka.96
@@ -873,7 +920,19 @@ country_event = {
 				champion_of_peace_5
 			}
 	}
-	news_event= crznews.106
+	hidden_effect = {
+		add_ai_strategy = {
+				type = alliance
+				id = GRN
+				value = 200
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = ACZ
+			value = 200
+		}
+		news_event= crznews.106
+	}
 	CRZ = {
 		country_event = {
 			id = carrotzka.96
@@ -922,7 +981,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = CRZ
-		country_exists = YUG     
+		NOT = { country_exists = YUG   }
 	}
 
 	mean_time_to_happen = { days = 1 } 
@@ -932,11 +991,11 @@ country_event = {
 		name = carrotzka.9999.a
 		create_corps_commander = {
 			name = "Josip Broz Tito"
-			picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+			picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 			traits = {
 				 trickster 
 				 brilliant_strategist
-				 }
+			}
 			skill = 4
 			attack_skill = 4
 			defense_skill = 2

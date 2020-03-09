@@ -324,7 +324,7 @@ taking_out_the_evil = {
                 target = CRZ
                 type = annex_everything
             }
-      }
+        }
     }
 
     volunteer_the_workers = {
@@ -352,7 +352,7 @@ taking_out_the_evil = {
             GRN = {
                 country_event = {
                     id = carrotzka.74
-                    days = 2
+                    days = 1
                     random = 10
                 }
             }
@@ -370,12 +370,12 @@ taking_out_the_evil = {
         complete_effect = {
             SOV = {
                 country_event = {
-                    id = carrotzka.75
-                    days = 2
+                    id = carrotzka.74
+                    days = 1
                     random = 10
                 }
             }
-      }
+        }
     }
 
     ask_carrot = {
@@ -526,36 +526,104 @@ taking_out_the_evil = {
                 amount = 1000
                 producer = USA
             }
-       }
-      }
+        }
     }
+}
 
 help_iwa = {
 
     send_weapon = {
         icon = generic_operation
-        cost = 150
+        cost = 75
         ai_will_do = {
             factor = 1
         }
         fire_only_once = no
         days_remove = 10
+        available = {
+            has_equipment = {
+                infantry_equipment > 999
+            }
+        }
         complete_effect = {
-            ROOT = {
-                add_equipment_to_stockpile = {
-                    type = infantry_equipment
-                    amount = -1000
-                }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
             }
             ACZ = {
                 add_equipment_to_stockpile = {
                     type = infantry_equipment
                     amount = 1000
-                    producer = SOV
+                   # producer = ROOT
                 }
             }
         }
     }
+
+    send_weapon_big = {
+        icon = generic_operation
+        cost = 100
+        ai_will_do = {
+            factor = 1
+        }
+        available = {
+            has_equipment = {
+                infantry_equipment > 2999
+            }
+        }
+        fire_only_once = no
+        days_remove = 10
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -3000
+            }
+
+            ACZ = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 3000
+                    #producer = ROOT
+                }
+            }
+        }
+    }
+
+    give_mil_factory = {
+        icon = ger_military_buildup
+        # cost = 100
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 80
+                arms_factory > 10
+            }
+        }
+
+        available = {
+           num_of_available_civilian_factories > 2
+        }
+
+        modifier = {
+		    civilian_factory_use = 3
+
+        }
+
+        fire_only_once = no
+        days_remove = 180
+        complete_effect = {
+            ACZ = {
+                add_offsite_building = { type = arms_factory level = 2 }
+            }
+        }
+        remove_effect = {
+            ACZ = {
+                add_offsite_building = { type = arms_factory level = -2 }
+            }
+        }
+    }
+    
+
 }
 
 cripple_carrotzka = {

@@ -1834,6 +1834,16 @@ focus_tree = {
 							id = crznews.69421
 							days = 1
 						}
+						add_ai_strategy = {
+							type = antagonize
+							id = GRN
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ACZ
+							value = 200
+						}
 					}
 					remove_unit_leader = 420
 					remove_unit_leader = 69420
