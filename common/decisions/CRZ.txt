@@ -313,7 +313,7 @@ taking_out_the_evil = {
 
     ignite_bearhunt = {
         icon = generic_operation
-        cost = 300
+        cost = 20
         ai_will_do = {
             factor = 1
         }
@@ -329,7 +329,7 @@ taking_out_the_evil = {
 
     volunteer_the_workers = {
         icon = generic_operation
-        cost = 150
+        cost = 100
         ai_will_do = {
             factor = 1
         }
@@ -342,7 +342,7 @@ taking_out_the_evil = {
 
     greenlin_help = {
         icon = generic_operation
-        cost = 150
+        cost = 50
         ai_will_do = {
             factor = 1
         }
@@ -361,7 +361,7 @@ taking_out_the_evil = {
 
     soviet_help = {
         icon = generic_operation
-        cost = 150
+        cost = 50
         ai_will_do = {
             factor = 1
         }
@@ -380,7 +380,7 @@ taking_out_the_evil = {
 
     ask_carrot = {
         icon = generic_operation
-        cost = 150
+        cost = 100
         ai_will_do = {
             factor = 1
         }
@@ -388,11 +388,11 @@ taking_out_the_evil = {
         days_remove = 0
         complete_effect = {
             random_list = {
-                40 = {
+                30 = {
                     
                 }
     
-                60 = {
+                70 = {
                     create_corps_commander = {
                         name = "Sadra carrot"
                         picture = "gfx/leaders/CRZ/Portrait_carrotzka_Sadra_Carrot.tga"
@@ -413,7 +413,7 @@ taking_out_the_evil = {
 
     international_army = {
         icon = generic_operation
-        cost = 150
+        cost = 100
         ai_will_do = {
             factor = 1
         }
@@ -462,7 +462,7 @@ taking_out_the_evil = {
 
     train_liberation_army = {
         icon = generic_operation
-        cost = 150
+        cost = 100
         ai_will_do = {
             factor = 1
         }
@@ -501,7 +501,7 @@ taking_out_the_evil = {
 
     death_before_surrender = {
         icon = generic_operation
-        cost = 150
+        cost = 100
         ai_will_do = {
             factor = 1
         }
@@ -514,7 +514,7 @@ taking_out_the_evil = {
 
     purchase_weapon = {
         icon = generic_operation
-        cost = 150
+        cost = 20
         ai_will_do = {
             factor = 1
         }
@@ -534,11 +534,7 @@ help_iwa = {
 
     send_weapon = {
         icon = generic_operation
-        cost = 75
         ai_will_do = {
-            factor = 1
-        }
-        fire_only_once = no
         days_remove = 10
         available = {
             has_equipment = {
@@ -630,11 +626,11 @@ cripple_carrotzka = {
 
     damage_railway = {
         icon = generic_operation
-        cost = 50
+        cost = 20
         ai_will_do = {
             factor = 1
         }
-        fire_only_once = yes
+        fire_only_once = no
         days_remove = 20
         complete_effect = {
             CRZ = {
@@ -650,11 +646,11 @@ cripple_carrotzka = {
     
     damage_mil_factory = {
         icon = generic_operation
-        cost = 50
+        cost = 20
         ai_will_do = {
             factor = 1
         }
-        fire_only_once = yes
+        fire_only_once = no
         days_remove = 20
         complete_effect = {
             CRZ = {
@@ -671,11 +667,11 @@ cripple_carrotzka = {
 
     damage_civ_factory = {
         icon = generic_operation
-        cost = 50
+        cost = 20
         ai_will_do = {
             factor = 1
         }
-        fire_only_once = yes
+        fire_only_once = no
         days_remove = 20
         complete_effect = {
            CRZ = {
