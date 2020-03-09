@@ -290,7 +290,7 @@ news_event = {
 	id = crznews.105
 	title = crznews.105.t
 	desc = crznews.105.d
-	picture = GFX_news_event_herman_goring
+	picture = GFX_news_event_german_speech
 	
 	major = no
 	
